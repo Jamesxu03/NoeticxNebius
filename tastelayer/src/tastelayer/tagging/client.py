@@ -49,6 +49,19 @@ class BudgetHardStop(Exception):
     """Spend passed MAX_USD."""
 
 
+def check_deadline() -> None:
+    deadline = float(os.getenv("TAG_DEADLINE", "0") or 0)
+    if deadline and time.time() >= deadline:
+        raise DeadlineReached(f"cutoff {time.strftime('%H:%M:%S', time.localtime(deadline))} reached")
+
+
+class DeadlineReached(BudgetPause):
+    """Wall-clock cutoff (env TAG_DEADLINE, unix seconds) passed: send no new requests.
+
+    Subclasses BudgetPause so it propagates through the tagger's retry/split handling unchanged;
+    requests already sent still complete and are saved."""
+
+
 def append_jsonl(path: Path, rec: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "a") as f:
@@ -97,6 +110,7 @@ class SpendTracker:
         self._last_flush = time.time()
 
     def check(self) -> None:
+        check_deadline()
         if self.total >= config.MAX_USD:
             raise BudgetHardStop(f"spend ${self.total:.2f} >= MAX_USD ${config.MAX_USD:.2f}")
         if self.total >= config.ASK_USD and os.getenv("ALLOW_OVER_ASK") != "1":
@@ -149,6 +163,7 @@ class AdaptiveLimiter:
 
     async def acquire(self, est_tokens: float) -> None:
         while True:
+            check_deadline()
             async with self.lock:
                 now = time.monotonic()
                 w = max(self.blocked_until - now, self.req.wait_time(1), self.tok.wait_time(est_tokens))
@@ -230,6 +245,7 @@ class NebiusClient:
         lim = self.limiter(model)
         est = (len(system) + len(user)) / 3.5 + self.avg_out.get(model, 1500)
         async with lim.sem:
+            check_deadline()  # a request that waited for a slot past the cutoff is dropped, not sent
             async for attempt in AsyncRetrying(
                 retry=retry_if_exception(_retryable),
                 wait=wait_random_exponential(multiplier=1, max=30),

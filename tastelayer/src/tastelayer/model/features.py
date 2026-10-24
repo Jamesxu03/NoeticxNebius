@@ -59,6 +59,12 @@ class EmbeddingStore:
         self.kp, self.vp = EMB_CACHE / f"{name}_keys.json", EMB_CACHE / f"{name}_vecs.npy"
         self.keys: list[str] = json.loads(self.kp.read_text()) if self.kp.exists() else []
         self.vecs = np.load(self.vp) if self.vp.exists() else None
+        n_vecs = 0 if self.vecs is None else len(self.vecs)
+        if len(self.keys) != n_vecs:
+            # e.g. a fresh clone: the keys file was committed but the >50MB vectors file was not.
+            # Never trust an index that doesn't match its vectors; start the cache over instead.
+            print(f"[emb_cache] {name}: {len(self.keys)} keys but {n_vecs} vectors; ignoring the stale cache")
+            self.keys, self.vecs = [], None
         self.index = {k: i for i, k in enumerate(self.keys)}
 
     def get(self, texts: list[str], compute) -> np.ndarray:
@@ -82,12 +88,24 @@ class EmbeddingStore:
 _BGE = None
 
 
+def load_bge(allow_download: bool = False):
+    """Load bge-base from the local Hugging Face cache only, so serving makes no network call
+    (without this, every load sends HEAD requests to huggingface.co to check for updates).
+    Fetch the weights once with `make fetch-models` (allow_download=True)."""
+    from sentence_transformers import SentenceTransformer
+
+    if allow_download:
+        return SentenceTransformer(BGE_MODEL)
+    try:
+        return SentenceTransformer(BGE_MODEL, local_files_only=True)
+    except OSError as e:
+        raise RuntimeError(f"{BGE_MODEL} is not in the local cache; run `make fetch-models` once (needs network)") from e
+
+
 def _bge_compute(texts: list[str]) -> np.ndarray:
     global _BGE
     if _BGE is None:
-        from sentence_transformers import SentenceTransformer
-
-        _BGE = SentenceTransformer(BGE_MODEL)
+        _BGE = load_bge()
     return _BGE.encode(texts, batch_size=64, normalize_embeddings=True, show_progress_bar=len(texts) > 2000)
 
 

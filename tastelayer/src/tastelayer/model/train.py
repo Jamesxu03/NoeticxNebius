@@ -71,6 +71,7 @@ def gold_uids() -> set[str]:
     return uids
 
 
+MIN_MODELS = int(os.getenv("TASTENET_MIN_MODELS", "2"))
 MIN_LABELS = int(os.getenv("TASTENET_MIN_LABELS", "4"))  # of 6 (3 models x 2 temps); 1-model rows have fake std=0
 
 
@@ -78,7 +79,9 @@ def load_training_frame() -> tuple[pd.DataFrame, np.ndarray, np.ndarray]:
     cons = pd.read_parquet(config.DATA_PROCESSED / "labels_consensus.parquet")
     df = load_dishes().merge(cons, on="uid", how="inner", suffixes=("", "_lbl"))
     df = df[~df.uid.isin(gold_uids())]
-    if "n_labels" in df:
+    if "n_models" in df:
+        df = df[df.n_models >= MIN_MODELS]  # 1-model rows: std is temperature noise only, not agreement
+    elif "n_labels" in df:
         df = df[df.n_labels >= MIN_LABELS]
     df = df.reset_index(drop=True)
     Y = df[TASTE_DIMS].to_numpy(float)

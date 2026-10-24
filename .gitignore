@@ -12,3 +12,6 @@ backend/.cache/
 # Personal data exports (e.g. Uber "Download your data") must never be committed
 Uber Data/
 *Uber*Data*Request*.zip
+
+# Generated browser OCR assets (recreated by frontend postinstall)
+frontend/public/ocr/

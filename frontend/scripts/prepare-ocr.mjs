@@ -1,0 +1,10 @@
+import { mkdir, copyFile, readdir } from 'node:fs/promises'
+const root = new URL('../', import.meta.url)
+const target = new URL('public/ocr/', root)
+await mkdir(target, {recursive:true})
+await copyFile(new URL('node_modules/tesseract.js/dist/worker.min.js', root),new URL('worker.min.js',target))
+const core = new URL('node_modules/tesseract.js-core/',root)
+for (const name of await readdir(core)) if (/-lstm\.wasm(?:\.js)?$/.test(name)) await copyFile(new URL(name,core),new URL(name,target))
+await copyFile(new URL('node_modules/@tesseract.js-data/eng/4.0.0_best_int/eng.traineddata.gz',root),new URL('eng.traineddata.gz',target))
+await copyFile(new URL('node_modules/tesseract.js-core/LICENSE',root),new URL('LICENSE-core',target))
+console.log('Prepared local English OCR worker, WASM and model assets.')

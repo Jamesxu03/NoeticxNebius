@@ -1,0 +1,8 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// fs.allow lets the dev server read ../backend/mocks while the API is not live yet.
+export default defineConfig({
+  plugins: [react()],
+  server: { fs: { allow: ['..'] } },
+})

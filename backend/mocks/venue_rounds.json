@@ -1,0 +1,205 @@
+[
+  {
+    "round_id": "v1",
+    "dish_family": "pizza",
+    "options": [
+      {
+        "restaurant": {
+          "id": "r_01",
+          "name": "Pizza Pronto",
+          "cuisine": "italian",
+          "price_tier": 1,
+          "vibe_tags": [
+            "casual",
+            "quick"
+          ],
+          "area": "Camden",
+          "lat": 0.0,
+          "lng": 0.0,
+          "halal_status": "unknown",
+          "menu_source_url": "mock",
+          "dish_ids": [
+            "d_0001",
+            "d_0002",
+            "d_0003",
+            "d_0004"
+          ]
+        },
+        "dish": {
+          "id": "d_0001",
+          "restaurant_id": "r_01",
+          "name": "Margherita Pizza",
+          "description": "",
+          "cuisine": "italian",
+          "category": "main",
+          "dish_family": "pizza",
+          "price_gbp": 9.5,
+          "ingredients": [
+            "pizza dough",
+            "tomato",
+            "mozzarella",
+            "basil",
+            "olive oil"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "dietary": {
+            "vegan": "no",
+            "vegetarian": "yes",
+            "halal": "unknown",
+            "kosher": "unknown"
+          },
+          "taste": {
+            "spice": 0.0,
+            "sweet": 2.0,
+            "sour": 3.0,
+            "bitter": 0.0,
+            "umami": 6.0,
+            "richness": 5.0,
+            "crunch": 4.0,
+            "creaminess": 4.0
+          },
+          "serving_temp": "hot",
+          "adventurousness": 1.0,
+          "tagged_by": "human",
+          "verified": false
+        }
+      },
+      {
+        "restaurant": {
+          "id": "r_02",
+          "name": "Trattoria Nonna",
+          "cuisine": "italian",
+          "price_tier": 2,
+          "vibe_tags": [
+            "traditional",
+            "family"
+          ],
+          "area": "Islington",
+          "lat": 0.0,
+          "lng": 0.0,
+          "halal_status": "none",
+          "menu_source_url": "mock",
+          "dish_ids": [
+            "d_0005",
+            "d_0006",
+            "d_0007",
+            "d_0008",
+            "d_0009",
+            "d_0010"
+          ]
+        },
+        "dish": {
+          "id": "d_0005",
+          "restaurant_id": "r_02",
+          "name": "Wood-fired Margherita",
+          "description": "",
+          "cuisine": "italian",
+          "category": "main",
+          "dish_family": "pizza",
+          "price_gbp": 12.0,
+          "ingredients": [
+            "pizza dough",
+            "tomato",
+            "buffalo mozzarella",
+            "basil",
+            "olive oil"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "dietary": {
+            "vegan": "no",
+            "vegetarian": "yes",
+            "halal": "unknown",
+            "kosher": "unknown"
+          },
+          "taste": {
+            "spice": 0.0,
+            "sweet": 2.0,
+            "sour": 3.0,
+            "bitter": 1.0,
+            "umami": 6.0,
+            "richness": 5.0,
+            "crunch": 5.0,
+            "creaminess": 5.0
+          },
+          "serving_temp": "hot",
+          "adventurousness": 1.0,
+          "tagged_by": "human",
+          "verified": false
+        }
+      },
+      {
+        "restaurant": {
+          "id": "r_03",
+          "name": "Osteria Lusso",
+          "cuisine": "italian",
+          "price_tier": 4,
+          "vibe_tags": [
+            "date-night",
+            "trendy"
+          ],
+          "area": "Mayfair",
+          "lat": 0.0,
+          "lng": 0.0,
+          "halal_status": "none",
+          "menu_source_url": "mock",
+          "dish_ids": [
+            "d_0011",
+            "d_0012",
+            "d_0013",
+            "d_0014",
+            "d_0015",
+            "d_0016",
+            "d_0017"
+          ]
+        },
+        "dish": {
+          "id": "d_0011",
+          "restaurant_id": "r_03",
+          "name": "Margherita DOP",
+          "description": "",
+          "cuisine": "italian",
+          "category": "main",
+          "dish_family": "pizza",
+          "price_gbp": 18.0,
+          "ingredients": [
+            "pizza dough",
+            "tomato",
+            "buffalo mozzarella",
+            "basil",
+            "olive oil"
+          ],
+          "allergens": [
+            "gluten",
+            "milk"
+          ],
+          "dietary": {
+            "vegan": "no",
+            "vegetarian": "yes",
+            "halal": "unknown",
+            "kosher": "unknown"
+          },
+          "taste": {
+            "spice": 0.0,
+            "sweet": 2.0,
+            "sour": 3.0,
+            "bitter": 1.0,
+            "umami": 7.0,
+            "richness": 5.0,
+            "crunch": 5.0,
+            "creaminess": 5.0
+          },
+          "serving_temp": "hot",
+          "adventurousness": 2.0,
+          "tagged_by": "human",
+          "verified": false
+        }
+      }
+    ]
+  }
+]

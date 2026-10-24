@@ -1,0 +1,1499 @@
+[
+  {
+    "id": "d_0001",
+    "restaurant_id": "r_01",
+    "name": "Margherita Pizza",
+    "description": "",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pizza",
+    "price_gbp": 9.5,
+    "ingredients": [
+      "pizza dough",
+      "tomato",
+      "mozzarella",
+      "basil",
+      "olive oil"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 2,
+      "sour": 3,
+      "bitter": 0,
+      "umami": 6,
+      "richness": 5,
+      "crunch": 4,
+      "creaminess": 4
+    },
+    "serving_temp": "hot",
+    "adventurousness": 1,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0002",
+    "restaurant_id": "r_01",
+    "name": "Pepperoni Pizza",
+    "description": "",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pizza",
+    "price_gbp": 11.0,
+    "ingredients": [
+      "pizza dough",
+      "tomato",
+      "mozzarella",
+      "pepperoni",
+      "oregano"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "no",
+      "kosher": "no"
+    },
+    "taste": {
+      "spice": 3,
+      "sweet": 2,
+      "sour": 3,
+      "bitter": 0,
+      "umami": 7,
+      "richness": 7,
+      "crunch": 4,
+      "creaminess": 4
+    },
+    "serving_temp": "hot",
+    "adventurousness": 1,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0003",
+    "restaurant_id": "r_01",
+    "name": "Garlic Bread",
+    "description": "",
+    "cuisine": "italian",
+    "category": "side",
+    "dish_family": "bread",
+    "price_gbp": 4.5,
+    "ingredients": [
+      "bread",
+      "garlic",
+      "butter",
+      "parsley"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 1,
+      "sour": 0,
+      "bitter": 0,
+      "umami": 3,
+      "richness": 6,
+      "crunch": 6,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 0,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0004",
+    "restaurant_id": "r_01",
+    "name": "Tiramisu",
+    "description": "",
+    "cuisine": "italian",
+    "category": "dessert",
+    "dish_family": "tiramisu",
+    "price_gbp": 6.0,
+    "ingredients": [
+      "savoiardi",
+      "mascarpone",
+      "espresso",
+      "cocoa",
+      "egg",
+      "sugar"
+    ],
+    "allergens": [
+      "gluten",
+      "milk",
+      "egg"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 8,
+      "sour": 1,
+      "bitter": 4,
+      "umami": 1,
+      "richness": 7,
+      "crunch": 1,
+      "creaminess": 9
+    },
+    "serving_temp": "cold",
+    "adventurousness": 2,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0005",
+    "restaurant_id": "r_02",
+    "name": "Wood-fired Margherita",
+    "description": "",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pizza",
+    "price_gbp": 12.0,
+    "ingredients": [
+      "pizza dough",
+      "tomato",
+      "buffalo mozzarella",
+      "basil",
+      "olive oil"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 2,
+      "sour": 3,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 5,
+      "crunch": 5,
+      "creaminess": 5
+    },
+    "serving_temp": "hot",
+    "adventurousness": 1,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0006",
+    "restaurant_id": "r_02",
+    "name": "Spaghetti Carbonara",
+    "description": "",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pasta",
+    "price_gbp": 14.0,
+    "ingredients": [
+      "spaghetti",
+      "guanciale",
+      "egg",
+      "pecorino",
+      "black pepper"
+    ],
+    "allergens": [
+      "gluten",
+      "egg",
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "no",
+      "kosher": "no"
+    },
+    "taste": {
+      "spice": 1,
+      "sweet": 0,
+      "sour": 1,
+      "bitter": 0,
+      "umami": 8,
+      "richness": 8,
+      "crunch": 0,
+      "creaminess": 7
+    },
+    "serving_temp": "hot",
+    "adventurousness": 2,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0007",
+    "restaurant_id": "r_02",
+    "name": "Penne Arrabbiata",
+    "description": "",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pasta",
+    "price_gbp": 12.0,
+    "ingredients": [
+      "penne",
+      "tomato",
+      "garlic",
+      "chilli flakes",
+      "olive oil",
+      "parsley"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 3,
+      "sour": 4,
+      "bitter": 0,
+      "umami": 5,
+      "richness": 3,
+      "crunch": 0,
+      "creaminess": 1
+    },
+    "serving_temp": "hot",
+    "adventurousness": 2,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0008",
+    "restaurant_id": "r_02",
+    "name": "Lasagne al Forno",
+    "description": "",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "lasagne",
+    "price_gbp": 15.0,
+    "ingredients": [
+      "lasagne sheets",
+      "beef",
+      "tomato",
+      "onion",
+      "bechamel",
+      "parmesan"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "no",
+      "kosher": "no"
+    },
+    "taste": {
+      "spice": 1,
+      "sweet": 3,
+      "sour": 2,
+      "bitter": 0,
+      "umami": 8,
+      "richness": 9,
+      "crunch": 2,
+      "creaminess": 7
+    },
+    "serving_temp": "hot",
+    "adventurousness": 1,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0009",
+    "restaurant_id": "r_02",
+    "name": "Porcini Risotto",
+    "description": "",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "risotto",
+    "price_gbp": 14.0,
+    "ingredients": [
+      "arborio rice",
+      "porcini",
+      "parmesan",
+      "white wine",
+      "butter",
+      "onion"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "unknown",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 1,
+      "sour": 1,
+      "bitter": 1,
+      "umami": 8,
+      "richness": 7,
+      "crunch": 0,
+      "creaminess": 8
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0010",
+    "restaurant_id": "r_02",
+    "name": "Burrata & Tomato Salad",
+    "description": "",
+    "cuisine": "italian",
+    "category": "starter",
+    "dish_family": "salad",
+    "price_gbp": 9.0,
+    "ingredients": [
+      "burrata",
+      "tomato",
+      "rocket",
+      "olive oil",
+      "balsamic vinegar"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 3,
+      "sour": 4,
+      "bitter": 3,
+      "umami": 3,
+      "richness": 6,
+      "crunch": 1,
+      "creaminess": 8
+    },
+    "serving_temp": "cold",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0011",
+    "restaurant_id": "r_03",
+    "name": "Margherita DOP",
+    "description": "",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pizza",
+    "price_gbp": 18.0,
+    "ingredients": [
+      "pizza dough",
+      "tomato",
+      "buffalo mozzarella",
+      "basil",
+      "olive oil"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 2,
+      "sour": 3,
+      "bitter": 1,
+      "umami": 7,
+      "richness": 5,
+      "crunch": 5,
+      "creaminess": 5
+    },
+    "serving_temp": "hot",
+    "adventurousness": 2,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0012",
+    "restaurant_id": "r_03",
+    "name": "Cacio e Pepe",
+    "description": "",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pasta",
+    "price_gbp": 19.0,
+    "ingredients": [
+      "tonnarelli",
+      "pecorino",
+      "black pepper",
+      "butter"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "unknown",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 3,
+      "sweet": 0,
+      "sour": 0,
+      "bitter": 0,
+      "umami": 7,
+      "richness": 7,
+      "crunch": 0,
+      "creaminess": 8
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0013",
+    "restaurant_id": "r_03",
+    "name": "Squid Ink Linguine",
+    "description": "",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pasta",
+    "price_gbp": 26.0,
+    "ingredients": [
+      "linguine",
+      "squid ink",
+      "calamari",
+      "garlic",
+      "chilli",
+      "white wine",
+      "parsley"
+    ],
+    "allergens": [
+      "gluten",
+      "molluscs"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "no"
+    },
+    "taste": {
+      "spice": 3,
+      "sweet": 1,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 9,
+      "richness": 4,
+      "crunch": 1,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 8,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0014",
+    "restaurant_id": "r_03",
+    "name": "Vitello Tonnato",
+    "description": "",
+    "cuisine": "italian",
+    "category": "starter",
+    "dish_family": "veal",
+    "price_gbp": 16.0,
+    "ingredients": [
+      "veal",
+      "tuna",
+      "anchovies",
+      "capers",
+      "mayonnaise",
+      "lemon juice"
+    ],
+    "allergens": [
+      "fish",
+      "egg"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "no"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 1,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 9,
+      "richness": 6,
+      "crunch": 0,
+      "creaminess": 6
+    },
+    "serving_temp": "cold",
+    "adventurousness": 8,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0015",
+    "restaurant_id": "r_03",
+    "name": "Gorgonzola & Pear Ravioli",
+    "description": "",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pasta",
+    "price_gbp": 22.0,
+    "ingredients": [
+      "pasta",
+      "gorgonzola",
+      "pear",
+      "walnuts",
+      "butter",
+      "sage"
+    ],
+    "allergens": [
+      "gluten",
+      "milk",
+      "nuts",
+      "egg"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "unknown",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 5,
+      "sour": 1,
+      "bitter": 2,
+      "umami": 6,
+      "richness": 8,
+      "crunch": 2,
+      "creaminess": 7
+    },
+    "serving_temp": "hot",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0016",
+    "restaurant_id": "r_03",
+    "name": "Grilled Radicchio & Anchovy",
+    "description": "",
+    "cuisine": "italian",
+    "category": "starter",
+    "dish_family": "salad",
+    "price_gbp": 12.0,
+    "ingredients": [
+      "radicchio",
+      "anchovies",
+      "garlic",
+      "olive oil",
+      "lemon juice"
+    ],
+    "allergens": [
+      "fish"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "no"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 1,
+      "sour": 3,
+      "bitter": 8,
+      "umami": 7,
+      "richness": 3,
+      "crunch": 3,
+      "creaminess": 0
+    },
+    "serving_temp": "warm",
+    "adventurousness": 7,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0017",
+    "restaurant_id": "r_03",
+    "name": "Affogato",
+    "description": "",
+    "cuisine": "italian",
+    "category": "dessert",
+    "dish_family": "affogato",
+    "price_gbp": 9.0,
+    "ingredients": [
+      "vanilla ice cream",
+      "espresso",
+      "amaretto"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 7,
+      "sour": 0,
+      "bitter": 5,
+      "umami": 1,
+      "richness": 4,
+      "crunch": 0,
+      "creaminess": 7
+    },
+    "serving_temp": "cold",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0018",
+    "restaurant_id": "r_04",
+    "name": "Butter Chicken",
+    "description": "",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "curry",
+    "price_gbp": 10.0,
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "butter",
+      "cream",
+      "garam masala",
+      "ginger",
+      "garlic",
+      "kasuri methi"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "no"
+    },
+    "taste": {
+      "spice": 4,
+      "sweet": 4,
+      "sour": 3,
+      "bitter": 0,
+      "umami": 6,
+      "richness": 9,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 2,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0019",
+    "restaurant_id": "r_04",
+    "name": "Chicken Tikka Masala",
+    "description": "",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "curry",
+    "price_gbp": 10.0,
+    "ingredients": [
+      "chicken",
+      "yoghurt",
+      "tomato",
+      "cream",
+      "onion",
+      "tikka masala",
+      "chilli"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "no"
+    },
+    "taste": {
+      "spice": 5,
+      "sweet": 3,
+      "sour": 3,
+      "bitter": 0,
+      "umami": 6,
+      "richness": 8,
+      "crunch": 0,
+      "creaminess": 8
+    },
+    "serving_temp": "hot",
+    "adventurousness": 2,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0020",
+    "restaurant_id": "r_04",
+    "name": "Chana Masala",
+    "description": "",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "curry",
+    "price_gbp": 8.0,
+    "ingredients": [
+      "chickpeas",
+      "tomato",
+      "onion",
+      "garlic",
+      "ginger",
+      "cumin",
+      "coriander"
+    ],
+    "allergens": [],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "yes",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 5,
+      "sweet": 2,
+      "sour": 4,
+      "bitter": 1,
+      "umami": 5,
+      "richness": 4,
+      "crunch": 1,
+      "creaminess": 3
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0021",
+    "restaurant_id": "r_04",
+    "name": "Vegetable Samosa",
+    "description": "",
+    "cuisine": "indian",
+    "category": "starter",
+    "dish_family": "samosa",
+    "price_gbp": 4.0,
+    "ingredients": [
+      "potato",
+      "peas",
+      "flour",
+      "cumin",
+      "green chilli",
+      "coriander"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "yes",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 4,
+      "sweet": 1,
+      "sour": 1,
+      "bitter": 0,
+      "umami": 3,
+      "richness": 6,
+      "crunch": 8,
+      "creaminess": 1
+    },
+    "serving_temp": "hot",
+    "adventurousness": 2,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0022",
+    "restaurant_id": "r_04",
+    "name": "Chicken Biryani",
+    "description": "",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "biryani",
+    "price_gbp": 9.0,
+    "ingredients": [
+      "basmati rice",
+      "chicken",
+      "onion",
+      "biryani masala",
+      "yoghurt",
+      "vegetable oil"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "no"
+    },
+    "taste": {
+      "spice": 5,
+      "sweet": 1,
+      "sour": 2,
+      "bitter": 0,
+      "umami": 6,
+      "richness": 5,
+      "crunch": 1,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0023",
+    "restaurant_id": "r_04",
+    "name": "Garlic Naan",
+    "description": "",
+    "cuisine": "indian",
+    "category": "side",
+    "dish_family": "bread",
+    "price_gbp": 3.0,
+    "ingredients": [
+      "flour",
+      "yoghurt",
+      "garlic",
+      "butter"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "yes",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 1,
+      "sour": 1,
+      "bitter": 0,
+      "umami": 2,
+      "richness": 5,
+      "crunch": 3,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 0,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0024",
+    "restaurant_id": "r_05",
+    "name": "Butter Chicken",
+    "description": "",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "curry",
+    "price_gbp": 13.0,
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "butter",
+      "cream",
+      "garam masala",
+      "ginger",
+      "garlic",
+      "kasuri methi"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "yes",
+      "kosher": "no"
+    },
+    "taste": {
+      "spice": 4,
+      "sweet": 4,
+      "sour": 3,
+      "bitter": 0,
+      "umami": 6,
+      "richness": 9,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 2,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0025",
+    "restaurant_id": "r_05",
+    "name": "Lamb Rogan Josh",
+    "description": "",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "curry",
+    "price_gbp": 15.0,
+    "ingredients": [
+      "lamb",
+      "yoghurt",
+      "kashmiri chilli",
+      "onion",
+      "ginger",
+      "garlic",
+      "cardamom",
+      "cinnamon",
+      "cloves"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "yes",
+      "kosher": "no"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 7,
+      "richness": 7,
+      "crunch": 0,
+      "creaminess": 4
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0026",
+    "restaurant_id": "r_05",
+    "name": "Hyderabadi Chicken Biryani",
+    "description": "",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "biryani",
+    "price_gbp": 14.0,
+    "ingredients": [
+      "basmati rice",
+      "chicken",
+      "yoghurt",
+      "fried onions",
+      "saffron",
+      "mint",
+      "biryani masala",
+      "ghee"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "yes",
+      "kosher": "no"
+    },
+    "taste": {
+      "spice": 5,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 0,
+      "umami": 6,
+      "richness": 6,
+      "crunch": 1,
+      "creaminess": 3
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0027",
+    "restaurant_id": "r_05",
+    "name": "Dal Makhani",
+    "description": "",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "dal",
+    "price_gbp": 10.0,
+    "ingredients": [
+      "urad dal",
+      "kidney beans",
+      "butter",
+      "cream",
+      "tomato",
+      "garlic",
+      "ginger"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "yes",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 2,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 0,
+      "umami": 6,
+      "richness": 10,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 2,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0028",
+    "restaurant_id": "r_05",
+    "name": "Palak Paneer",
+    "description": "",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "curry",
+    "price_gbp": 11.0,
+    "ingredients": [
+      "spinach",
+      "paneer",
+      "cream",
+      "onion",
+      "garlic",
+      "cumin",
+      "green chilli"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "yes",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 3,
+      "sweet": 1,
+      "sour": 1,
+      "bitter": 3,
+      "umami": 5,
+      "richness": 6,
+      "crunch": 0,
+      "creaminess": 8
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0029",
+    "restaurant_id": "r_05",
+    "name": "Gulab Jamun",
+    "description": "",
+    "cuisine": "indian",
+    "category": "dessert",
+    "dish_family": "gulab_jamun",
+    "price_gbp": 5.0,
+    "ingredients": [
+      "milk powder",
+      "flour",
+      "sugar",
+      "cardamom",
+      "rose water",
+      "ghee"
+    ],
+    "allergens": [
+      "milk",
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "yes",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 10,
+      "sour": 0,
+      "bitter": 0,
+      "umami": 0,
+      "richness": 7,
+      "crunch": 1,
+      "creaminess": 4
+    },
+    "serving_temp": "warm",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0030",
+    "restaurant_id": "r_06",
+    "name": "Smoked Butter Chicken",
+    "description": "",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "curry",
+    "price_gbp": 24.0,
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "butter",
+      "cream",
+      "fenugreek",
+      "honey",
+      "cashews"
+    ],
+    "allergens": [
+      "milk",
+      "nuts"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "no"
+    },
+    "taste": {
+      "spice": 3,
+      "sweet": 5,
+      "sour": 2,
+      "bitter": 0,
+      "umami": 7,
+      "richness": 9,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0031",
+    "restaurant_id": "r_06",
+    "name": "Goan Prawn Curry",
+    "description": "",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "curry",
+    "price_gbp": 26.0,
+    "ingredients": [
+      "prawns",
+      "coconut milk",
+      "tamarind",
+      "kashmiri chilli",
+      "curry leaves",
+      "mustard seeds",
+      "turmeric"
+    ],
+    "allergens": [
+      "crustaceans",
+      "mustard"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "no"
+    },
+    "taste": {
+      "spice": 7,
+      "sweet": 3,
+      "sour": 6,
+      "bitter": 0,
+      "umami": 7,
+      "richness": 6,
+      "crunch": 0,
+      "creaminess": 6
+    },
+    "serving_temp": "hot",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0032",
+    "restaurant_id": "r_06",
+    "name": "Tandoori Lamb Chops",
+    "description": "",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "tandoori",
+    "price_gbp": 32.0,
+    "ingredients": [
+      "lamb",
+      "yoghurt",
+      "tandoori masala",
+      "ginger",
+      "garlic",
+      "lemon juice"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "no"
+    },
+    "taste": {
+      "spice": 5,
+      "sweet": 1,
+      "sour": 3,
+      "bitter": 1,
+      "umami": 8,
+      "richness": 6,
+      "crunch": 3,
+      "creaminess": 1
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0033",
+    "restaurant_id": "r_06",
+    "name": "Lamb Dum Biryani",
+    "description": "",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "biryani",
+    "price_gbp": 28.0,
+    "ingredients": [
+      "basmati rice",
+      "lamb",
+      "saffron",
+      "yoghurt",
+      "fried onions",
+      "mint",
+      "ghee",
+      "cardamom"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "no"
+    },
+    "taste": {
+      "spice": 4,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 0,
+      "umami": 7,
+      "richness": 7,
+      "crunch": 1,
+      "creaminess": 3
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0034",
+    "restaurant_id": "r_06",
+    "name": "Pani Puri",
+    "description": "",
+    "cuisine": "indian",
+    "category": "starter",
+    "dish_family": "chaat",
+    "price_gbp": 9.0,
+    "ingredients": [
+      "semolina",
+      "potato",
+      "chickpeas",
+      "tamarind",
+      "mint",
+      "coriander",
+      "chaat masala",
+      "green chilli"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "yes",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 4,
+      "sour": 8,
+      "bitter": 1,
+      "umami": 4,
+      "richness": 2,
+      "crunch": 9,
+      "creaminess": 0
+    },
+    "serving_temp": "cold",
+    "adventurousness": 7,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0035",
+    "restaurant_id": "r_06",
+    "name": "Karela Fry",
+    "description": "",
+    "cuisine": "indian",
+    "category": "side",
+    "dish_family": "sabzi",
+    "price_gbp": 8.0,
+    "ingredients": [
+      "bitter gourd",
+      "onion",
+      "turmeric",
+      "chilli powder",
+      "mustard oil"
+    ],
+    "allergens": [
+      "mustard"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "yes",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 5,
+      "sweet": 1,
+      "sour": 2,
+      "bitter": 9,
+      "umami": 3,
+      "richness": 4,
+      "crunch": 6,
+      "creaminess": 0
+    },
+    "serving_temp": "hot",
+    "adventurousness": 9,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0036",
+    "restaurant_id": "r_06",
+    "name": "Pistachio Kulfi",
+    "description": "",
+    "cuisine": "indian",
+    "category": "dessert",
+    "dish_family": "kulfi",
+    "price_gbp": 8.0,
+    "ingredients": [
+      "milk",
+      "sugar",
+      "pistachios",
+      "cardamom",
+      "saffron"
+    ],
+    "allergens": [
+      "milk",
+      "nuts"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "yes",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 9,
+      "sour": 0,
+      "bitter": 0,
+      "umami": 0,
+      "richness": 7,
+      "crunch": 1,
+      "creaminess": 8
+    },
+    "serving_temp": "cold",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  }
+]

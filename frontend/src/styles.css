@@ -1,0 +1,48 @@
+:root {
+  --bg: #f2efe9;
+  --ink: #1d1b18;
+  --muted: #7a746b;
+  --accent: #d2542b;
+  --screen: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  color: var(--ink);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); }
+
+.stage { min-height: 100vh; display: grid; place-items: center; padding: 24px 16px; }
+
+.phone {
+  position: relative;
+  width: 390px;
+  max-width: 100%;
+  height: 844px;
+  max-height: calc(100vh - 48px);
+  border-radius: 54px;
+  border: 12px solid #111;
+  background: var(--screen);
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+.notch {
+  position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
+  width: 120px; height: 34px; border-radius: 20px; background: #111; z-index: 2;
+}
+
+.screen { height: 100%; overflow-y: auto; padding: 64px 20px 24px; display: flex; flex-direction: column; gap: 16px; }
+.screen h1 { font-size: 28px; margin: 0; }
+
+.progress small { color: var(--muted); }
+.progress .bar { height: 6px; border-radius: 3px; background: #eee; margin-bottom: 6px; }
+.progress .bar div { height: 100%; border-radius: 3px; background: var(--accent); }
+
+.placeholder { color: var(--muted); flex: 1; }
+
+.nav { display: flex; gap: 12px; }
+.nav button {
+  flex: 1; padding: 14px; border: 0; border-radius: 14px;
+  background: var(--accent); color: #fff; font-size: 16px; font-weight: 600;
+}
+.nav button:disabled { opacity: 0.35; }

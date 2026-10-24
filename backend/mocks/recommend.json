@@ -1,0 +1,706 @@
+[
+  {
+    "restaurant": {
+      "id": "r_03",
+      "name": "Osteria Lusso",
+      "cuisine": "italian",
+      "price_tier": 4,
+      "vibe_tags": [
+        "date-night",
+        "trendy"
+      ],
+      "area": "Mayfair",
+      "lat": 0.0,
+      "lng": 0.0,
+      "halal_status": "none",
+      "menu_source_url": "mock",
+      "dish_ids": [
+        "d_0011",
+        "d_0012",
+        "d_0013",
+        "d_0014",
+        "d_0015",
+        "d_0016",
+        "d_0017"
+      ]
+    },
+    "dishes": [
+      {
+        "id": "d_0011",
+        "restaurant_id": "r_03",
+        "name": "Margherita DOP",
+        "description": "",
+        "cuisine": "italian",
+        "category": "main",
+        "dish_family": "pizza",
+        "price_gbp": 18.0,
+        "ingredients": [
+          "pizza dough",
+          "tomato",
+          "buffalo mozzarella",
+          "basil",
+          "olive oil"
+        ],
+        "allergens": [
+          "gluten",
+          "milk"
+        ],
+        "dietary": {
+          "vegan": "no",
+          "vegetarian": "yes",
+          "halal": "unknown",
+          "kosher": "unknown"
+        },
+        "taste": {
+          "spice": 0.0,
+          "sweet": 2.0,
+          "sour": 3.0,
+          "bitter": 1.0,
+          "umami": 7.0,
+          "richness": 5.0,
+          "crunch": 5.0,
+          "creaminess": 5.0
+        },
+        "serving_temp": "hot",
+        "adventurousness": 2.0,
+        "tagged_by": "human",
+        "verified": false
+      },
+      {
+        "id": "d_0017",
+        "restaurant_id": "r_03",
+        "name": "Affogato",
+        "description": "",
+        "cuisine": "italian",
+        "category": "dessert",
+        "dish_family": "affogato",
+        "price_gbp": 9.0,
+        "ingredients": [
+          "vanilla ice cream",
+          "espresso",
+          "amaretto"
+        ],
+        "allergens": [
+          "milk"
+        ],
+        "dietary": {
+          "vegan": "no",
+          "vegetarian": "yes",
+          "halal": "unknown",
+          "kosher": "unknown"
+        },
+        "taste": {
+          "spice": 0.0,
+          "sweet": 7.0,
+          "sour": 0.0,
+          "bitter": 5.0,
+          "umami": 1.0,
+          "richness": 4.0,
+          "crunch": 0.0,
+          "creaminess": 7.0
+        },
+        "serving_temp": "cold",
+        "adventurousness": 3.0,
+        "tagged_by": "human",
+        "verified": false
+      }
+    ],
+    "score": 0.541,
+    "explanation": "Margherita DOP at Osteria Lusso matches your love of crunch and richness, and the date-night, trendy feel suits a date-night meal.",
+    "warnings": [
+      "Margherita DOP: allergen info not yet verified",
+      "Affogato: allergen info not yet verified"
+    ]
+  },
+  {
+    "restaurant": {
+      "id": "r_02",
+      "name": "Trattoria Nonna",
+      "cuisine": "italian",
+      "price_tier": 2,
+      "vibe_tags": [
+        "traditional",
+        "family"
+      ],
+      "area": "Islington",
+      "lat": 0.0,
+      "lng": 0.0,
+      "halal_status": "none",
+      "menu_source_url": "mock",
+      "dish_ids": [
+        "d_0005",
+        "d_0006",
+        "d_0007",
+        "d_0008",
+        "d_0009",
+        "d_0010"
+      ]
+    },
+    "dishes": [
+      {
+        "id": "d_0005",
+        "restaurant_id": "r_02",
+        "name": "Wood-fired Margherita",
+        "description": "",
+        "cuisine": "italian",
+        "category": "main",
+        "dish_family": "pizza",
+        "price_gbp": 12.0,
+        "ingredients": [
+          "pizza dough",
+          "tomato",
+          "buffalo mozzarella",
+          "basil",
+          "olive oil"
+        ],
+        "allergens": [
+          "gluten",
+          "milk"
+        ],
+        "dietary": {
+          "vegan": "no",
+          "vegetarian": "yes",
+          "halal": "unknown",
+          "kosher": "unknown"
+        },
+        "taste": {
+          "spice": 0.0,
+          "sweet": 2.0,
+          "sour": 3.0,
+          "bitter": 1.0,
+          "umami": 6.0,
+          "richness": 5.0,
+          "crunch": 5.0,
+          "creaminess": 5.0
+        },
+        "serving_temp": "hot",
+        "adventurousness": 1.0,
+        "tagged_by": "human",
+        "verified": false
+      },
+      {
+        "id": "d_0010",
+        "restaurant_id": "r_02",
+        "name": "Burrata & Tomato Salad",
+        "description": "",
+        "cuisine": "italian",
+        "category": "starter",
+        "dish_family": "salad",
+        "price_gbp": 9.0,
+        "ingredients": [
+          "burrata",
+          "tomato",
+          "rocket",
+          "olive oil",
+          "balsamic vinegar"
+        ],
+        "allergens": [
+          "milk"
+        ],
+        "dietary": {
+          "vegan": "no",
+          "vegetarian": "yes",
+          "halal": "unknown",
+          "kosher": "unknown"
+        },
+        "taste": {
+          "spice": 0.0,
+          "sweet": 3.0,
+          "sour": 4.0,
+          "bitter": 3.0,
+          "umami": 3.0,
+          "richness": 6.0,
+          "crunch": 1.0,
+          "creaminess": 8.0
+        },
+        "serving_temp": "cold",
+        "adventurousness": 4.0,
+        "tagged_by": "human",
+        "verified": false
+      },
+      {
+        "id": "d_0009",
+        "restaurant_id": "r_02",
+        "name": "Porcini Risotto",
+        "description": "",
+        "cuisine": "italian",
+        "category": "main",
+        "dish_family": "risotto",
+        "price_gbp": 14.0,
+        "ingredients": [
+          "arborio rice",
+          "porcini",
+          "parmesan",
+          "white wine",
+          "butter",
+          "onion"
+        ],
+        "allergens": [
+          "milk"
+        ],
+        "dietary": {
+          "vegan": "no",
+          "vegetarian": "unknown",
+          "halal": "unknown",
+          "kosher": "unknown"
+        },
+        "taste": {
+          "spice": 0.0,
+          "sweet": 1.0,
+          "sour": 1.0,
+          "bitter": 1.0,
+          "umami": 8.0,
+          "richness": 7.0,
+          "crunch": 0.0,
+          "creaminess": 8.0
+        },
+        "serving_temp": "hot",
+        "adventurousness": 3.0,
+        "tagged_by": "human",
+        "verified": false
+      }
+    ],
+    "score": 0.53,
+    "explanation": "Wood-fired Margherita at Trattoria Nonna matches your love of crunch and richness, and the traditional, family feel suits a date-night meal.",
+    "warnings": [
+      "Wood-fired Margherita: allergen info not yet verified",
+      "Burrata & Tomato Salad: allergen info not yet verified",
+      "Porcini Risotto: not confirmed vegetarian, check with the restaurant",
+      "Porcini Risotto: allergen info not yet verified"
+    ]
+  },
+  {
+    "restaurant": {
+      "id": "r_05",
+      "name": "Spice Route Kitchen",
+      "cuisine": "indian",
+      "price_tier": 2,
+      "vibe_tags": [
+        "traditional",
+        "family"
+      ],
+      "area": "Southall",
+      "lat": 0.0,
+      "lng": 0.0,
+      "halal_status": "certified",
+      "menu_source_url": "mock",
+      "dish_ids": [
+        "d_0024",
+        "d_0025",
+        "d_0026",
+        "d_0027",
+        "d_0028",
+        "d_0029"
+      ]
+    },
+    "dishes": [
+      {
+        "id": "d_0028",
+        "restaurant_id": "r_05",
+        "name": "Palak Paneer",
+        "description": "",
+        "cuisine": "indian",
+        "category": "main",
+        "dish_family": "curry",
+        "price_gbp": 11.0,
+        "ingredients": [
+          "spinach",
+          "paneer",
+          "cream",
+          "onion",
+          "garlic",
+          "cumin",
+          "green chilli"
+        ],
+        "allergens": [
+          "milk"
+        ],
+        "dietary": {
+          "vegan": "no",
+          "vegetarian": "yes",
+          "halal": "yes",
+          "kosher": "unknown"
+        },
+        "taste": {
+          "spice": 3.0,
+          "sweet": 1.0,
+          "sour": 1.0,
+          "bitter": 3.0,
+          "umami": 5.0,
+          "richness": 6.0,
+          "crunch": 0.0,
+          "creaminess": 8.0
+        },
+        "serving_temp": "hot",
+        "adventurousness": 3.0,
+        "tagged_by": "human",
+        "verified": false
+      },
+      {
+        "id": "d_0027",
+        "restaurant_id": "r_05",
+        "name": "Dal Makhani",
+        "description": "",
+        "cuisine": "indian",
+        "category": "main",
+        "dish_family": "dal",
+        "price_gbp": 10.0,
+        "ingredients": [
+          "urad dal",
+          "kidney beans",
+          "butter",
+          "cream",
+          "tomato",
+          "garlic",
+          "ginger"
+        ],
+        "allergens": [
+          "milk"
+        ],
+        "dietary": {
+          "vegan": "no",
+          "vegetarian": "yes",
+          "halal": "yes",
+          "kosher": "unknown"
+        },
+        "taste": {
+          "spice": 2.0,
+          "sweet": 2.0,
+          "sour": 2.0,
+          "bitter": 0.0,
+          "umami": 6.0,
+          "richness": 10.0,
+          "crunch": 0.0,
+          "creaminess": 9.0
+        },
+        "serving_temp": "hot",
+        "adventurousness": 2.0,
+        "tagged_by": "human",
+        "verified": false
+      },
+      {
+        "id": "d_0029",
+        "restaurant_id": "r_05",
+        "name": "Gulab Jamun",
+        "description": "",
+        "cuisine": "indian",
+        "category": "dessert",
+        "dish_family": "gulab_jamun",
+        "price_gbp": 5.0,
+        "ingredients": [
+          "milk powder",
+          "flour",
+          "sugar",
+          "cardamom",
+          "rose water",
+          "ghee"
+        ],
+        "allergens": [
+          "milk",
+          "gluten"
+        ],
+        "dietary": {
+          "vegan": "no",
+          "vegetarian": "yes",
+          "halal": "yes",
+          "kosher": "unknown"
+        },
+        "taste": {
+          "spice": 0.0,
+          "sweet": 10.0,
+          "sour": 0.0,
+          "bitter": 0.0,
+          "umami": 0.0,
+          "richness": 7.0,
+          "crunch": 1.0,
+          "creaminess": 4.0
+        },
+        "serving_temp": "warm",
+        "adventurousness": 3.0,
+        "tagged_by": "human",
+        "verified": false
+      }
+    ],
+    "score": 0.495,
+    "explanation": "Palak Paneer at Spice Route Kitchen matches your love of crunch and richness, and the traditional, family feel suits a date-night meal.",
+    "warnings": [
+      "Palak Paneer: allergen info not yet verified",
+      "Dal Makhani: allergen info not yet verified",
+      "Gulab Jamun: allergen info not yet verified"
+    ]
+  },
+  {
+    "restaurant": {
+      "id": "r_01",
+      "name": "Pizza Pronto",
+      "cuisine": "italian",
+      "price_tier": 1,
+      "vibe_tags": [
+        "casual",
+        "quick"
+      ],
+      "area": "Camden",
+      "lat": 0.0,
+      "lng": 0.0,
+      "halal_status": "unknown",
+      "menu_source_url": "mock",
+      "dish_ids": [
+        "d_0001",
+        "d_0002",
+        "d_0003",
+        "d_0004"
+      ]
+    },
+    "dishes": [
+      {
+        "id": "d_0001",
+        "restaurant_id": "r_01",
+        "name": "Margherita Pizza",
+        "description": "",
+        "cuisine": "italian",
+        "category": "main",
+        "dish_family": "pizza",
+        "price_gbp": 9.5,
+        "ingredients": [
+          "pizza dough",
+          "tomato",
+          "mozzarella",
+          "basil",
+          "olive oil"
+        ],
+        "allergens": [
+          "gluten",
+          "milk"
+        ],
+        "dietary": {
+          "vegan": "no",
+          "vegetarian": "yes",
+          "halal": "unknown",
+          "kosher": "unknown"
+        },
+        "taste": {
+          "spice": 0.0,
+          "sweet": 2.0,
+          "sour": 3.0,
+          "bitter": 0.0,
+          "umami": 6.0,
+          "richness": 5.0,
+          "crunch": 4.0,
+          "creaminess": 4.0
+        },
+        "serving_temp": "hot",
+        "adventurousness": 1.0,
+        "tagged_by": "human",
+        "verified": false
+      },
+      {
+        "id": "d_0003",
+        "restaurant_id": "r_01",
+        "name": "Garlic Bread",
+        "description": "",
+        "cuisine": "italian",
+        "category": "side",
+        "dish_family": "bread",
+        "price_gbp": 4.5,
+        "ingredients": [
+          "bread",
+          "garlic",
+          "butter",
+          "parsley"
+        ],
+        "allergens": [
+          "gluten",
+          "milk"
+        ],
+        "dietary": {
+          "vegan": "no",
+          "vegetarian": "yes",
+          "halal": "unknown",
+          "kosher": "unknown"
+        },
+        "taste": {
+          "spice": 0.0,
+          "sweet": 1.0,
+          "sour": 0.0,
+          "bitter": 0.0,
+          "umami": 3.0,
+          "richness": 6.0,
+          "crunch": 6.0,
+          "creaminess": 2.0
+        },
+        "serving_temp": "hot",
+        "adventurousness": 0.0,
+        "tagged_by": "human",
+        "verified": false
+      },
+      {
+        "id": "d_0004",
+        "restaurant_id": "r_01",
+        "name": "Tiramisu",
+        "description": "",
+        "cuisine": "italian",
+        "category": "dessert",
+        "dish_family": "tiramisu",
+        "price_gbp": 6.0,
+        "ingredients": [
+          "savoiardi",
+          "mascarpone",
+          "espresso",
+          "cocoa",
+          "egg",
+          "sugar"
+        ],
+        "allergens": [
+          "gluten",
+          "milk",
+          "egg"
+        ],
+        "dietary": {
+          "vegan": "no",
+          "vegetarian": "yes",
+          "halal": "unknown",
+          "kosher": "unknown"
+        },
+        "taste": {
+          "spice": 0.0,
+          "sweet": 8.0,
+          "sour": 1.0,
+          "bitter": 4.0,
+          "umami": 1.0,
+          "richness": 7.0,
+          "crunch": 1.0,
+          "creaminess": 9.0
+        },
+        "serving_temp": "cold",
+        "adventurousness": 2.0,
+        "tagged_by": "human",
+        "verified": false
+      }
+    ],
+    "score": 0.425,
+    "explanation": "Margherita Pizza at Pizza Pronto matches your love of crunch and richness, and the casual, quick feel suits a date-night meal.",
+    "warnings": [
+      "Margherita Pizza: allergen info not yet verified",
+      "Garlic Bread: allergen info not yet verified",
+      "Tiramisu: allergen info not yet verified"
+    ]
+  },
+  {
+    "restaurant": {
+      "id": "r_06",
+      "name": "Masala Mahal",
+      "cuisine": "indian",
+      "price_tier": 4,
+      "vibe_tags": [
+        "date-night",
+        "trendy"
+      ],
+      "area": "Marylebone",
+      "lat": 0.0,
+      "lng": 0.0,
+      "halal_status": "some",
+      "menu_source_url": "mock",
+      "dish_ids": [
+        "d_0030",
+        "d_0031",
+        "d_0032",
+        "d_0033",
+        "d_0034",
+        "d_0035",
+        "d_0036"
+      ]
+    },
+    "dishes": [
+      {
+        "id": "d_0035",
+        "restaurant_id": "r_06",
+        "name": "Karela Fry",
+        "description": "",
+        "cuisine": "indian",
+        "category": "side",
+        "dish_family": "sabzi",
+        "price_gbp": 8.0,
+        "ingredients": [
+          "bitter gourd",
+          "onion",
+          "turmeric",
+          "chilli powder",
+          "mustard oil"
+        ],
+        "allergens": [
+          "mustard"
+        ],
+        "dietary": {
+          "vegan": "yes",
+          "vegetarian": "yes",
+          "halal": "yes",
+          "kosher": "unknown"
+        },
+        "taste": {
+          "spice": 5.0,
+          "sweet": 1.0,
+          "sour": 2.0,
+          "bitter": 9.0,
+          "umami": 3.0,
+          "richness": 4.0,
+          "crunch": 6.0,
+          "creaminess": 0.0
+        },
+        "serving_temp": "hot",
+        "adventurousness": 9.0,
+        "tagged_by": "human",
+        "verified": false
+      },
+      {
+        "id": "d_0034",
+        "restaurant_id": "r_06",
+        "name": "Pani Puri",
+        "description": "",
+        "cuisine": "indian",
+        "category": "starter",
+        "dish_family": "chaat",
+        "price_gbp": 9.0,
+        "ingredients": [
+          "semolina",
+          "potato",
+          "chickpeas",
+          "tamarind",
+          "mint",
+          "coriander",
+          "chaat masala",
+          "green chilli"
+        ],
+        "allergens": [
+          "gluten"
+        ],
+        "dietary": {
+          "vegan": "yes",
+          "vegetarian": "yes",
+          "halal": "yes",
+          "kosher": "unknown"
+        },
+        "taste": {
+          "spice": 6.0,
+          "sweet": 4.0,
+          "sour": 8.0,
+          "bitter": 1.0,
+          "umami": 4.0,
+          "richness": 2.0,
+          "crunch": 9.0,
+          "creaminess": 0.0
+        },
+        "serving_temp": "cold",
+        "adventurousness": 7.0,
+        "tagged_by": "human",
+        "verified": false
+      }
+    ],
+    "score": 0.394,
+    "explanation": "Karela Fry at Masala Mahal matches your love of crunch and richness, and the date-night, trendy feel suits a date-night meal.",
+    "warnings": [
+      "Karela Fry: allergen info not yet verified",
+      "Pani Puri: allergen info not yet verified",
+      "Pani Puri: contains coriander"
+    ]
+  }
+]

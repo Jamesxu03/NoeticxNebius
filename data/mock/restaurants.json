@@ -1,0 +1,140 @@
+[
+  {
+    "id": "r_01",
+    "name": "Pizza Pronto",
+    "cuisine": "italian",
+    "price_tier": 1,
+    "vibe_tags": [
+      "casual",
+      "quick"
+    ],
+    "area": "Camden",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "mock",
+    "dish_ids": [
+      "d_0001",
+      "d_0002",
+      "d_0003",
+      "d_0004"
+    ]
+  },
+  {
+    "id": "r_02",
+    "name": "Trattoria Nonna",
+    "cuisine": "italian",
+    "price_tier": 2,
+    "vibe_tags": [
+      "traditional",
+      "family"
+    ],
+    "area": "Islington",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "none",
+    "menu_source_url": "mock",
+    "dish_ids": [
+      "d_0005",
+      "d_0006",
+      "d_0007",
+      "d_0008",
+      "d_0009",
+      "d_0010"
+    ]
+  },
+  {
+    "id": "r_03",
+    "name": "Osteria Lusso",
+    "cuisine": "italian",
+    "price_tier": 4,
+    "vibe_tags": [
+      "date-night",
+      "trendy"
+    ],
+    "area": "Mayfair",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "none",
+    "menu_source_url": "mock",
+    "dish_ids": [
+      "d_0011",
+      "d_0012",
+      "d_0013",
+      "d_0014",
+      "d_0015",
+      "d_0016",
+      "d_0017"
+    ]
+  },
+  {
+    "id": "r_04",
+    "name": "Curry Express",
+    "cuisine": "indian",
+    "price_tier": 1,
+    "vibe_tags": [
+      "casual",
+      "quick"
+    ],
+    "area": "Whitechapel",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "some",
+    "menu_source_url": "mock",
+    "dish_ids": [
+      "d_0018",
+      "d_0019",
+      "d_0020",
+      "d_0021",
+      "d_0022",
+      "d_0023"
+    ]
+  },
+  {
+    "id": "r_05",
+    "name": "Spice Route Kitchen",
+    "cuisine": "indian",
+    "price_tier": 2,
+    "vibe_tags": [
+      "traditional",
+      "family"
+    ],
+    "area": "Southall",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "certified",
+    "menu_source_url": "mock",
+    "dish_ids": [
+      "d_0024",
+      "d_0025",
+      "d_0026",
+      "d_0027",
+      "d_0028",
+      "d_0029"
+    ]
+  },
+  {
+    "id": "r_06",
+    "name": "Masala Mahal",
+    "cuisine": "indian",
+    "price_tier": 4,
+    "vibe_tags": [
+      "date-night",
+      "trendy"
+    ],
+    "area": "Marylebone",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "some",
+    "menu_source_url": "mock",
+    "dish_ids": [
+      "d_0030",
+      "d_0031",
+      "d_0032",
+      "d_0033",
+      "d_0034",
+      "d_0035",
+      "d_0036"
+    ]
+  }
+]

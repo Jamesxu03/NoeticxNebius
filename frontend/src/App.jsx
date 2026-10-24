@@ -1,44 +1,103 @@
-import { useEffect, useRef, useState } from 'react'
-import { createWorker } from 'tesseract.js'
-import { parseMenu, rankMenu } from './menu'
-import { cloud } from './cloud'
-import { api, syncProfile, DIETARY, ALLERGENS } from './api'
-import Recommendations from './screens/Recommendations'
-import TasteSurvey from './screens/TasteSurvey'
-import TasteJourney from './TasteJourney'
+import { useEffect, useState } from 'react'
+import fallbackDims from '../../data/taste_dimensions.json'
+import { api, syncProfile } from './api'
+import Phone from './ui/Phone'
+import { Button, TabBar, Toast } from './ui/kit'
+import { Sparkle } from './ui/icons'
+import Welcome from './screens/Welcome'
+import Onboarding from './screens/Onboarding'
+import TasteCard from './screens/TasteCard'
+import Discover from './screens/Discover'
+import Scan from './screens/Scan'
+import Palate from './screens/Palate'
+import Saved from './screens/Saved'
 
-const initialTaste = {spice:5, sweet:5, sour:5, bitter:5, umami:5, richness:5, crunch:5, creaminess:5}
-function stored(key, fallback) { try { return JSON.parse(localStorage.getItem(key)) ?? fallback } catch { return fallback } }
-const toggle = (list=[], value) => list.includes(value) ? list.filter(v=>v!==value) : [...list, value]
-const icons = {home:'⌂', menu:'▤', profile:'◉', saved:'♡', journey:'✧'}
+// localStorage can be unavailable (private mode); the app still works without it.
+const load = (k, fallback) => { try { return JSON.parse(localStorage.getItem(k)) ?? fallback } catch { return fallback } }
+const keep = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)) } catch { /* ignore */ } }
+
 export default function App() {
-  const [page,setPage]=useState('home'), [profile,setProfile]=useState(()=>stored('palatable.profile',null)), [menus,setMenus]=useState(()=>stored('palatable.menus',[]))
-  const [busy,setBusy]=useState(''), [notice,setNotice]=useState(''), [error,setError]=useState(''), [summary,setSummary]=useState(null), [items,setItems]=useState([]), [raw,setRaw]=useState(''), [ranked,setRanked]=useState(false), [preview,setPreview]=useState(''), [name,setName]=useState(''), [menuName,setMenuName]=useState('My scanned menu'), [session,setSession]=useState(null), [email,setEmail]=useState(''), [password,setPassword]=useState(''), [authOpen,setAuthOpen]=useState(false), [results,setResults]=useState([]), [offline,setOffline]=useState(false), [anchors,setAnchors]=useState({})
-  const upload=useRef(), camera=useRef(), history=useRef()
-  useEffect(()=>{ localStorage.setItem('palatable.profile',JSON.stringify(profile)) },[profile])
-  useEffect(()=>{ localStorage.setItem('palatable.menus',JSON.stringify(menus)) },[menus])
-  useEffect(()=>{api.tasteDimensions().then(d=>setAnchors(Object.fromEntries(d.dimensions.map(x=>[x.key,x.anchors.map(a=>a.ingredient)])))).catch(()=>{})},[])
-  useEffect(()=>{if(!cloud)return;cloud.auth.getSession().then(({data})=>setSession(data.session));const {data}=cloud.auth.onAuthStateChange((event,s)=>setSession(s));return ()=>data.subscription.unsubscribe()},[])
-  useEffect(()=>{if(!session)return;cloud.from('palatable_profiles').select('profile,menus').eq('user_id',session.user.id).maybeSingle().then(({data,error})=>{if(error)setError(error.message);else if(data){setProfile(data.profile);setMenus(data.menus || []);setNotice('Your cloud profile has been restored.')}})},[session?.user.id])
-  async function run(label, fn) {setBusy(label);setError('');setNotice('');try{await fn()}catch(e){setError(e.message)}finally{setBusy('')}}
-  async function ensureProfile(local=profile){const p=await syncProfile(local,name);setProfile(p);return p}
-  async function importHistory(file){if(!file)return;await run('Reading your delivery history…',async()=>{const p=await ensureProfile();const result=await api.importUber(p.id,file);setProfile(result.profile);setSummary(result.summary);setNotice('Delivery history imported. Your taste profile is updated.');setPage('profile')});history.current.value=''}
-  async function scan(file){if(!file)return;if(!file.type.startsWith('image/')){setError('Choose a menu photo (JPG, PNG or WebP).');return}if(file.size>20*1024*1024){setError('Please use an image smaller than 20 MB.');return}if(preview)URL.revokeObjectURL(preview);setPreview(URL.createObjectURL(file));setPage('menu');setRanked(false);await run('Reading the menu…',async()=>{let worker;try{worker=await createWorker('eng',1,{workerPath:'/ocr/worker.min.js',corePath:'/ocr',langPath:'/ocr',logger:m=>{if(m.status==='recognizing text')setBusy(`Reading menu · ${Math.round(m.progress*100)}%`)}});const {data}=await worker.recognize(file);setRaw(data.text);setItems(parseMenu(data.text));setNotice('Review the extracted text, names and ingredients before finding your dish.')}finally{if(worker)await worker.terminate()}})}
-  async function sync(){await run('Saving to your account…',async()=>{const {error}=await cloud.from('palatable_profiles').upsert({user_id:session.user.id,profile,menus,updated_at:new Date().toISOString()});if(error)throw error;setNotice('Profile and reviewed menus saved to your account.')})}
-  async function findDish(list=items){await run('Finding your dish…',async()=>{try{const p=await ensureProfile();setResults(await api.rankMenu(p.id,list.filter(i=>i.name.trim())));setOffline(false)}catch(e){setResults(rankMenu(list,profile).map(i=>({...i,reason:i.matches.length?`Shares ingredients from your history: ${i.matches.join(', ')}`:'No history match yet.',warnings:[],excluded:false})));setOffline(true)}setRanked(true)})}
-  function saveMenu(){const reviewed=items.filter(i=>i.name.trim());if(!reviewed.length){setError('Add at least one dish before saving.');return}setMenus([...menus,{id:crypto.randomUUID(),name:menuName,items:reviewed,date:new Date().toLocaleDateString()}]);setNotice('Reviewed menu saved on this device.');}
-  const taste=profile?.taste_vector || initialTaste
-  return <div className="app-shell">
-    <aside className="sidebar"><a className="brand" href="#" onClick={e=>{e.preventDefault();setPage('home')}}><img src="/palatable.svg" alt=""/>palatable<span>®</span></a><div className="workspace-label">YOUR FOOD, FIGURED OUT</div><nav>{[['home','Discover'],['journey','Taste journey'],['menu','Scan a menu'],['profile','My taste profile'],['saved','Saved menus']].map(([key,label])=><button key={key} className={page===key?'nav-item active':'nav-item'} aria-current={page===key?'page':undefined} onClick={()=>{setPage(key);setError('');setNotice('')}}><span>{icons[key]}</span>{label}{key==='menu'&&<small>NEW</small>}</button>)}</nav><div className="sidebar-bottom"><div className="little-plate">◉</div><h3>Good taste.<br/>Entirely yours.</h3><p>A little less scrolling.<br/>A lot more “that’s the one”.</p></div><button className="user" onClick={()=>{setPage('profile');setAuthOpen(true)}}><span className="avatar">{(profile?.first_name || 'Y')[0]}</span><span>{session ? session.user.email : profile?.first_name || 'Your personal space'}<small>{session?'Cloud connected':'Saved on this device'}</small></span><span>↗</span></button></aside>
-    <main><header className="topbar"><span>Made for your taste <span className="spark">✳</span></span><div><span className="location">⌖ London, UK</span><button className="round-button" aria-label="Open profile" onClick={()=>setPage('profile')}>{(profile?.first_name || 'Y')[0]}</button></div></header>
-    <div className="content"><div hidden={page!=='journey'}><TasteJourney initialProfile={profile} onProfile={setProfile} onScan={()=>setPage('menu')}/></div>{(notice||error||busy)&&<div role={error?'alert':'status'} className={`message ${error?'error':''}`}>{busy&&<span className="loading-spinner"/>}{busy || error || notice}{!busy&&<button aria-label="Dismiss notification" onClick={()=>{setError('');setNotice('')}}>×</button>}</div>}
-    {page==='home'&&<><div className="eyebrow"><span/> THE NEXT GOOD THING YOU’LL EAT</div><section className="hero"><div className="hero-copy"><h1>Less guessing.<br/>More <em>your flavour.</em></h1><p>Meet the food that gets you. Turn what you love<br className="desktop"/> into your next favourite bite.</p><div className="hero-actions"><button className="primary" onClick={()=>setPage('journey')}>Build my taste profile <span>↗</span></button><button className="text-button" onClick={()=>setPage('menu')}>Scan a menu →</button></div><div className="hero-foot"><span className="mini-faces">◉ ◉ ◉</span><span>A taste profile as individual as you are.</span></div></div><div className="hero-art"><div className="orbit orbit-one"/><div className="orbit orbit-two"/><div className="food-plate"><div className="food-core"><span>🌿</span><span>🍅</span><span>🥬</span><span>🍋</span><span>🥑</span><span>🍅</span><span>🥬</span></div></div><div className="floating-label top-label"><span>✦</span> Made for your palate</div><div className="floating-label bottom-label"><span className="green-dot"/> A little zing. A lot of you.</div><span className="art-star">✳</span></div></section>
-    <div className="section-heading"><div><h2>Your next bite starts here</h2><p>Two simple ways to find something you’ll love.</p></div><span className="handwritten">Follow your appetite ↴</span></div><section className="feature-grid"><button className="feature-card scan-card" onClick={()=>setPage('menu')}><div className="card-top"><span className="feature-icon">▤</span><span className="pill">AT THE TABLE</span></div><h3>A menu full of possibilities.<br/>One dish with your name on it.</h3><p>Snap a menu. We’ll help you find your kind of delicious.</p><div className="card-bottom"><strong>Scan a menu</strong><span className="arrow-circle">↗</span></div></button><button className="feature-card history-card" onClick={()=>history.current.click()} disabled={!!busy}><div className="card-top"><span className="feature-icon">↺</span><span className="pill">ALREADY YOU</span></div><h3>Your order history.<br/>Your flavour fingerprint.</h3><p>Let your Uber Eats favourites do the introductions.</p><div className="card-bottom"><strong>Import delivery history</strong><span className="arrow-circle">↗</span></div></button></section><Recommendations sync={ensureProfile}/><div className="trust-row"><span>♧ <strong>Your taste, your business.</strong> Your delivery file isn’t stored.</span><span>Real preferences. Better possibilities.</span></div><section className="how-section"><span className="eyebrow">A LITTLE SCIENCE. A LOT OF APPETITE.</span><h2>Good recommendations start with you.</h2><div className="steps"><p><b>01</b><strong>Bring your taste</strong><span>Start fresh or import the food you already love.</span></p><p><b>02</b><strong>Meet your menu</strong><span>Take a photo and review what’s on the table.</span></p><p><b>03</b><strong>Find your flavour</strong><span>Discover your match, from this menu only.</span></p></div></section></>}
-    {page==='menu'&&<><div className="eyebrow">AT THE TABLE</div><h1 className="page-title">Your menu.<br/><em>Your kind of delicious.</em></h1><p className="intro">Take a photo or upload a menu. Review the details, then find your dish.</p><ol className="scan-progress" aria-label="Menu scan progress">{['Upload menu','Review items','Find your dish'].map((label,i)=><li key={label} aria-current={(ranked?2:items.length?1:0)===i?'step':undefined}><span>{i+1}</span>{label}</li>)}</ol><section className="upload-area"><span className="upload-icon">▤</span><h2>What’s on the menu?</h2><p>English menu photos · JPG, PNG, WebP · up to 20 MB</p><div className="button-row"><button className="primary" disabled={!!busy} onClick={()=>camera.current.click()}>Take a photo ↗</button><button className="secondary" disabled={!!busy} onClick={()=>upload.current.click()}>Upload a photo</button></div><small>Text recognition happens on your device. The English OCR model is served with this app.</small></section>{preview&&<img className="menu-preview" src={preview} alt="Uploaded menu for review"/>}<details className="manual-entry" open={!!raw}><summary>Paste or edit menu text instead</summary><p>Use one item per line: Dish name — listed ingredients £12.50</p><textarea aria-label="Menu text" value={raw} onChange={e=>setRaw(e.target.value)} placeholder={'Burrata — tomato, basil £12\nMushroom risotto — rice, mushroom, parmesan £18'}/><button className="secondary" onClick={()=>{setItems(parseMenu(raw));setRanked(false);setResults([])}}>Extract items from text</button></details>
-    {!!items.length&&<section className="review"><div className="section-heading"><h2>{ranked?'Your menu matches':'A quick check before your first bite'}</h2><span>{items.length} items</span></div><p className="safety-note">Only listed ingredients are used and missing ones stay unknown. We hide dishes whose menu text conflicts with your allergies or diet, but menus rarely list everything, so always confirm with the restaurant.</p>{ranked&&offline&&<p className="safety-note">The food API is offline, so this ranking only uses ingredient overlap with your history. Allergy and diet checks were not run.</p>}<label>Menu name<input value={menuName} onChange={e=>setMenuName(e.target.value)}/></label>{!ranked?items.map((item,index)=><div className="menu-edit" key={item.id}><span className="item-number">{String(index+1).padStart(2,'0')}</span><label>Dish name<input value={item.name} onChange={e=>setItems(items.map(i=>i.id===item.id?{...i,name:e.target.value}:i))}/></label><label>Listed ingredients<input value={item.ingredients} placeholder="Unknown / not listed" onChange={e=>setItems(items.map(i=>i.id===item.id?{...i,ingredients:e.target.value}:i))}/></label><label>Price<input value={item.price} placeholder="Unknown" onChange={e=>setItems(items.map(i=>i.id===item.id?{...i,price:e.target.value}:i))}/></label><button className="delete" aria-label={`Remove ${item.name}`} onClick={()=>setItems(items.filter(i=>i.id!==item.id))}>×</button></div>):results.map((item,index)=><article className={item.excluded?'result-card excluded':'result-card'} key={item.id}><span className="item-number">{item.excluded?'—':String(index+1).padStart(2,'0')}</span><div><h3>{item.name}</h3><p>{item.ingredients||'Ingredients not listed'}</p><small>{item.excluded?`Hidden for you: ${item.exclusion_reason}`:item.reason}</small>{!!item.warnings?.length&&<ul className="warnings">{item.warnings.map(w=><li key={w}>{w}</li>)}</ul>}</div><strong>{item.price?`£${item.price}`:''}</strong></article>)}<div className="button-row"><button className="primary" disabled={!!busy} onClick={()=>ranked?setRanked(false):findDish()}>{ranked?'Edit reviewed items':'Find my dish →'}</button><button className="secondary" onClick={saveMenu}>Save reviewed menu</button>{!ranked&&<button className="text-button" onClick={()=>setItems([...items,{id:crypto.randomUUID(),name:'',ingredients:'',price:''}])}>+ Add item</button>}</div></section>}</>}
-    {page==='profile'&&<><div className="eyebrow">ENTIRELY YOURS</div><h1 className="page-title">Meet your<br/><em>flavour fingerprint.</em></h1><p className="intro">A little reflection of what makes a meal feel like you.</p><div className="profile-invitation"><div><strong>A few choices. A more personal match.</strong><p>Rate dishes, pick places, and reveal your flavour fingerprint.</p></div><button className="primary" onClick={()=>setPage('journey')}>Take my taste journey →</button></div><section className="profile-grid"><div className="panel"><h2>{profile?`${profile.first_name}’s taste profile`:'Let’s get to know your taste'}</h2><label>Your first name<input value={name} placeholder={profile?.first_name||'What should we call you?'} onChange={e=>setName(e.target.value)}/></label><fieldset className="restrictions"><legend>Dietary needs</legend><div className="chips">{DIETARY.map(d=><button key={d} aria-pressed={!!profile?.dietary?.includes(d)} className={profile?.dietary?.includes(d)?'chip on':'chip'} onClick={()=>setProfile({...profile,dietary:toggle(profile?.dietary,d)})}>{d}</button>)}</div></fieldset><fieldset className="restrictions"><legend>Allergies</legend><div className="chips">{ALLERGENS.map(a=><button key={a} aria-pressed={!!profile?.allergies?.includes(a)} className={profile?.allergies?.includes(a)?'chip on':'chip'} onClick={()=>setProfile({...profile,allergies:toggle(profile?.allergies,a)})}>{a}</button>)}</div></fieldset><label>Ingredients you avoid<input value={(profile?.disliked_ingredients||[]).join(', ')} placeholder="e.g. coriander, mushroom" onChange={e=>setProfile({...profile,disliked_ingredients:e.target.value.split(',').map(s=>s.trimStart()).filter((s,i,a)=>s||i===a.length-1)})}/></label><label className="check"><input type="checkbox" checked={!!profile?.strict} onChange={e=>setProfile({...profile,strict:e.target.checked})}/> Hide dishes we can’t confirm are safe for me (stricter, fewer results)</label><div className="taste-bars">{Object.entries(taste).map(([key,value])=><label key={key}>{key}<input type="range" min="0" max="10" step="0.1" value={value} onChange={e=>setProfile({...profile,first_name:name||profile?.first_name||'Food lover',taste_vector:{...taste,[key]:Number(e.target.value)}})}/><span>{Number(value).toFixed(1)}</span>{anchors[key]&&<small className="anchors">{anchors[key].join(' · ')}</small>}</label>)}</div><button className="secondary" disabled={!!busy} onClick={()=>run('Saving your preferences…',async()=>{await ensureProfile({...profile,first_name:name||profile?.first_name||'Food lover',taste_vector:taste,disliked_ingredients:(profile?.disliked_ingredients||[]).map(s=>s.trim()).filter(Boolean)});setNotice('Taste profile saved.')})}>Save my preferences</button></div><div className="panel blue-panel"><span className="feature-icon">↺</span><h2>Your favourites<br/>tell a story.</h2><p>Upload your Uber Eats data ZIP or order CSV to build a profile from your real orders.</p><button className="primary" disabled={!!busy} onClick={()=>history.current.click()}>Import delivery history ↗</button><small>Only food order records are read. Your original file isn’t saved.</small>{summary&&<div className="import-summary"><strong>✓ {summary.items} items · {summary.restaurants} restaurants</strong><p>{Object.entries(summary.cuisines || {}).map(([name,count])=>`${name} (${count})`).join(' · ')}</p><p>{summary.top_ingredients?.slice(0,6).join(', ')}</p></div>}</div></section><TasteSurvey sync={ensureProfile} onProfile={setProfile}/><section className="panel cloud-panel"><div><h2>Take your taste with you.</h2><p>{cloud?'Sign in to save your profile and reviewed menus across devices.':'Cloud sync is not connected. Your profile and menus are saved in this browser.'}</p></div>{session?<div className="button-row"><button className="primary" disabled={!!busy} onClick={sync}>Save to cloud</button><button className="secondary" onClick={()=>cloud.auth.signOut()}>Sign out</button></div>:<button className="secondary" onClick={()=>setAuthOpen(!authOpen)}>{cloud?'Sign in / sign up':'Connection details'}</button>}{authOpen&&(cloud?<form className="auth-form" onSubmit={e=>{e.preventDefault();run('Signing in…',async()=>{const {error}=await cloud.auth.signInWithPassword({email,password});if(error)throw error;setPassword('')})}}><input aria-label="Email" type="email" value={email} onChange={e=>setEmail(e.target.value)} placeholder="Email" required/><input aria-label="Password" type="password" minLength={8} value={password} onChange={e=>setPassword(e.target.value)} placeholder="Password (8+ characters)" required/><button className="primary" disabled={!!busy}>Sign in</button><button type="button" className="secondary" disabled={!!busy||!email||password.length<8} onClick={()=>run('Creating account…',async()=>{const {error}=await cloud.auth.signUp({email,password});if(error)throw error;setNotice('Check your email to confirm your account.');setPassword('')})}>Create account</button></form>:<p className="safety-note">Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY, apply the included migration, and restart the frontend. No Supabase project is connected yet.</p>)}</section></>}
-    {page==='saved'&&<><div className="eyebrow">THE GOOD ONES, KEPT CLOSE</div><h1 className="page-title">A little collection<br/><em>of possibilities.</em></h1>{!menus.length?<section className="upload-area"><h2>Your next favourite is waiting.</h2><p>Scan and review a menu to save it here.</p><button className="primary" onClick={()=>setPage('menu')}>Scan my first menu ↗</button></section>:menus.map(menu=><article className="saved-card" key={menu.id}><span className="feature-icon">▤</span><div><h2>{menu.name}</h2><p>{menu.items.length} reviewed items · {menu.date}</p></div><button className="secondary" onClick={()=>{setItems(menu.items);setMenuName(menu.name);setPage('menu');findDish(menu.items)}}>Find my dish ↗</button><button className="delete" aria-label={`Delete ${menu.name}`} onClick={()=>setMenus(menus.filter(m=>m.id!==menu.id))}>×</button></article>)}</>}
-    <footer><a className="footer-brand" href="#" onClick={e=>{e.preventDefault();setPage('home')}}>palatable</a><span>Find your flavour. Keep your curiosity.</span><span>Made with good taste ↗</span></footer></div></main>
-    <input hidden ref={upload} type="file" accept="image/*" onChange={e=>scan(e.target.files[0])}/><input hidden ref={camera} type="file" accept="image/*" capture="environment" onChange={e=>scan(e.target.files[0])}/><input hidden ref={history} type="file" accept=".zip,.csv" onChange={e=>importHistory(e.target.files[0])}/>
-  </div>
+  const [profile, setProfile] = useState(() => load('palatable.profile', null))
+  const [stage, setStage] = useState(() => load('palatable.stage', 'welcome')) // welcome | onboarding | reveal | app
+  const [step, setStep] = useState(0)
+  const [tab, setTab] = useState('discover')
+  const [saved, setSaved] = useState(() => load('palatable.saved', []))
+  const [menus, setMenus] = useState(() => load('palatable.menus', []))
+  const [openMenu, setOpenMenu] = useState(null)
+  const [dims, setDims] = useState(fallbackDims.dimensions)
+  const [busy, setBusy] = useState(''), [error, setError] = useState(''), [notice, setNotice] = useState('')
+
+  useEffect(() => keep('palatable.profile', profile), [profile])
+  useEffect(() => keep('palatable.stage', stage === 'onboarding' ? 'welcome' : stage), [stage])
+  useEffect(() => keep('palatable.saved', saved), [saved])
+  useEffect(() => keep('palatable.menus', menus), [menus])
+  useEffect(() => { api.tasteDimensions().then((d) => setDims(d.dimensions)).catch(() => {}) }, [])
+  useEffect(() => { document.getElementById('screen-scroll')?.scrollTo({ top: 0 }) }, [stage, step, tab])
+  useEffect(() => { if (!notice && !error) return; const t = setTimeout(() => { setNotice(''); setError('') }, 4500); return () => clearTimeout(t) }, [notice, error])
+
+  // One backend profile per browser (restored after a backend restart, see api.syncProfile).
+  const sync = async (local = profile) => { const p = await syncProfile(local, local?.first_name); setProfile(p); return p }
+  async function run(label, fn) {
+    setBusy(label); setError('')
+    try { await fn() } catch (e) { setError(e.message || 'Something went wrong. Please try again.') } finally { setBusy('') }
+  }
+  const toast = (msg) => setNotice(msg)
+  const toggleSave = (rec) => setSaved(saved.some((s) => s.restaurant.id === rec.restaurant.id)
+    ? saved.filter((s) => s.restaurant.id !== rec.restaurant.id) : [rec, ...saved])
+
+  let screen
+  if (stage === 'welcome') {
+    screen = <Welcome returning={profile?.id && profile?.first_name}
+      onStart={(name) => { if (name) { setProfile({ ...(profile || {}), first_name: name }); setStep(0); setStage('onboarding') } else setStage('app') }} />
+  } else if (stage === 'onboarding') {
+    screen = <Onboarding profile={profile} setProfile={setProfile} sync={sync} dims={dims} run={run} step={step} setStep={setStep}
+      onDone={() => setStage('reveal')} />
+  } else if (stage === 'reveal') {
+    screen = <Reveal profile={profile} sync={sync} run={run} toast={toast} onContinue={() => { setTab('discover'); setStage('app') }} />
+  } else {
+    screen = {
+      discover: <Discover profile={profile} sync={sync} run={run} saved={saved} onSave={toggleSave} />,
+      scan: <Scan key={openMenu?.id || 'new'} initial={openMenu} profile={profile} sync={sync} run={run} setBusy={setBusy}
+        onSaveMenu={({ name, items }) => { setMenus([{ id: crypto.randomUUID(), name, items, date: new Date().toLocaleDateString('en-GB') }, ...menus]); toast('Menu saved.') }} />,
+      palate: <Palate profile={profile} setProfile={setProfile} sync={sync} run={run} toast={toast} menus={menus}
+        onRetake={() => { setStep(1); setStage('onboarding') }} />,
+      saved: <Saved saved={saved} menus={menus} onUnsave={toggleSave} onDiscover={() => setTab('discover')}
+        onOpenMenu={(m) => { setOpenMenu(m); setTab('scan') }} onDeleteMenu={(m) => setMenus(menus.filter((x) => x.id !== m.id))} />,
+    }[tab]
+  }
+
+  return (
+    <Phone side={<SidePitch />} tabBar={stage === 'app' && <TabBar tab={tab} onTab={(t) => { if (t === 'scan' && tab !== 'scan') setOpenMenu(null); setTab(t) }} />}>
+      <div className={`screen stage-${stage}`}>{screen}</div>
+      <Toast busy={busy} error={error} notice={notice} onClose={() => { setError(''); setNotice('') }} />
+    </Phone>
+  )
+}
+
+// Brief screen 7: the taste profile reveal at the end of the survey.
+function Reveal({ profile, sync, run, toast, onContinue }) {
+  const [map, setMap] = useState(null)
+  useEffect(() => { run('Building your taste profile…', async () => { const p = await sync(profile); setMap(await api.tasteMap(p.id)) }) }, [])
+  return (
+    <div className="reveal">
+      <span className="eyebrow light"><Sparkle size={14} /> Your taste profile is ready</span>
+      <TasteCard map={map} name={profile?.first_name} onToast={toast} />
+      <Button onClick={onContinue}>Find my next meal</Button>
+    </div>
+  )
+}
+
+function SidePitch() {
+  return (
+    <div className="pitch">
+      <span className="wordmark">palatable<Sparkle size={16} /></span>
+      <h2>A portable taste profile <em>any delivery app could plug in.</em></h2>
+      <ol>
+        <li><b>Learn</b> your palate: sliders, dish ratings, venue picks and your Uber Eats history.</li>
+        <li><b>Recommend</b> restaurants and dishes for the occasion, scored by taste, Epicure flavour embeddings and TasteNet.</li>
+        <li><b>Protect</b>: allergens and diets are checked by code, never guessed by an AI.</li>
+      </ol>
+      <small>Hackathon prototype · photos: openly licensed, see <a href="/photos/CREDITS.md" target="_blank" rel="noreferrer">credits</a></small>
+    </div>
+  )
 }

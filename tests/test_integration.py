@@ -242,3 +242,44 @@ def test_restore_profile_after_restart():
 
 def test_blank_disliked_entry_matches_nothing():
     assert rec.disliked_in(cat.dishes["d_0001"], ["", "  "]) == []
+
+
+# ----- iPhone UI support: meal-shaped cards, photos, occasions, persona -----
+
+PHOTO_DIR = ROOT / "frontend/public"
+
+
+@pytest.mark.parametrize("pid", sorted(PROFILES))
+@pytest.mark.parametrize("occasion", list(rec.OCCASIONS))
+def test_cards_are_meal_shaped(pid, occasion):
+    for r in rec.recommend(PROFILES[pid], cat, occasion):
+        if r.kind != "match":
+            continue
+        cats = [d.category for d in r.dishes]
+        assert cats.count("dessert") <= 1
+        assert len({d.dish_family for d in r.dishes}) == len(r.dishes)  # no "Half" + "Full" of one dish
+        if "main" in cats:
+            assert cats[0] == "main"
+        assert cats == sorted(cats, key=lambda c: rec.MEAL_ORDER.get(c, 1))
+
+
+@pytest.mark.parametrize("folder", ["data/mock", "data/tastelayer"])
+def test_every_dish_and_restaurant_has_a_photo(folder):
+    c = rec.Catalogue(str(ROOT / folder))
+    paths = {d.image for d in c.dishes.values() if d.category != "drink"} | {r.image for r in c.restaurants.values()}
+    assert "" not in paths
+    missing = sorted(p for p in paths if not (PHOTO_DIR / p.lstrip("/")).exists())
+    assert not missing, missing
+
+
+def test_occasions_endpoint_matches_recommender():
+    occ = client.get("/occasions").json()
+    assert [o["id"] for o in occ] == list(rec.OCCASIONS)
+    assert all(o["label"] and o["blurb"] and (PHOTO_DIR / o["image"].lstrip("/")).exists() for o in occ)
+
+
+def test_taste_map_has_persona():
+    tm = client.get("/profile/u_001/taste-map").json()
+    assert tm["persona"].startswith("The ") and tm["persona_blurb"]
+    calm = UserProfile(id="t", taste_vector={**{k: 3 for k in rec.TASTE_KEYS}, "creaminess": 9}, adventurousness=2)
+    assert rec.persona(calm)[0] == "The Classic Creamy Dreamer"

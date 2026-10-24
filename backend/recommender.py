@@ -27,11 +27,21 @@ from schema.models import (
 
 # TBD with the team: occasion list and weights (BRIEF.md 9).
 OCCASIONS = {
-    "date-night": {"vibe": {"date-night": 1.0, "trendy": 0.5}, "price_shift": 1.0},
-    "quick-bite": {"vibe": {"quick": 1.0, "casual": 0.7}, "price_shift": -1.0},
-    "family": {"vibe": {"family": 1.0, "traditional": 0.6}, "price_shift": 0.0},
-    "celebration": {"vibe": {"trendy": 0.8, "date-night": 0.5}, "price_shift": 1.0},
-    "comfort": {"vibe": {"casual": 0.8, "traditional": 0.6}, "price_shift": 0.0},
+    "date-night": {"vibe": {"date-night": 1.0, "trendy": 0.5}, "price_shift": 1.0,
+                   "label": "Date night", "blurb": "A table for two, a little spark"},
+    "quick-bite": {"vibe": {"quick": 1.0, "casual": 0.7}, "price_shift": -1.0,
+                   "label": "Quick bite", "blurb": "Big flavour, less fuss"},
+    "family": {"vibe": {"family": 1.0, "traditional": 0.6}, "price_shift": 0.0,
+               "label": "Family time", "blurb": "Good food, shared together"},
+    "celebration": {"vibe": {"trendy": 0.8, "date-night": 0.5}, "price_shift": 1.0,
+                    "label": "Celebration", "blurb": "Make a meal of the moment"},
+    "comfort": {"vibe": {"casual": 0.8, "traditional": 0.6}, "price_shift": 0.0,
+                "label": "Comfort food", "blurb": "Something familiar and lovely"},
+}
+MEAL_ORDER = {"main": 0, "starter": 1, "side": 1, "dessert": 2}
+PERSONAS = {  # strongest taste dimension -> share-card title
+    "spice": "Heat Seeker", "sweet": "Sweet Tooth", "sour": "Tang Chaser", "bitter": "Bold Palate",
+    "umami": "Umami Hunter", "richness": "Comfort Connoisseur", "crunch": "Crunch Lover", "creaminess": "Creamy Dreamer",
 }
 
 WEIGHTS = {"taste": 0.5, "epicure": 0.15, "price": 0.15, "vibe": 0.1, "novelty": 0.1}
@@ -45,11 +55,35 @@ STRETCH_MIN_SIM = 0.2  # centred Epicure cosine to the user's direction needed f
 SURVEY_EPICURE_MIX = 0.5  # share of Epicure distance in survey diversity (rest is taste distance)
 
 
+PHOTOS_PATH = Path(__file__).resolve().parent.parent / "data/photos.json"
+
+
+def load_photos() -> dict:
+    return json.loads(PHOTOS_PATH.read_text()) if PHOTOS_PATH.exists() else {}
+
+
+def dish_photo(d: Dish, photos: dict) -> str:
+    return (photos.get("dish_family", {}).get(d.dish_family)
+            or photos.get("category", {}).get(f"{d.cuisine}:{d.category}")
+            or photos.get("category", {}).get(d.category) or "")
+
+
+def restaurant_photo(r: Restaurant, photos: dict) -> str:
+    return (photos.get("restaurant", {}).get(r.id)
+            or photos.get("restaurant_style", {}).get(f"{r.cuisine}:{r.price_tier}") or "")
+
+
 class Catalogue:
     def __init__(self, data_dir: str):
         base = Path(data_dir)
         self.restaurants = {r["id"]: Restaurant(**r) for r in json.loads((base / "restaurants.json").read_text())}
         self.dishes = {d["id"]: Dish(**d) for d in json.loads((base / "dishes.json").read_text())}
+        # Photos come from one map (data/photos.json) unless the data already names one.
+        photos = load_photos()
+        for d in self.dishes.values():
+            d.image = d.image or dish_photo(d, photos)
+        for r in self.restaurants.values():
+            r.image = r.image or restaurant_photo(r, photos)
         # Optional: if the Epicure asset is missing, flavour.available is False and scoring uses taste only.
         self.flavour = FlavourIndex(self.dishes)
 
@@ -183,8 +217,20 @@ def venue_rounds(profile: UserProfile, cat: Catalogue, n_rounds: int = 4) -> lis
     return rounds
 
 
+def persona(profile: UserProfile) -> tuple[str, str]:
+    """(title, blurb) for the shareable taste card, from the two strongest dims and adventurousness."""
+    t = profile.taste_vector
+    top = sorted(TASTE_KEYS, key=lambda k: -getattr(t, k))[:2]
+    adv = profile.adventurousness
+    prefix = "Adventurous " if adv >= 7 else "Classic " if adv <= 3.5 else ""
+    explore = ("always up for something new" if adv >= 7 else "loyal to the dishes you love" if adv <= 3.5
+               else "happy to explore now and then")
+    return f"The {prefix}{PERSONAS[top[0]]}", f"Big on {top[0]} and {top[1]}, {explore}."
+
+
 def taste_map(profile: UserProfile) -> TasteMap:
     t = profile.taste_vector
+    title, blurb = persona(profile)
     return TasteMap(
         taste_vector=t,
         taste_confidence=profile.taste_confidence,
@@ -192,7 +238,33 @@ def taste_map(profile: UserProfile) -> TasteMap:
         price_pref=profile.price_pref,
         vibe_pref=profile.vibe_pref,
         top_dimensions=sorted(TASTE_KEYS, key=lambda k: -getattr(t, k))[:3],
+        persona=title,
+        persona_blurb=blurb,
     )
+
+
+def compose_meal(scored: list[tuple], n: int) -> list[tuple]:
+    """Pick up to n of a restaurant's (score, dish, warnings), best first, shaped like a meal:
+    the best main leads, then a starter or side, at most one dessert, and never two dishes of
+    the same family ("Tandoori Chicken (Half)" and "(Full)")."""
+    picked: list[tuple] = []
+
+    def take(ok) -> bool:
+        families = {p[1].dish_family for p in picked}
+        has_dessert = any(p[1].category == "dessert" for p in picked)
+        for item in scored:
+            d = item[1]
+            if item in picked or d.dish_family in families or (d.category == "dessert" and has_dessert) or not ok(d):
+                continue
+            picked.append(item)
+            return True
+        return False
+
+    take(lambda d: d.category == "main")
+    take(lambda d: d.category in ("starter", "side"))
+    while len(picked) < n and take(lambda d: True):
+        pass
+    return sorted(picked[:n], key=lambda p: MEAL_ORDER.get(p[1].category, 1))
 
 
 # ----- scoring -----
@@ -295,7 +367,7 @@ def recommend(profile: UserProfile, cat: Catalogue, occasion: str, budget: int |
         if not scored:
             continue
         scored.sort(key=lambda x: -x[0])
-        top = scored[:dishes_per_restaurant]
+        top = compose_meal(scored, dishes_per_restaurant)
         warnings = list(dict.fromkeys(w for _, _, ws in top for w in ws))
         dishes = [d for _, d, _ in top]
         liked = because_you_liked(dishes[0], profile, cat)

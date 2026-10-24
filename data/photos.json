@@ -1,0 +1,28 @@
+{
+  "_about": "Photo map for the app. Files live in frontend/public/photos/ (credits in frontend/public/photos/CREDITS.md). The backend fills Dish.image and Restaurant.image from this map; /occasions uses `occasion`.",
+  "hero": "/photos/hero.jpg",
+  "dish_family": {
+    "pizza": "/photos/pizza.jpg", "pasta": "/photos/pasta.jpg", "lasagne": "/photos/lasagne.jpg",
+    "risotto": "/photos/risotto.jpg", "tiramisu": "/photos/tiramisu.jpg", "salad": "/photos/salad.jpg",
+    "affogato": "/photos/affogato.jpg", "veal": "/photos/veal.jpg", "antipasti": "/photos/antipasti.jpg",
+    "soup": "/photos/soup.jpg", "curry": "/photos/curry.jpg", "biryani": "/photos/biryani.jpg",
+    "dal": "/photos/dal.jpg", "tandoori": "/photos/tandoori.jpg", "samosa": "/photos/samosa.jpg",
+    "indian_snack": "/photos/samosa.jpg", "chaat": "/photos/chaat.jpg", "gulab_jamun": "/photos/gulab_jamun.jpg",
+    "kulfi": "/photos/kulfi.jpg", "bread": "/photos/bread.jpg", "indian_bread": "/photos/bread.jpg",
+    "sabzi": "/photos/sabzi.jpg", "rice": "/photos/rice.jpg"
+  },
+  "category": {
+    "italian:main": "/photos/pasta.jpg", "italian:starter": "/photos/antipasti.jpg", "italian:side": "/photos/antipasti.jpg",
+    "italian:dessert": "/photos/tiramisu.jpg", "indian:main": "/photos/curry.jpg", "indian:starter": "/photos/samosa.jpg",
+    "indian:side": "/photos/bread.jpg", "indian:dessert": "/photos/gulab_jamun.jpg"
+  },
+  "restaurant_style": {
+    "italian:1": "/photos/r_pizzeria.jpg", "italian:2": "/photos/r_trattoria.jpg", "italian:3": "/photos/r_trattoria.jpg",
+    "italian:4": "/photos/r_fine_italian.jpg", "indian:1": "/photos/r_takeaway.jpg", "indian:2": "/photos/r_curry_house.jpg",
+    "indian:3": "/photos/r_curry_house.jpg", "indian:4": "/photos/r_indian_fine.jpg"
+  },
+  "occasion": {
+    "date-night": "/photos/date-night.jpg", "quick-bite": "/photos/quick-bite.jpg", "family": "/photos/family.jpg",
+    "celebration": "/photos/celebration.jpg", "comfort": "/photos/comfort.jpg"
+  }
+}

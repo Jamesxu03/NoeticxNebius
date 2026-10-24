@@ -87,6 +87,7 @@ class Dish(BaseModel):
     taste_model_version: str = ""
     taste_verified: bool = False  # a human checked the taste vector (separate from `verified`)
     is_mock: bool = False  # stand-in menu dish, not one of our curated restaurants
+    image: str = ""  # photo URL; filled by the backend from data/photos.json when empty
 
 
 class Restaurant(BaseModel):
@@ -101,6 +102,7 @@ class Restaurant(BaseModel):
     halal_status: Literal["certified", "some", "none", "unknown"]
     menu_source_url: str
     dish_ids: list[str] = []
+    image: str = ""  # photo URL; filled by the backend from data/photos.json when empty
 
 
 # ----- 4.4 user profile (recommender role owns) -----
@@ -169,6 +171,15 @@ class TasteMap(BaseModel):
     price_pref: float
     vibe_pref: dict[str, float]
     top_dimensions: list[str]  # strongest dimensions first, for the profile headline
+    persona: str = ""  # share-card title, e.g. "The Adventurous Heat Seeker"
+    persona_blurb: str = ""
+
+
+class Occasion(BaseModel):
+    id: str  # value for POST /recommend `occasion`
+    label: str
+    blurb: str
+    image: str = ""
 
 
 class RecommendRequest(BaseModel):

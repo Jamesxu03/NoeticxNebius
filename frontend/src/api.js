@@ -11,6 +11,7 @@ export async function request(path, body, method = 'POST') {
 
 export const api = {
   tasteDimensions: () => request('/taste-dimensions', null, 'GET'),
+  occasions: () => request('/occasions', null, 'GET'), // [{id, label, blurb, image}]
   createProfile: (body) => request('/profile', body),
   getProfile: (id) => request(`/profile/${id}`, null, 'GET'),
   restoreProfile: (profile) => request(`/profile/${profile.id}`, profile, 'PUT'), // browser copy -> backend after a restart

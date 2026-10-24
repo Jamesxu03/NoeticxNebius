@@ -24,7 +24,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from backend import menu_rank, uber_import
 from backend import recommender as rec
 from schema.models import (
-    Dish, MenuItemResult, MenuRankRequest, ProfileCreate, RatingsIn, Recommendation, RecommendRequest,
+    Dish, MenuItemResult, MenuRankRequest, Occasion, ProfileCreate, RatingsIn, Recommendation, RecommendRequest,
     TasteMap, TasteVector, UberImportResult, UserProfile, VenueChoice, VenueRound,
 )
 
@@ -50,6 +50,14 @@ def get_profile(profile_id: str) -> UserProfile:
 @app.get("/taste-dimensions")
 def taste_dimensions() -> dict:
     return json.loads((ROOT / "data/taste_dimensions.json").read_text())
+
+
+@app.get("/occasions")
+def occasions() -> list[Occasion]:
+    """The occasions /recommend understands, with copy and a photo for the picker."""
+    photos = rec.load_photos().get("occasion", {})
+    return [Occasion(id=k, label=v["label"], blurb=v["blurb"], image=photos.get(k, ""))
+            for k, v in rec.OCCASIONS.items()]
 
 
 @app.post("/profile")

@@ -171,18 +171,23 @@ def ordered_ingredients(items: list[OrderItem], vocab: dict, alias: dict,
             names = {n for ing in [*dish.ingredients, *dish.ingredients_canonical] for n in resolve(ing, vocab, alias)}
             for name in names:
                 weights[name] += it.quantity / len(ids)
-        words = [w for w in _words(it.text) if w not in STOPWORDS and len(w) > 2]
-        found = set()
-        for i, w in enumerate(words):
-            if i + 1 < len(words):
-                pair = resolve(f"{w} {words[i + 1]}", vocab, alias)
-                if pair:
-                    found.update(pair)
-                    continue
-            found.update(resolve(w, vocab, alias))
-        for name in found:
+        for name in text_ingredients(it.text, vocab, alias):
             weights[name] += it.quantity
     return dict(weights.most_common(MAX_ORDERED_INGREDIENTS))
+
+
+def text_ingredients(text: str, vocab: dict, alias: dict) -> set[str]:
+    """Epicure vocab names mentioned in free text, preferring two-word matches ("soy sauce")."""
+    words = [w for w in _words(text) if w not in STOPWORDS and len(w) > 2]
+    found = set()
+    for i, w in enumerate(words):
+        if i + 1 < len(words):
+            pair = resolve(f"{w} {words[i + 1]}", vocab, alias)
+            if pair:
+                found.update(pair)
+                continue
+        found.update(resolve(w, vocab, alias))
+    return found
 
 
 class NameMatcher:
@@ -212,11 +217,15 @@ class NameMatcher:
 
 
 def item_taste(it: OrderItem, matcher: NameMatcher) -> tuple[np.ndarray, np.ndarray]:
+    return text_taste(it.item, it.customizations, matcher)
+
+
+def text_taste(name: str, extra: str, matcher: NameMatcher) -> tuple[np.ndarray, np.ndarray]:
     """(scores, mask): per-dim estimate and which dims have evidence."""
-    lex, _ = lookup_features({"name": it.item, "description": it.customizations, "ingredients": []})
+    lex, _ = lookup_features({"name": name, "description": extra, "ingredients": []})
     lex = np.asarray(lex, dtype=float)
     lex_mask = np.abs(lex - LEXICON_DEFAULT) > 1e-6
-    cat = matcher.taste(it.item)
+    cat = matcher.taste(name)
     if cat is None:
         return lex, lex_mask
     scores = np.where(lex_mask, (lex + cat) / 2, cat)
@@ -265,7 +274,7 @@ def apply_orders(profile: UserProfile, items: list[OrderItem], cat) -> UberImpor
         date_from=dates[0] if dates else "",
         date_to=dates[-1] if dates else "",
         cuisines=detect_cuisines(items),
-        top_ingredients=list(profile.ordered_ingredients)[:8],
+        top_ingredients=[n.replace("_", " ") for n in list(profile.ordered_ingredients)[:8]],
         taste_shift={k: round(float(d), 2) for k, d in zip(TASTE_KEYS, new - user) if abs(d) >= 0.05},
         price_pref=profile.price_pref,
     )

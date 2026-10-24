@@ -105,3 +105,13 @@ class FlavourIndex:
         if a not in self.dish_vecs or b not in self.dish_vecs:
             return None
         return float(self.dish_vecs[a] @ self.dish_vecs[b])
+
+    def vocab_vec(self, names) -> np.ndarray | None:
+        """Centred unit vector for already-resolved Epicure vocab names (e.g. from a scanned menu line)."""
+        if not self.available:
+            return None
+        idx = [self.vocab[n] for n in names if n in self.vocab]
+        if not idx:
+            return None
+        v = _unit(np.mean(self.E[idx], axis=0))
+        return None if v is None else _unit(v - self.mean)

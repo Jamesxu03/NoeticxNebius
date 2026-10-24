@@ -175,3 +175,70 @@ def test_import_moves_flavour_toward_orders():
     desserts = [d for d in cat.dishes.values() if d.category == "dessert"]
     mean = lambda ds: sum(cat.flavour.similarity(d.id, vec) for d in ds) / len(ds)
     assert mean(pizza) > mean(desserts)
+
+
+# ----- frontend-facing additions: menu ranking, profile restore -----
+
+MENU = [
+    {"id": "1", "name": "Burrata", "ingredients": "tomato, basil, olive oil", "price": "12"},
+    {"id": "2", "name": "Pistachio cannoli", "ingredients": "ricotta, pistachio", "price": "7"},
+    {"id": "3", "name": "Chicken tikka", "ingredients": "chicken, yoghurt", "price": "14"},
+    {"id": "4", "name": "Paneer butter masala", "ingredients": "paneer, tomato, cream, coriander", "price": "13"},
+    {"id": "5", "name": "Mystery special", "ingredients": "", "price": "15"},
+]
+
+
+def test_menu_rank_filters_and_explains():
+    pid = client.post("/profile", json={"first_name": "Menu", "dietary": ["vegetarian"], "allergies": ["nuts"],
+                                        "disliked_ingredients": ["coriander"]}).json()["id"]
+    client.post(f"/profile/{pid}/ratings", json={"ratings": [{"dish_id": "d_0001", "stars": 5}]})  # Margherita Pizza
+    r = client.post("/menu/rank", json={"profile_id": pid, "items": MENU})
+    assert r.status_code == 200, r.text
+    out = {x["name"]: x for x in r.json()}
+    assert [x["excluded"] for x in r.json()] == sorted(x["excluded"] for x in r.json())  # excluded items last
+    assert out["Pistachio cannoli"]["excluded"] and "nuts" in out["Pistachio cannoli"]["exclusion_reason"]
+    assert out["Chicken tikka"]["excluded"] and "vegetarian" in out["Chicken tikka"]["exclusion_reason"]
+    assert out["Chicken tikka"]["score"] is None and out["Chicken tikka"]["matches"] == []
+    assert out["Burrata"]["because_you_liked"] == "Margherita Pizza"
+    assert any("coriander" in w for w in out["Paneer butter masala"]["warnings"])
+    assert out["Burrata"]["score"] > out["Paneer butter masala"]["score"]
+    assert all(any("vegetarian" in w for w in x["warnings"]) for x in r.json() if not x["excluded"])
+    del PROFILES[pid]
+
+
+def test_menu_rank_uses_tastenet_when_available(monkeypatch):
+    from backend import menu_rank
+
+    class Resp:
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return [{"taste": {k: 9.0 for k in rec.TASTE_KEYS}}]
+
+    monkeypatch.setattr(menu_rank, "TASTELAYER_URL", "http://tastelayer.test")
+    monkeypatch.setattr(menu_rank.httpx, "post", lambda *a, **k: Resp())
+    res = menu_rank.rank_menu(UserProfile(id="t"), [menu_rank.MenuItemIn(name="Chicken Tikka Masala")], cat)
+    assert res[0].taste_source == "tastenet" and res[0].taste["spice"] == 9.0
+    monkeypatch.setattr(menu_rank.httpx, "post", lambda *a, **k: (_ for _ in ()).throw(RuntimeError("down")))
+    res = menu_rank.rank_menu(UserProfile(id="t"), [menu_rank.MenuItemIn(name="Chicken Tikka Masala")], cat)
+    assert res[0].taste_source == "estimate"  # service down -> local estimate, no error
+
+
+def test_restore_profile_after_restart():
+    p = client.post("/profile", json={"first_name": "Restore"}).json()
+    client.post(f"/profile/{p['id']}/ratings", json={"ratings": [{"dish_id": "d_0001", "stars": 5}]})
+    saved = client.get(f"/profile/{p['id']}").json()
+    del PROFILES[p["id"]]  # backend restart
+    assert client.get(f"/profile/{p['id']}").status_code == 404
+    assert client.put(f"/profile/{p['id']}", json=saved).json()["dish_ratings"] == saved["dish_ratings"]
+    assert client.put("/profile/u_someone_else", json=saved).status_code == 400
+    # resending sliders keeps the confidence ratings already earned
+    before = client.get(f"/profile/{p['id']}").json()["taste_confidence"]
+    after = client.put(f"/profile/{p['id']}/tolerances", json={k: 6 for k in rec.TASTE_KEYS}).json()["taste_confidence"]
+    assert all(after[k] >= before[k] for k in before)
+    del PROFILES[p["id"]]
+
+
+def test_blank_disliked_entry_matches_nothing():
+    assert rec.disliked_in(cat.dishes["d_0001"], ["", "  "]) == []

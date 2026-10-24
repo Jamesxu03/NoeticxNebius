@@ -30,6 +30,7 @@ backend/                   Role C (recommender + API)
   recommender.py           hard filters, profile updates, scoring, stretch pick
   safety.py                exclusion-only text rules: "chicken" -> not vegetarian, "pistachio" -> nuts, etc.
   uber_import.py           warm-start a profile from an Uber Eats data export (reads only the Eats order CSV)
+  menu_rank.py             rank a scanned menu: safety rules, TasteNet (if running) or lexicon taste, Epicure flavour
   flavour.py               Epicure flavour space: loads data/epicure/, centred dish vectors
   llm.py                   optional Nebius Token Factory rewrite of explanations (cached, template fallback)
   personas/personas.json   synthetic test users (seeded into the API)
@@ -38,8 +39,10 @@ backend/                   Role C (recommender + API)
   fixtures/                synthetic Uber Eats order CSV for tests, mocks and demos (not anyone's real data)
 tests/                     python -m pytest (persona safety, safety rules, Epicure, Uber import, LLM fallback, API flow)
 docs/BACKEND_GOALS.md      backend goal, milestones and Epicure decisions
-frontend/                  Role A (React + Vite, iPhone frame)
-  src/api.js               the only file that calls the backend; uses mocks/ until VITE_API_URL is set
+frontend/                  Role A: "Palatable" (React + Vite). Menu scan (in-browser OCR), taste profile, Uber import,
+                           restaurant picks, taste quiz, optional Supabase cloud save (SUPABASE-SETUP.md)
+  src/api.js               the only file that calls the backend: /api via the Vite proxy, or VITE_API_URL
+  src/screens/             Recommendations.jsx (POST /recommend), TasteSurvey.jsx (survey dishes + venue rounds)
 ```
 
 ## Run it
@@ -66,7 +69,13 @@ git-ignored `.env`. Without a key the backend uses template explanations; nothin
 cd frontend && npm install && npm run dev
 ```
 
-The frontend runs on mocks by default. To use the live API: `VITE_API_URL=http://127.0.0.1:8000 npm run dev`.
+The dev server proxies `/api` to the backend on :8000, so start the backend first. For a deployed API, build with
+`VITE_API_URL=https://...`. `npm test` runs the frontend's menu-parsing tests. `backend/mocks/` remains a reference
+of response shapes (`python -m backend.make_mocks`), but the app no longer reads it.
+
+Optional: run TasteLayer's TasteNet service (`cd tastelayer && make serve`, :8002) and start the backend with
+`TASTELAYER_URL=http://127.0.0.1:8002` so scanned Indian/Italian menu items get TasteNet taste scores. Without it the
+backend uses the lexicon + catalogue estimate.
 
 ## How the three roles connect
 
@@ -101,6 +110,11 @@ User: Uber Eats export ──> POST /profile/:id/import/uber ──> profile war
 - The occasion list in `backend/recommender.py` is a placeholder until the team agrees on one.
 - `Recommendation.kind` (`"match"` default, or `"stretch"`) and `Recommendation.because_you_liked` (dish name or
   `null`). `/recommend` returns up to 5 matches, then at most one stretch card.
+- `PUT /profile/:id` replaces a whole profile (the browser keeps a copy and restores it after a backend restart).
+  New profile ids are random (`u_<10 hex>`), so restored ids never collide.
+- `POST /menu/rank` `{profile_id, items: [{id, name, ingredients, price}]}` returns the items sorted, each with
+  `score`, `excluded` + `exclusion_reason`, `warnings`, `reason`, `matches`, `because_you_liked`, `taste`, `taste_source`.
+- `PUT /profile/:id/tolerances` keeps confidence that ratings or imports already earned (it used to reset it to 0.3).
 - `POST /profile/:id/import/uber` (multipart `file`: the Uber data zip or its Eats order CSV) returns
   `{profile, summary}`; `summary` has item/restaurant counts, cuisines, top ingredients, taste shift and price preference.
 - From `tastelayer/CONTRACT_CHANGES.md`, adopted as optional fields: Dish `taste_confidence`, `taste_std`,

@@ -24,6 +24,18 @@ def tag_dishes_cmd(
     raise typer.Exit(tag_dishes(limit, uids_file, menu_only, concurrency=concurrency, corpus=corpus))
 
 
+@app.command("tag-gaps")
+def tag_gaps_cmd(
+    models: str = typer.Option("Qwen/Qwen3-235B-A22B-Instruct-2507,openai/gpt-oss-120b", help="comma list"),
+    minutes: Optional[float] = typer.Option(None, help="wall-clock cutoff; stops new requests cleanly"),
+    concurrency: int = typer.Option(64, help="max in-flight requests per model"),
+):
+    """Fill missing (dish, model, temperature) labels: menu, then high-disagreement, then near-complete dishes."""
+    from tastelayer.tagging.tag import tag_gaps
+
+    raise typer.Exit(tag_gaps([x.strip() for x in models.split(",") if x.strip()], minutes, concurrency))
+
+
 @app.command("tag-ingredients")
 def tag_ingredients_cmd(
     limit: Optional[int] = None,

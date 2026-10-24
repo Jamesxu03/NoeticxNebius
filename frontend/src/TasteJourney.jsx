@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import dimensions from '../../data/taste_dimensions.json'
-import { request } from './liveApi'
+import { request } from './api'
 
 const steps = ['About you', 'Your flavours', 'Dish ratings', 'Venue picks', 'Your taste map']
 const dietaryOptions = ['vegan', 'vegetarian', 'halal', 'kosher']

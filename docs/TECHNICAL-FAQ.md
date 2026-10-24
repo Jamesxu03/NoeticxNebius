@@ -76,13 +76,13 @@ A: A reviewable parser separates dish names, explicitly listed descriptions/ingr
 A: No. Missing ingredients remain unknown. Scanned-menu results are preference matches and do not certify dietary or allergy safety.
 
 **Q: How are photographed-menu dishes ranked?**  
-A: The frontend scores ingredient-word overlap with the profile's derived Uber history. It ranks only the reviewed items in that menu. Without overlap, items keep input order. This path does not yet use the full taste-vector/Epicure restaurant recommender or infer taste vectors for scanned dishes.
+A: The backend ranks only reviewed menu items using estimated taste, Epicure flavour similarity and imported ingredient history. An optional TasteLayer service supplies TasteNet predictions for supported cuisines; otherwise it uses local lexicon/catalogue estimates. It returns exclusions, warnings and explanation text. When the backend is unavailable, the UI explicitly falls back to local history-word overlap without safety verification.
 
 **Q: Can menus be saved and reopened?**  
 A: Reviewed menu datasets can be saved, reopened for ranking and deleted in the UI. They persist in localStorage. Signed-in users can explicitly save them with their profile to Supabase after connection.
 
 **Q: What is stored locally?**  
-A: The derived profile and reviewed menus persist in browser localStorage. Current survey progress is held in React state and does not survive a full reload. Backend profiles are in memory and reset on server restart.
+A: The derived profile and reviewed menus persist in browser localStorage. Current survey progress is held in React state and does not survive a full reload. Backend profiles are in memory and reset on server restart; the frontend can restore its saved profile through the profile-restore endpoint.
 
 **Q: Is Supabase connected?**  
 A: Not yet. The code supports email/password sign-up/sign-in, session handling, restoring saved profiles and explicit cloud saves. A migration and setup guide are included, but project settings, schema application and live authentication validation are outstanding.
@@ -103,7 +103,7 @@ A: The repository contains optional data ingestion, Nebius tagging, consensus la
 A: Keyboard-operable controls, labelled inputs, pressed/expanded/current states, visible focus indicators, live status/error messages, loading/disabled states, focus management between journey stages and reduced-motion CSS.
 
 **Q: What has been tested?**  
-A: The existing 197 backend tests and 4 menu-parser/ranking tests pass, as does the Vite production build. Browser checks have covered desktop/mobile rendering, delivery ZIP upload, generated-image OCR, menu review and save/reload. The new guided flow is separately checked through live APIs. Phone camera capture and live Supabase operation remain unverified.
+A: The backend test suite and 4 menu-parser/ranking tests are run alongside the Vite production build. Browser checks have covered desktop/mobile rendering, delivery ZIP upload, generated-image OCR, menu review and save/reload. The new guided flow was checked through live APIs, including PNG export, occasion/budget selection and expandable dishes. Phone camera capture and live Supabase operation remain unverified.
 
 **Q: Is this deployed or a production system?**  
-A: It is a development/demo application. A production deployment, persistent backend storage, real-project authentication validation, production catalogue verification and operational monitoring are separate work.
+A: It is a development/demo application. Supabase row-level security protects its optional cloud table; the separate FastAPI endpoints currently have no production authentication layer. A production deployment, persistent backend storage, real-project authentication validation, production catalogue verification and operational monitoring are separate work.

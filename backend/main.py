@@ -12,6 +12,8 @@ from __future__ import annotations
 import csv
 import json
 import os
+import threading
+import uuid
 import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
@@ -19,10 +21,10 @@ from pathlib import Path
 from fastapi import FastAPI, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 
+from backend import menu_rank, uber_import
 from backend import recommender as rec
-from backend import uber_import
 from schema.models import (
-    Dish, ProfileCreate, RatingsIn, Recommendation, RecommendRequest,
+    Dish, MenuItemResult, MenuRankRequest, ProfileCreate, RatingsIn, Recommendation, RecommendRequest,
     TasteMap, TasteVector, UberImportResult, UserProfile, VenueChoice, VenueRound,
 )
 
@@ -35,6 +37,7 @@ PROFILES: dict[str, UserProfile] = {
 }
 
 app = FastAPI(title="Noetic taste API")
+threading.Thread(target=menu_rank.warm_up, daemon=True).start()  # no-op unless TASTELAYER_URL is set
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
 
@@ -51,7 +54,7 @@ def taste_dimensions() -> dict:
 
 @app.post("/profile")
 def create_profile(body: ProfileCreate) -> UserProfile:
-    pid = f"u_{len(PROFILES) + 1:03d}"
+    pid = f"u_{uuid.uuid4().hex[:10]}"  # random: restored browser profiles must never collide
     profile = UserProfile(id=pid, created_at=datetime.now(timezone.utc).isoformat(), **body.model_dump())
     PROFILES[pid] = profile
     return profile
@@ -62,11 +65,22 @@ def read_profile(profile_id: str) -> UserProfile:
     return get_profile(profile_id)
 
 
+@app.put("/profile/{profile_id}")
+def restore_profile(profile_id: str, body: UserProfile) -> UserProfile:
+    """Create or replace a whole profile, e.g. from the browser's saved copy after a backend restart."""
+    if body.id != profile_id:
+        raise HTTPException(400, "profile id in the URL and body differ")
+    PROFILES[profile_id] = body
+    return body
+
+
 @app.put("/profile/{profile_id}/tolerances")
 def set_tolerances(profile_id: str, body: TasteVector) -> UserProfile:
     profile = get_profile(profile_id)
     profile.taste_vector = body
-    profile.taste_confidence = type(profile.taste_confidence)(**{k: 0.3 for k in rec.TASTE_KEYS})
+    # Sliders give at least 0.3 confidence; keep anything ratings or imports already earned (safe to resend).
+    profile.taste_confidence = type(profile.taste_confidence)(
+        **{k: max(0.3, getattr(profile.taste_confidence, k)) for k in rec.TASTE_KEYS})
     return profile
 
 
@@ -117,3 +131,9 @@ def taste_map(profile_id: str) -> TasteMap:
 @app.post("/recommend")
 def recommend(body: RecommendRequest) -> list[Recommendation]:
     return rec.recommend(get_profile(body.profile_id), cat, body.occasion, budget=body.budget)
+
+
+@app.post("/menu/rank")
+def rank_menu(body: MenuRankRequest) -> list[MenuItemResult]:
+    """Rank the reviewed lines of a scanned menu: safety rules, taste estimate, Epicure flavour."""
+    return menu_rank.rank_menu(get_profile(body.profile_id), body.items, cat)

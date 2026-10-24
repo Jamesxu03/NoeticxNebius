@@ -19,3 +19,6 @@ consensus-final:  ## re-run consensus after the review pass
 
 gold-compare: ## human gold vs model consensus -> reports/gold_vs_consensus.md
 	$(PY) gold/compare_consensus.py
+
+fetch-models: ## one-time download of bge-base so TasteNet serving is fully offline
+	$(PY) -c "from tastelayer.model.features import load_bge; load_bge(allow_download=True); print('bge cached')"

@@ -64,6 +64,8 @@ def disliked_in(dish: Dish, disliked: list[str]) -> list[str]:
     """Disliked ingredients found in the dish, matched as whole words ("egg" is not "eggplant")."""
     found = []
     for x in disliked:
+        if not x.strip():
+            continue  # a blank entry would match every word boundary
         pattern = rf"\b{re.escape(x.strip().lower())}(s|es)?\b"
         if any(re.search(pattern, ing.lower()) for ing in [*dish.ingredients, *dish.ingredients_canonical]):
             found.append(x)

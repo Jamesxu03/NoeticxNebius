@@ -1,41 +1,42 @@
-// Every screen talks to the backend through this file only.
-// Without VITE_API_URL it serves the JSON in backend/mocks, so the UI never waits on the API.
-import tasteDimensions from '../../backend/mocks/taste_dimensions.json'
-import profile from '../../backend/mocks/profile.json'
-import surveyDishes from '../../backend/mocks/survey_dishes.json'
-import venueRounds from '../../backend/mocks/venue_rounds.json'
-import tasteMap from '../../backend/mocks/taste_map.json'
-import recommendations from '../../backend/mocks/recommend.json'
-import uberImport from '../../backend/mocks/uber_import.json'
+// Every call to the food API goes through this file.
+// Dev: Vite proxies /api to the backend on :8000 (vite.config.js). Production: set VITE_API_URL.
+const API = import.meta.env.VITE_API_URL || '/api'
 
-const API = import.meta.env.VITE_API_URL
-
-async function call(method, path, body, mock) {
-  if (!API) return structuredClone(mock)
-  const isForm = body instanceof FormData
-  const res = await fetch(API + path, {
-    method,
-    headers: isForm ? undefined : { 'Content-Type': 'application/json' },
-    body: isForm ? body : body ? JSON.stringify(body) : undefined,
-  })
-  if (!res.ok) throw new Error(`${method} ${path} -> ${res.status}`)
-  return res.json()
+export async function request(path, body, method = 'POST') {
+  const form = body instanceof FormData
+  const r = await fetch(API + path, {method, headers: form ? undefined : {'Content-Type': 'application/json'}, body: body ? form ? body : JSON.stringify(body) : undefined})
+  if (!r.ok) { const err = await r.json().catch(() => ({})); const e = new Error(typeof err.detail === 'string' ? err.detail : 'Could not reach the food API. Please try again.'); e.status = r.status; throw e }
+  return r.json()
 }
 
 export const api = {
-  tasteDimensions: () => call('GET', '/taste-dimensions', null, tasteDimensions),
-  createProfile: (body) => call('POST', '/profile', body, profile),
-  setTolerances: (id, taste) => call('PUT', `/profile/${id}/tolerances`, taste, profile),
-  surveyDishes: (id) => call('GET', `/survey/dishes?profile_id=${id}`, null, surveyDishes),
-  postRatings: (id, ratings) => call('POST', `/profile/${id}/ratings`, { ratings }, profile),
-  venueRounds: (id) => call('GET', `/survey/venue-rounds?profile_id=${id}`, null, venueRounds),
-  postVenueChoice: (id, choice) => call('POST', `/profile/${id}/venue-choice`, choice, profile),
-  tasteMap: (id) => call('GET', `/profile/${id}/taste-map`, null, tasteMap),
-  recommend: (body) => call('POST', '/recommend', body, recommendations),
-  // file: the Uber "Download your data" zip, or its Eats/eats_order_details CSV. Returns { profile, summary }.
-  importUber: (id, file) => {
-    const form = new FormData()
-    form.append('file', file)
-    return call('POST', `/profile/${id}/import/uber`, form, uberImport)
-  },
+  tasteDimensions: () => request('/taste-dimensions', null, 'GET'),
+  createProfile: (body) => request('/profile', body),
+  getProfile: (id) => request(`/profile/${id}`, null, 'GET'),
+  restoreProfile: (profile) => request(`/profile/${profile.id}`, profile, 'PUT'), // browser copy -> backend after a restart
+  setTolerances: (id, taste) => request(`/profile/${id}/tolerances`, taste, 'PUT'),
+  surveyDishes: (id) => request(`/survey/dishes?profile_id=${id}`, null, 'GET'),
+  postRatings: (id, ratings) => request(`/profile/${id}/ratings`, {ratings}),
+  venueRounds: (id) => request(`/survey/venue-rounds?profile_id=${id}`, null, 'GET'),
+  postVenueChoice: (id, choice) => request(`/profile/${id}/venue-choice`, choice),
+  tasteMap: (id) => request(`/profile/${id}/taste-map`, null, 'GET'),
+  recommend: (body) => request('/recommend', body), // {profile_id, occasion, party_size?, budget?}
+  rankMenu: (profileId, items) => request('/menu/rank', {profile_id: profileId, items: items.map(({id, name, ingredients, price}) => ({id, name, ingredients: ingredients || '', price: String(price || '')}))}),
+  // file: the Uber "Download your data" zip, or its Eats order CSV. Returns {profile, summary}.
+  importUber: (id, file) => { const form = new FormData(); form.append('file', file); return request(`/profile/${id}/import/uber`, form) },
+}
+
+export const OCCASIONS = [['date-night', 'Date night'], ['quick-bite', 'Quick bite'], ['family', 'Family meal'], ['celebration', 'Celebration'], ['comfort', 'Comfort food']]
+export const DIETARY = ['vegetarian', 'vegan', 'halal', 'kosher']
+export const ALLERGENS = ['celery', 'gluten', 'crustaceans', 'egg', 'fish', 'lupin', 'milk', 'molluscs', 'mustard', 'nuts', 'peanuts', 'sesame', 'soya', 'sulphites']
+
+// Make sure the backend knows this browser's profile and return the backend copy.
+// Profiles live in backend memory, so after a restart the saved copy is restored instead of recreated.
+export async function syncProfile(local, name) {
+  const base = {first_name: name || local?.first_name || 'Food lover', dietary: local?.dietary || [], allergies: local?.allergies || [], disliked_ingredients: (local?.disliked_ingredients || []).map(s => s.trim()).filter(Boolean), strict: !!local?.strict}
+  if (local?.id) {
+    try { return await api.restoreProfile({...local, ...base}) } catch (e) { if (e.status !== 422) throw e } // 422: old local shape, start fresh
+  }
+  const p = await api.createProfile(base)
+  return local?.taste_vector ? api.setTolerances(p.id, local.taste_vector) : p
 }

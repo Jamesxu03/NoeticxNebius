@@ -4,6 +4,7 @@ from __future__ import annotations
 import asyncio
 import hashlib
 import json
+import os
 import re
 import time
 from dataclasses import dataclass, field
@@ -19,7 +20,7 @@ from tastelayer.tagging import rubric
 from tastelayer.tagging.client import (
     FAILURES_LOG,
     model_kwargs_tag,
-    BudgetHardStop,
+    BudgetHardStop, DeadlineReached,
     BudgetPause,
     NebiusClient,
     append_jsonl,
@@ -325,6 +326,9 @@ async def _run_jobs(jobs: list[Job], kind: str, writer: ShardWriter, concurrency
         await client.close()
         cache.close()
     total = client.spend.total
+    if isinstance(stop["reason"], DeadlineReached):
+        print(f"DEADLINE: {stop['reason']}; stopped cleanly. total spend so far ${total:.4f}")
+        return 0
     if isinstance(stop["reason"], BudgetHardStop):
         print(f"HARD STOP: {stop['reason']}")
         return 4
@@ -333,6 +337,58 @@ async def _run_jobs(jobs: list[Job], kind: str, writer: ShardWriter, concurrency
         return 3
     print(f"done. total spend so far ${total:.4f}")
     return 0
+
+
+def gap_priority(labels: pd.DataFrame, menu_uids: set[str]) -> dict[str, int]:
+    """Priority per uid for gap filling: 0 menu, 1 high-disagreement (any dim std > 2 over the labels
+    available now), 2 one model short of all three, 3 everything else."""
+    main = labels[labels["pass"] == "main"]
+    std = main.groupby("uid")[TASTE_DIMS].std(ddof=0)
+    hd = set(std.index[(std > 2.0).any(axis=1)])
+    n_models = main.groupby("uid").model.nunique()
+    pr = {}
+    for uid, n in n_models.items():
+        pr[uid] = 0 if uid in menu_uids else 1 if uid in hd else 2 if n == len(config.TAGGING_MODELS) - 1 else 3
+    return pr
+
+
+def tag_gaps(models: list[str], minutes: float | None = None, concurrency: int = 64,
+             corpus: Path = CORPUS) -> int:
+    """Tag only the (dish, model, temperature) labels that are missing, highest priority first.
+
+    Jobs are interleaved across models/temps by batch index, so every model works down the same
+    priority list in parallel. With `minutes`, a wall-clock cutoff stops new requests cleanly."""
+    if minutes:
+        os.environ["TAG_DEADLINE"] = str(time.time() + minutes * 60)
+    labels = consolidate(SHARDS, LABELS, ["uid", "model", "temperature", "pass"])
+    rows = {r["uid"]: r for r in load_dish_rows(corpus)}
+    menu_uids = {u for u in rows if u.startswith("d_")}
+    pr = gap_priority(labels, menu_uids)
+    have = set(zip(labels.uid, labels.model, labels.temperature)) if len(labels) else set()
+    per_model: list[list[Job]] = []
+    for m in models:
+        jobs_m = []
+        for t in config.TAG_TEMPERATURES:
+            missing = [u for u in rows if (u, short(m), t) not in have]
+            missing.sort(key=lambda u: (pr.get(u, 3), u))
+            batches = chunk([rows[u] for u in missing], config.DISHES_PER_REQUEST)
+            jobs_m.append([Job(m, t, b, short(m)) for b in batches])
+            counts = {k: sum(pr.get(u, 3) == k for u in missing) for k in range(4)}
+            print(f"gaps {short(m)} t={t}: {len(missing)} dishes (menu {counts[0]}, high-disagreement {counts[1]}, "
+                  f"one-model-short {counts[2]}, rest {counts[3]})")
+        # interleave temperatures for this model
+        per_model.append([j for pair in zip(*jobs_m) for j in pair] + [j for js in jobs_m for j in js[min(map(len, jobs_m)):]])
+    jobs = [j for group in zip_longest_jobs(per_model) for j in group]
+    print(f"tag-gaps: {len(jobs)} requests queued"
+          + (f"; cutoff {time.strftime('%H:%M:%S', time.localtime(float(os.environ['TAG_DEADLINE'])))}" if minutes else ""))
+    code = asyncio.run(_run_jobs(jobs, "dish", ShardWriter(SHARDS, "main"), concurrency))
+    consolidate(SHARDS, LABELS, ["uid", "model", "temperature", "pass"])
+    return code
+
+
+def zip_longest_jobs(lists: list[list[Job]]):
+    for i in range(max((len(x) for x in lists), default=0)):
+        yield [x[i] for x in lists if i < len(x)]
 
 
 def tag_dishes(limit: int | None = None, uids_file: Path | None = None, menu_only: bool = False,

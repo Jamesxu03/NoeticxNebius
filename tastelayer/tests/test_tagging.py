@@ -152,7 +152,8 @@ def test_consensus_median_std_conf_and_review():
     assert c.loc["a", "spice_std"] == pytest.approx(np.std([2, 4, 9]), abs=1e-3)
     assert c.loc["a", "spice_conf"] == pytest.approx(1 - min(np.std([2, 4, 9]) / 3, 1), abs=1e-3)
     assert bool(c.loc["a", "reviewed"]) and not bool(c.loc["b", "reviewed"])
-    assert c.loc["b", "spice_conf"] == 1.0 and c.loc["b", "n_labels"] == 2
+    # std 0 but only 2 models -> coverage factor 0.75
+    assert c.loc["b", "spice_conf"] == 0.75 and c.loc["b", "n_labels"] == 2 and c.loc["b", "n_models"] == 2
     dis = disagreement_table(c.reset_index(), {"a": {"name": "A", "cuisine": "indian"}})
     assert list(dis["uid"]) == ["a"] and dis.iloc[0]["dims"] == "spice"
 

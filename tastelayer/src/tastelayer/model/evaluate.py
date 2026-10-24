@@ -223,6 +223,46 @@ def _fmt(x, nd=2):
     return "–" if x is None or (isinstance(x, float) and np.isnan(x)) else f"{x:.{nd}f}"
 
 
+ALT_MODEL = config.ARTIFACTS / "tastenet_qwen.joblib"
+ALT_EVAL = config.REPORTS / "eval_qwen_alt.csv"
+
+
+def served_model_line() -> str:
+    p = config.ARTIFACTS / "tastenet.joblib"
+    if not p.exists():
+        return ""
+    import joblib
+
+    a = joblib.load(p)
+    net = "one Qwen3-Embedding API call per unseen dish" if "qwen" in a["feature_set"] else "no network calls (bge-base loaded from the local cache)"
+    ho = a["holdout"][a["model_type"]]["mean_spearman"]
+    return (f"Served model: **TasteNet {a['model_type']} on {'+'.join(a['feature_set'])}**, held-out ρ vs consensus "
+            f"{ho:.2f}; runtime: {net}.")
+
+
+def alternative_section(tag: str) -> list[str]:
+    """Not-served alternative (TasteNet with the Qwen3-Embedding feature), from its saved evaluation."""
+    if not (ALT_MODEL.exists() and ALT_EVAL.exists()):
+        return []
+    import joblib
+
+    a = joblib.load(ALT_MODEL)
+    df = pd.read_csv(ALT_EVAL)
+    t = df[df.method == "TasteNet raw"].set_index("dim")
+    if t.empty:
+        return []
+    ho = a["holdout"][a["model_type"]]["mean_spearman"]
+    L = ["", f"## Alternative, not served: TasteNet with Qwen3-Embedding features{tag}", "",
+         f"{a['model_type']} on {'+'.join(a['feature_set'])} (`artifacts/tastenet_qwen.joblib`); held-out ρ vs consensus "
+         f"{ho:.2f}. Needs one Qwen3-Embedding API call per unseen dish. Full report: `reports/eval_qwen_alt.md`.", "",
+         "| dim | Spearman (95% CI) | MAE | % within ±1 |", "|---|---|---|---|"]
+    for d in TASTE_DIMS + ["mean"]:
+        if d in t.index:
+            r = t.loc[d]
+            L.append(f"| {'**mean**' if d == 'mean' else d} | {r.spearman:.2f} [{r.ci_lo:.2f}, {r.ci_hi:.2f}] | {r.mae:.2f} | {r.within1_pct:.0f} |")
+    return L
+
+
 def write_report(results: dict[str, dict], reference: str, costs: pd.DataFrame, auroc: dict, human: dict | None,
                  notes: list[str]) -> None:
     order = (["claude"] if "claude" in results else []) + [k for k in results if k != "claude"]
@@ -238,6 +278,9 @@ def write_report(results: dict[str, dict], reference: str, costs: pd.DataFrame, 
     long.to_csv(config.REPORTS / "eval.csv", index=False)
 
     L = [f"# TasteNet evaluation", "", f"Reference: **{reference}**. Generated {time.strftime('%Y-%m-%d %H:%M')}.", ""]
+    sm = served_model_line()
+    if sm:
+        L += [sm, ""]
     gp = config.GOLD / "gold.json"
     if reference.startswith("human gold") and gp.exists():
         g = json.loads(gp.read_text())
@@ -272,6 +315,7 @@ def write_report(results: dict[str, dict], reference: str, costs: pd.DataFrame, 
         for k, v in auroc.items():
             if k != "n":
                 L.append(f"| {k} | {v.get('spice_vs_spicy', '–')} | {v.get('sweet_vs_sweet', '–')} |")
+    L += alternative_section(tag)
     L += ["", "## Interpretation", ""] + [f"{i + 1}. {n}" for i, n in enumerate(notes[:5])]
     (config.REPORTS / "eval.md").write_text("\n".join(L) + "\n")
     _plot(results, order)
@@ -313,7 +357,8 @@ def interpretation(results: dict, costs: pd.DataFrame, reference: str) -> list[s
     if tn and "3-model vote" in ms:
         gap = ms["3-model vote"] - ms[tn]
         notes.append(f"{tn} is {abs(gap):.2f} ρ {'below' if gap > 0 else 'above'} the 3-model vote it was distilled from, "
-                     f"with zero runtime LLM calls.")
+                     f"with zero runtime LLM calls"
+                     + (" and no network calls." if not _TIMING.get("uses_qwen", 1.0) else "."))
     if "lexicon" in ms and tn:
         notes.append(f"Learning adds {ms[tn] - ms['lexicon']:+.2f} ρ over the hand-written lexicon baseline ({ms['lexicon']:.2f}).")
     ref = results.get(tn or best)
@@ -367,6 +412,7 @@ def run() -> dict:
                         calibrate.fit_final(Pm, Y, fitted_for=art["trained_at"], use=use)
                         _TIMING["calibration_used"] = float(use)
     human = None  # single-labeller gold: no human-vs-human comparison is reported
+    _TIMING["uses_qwen"] = float(bool(art and "qwen" in art["feature_set"]))
     costs = cost_rows(art["feature_set"] if art else [])
     auroc = indian101_auroc(dishes)
     notes = interpretation(results, costs, "gold" if gold is not None else "held-out consensus")

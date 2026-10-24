@@ -1,9 +1,12 @@
 """
-Precompute one Epicure flavour vector per dish (offline, run once per dishes.json).
+Precompute one Epicure flavour vector per dish and report unresolved ingredients.
 
 A dish vector is the mean of its ingredients' unit Epicure vectors, re-normalised.
 Dishes with fewer than MIN_MATCHED resolvable ingredients get "vector": null and the
 recommender falls back to the 8-dim taste scores for them.
+
+The backend now builds these vectors itself at startup (backend/flavour.py), so the main
+use of this script is the unresolved-ingredient list: add those to the alias map.
 
 Usage
 -----
@@ -15,34 +18,16 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
 
 import numpy as np
 
 from epicure import Epicure
 
-MIN_MATCHED = 2
-
-
-def resolve(name: str, vocab: dict[str, int], alias: dict[str, str | list[str]]) -> list[str]:
-    """Map a menu ingredient to Epicure vocab names; [] if it cannot be resolved."""
-    key = name.strip().lower()
-    if key in alias:
-        target = alias[key]
-        names = [target] if isinstance(target, str) else target
-        return [n for n in names if n in vocab]
-    snake = key.replace(" ", "_").replace("-", "_")
-    candidates = [snake]
-    if snake.endswith("ies"):
-        candidates.append(snake[:-3] + "y")
-    if snake.endswith("es"):
-        candidates.append(snake[:-2])
-    if snake.endswith("s"):
-        candidates.append(snake[:-1])
-    for c in candidates:
-        if c in vocab:
-            return [c]
-    return []
+# One ingredient resolver for this script and the backend, so they never disagree.
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from backend.flavour import MIN_MATCHED, resolve  # noqa: E402
 
 
 def main() -> None:

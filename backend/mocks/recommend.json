@@ -26,6 +26,46 @@
     },
     "dishes": [
       {
+        "id": "d_0012",
+        "restaurant_id": "r_03",
+        "name": "Cacio e Pepe",
+        "description": "",
+        "cuisine": "italian",
+        "category": "main",
+        "dish_family": "pasta",
+        "price_gbp": 19.0,
+        "ingredients": [
+          "tonnarelli",
+          "pecorino",
+          "black pepper",
+          "butter"
+        ],
+        "allergens": [
+          "gluten",
+          "milk"
+        ],
+        "dietary": {
+          "vegan": "no",
+          "vegetarian": "unknown",
+          "halal": "unknown",
+          "kosher": "unknown"
+        },
+        "taste": {
+          "spice": 3.0,
+          "sweet": 0.0,
+          "sour": 0.0,
+          "bitter": 0.0,
+          "umami": 7.0,
+          "richness": 7.0,
+          "crunch": 0.0,
+          "creaminess": 8.0
+        },
+        "serving_temp": "hot",
+        "adventurousness": 3.0,
+        "tagged_by": "human",
+        "verified": false
+      },
+      {
         "id": "d_0011",
         "restaurant_id": "r_03",
         "name": "Margherita DOP",
@@ -105,12 +145,16 @@
         "verified": false
       }
     ],
-    "score": 0.541,
-    "explanation": "Margherita DOP at Osteria Lusso matches your love of crunch and richness, and the date-night, trendy feel suits a date-night meal.",
+    "score": 0.616,
+    "explanation": "Cacio e Pepe at Osteria Lusso matches your love of creaminess and umami, and the date-night, trendy feel suits a date-night meal.",
     "warnings": [
+      "Cacio e Pepe: not confirmed vegetarian, check with the restaurant",
+      "Cacio e Pepe: allergen info not yet verified",
       "Margherita DOP: allergen info not yet verified",
       "Affogato: allergen info not yet verified"
-    ]
+    ],
+    "kind": "match",
+    "because_you_liked": null
   },
   {
     "restaurant": {
@@ -137,6 +181,46 @@
       ]
     },
     "dishes": [
+      {
+        "id": "d_0010",
+        "restaurant_id": "r_02",
+        "name": "Burrata & Tomato Salad",
+        "description": "",
+        "cuisine": "italian",
+        "category": "starter",
+        "dish_family": "salad",
+        "price_gbp": 9.0,
+        "ingredients": [
+          "burrata",
+          "tomato",
+          "rocket",
+          "olive oil",
+          "balsamic vinegar"
+        ],
+        "allergens": [
+          "milk"
+        ],
+        "dietary": {
+          "vegan": "no",
+          "vegetarian": "yes",
+          "halal": "unknown",
+          "kosher": "unknown"
+        },
+        "taste": {
+          "spice": 0.0,
+          "sweet": 3.0,
+          "sour": 4.0,
+          "bitter": 3.0,
+          "umami": 3.0,
+          "richness": 6.0,
+          "crunch": 1.0,
+          "creaminess": 8.0
+        },
+        "serving_temp": "cold",
+        "adventurousness": 4.0,
+        "tagged_by": "human",
+        "verified": false
+      },
       {
         "id": "d_0005",
         "restaurant_id": "r_02",
@@ -175,46 +259,6 @@
         },
         "serving_temp": "hot",
         "adventurousness": 1.0,
-        "tagged_by": "human",
-        "verified": false
-      },
-      {
-        "id": "d_0010",
-        "restaurant_id": "r_02",
-        "name": "Burrata & Tomato Salad",
-        "description": "",
-        "cuisine": "italian",
-        "category": "starter",
-        "dish_family": "salad",
-        "price_gbp": 9.0,
-        "ingredients": [
-          "burrata",
-          "tomato",
-          "rocket",
-          "olive oil",
-          "balsamic vinegar"
-        ],
-        "allergens": [
-          "milk"
-        ],
-        "dietary": {
-          "vegan": "no",
-          "vegetarian": "yes",
-          "halal": "unknown",
-          "kosher": "unknown"
-        },
-        "taste": {
-          "spice": 0.0,
-          "sweet": 3.0,
-          "sour": 4.0,
-          "bitter": 3.0,
-          "umami": 3.0,
-          "richness": 6.0,
-          "crunch": 1.0,
-          "creaminess": 8.0
-        },
-        "serving_temp": "cold",
-        "adventurousness": 4.0,
         "tagged_by": "human",
         "verified": false
       },
@@ -260,14 +304,16 @@
         "verified": false
       }
     ],
-    "score": 0.53,
-    "explanation": "Wood-fired Margherita at Trattoria Nonna matches your love of crunch and richness, and the traditional, family feel suits a date-night meal.",
+    "score": 0.609,
+    "explanation": "Burrata & Tomato Salad at Trattoria Nonna matches your love of creaminess and umami, and the traditional, family feel suits a date-night meal.",
     "warnings": [
-      "Wood-fired Margherita: allergen info not yet verified",
       "Burrata & Tomato Salad: allergen info not yet verified",
+      "Wood-fired Margherita: allergen info not yet verified",
       "Porcini Risotto: not confirmed vegetarian, check with the restaurant",
       "Porcini Risotto: allergen info not yet verified"
-    ]
+    ],
+    "kind": "match",
+    "because_you_liked": null
   },
   {
     "restaurant": {
@@ -377,57 +423,16 @@
         "adventurousness": 2.0,
         "tagged_by": "human",
         "verified": false
-      },
-      {
-        "id": "d_0029",
-        "restaurant_id": "r_05",
-        "name": "Gulab Jamun",
-        "description": "",
-        "cuisine": "indian",
-        "category": "dessert",
-        "dish_family": "gulab_jamun",
-        "price_gbp": 5.0,
-        "ingredients": [
-          "milk powder",
-          "flour",
-          "sugar",
-          "cardamom",
-          "rose water",
-          "ghee"
-        ],
-        "allergens": [
-          "milk",
-          "gluten"
-        ],
-        "dietary": {
-          "vegan": "no",
-          "vegetarian": "yes",
-          "halal": "yes",
-          "kosher": "unknown"
-        },
-        "taste": {
-          "spice": 0.0,
-          "sweet": 10.0,
-          "sour": 0.0,
-          "bitter": 0.0,
-          "umami": 0.0,
-          "richness": 7.0,
-          "crunch": 1.0,
-          "creaminess": 4.0
-        },
-        "serving_temp": "warm",
-        "adventurousness": 3.0,
-        "tagged_by": "human",
-        "verified": false
       }
     ],
-    "score": 0.495,
-    "explanation": "Palak Paneer at Spice Route Kitchen matches your love of crunch and richness, and the traditional, family feel suits a date-night meal.",
+    "score": 0.53,
+    "explanation": "Palak Paneer at Spice Route Kitchen matches your love of creaminess and umami, and the traditional, family feel suits a date-night meal.",
     "warnings": [
       "Palak Paneer: allergen info not yet verified",
-      "Dal Makhani: allergen info not yet verified",
-      "Gulab Jamun: allergen info not yet verified"
-    ]
+      "Dal Makhani: allergen info not yet verified"
+    ],
+    "kind": "match",
+    "because_you_liked": null
   },
   {
     "restaurant": {
@@ -494,46 +499,6 @@
         "verified": false
       },
       {
-        "id": "d_0003",
-        "restaurant_id": "r_01",
-        "name": "Garlic Bread",
-        "description": "",
-        "cuisine": "italian",
-        "category": "side",
-        "dish_family": "bread",
-        "price_gbp": 4.5,
-        "ingredients": [
-          "bread",
-          "garlic",
-          "butter",
-          "parsley"
-        ],
-        "allergens": [
-          "gluten",
-          "milk"
-        ],
-        "dietary": {
-          "vegan": "no",
-          "vegetarian": "yes",
-          "halal": "unknown",
-          "kosher": "unknown"
-        },
-        "taste": {
-          "spice": 0.0,
-          "sweet": 1.0,
-          "sour": 0.0,
-          "bitter": 0.0,
-          "umami": 3.0,
-          "richness": 6.0,
-          "crunch": 6.0,
-          "creaminess": 2.0
-        },
-        "serving_temp": "hot",
-        "adventurousness": 0.0,
-        "tagged_by": "human",
-        "verified": false
-      },
-      {
         "id": "d_0004",
         "restaurant_id": "r_01",
         "name": "Tiramisu",
@@ -575,15 +540,57 @@
         "adventurousness": 2.0,
         "tagged_by": "human",
         "verified": false
+      },
+      {
+        "id": "d_0003",
+        "restaurant_id": "r_01",
+        "name": "Garlic Bread",
+        "description": "",
+        "cuisine": "italian",
+        "category": "side",
+        "dish_family": "bread",
+        "price_gbp": 4.5,
+        "ingredients": [
+          "bread",
+          "garlic",
+          "butter",
+          "parsley"
+        ],
+        "allergens": [
+          "gluten",
+          "milk"
+        ],
+        "dietary": {
+          "vegan": "no",
+          "vegetarian": "yes",
+          "halal": "unknown",
+          "kosher": "unknown"
+        },
+        "taste": {
+          "spice": 0.0,
+          "sweet": 1.0,
+          "sour": 0.0,
+          "bitter": 0.0,
+          "umami": 3.0,
+          "richness": 6.0,
+          "crunch": 6.0,
+          "creaminess": 2.0
+        },
+        "serving_temp": "hot",
+        "adventurousness": 0.0,
+        "tagged_by": "human",
+        "verified": false
       }
     ],
-    "score": 0.425,
-    "explanation": "Margherita Pizza at Pizza Pronto matches your love of crunch and richness, and the casual, quick feel suits a date-night meal.",
+    "score": 0.443,
+    "explanation": "Margherita Pizza at Pizza Pronto shares a flavour profile with Burrata & Tomato Salad, which you loved, and the casual, quick feel suits a date-night meal.",
     "warnings": [
       "Margherita Pizza: allergen info not yet verified",
-      "Garlic Bread: allergen info not yet verified",
-      "Tiramisu: allergen info not yet verified"
-    ]
+      "Tiramisu: allergen info not yet verified",
+      "Garlic Bread: allergen info not yet verified"
+    ],
+    "kind": "match",
+    "because_you_liked": "Burrata & Tomato Salad"
   },
   {
     "restaurant": {
@@ -695,12 +702,14 @@
         "verified": false
       }
     ],
-    "score": 0.394,
-    "explanation": "Karela Fry at Masala Mahal matches your love of crunch and richness, and the date-night, trendy feel suits a date-night meal.",
+    "score": 0.333,
+    "explanation": "Karela Fry at Masala Mahal shares a flavour profile with Pani Puri, which you loved, and the date-night, trendy feel suits a date-night meal.",
     "warnings": [
       "Karela Fry: allergen info not yet verified",
       "Pani Puri: allergen info not yet verified",
       "Pani Puri: contains coriander"
-    ]
+    ],
+    "kind": "match",
+    "because_you_liked": "Pani Puri"
   }
 ]

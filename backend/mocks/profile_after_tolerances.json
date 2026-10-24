@@ -1,5 +1,5 @@
 {
-  "id": "u_004",
+  "id": "u_009",
   "first_name": "Alex",
   "last_name": "Demo",
   "dietary": [
@@ -36,5 +36,5 @@
   "price_pref": 2.5,
   "vibe_pref": {},
   "adventurousness": 5.0,
-  "created_at": "2026-10-24T11:43:25.713097+00:00"
+  "created_at": "2026-10-24T12:22:58.698848+00:00"
 }

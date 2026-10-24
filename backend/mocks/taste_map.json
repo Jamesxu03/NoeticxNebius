@@ -1,13 +1,13 @@
 {
   "taste_vector": {
-    "spice": 4.75,
-    "sweet": 3.71,
-    "sour": 5.0,
-    "bitter": 2.66,
-    "umami": 4.96,
-    "richness": 5.5,
-    "crunch": 7.08,
-    "creaminess": 4.29
+    "spice": 4.44,
+    "sweet": 2.68,
+    "sour": 3.88,
+    "bitter": 3.16,
+    "umami": 6.25,
+    "richness": 6.12,
+    "crunch": 4.17,
+    "creaminess": 7.68
   },
   "taste_confidence": {
     "spice": 0.65,
@@ -19,15 +19,15 @@
     "crunch": 0.65,
     "creaminess": 0.65
   },
-  "adventurousness": 4.0,
+  "adventurousness": 4.4,
   "price_pref": 2.0,
   "vibe_pref": {
     "traditional": 0.5,
     "family": 0.5
   },
   "top_dimensions": [
-    "crunch",
-    "richness",
-    "sour"
+    "creaminess",
+    "umami",
+    "richness"
   ]
 }

@@ -172,3 +172,6 @@ class Recommendation(BaseModel):
     score: float
     explanation: str
     warnings: list[str]
+    # Additions (BACKEND_GOALS.md, "Contract changes"); both optional with defaults.
+    kind: Literal["match", "stretch"] = "match"  # "stretch": one Epicure-picked dish outside the user's usual families
+    because_you_liked: str | None = None  # name of the user's top-rated dish closest in Epicure space

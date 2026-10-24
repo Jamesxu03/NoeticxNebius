@@ -45,6 +45,9 @@ def main() -> None:
     for r in rounds:
         ids = [o["restaurant"]["id"] for o in r["options"]]
         c.post(f"/profile/{pid}/venue-choice", json={"round_id": r["round_id"], "options": ids, "chosen": ids[1]})
+    sample = Path(__file__).resolve().parent / "fixtures/uber_eats_orders_sample.csv"  # synthetic, not real data
+    save("uber_import", c.post(f"/profile/{pid}/import/uber",
+                               files={"file": ("orders.csv", sample.read_bytes(), "text/csv")}))
     save("taste_map", c.get(f"/profile/{pid}/taste-map"))
     save("recommend", c.post("/recommend", json={"profile_id": pid, "occasion": "date-night"}))
     print(f"wrote {len(list(OUT.glob('*.json')))} mock files to {OUT}")

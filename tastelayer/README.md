@@ -39,4 +39,4 @@ Full pipeline end to end (idempotent, cached):
 make all   # ingest → tag → consensus → embed → train → eval → predict
 ```
 
-Other useful targets: `make eval` (writes `reports/eval.*`), `make predict` (rewrites `data/processed/menu_dishes_tagged.json`), `make serve` (API on :8000), `make gold` (labelling tool on :8001).
+Other useful targets: `make eval` (writes `reports/eval.*`), `make predict` (rewrites `data/processed/menu_dishes_tagged.json`), `make serve` (API on :8002; the app backend in `backend/` uses :8000), `make gold` (labelling tool on :8001).

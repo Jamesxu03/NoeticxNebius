@@ -9,18 +9,21 @@ Profiles live in memory (seeded with the personas) so the demo has no database t
 
 from __future__ import annotations
 
+import csv
 import json
 import os
+import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 
 from backend import recommender as rec
+from backend import uber_import
 from schema.models import (
     Dish, ProfileCreate, RatingsIn, Recommendation, RecommendRequest,
-    TasteMap, TasteVector, UserProfile, VenueChoice, VenueRound,
+    TasteMap, TasteVector, UberImportResult, UserProfile, VenueChoice, VenueRound,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -89,6 +92,21 @@ def post_venue_choice(profile_id: str, body: VenueChoice) -> UserProfile:
     profile = get_profile(profile_id)
     rec.apply_venue_choice(profile, body, cat)
     return profile
+
+
+@app.post("/profile/{profile_id}/import/uber")
+async def import_uber(profile_id: str, file: UploadFile) -> UberImportResult:
+    """Warm-start from an Uber Eats export (zip or its Eats order CSV). Read in memory, never stored."""
+    profile = get_profile(profile_id)
+    data = await file.read(uber_import.MAX_BYTES + 1)
+    try:
+        items = uber_import.read_orders(data, file.filename or "")
+    except (ValueError, UnicodeDecodeError, zipfile.BadZipFile, csv.Error) as exc:
+        raise HTTPException(400, str(exc)) from exc
+    if not items:
+        raise HTTPException(400, "no completed Uber Eats orders found in this file")
+    summary = uber_import.apply_orders(profile, items, cat)
+    return UberImportResult(profile=profile, summary=summary)
 
 
 @app.get("/profile/{profile_id}/taste-map")

@@ -4,6 +4,8 @@ fastapi
 uvicorn[standard]
 httpx
 pytest
+python-multipart  # Uber Eats file upload
+pyyaml            # TasteLayer lexicon, used by the Uber Eats import
 # Epicure scripts (data role, offline only)
 safetensors
 huggingface_hub

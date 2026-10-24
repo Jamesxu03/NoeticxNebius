@@ -21,8 +21,8 @@ eval:             ## gold (or held-out consensus) comparison -> reports/eval.{md
 predict:          ## data/processed/menu_dishes_tagged.json (taste fields only)
 	$(PY) -m tastelayer.model.predict
 
-serve:            ## POST /taste on :8000
-	$(PY) -m uvicorn tastelayer.api:app --port 8000
+serve:            ## POST /taste on :8002 (the app backend uses :8000)
+	$(PY) -m uvicorn tastelayer.api:app --port 8002
 
 test-model:
 	$(PY) -m pytest tests/test_model.py -q

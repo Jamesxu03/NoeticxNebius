@@ -1,6 +1,186 @@
 [
   {
     "restaurant": {
+      "id": "r_02",
+      "name": "Trattoria Nonna",
+      "cuisine": "italian",
+      "price_tier": 2,
+      "vibe_tags": [
+        "traditional",
+        "family"
+      ],
+      "area": "Islington",
+      "lat": 0.0,
+      "lng": 0.0,
+      "halal_status": "none",
+      "menu_source_url": "mock",
+      "dish_ids": [
+        "d_0005",
+        "d_0006",
+        "d_0007",
+        "d_0008",
+        "d_0009",
+        "d_0010"
+      ]
+    },
+    "dishes": [
+      {
+        "id": "d_0010",
+        "restaurant_id": "r_02",
+        "name": "Burrata & Tomato Salad",
+        "description": "",
+        "cuisine": "italian",
+        "category": "starter",
+        "dish_family": "salad",
+        "price_gbp": 9.0,
+        "ingredients": [
+          "burrata",
+          "tomato",
+          "rocket",
+          "olive oil",
+          "balsamic vinegar"
+        ],
+        "allergens": [
+          "milk"
+        ],
+        "dietary": {
+          "vegan": "no",
+          "vegetarian": "yes",
+          "halal": "unknown",
+          "kosher": "unknown"
+        },
+        "taste": {
+          "spice": 0.0,
+          "sweet": 3.0,
+          "sour": 4.0,
+          "bitter": 3.0,
+          "umami": 3.0,
+          "richness": 6.0,
+          "crunch": 1.0,
+          "creaminess": 8.0
+        },
+        "serving_temp": "cold",
+        "adventurousness": 4.0,
+        "tagged_by": "human",
+        "verified": false,
+        "taste_confidence": null,
+        "taste_std": null,
+        "ingredients_canonical": [],
+        "allergens_suggested": [],
+        "taste_model_version": "",
+        "taste_verified": false,
+        "is_mock": false
+      },
+      {
+        "id": "d_0005",
+        "restaurant_id": "r_02",
+        "name": "Wood-fired Margherita",
+        "description": "",
+        "cuisine": "italian",
+        "category": "main",
+        "dish_family": "pizza",
+        "price_gbp": 12.0,
+        "ingredients": [
+          "pizza dough",
+          "tomato",
+          "buffalo mozzarella",
+          "basil",
+          "olive oil"
+        ],
+        "allergens": [
+          "gluten",
+          "milk"
+        ],
+        "dietary": {
+          "vegan": "no",
+          "vegetarian": "yes",
+          "halal": "unknown",
+          "kosher": "unknown"
+        },
+        "taste": {
+          "spice": 0.0,
+          "sweet": 2.0,
+          "sour": 3.0,
+          "bitter": 1.0,
+          "umami": 6.0,
+          "richness": 5.0,
+          "crunch": 5.0,
+          "creaminess": 5.0
+        },
+        "serving_temp": "hot",
+        "adventurousness": 1.0,
+        "tagged_by": "human",
+        "verified": false,
+        "taste_confidence": null,
+        "taste_std": null,
+        "ingredients_canonical": [],
+        "allergens_suggested": [],
+        "taste_model_version": "",
+        "taste_verified": false,
+        "is_mock": false
+      },
+      {
+        "id": "d_0009",
+        "restaurant_id": "r_02",
+        "name": "Porcini Risotto",
+        "description": "",
+        "cuisine": "italian",
+        "category": "main",
+        "dish_family": "risotto",
+        "price_gbp": 14.0,
+        "ingredients": [
+          "arborio rice",
+          "porcini",
+          "parmesan",
+          "white wine",
+          "butter",
+          "onion"
+        ],
+        "allergens": [
+          "milk"
+        ],
+        "dietary": {
+          "vegan": "no",
+          "vegetarian": "unknown",
+          "halal": "unknown",
+          "kosher": "unknown"
+        },
+        "taste": {
+          "spice": 0.0,
+          "sweet": 1.0,
+          "sour": 1.0,
+          "bitter": 1.0,
+          "umami": 8.0,
+          "richness": 7.0,
+          "crunch": 0.0,
+          "creaminess": 8.0
+        },
+        "serving_temp": "hot",
+        "adventurousness": 3.0,
+        "tagged_by": "human",
+        "verified": false,
+        "taste_confidence": null,
+        "taste_std": null,
+        "ingredients_canonical": [],
+        "allergens_suggested": [],
+        "taste_model_version": "",
+        "taste_verified": false,
+        "is_mock": false
+      }
+    ],
+    "score": 0.62,
+    "explanation": "Burrata & Tomato Salad at Trattoria Nonna matches your love of creaminess and richness, and the traditional, family feel suits a date-night meal.",
+    "warnings": [
+      "Burrata & Tomato Salad: allergen info not yet verified",
+      "Wood-fired Margherita: allergen info not yet verified",
+      "Porcini Risotto: not confirmed vegetarian, check with the restaurant",
+      "Porcini Risotto: allergen info not yet verified"
+    ],
+    "kind": "match",
+    "because_you_liked": null
+  },
+  {
+    "restaurant": {
       "id": "r_03",
       "name": "Osteria Lusso",
       "cuisine": "italian",
@@ -63,7 +243,14 @@
         "serving_temp": "hot",
         "adventurousness": 3.0,
         "tagged_by": "human",
-        "verified": false
+        "verified": false,
+        "taste_confidence": null,
+        "taste_std": null,
+        "ingredients_canonical": [],
+        "allergens_suggested": [],
+        "taste_model_version": "",
+        "taste_verified": false,
+        "is_mock": false
       },
       {
         "id": "d_0011",
@@ -104,7 +291,14 @@
         "serving_temp": "hot",
         "adventurousness": 2.0,
         "tagged_by": "human",
-        "verified": false
+        "verified": false,
+        "taste_confidence": null,
+        "taste_std": null,
+        "ingredients_canonical": [],
+        "allergens_suggested": [],
+        "taste_model_version": "",
+        "taste_verified": false,
+        "is_mock": false
       },
       {
         "id": "d_0017",
@@ -142,175 +336,23 @@
         "serving_temp": "cold",
         "adventurousness": 3.0,
         "tagged_by": "human",
-        "verified": false
+        "verified": false,
+        "taste_confidence": null,
+        "taste_std": null,
+        "ingredients_canonical": [],
+        "allergens_suggested": [],
+        "taste_model_version": "",
+        "taste_verified": false,
+        "is_mock": false
       }
     ],
-    "score": 0.616,
-    "explanation": "Cacio e Pepe at Osteria Lusso matches your love of creaminess and umami, and the date-night, trendy feel suits a date-night meal.",
+    "score": 0.62,
+    "explanation": "Cacio e Pepe at Osteria Lusso matches your love of creaminess and richness, and the date-night, trendy feel suits a date-night meal.",
     "warnings": [
       "Cacio e Pepe: not confirmed vegetarian, check with the restaurant",
       "Cacio e Pepe: allergen info not yet verified",
       "Margherita DOP: allergen info not yet verified",
       "Affogato: allergen info not yet verified"
-    ],
-    "kind": "match",
-    "because_you_liked": null
-  },
-  {
-    "restaurant": {
-      "id": "r_02",
-      "name": "Trattoria Nonna",
-      "cuisine": "italian",
-      "price_tier": 2,
-      "vibe_tags": [
-        "traditional",
-        "family"
-      ],
-      "area": "Islington",
-      "lat": 0.0,
-      "lng": 0.0,
-      "halal_status": "none",
-      "menu_source_url": "mock",
-      "dish_ids": [
-        "d_0005",
-        "d_0006",
-        "d_0007",
-        "d_0008",
-        "d_0009",
-        "d_0010"
-      ]
-    },
-    "dishes": [
-      {
-        "id": "d_0010",
-        "restaurant_id": "r_02",
-        "name": "Burrata & Tomato Salad",
-        "description": "",
-        "cuisine": "italian",
-        "category": "starter",
-        "dish_family": "salad",
-        "price_gbp": 9.0,
-        "ingredients": [
-          "burrata",
-          "tomato",
-          "rocket",
-          "olive oil",
-          "balsamic vinegar"
-        ],
-        "allergens": [
-          "milk"
-        ],
-        "dietary": {
-          "vegan": "no",
-          "vegetarian": "yes",
-          "halal": "unknown",
-          "kosher": "unknown"
-        },
-        "taste": {
-          "spice": 0.0,
-          "sweet": 3.0,
-          "sour": 4.0,
-          "bitter": 3.0,
-          "umami": 3.0,
-          "richness": 6.0,
-          "crunch": 1.0,
-          "creaminess": 8.0
-        },
-        "serving_temp": "cold",
-        "adventurousness": 4.0,
-        "tagged_by": "human",
-        "verified": false
-      },
-      {
-        "id": "d_0005",
-        "restaurant_id": "r_02",
-        "name": "Wood-fired Margherita",
-        "description": "",
-        "cuisine": "italian",
-        "category": "main",
-        "dish_family": "pizza",
-        "price_gbp": 12.0,
-        "ingredients": [
-          "pizza dough",
-          "tomato",
-          "buffalo mozzarella",
-          "basil",
-          "olive oil"
-        ],
-        "allergens": [
-          "gluten",
-          "milk"
-        ],
-        "dietary": {
-          "vegan": "no",
-          "vegetarian": "yes",
-          "halal": "unknown",
-          "kosher": "unknown"
-        },
-        "taste": {
-          "spice": 0.0,
-          "sweet": 2.0,
-          "sour": 3.0,
-          "bitter": 1.0,
-          "umami": 6.0,
-          "richness": 5.0,
-          "crunch": 5.0,
-          "creaminess": 5.0
-        },
-        "serving_temp": "hot",
-        "adventurousness": 1.0,
-        "tagged_by": "human",
-        "verified": false
-      },
-      {
-        "id": "d_0009",
-        "restaurant_id": "r_02",
-        "name": "Porcini Risotto",
-        "description": "",
-        "cuisine": "italian",
-        "category": "main",
-        "dish_family": "risotto",
-        "price_gbp": 14.0,
-        "ingredients": [
-          "arborio rice",
-          "porcini",
-          "parmesan",
-          "white wine",
-          "butter",
-          "onion"
-        ],
-        "allergens": [
-          "milk"
-        ],
-        "dietary": {
-          "vegan": "no",
-          "vegetarian": "unknown",
-          "halal": "unknown",
-          "kosher": "unknown"
-        },
-        "taste": {
-          "spice": 0.0,
-          "sweet": 1.0,
-          "sour": 1.0,
-          "bitter": 1.0,
-          "umami": 8.0,
-          "richness": 7.0,
-          "crunch": 0.0,
-          "creaminess": 8.0
-        },
-        "serving_temp": "hot",
-        "adventurousness": 3.0,
-        "tagged_by": "human",
-        "verified": false
-      }
-    ],
-    "score": 0.609,
-    "explanation": "Burrata & Tomato Salad at Trattoria Nonna matches your love of creaminess and umami, and the traditional, family feel suits a date-night meal.",
-    "warnings": [
-      "Burrata & Tomato Salad: allergen info not yet verified",
-      "Wood-fired Margherita: allergen info not yet verified",
-      "Porcini Risotto: not confirmed vegetarian, check with the restaurant",
-      "Porcini Risotto: allergen info not yet verified"
     ],
     "kind": "match",
     "because_you_liked": null
@@ -380,7 +422,14 @@
         "serving_temp": "hot",
         "adventurousness": 3.0,
         "tagged_by": "human",
-        "verified": false
+        "verified": false,
+        "taste_confidence": null,
+        "taste_std": null,
+        "ingredients_canonical": [],
+        "allergens_suggested": [],
+        "taste_model_version": "",
+        "taste_verified": false,
+        "is_mock": false
       },
       {
         "id": "d_0027",
@@ -422,11 +471,18 @@
         "serving_temp": "hot",
         "adventurousness": 2.0,
         "tagged_by": "human",
-        "verified": false
+        "verified": false,
+        "taste_confidence": null,
+        "taste_std": null,
+        "ingredients_canonical": [],
+        "allergens_suggested": [],
+        "taste_model_version": "",
+        "taste_verified": false,
+        "is_mock": false
       }
     ],
-    "score": 0.53,
-    "explanation": "Palak Paneer at Spice Route Kitchen matches your love of creaminess and umami, and the traditional, family feel suits a date-night meal.",
+    "score": 0.536,
+    "explanation": "Palak Paneer at Spice Route Kitchen matches your love of creaminess and richness, and the traditional, family feel suits a date-night meal.",
     "warnings": [
       "Palak Paneer: allergen info not yet verified",
       "Dal Makhani: allergen info not yet verified"
@@ -496,7 +552,14 @@
         "serving_temp": "hot",
         "adventurousness": 1.0,
         "tagged_by": "human",
-        "verified": false
+        "verified": false,
+        "taste_confidence": null,
+        "taste_std": null,
+        "ingredients_canonical": [],
+        "allergens_suggested": [],
+        "taste_model_version": "",
+        "taste_verified": false,
+        "is_mock": false
       },
       {
         "id": "d_0004",
@@ -539,7 +602,14 @@
         "serving_temp": "cold",
         "adventurousness": 2.0,
         "tagged_by": "human",
-        "verified": false
+        "verified": false,
+        "taste_confidence": null,
+        "taste_std": null,
+        "ingredients_canonical": [],
+        "allergens_suggested": [],
+        "taste_model_version": "",
+        "taste_verified": false,
+        "is_mock": false
       },
       {
         "id": "d_0003",
@@ -579,10 +649,17 @@
         "serving_temp": "hot",
         "adventurousness": 0.0,
         "tagged_by": "human",
-        "verified": false
+        "verified": false,
+        "taste_confidence": null,
+        "taste_std": null,
+        "ingredients_canonical": [],
+        "allergens_suggested": [],
+        "taste_model_version": "",
+        "taste_verified": false,
+        "is_mock": false
       }
     ],
-    "score": 0.443,
+    "score": 0.462,
     "explanation": "Margherita Pizza at Pizza Pronto shares a flavour profile with Burrata & Tomato Salad, which you loved, and the casual, quick feel suits a date-night meal.",
     "warnings": [
       "Margherita Pizza: allergen info not yet verified",
@@ -656,7 +733,14 @@
         "serving_temp": "hot",
         "adventurousness": 9.0,
         "tagged_by": "human",
-        "verified": false
+        "verified": false,
+        "taste_confidence": null,
+        "taste_std": null,
+        "ingredients_canonical": [],
+        "allergens_suggested": [],
+        "taste_model_version": "",
+        "taste_verified": false,
+        "is_mock": false
       },
       {
         "id": "d_0034",
@@ -699,10 +783,17 @@
         "serving_temp": "cold",
         "adventurousness": 7.0,
         "tagged_by": "human",
-        "verified": false
+        "verified": false,
+        "taste_confidence": null,
+        "taste_std": null,
+        "ingredients_canonical": [],
+        "allergens_suggested": [],
+        "taste_model_version": "",
+        "taste_verified": false,
+        "is_mock": false
       }
     ],
-    "score": 0.333,
+    "score": 0.329,
     "explanation": "Karela Fry at Masala Mahal shares a flavour profile with Pani Puri, which you loved, and the date-night, trendy feel suits a date-night meal.",
     "warnings": [
       "Karela Fry: allergen info not yet verified",

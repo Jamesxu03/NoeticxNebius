@@ -17,7 +17,7 @@ Nothing below changes an existing field. Teammates can ignore all of it.
 - `nebius:consensus`: per-dim median of up to 3 Nebius models
 
 ## Artifacts (data/model owner)
-`taste_dimensions.json`, `artifacts/ingredient_vocab.json`, `artifacts/ingredient_emb.npy`, `artifacts/taste_directions.json`, `artifacts/tastenet.joblib`, `artifacts/calibrators.joblib`
+`data/taste_dimensions.json` (repo root, single source for sliders and rubric), `artifacts/ingredient_vocab.json`, `artifacts/ingredient_emb.npy`, `artifacts/taste_directions.json`, `artifacts/tastenet.joblib`, `artifacts/calibrators.joblib`
 
 ## Note for frontend
 `taste_dimensions.json` adds a numeric `score` per anchor (low 2.5, mid 5, high 8.5) so slider tick marks line up with the tagging rubric.

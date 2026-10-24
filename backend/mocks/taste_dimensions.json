@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "scale": "0-10. Slider anchors and the dish-tagging rubric use the same anchors and scores.",
+  "version": 2,
+  "scale": "0-10: 0 absent, 2-3 low anchor, 5 mid anchor, 8-9 high anchor, 10 extreme. The tagging rubric (tastelayer/src/tastelayer/tagging/rubric.py) uses the same anchors and scores.",
   "dimensions": [
     {
       "key": "spice",
@@ -9,17 +9,17 @@
       "anchors": [
         {
           "level": "low",
-          "score": 2,
+          "score": 2.5,
           "ingredient": "black pepper"
         },
         {
           "level": "mid",
-          "score": 5,
+          "score": 5.0,
           "ingredient": "jalapeño"
         },
         {
           "level": "high",
-          "score": 9,
+          "score": 8.5,
           "ingredient": "habanero"
         }
       ]
@@ -31,17 +31,17 @@
       "anchors": [
         {
           "level": "low",
-          "score": 2,
+          "score": 2.5,
           "ingredient": "roasted red pepper"
         },
         {
           "level": "mid",
-          "score": 5,
+          "score": 5.0,
           "ingredient": "caramelised onion"
         },
         {
           "level": "high",
-          "score": 9,
+          "score": 8.5,
           "ingredient": "maple syrup"
         }
       ]
@@ -53,17 +53,17 @@
       "anchors": [
         {
           "level": "low",
-          "score": 2,
+          "score": 2.5,
           "ingredient": "natural yoghurt"
         },
         {
           "level": "mid",
-          "score": 5,
+          "score": 5.0,
           "ingredient": "lemon juice"
         },
         {
           "level": "high",
-          "score": 9,
+          "score": 8.5,
           "ingredient": "tamarind"
         }
       ]
@@ -75,17 +75,17 @@
       "anchors": [
         {
           "level": "low",
-          "score": 2,
+          "score": 2.5,
           "ingredient": "rocket"
         },
         {
           "level": "mid",
-          "score": 5,
+          "score": 5.0,
           "ingredient": "70% dark chocolate"
         },
         {
           "level": "high",
-          "score": 9,
+          "score": 8.5,
           "ingredient": "radicchio"
         }
       ]
@@ -97,18 +97,18 @@
       "anchors": [
         {
           "level": "low",
-          "score": 2,
+          "score": 2.5,
           "ingredient": "tomato"
         },
         {
           "level": "mid",
-          "score": 5,
+          "score": 5.0,
           "ingredient": "parmesan"
         },
         {
           "level": "high",
-          "score": 9,
-          "ingredient": "anchovy"
+          "score": 8.5,
+          "ingredient": "anchovy or miso"
         }
       ]
     },
@@ -119,18 +119,18 @@
       "anchors": [
         {
           "level": "low",
-          "score": 2,
+          "score": 2.5,
           "ingredient": "olive-oil dressing"
         },
         {
           "level": "mid",
-          "score": 5,
+          "score": 5.0,
           "ingredient": "cream sauce"
         },
         {
           "level": "high",
-          "score": 9,
-          "ingredient": "dal makhani"
+          "score": 8.5,
+          "ingredient": "ghee-heavy dal makhani"
         }
       ]
     },
@@ -141,17 +141,17 @@
       "anchors": [
         {
           "level": "low",
-          "score": 2,
+          "score": 2.5,
           "ingredient": "soft bread"
         },
         {
           "level": "mid",
-          "score": 5,
+          "score": 5.0,
           "ingredient": "toasted nuts"
         },
         {
           "level": "high",
-          "score": 9,
+          "score": 8.5,
           "ingredient": "fried papadum"
         }
       ]
@@ -163,17 +163,17 @@
       "anchors": [
         {
           "level": "low",
-          "score": 2,
+          "score": 2.5,
           "ingredient": "clear broth"
         },
         {
           "level": "mid",
-          "score": 5,
+          "score": 5.0,
           "ingredient": "hummus"
         },
         {
           "level": "high",
-          "score": 9,
+          "score": 8.5,
           "ingredient": "mascarpone"
         }
       ]

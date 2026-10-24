@@ -36,5 +36,7 @@
   "price_pref": 2.5,
   "vibe_pref": {},
   "adventurousness": 5.0,
-  "created_at": "2026-10-24T12:22:58.698848+00:00"
+  "created_at": "2026-10-24T13:55:46.116275+00:00",
+  "strict": false,
+  "ordered_ingredients": {}
 }

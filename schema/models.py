@@ -77,8 +77,16 @@ class Dish(BaseModel):
     taste: TasteVector
     serving_temp: Literal["hot", "warm", "cold"]
     adventurousness: Score
-    tagged_by: str  # "claude" | "nebula:<model>" | "human"
-    verified: bool = False
+    tagged_by: str  # "claude" | "nebula:<model>" | "nebius:consensus" | "trained-regressor" | "human"
+    verified: bool = False  # a human checked allergens + dietary flags; models never set or clear it
+    # Optional additions from tastelayer/CONTRACT_CHANGES.md (taste model / data role).
+    taste_confidence: dict[str, float] | None = None  # per-dim 0-1 from the taste model
+    taste_std: dict[str, float] | None = None  # per-dim spread across tagging models
+    ingredients_canonical: list[str] = []  # normalised names (synonyms merged)
+    allergens_suggested: list[str] = []  # ML suggestion for human review ONLY; filters never read it
+    taste_model_version: str = ""
+    taste_verified: bool = False  # a human checked the taste vector (separate from `verified`)
+    is_mock: bool = False  # stand-in menu dish, not one of our curated restaurants
 
 
 class Restaurant(BaseModel):
@@ -123,6 +131,9 @@ class UserProfile(BaseModel):
     vibe_pref: dict[VibeTag, float] = {}
     adventurousness: Score = 5
     created_at: str = ""  # ISO8601
+    # Additions: strict comes from tastelayer/CONTRACT_CHANGES.md; ordered_ingredients from the Uber Eats import.
+    strict: bool = False  # True: exclude dishes whose dietary/allergen info is unknown or unverified (instead of warning)
+    ordered_ingredients: dict[str, float] = {}  # ingredient -> weight from imported order history (no raw data kept)
 
 
 # ----- 4.5 API bodies and responses -----
@@ -133,6 +144,7 @@ class ProfileCreate(BaseModel):
     dietary: list[DietaryRestriction] = []
     allergies: list[Allergen] = []
     disliked_ingredients: list[str] = []
+    strict: bool = False
 
 
 class RatingsIn(BaseModel):
@@ -175,3 +187,20 @@ class Recommendation(BaseModel):
     # Additions (BACKEND_GOALS.md, "Contract changes"); both optional with defaults.
     kind: Literal["match", "stretch"] = "match"  # "stretch": one Epicure-picked dish outside the user's usual families
     because_you_liked: str | None = None  # name of the user's top-rated dish closest in Epicure space
+
+
+class UberImportSummary(BaseModel):
+    """What the Uber Eats import learned; counts and derived signals only, never raw order data."""
+    items: int
+    restaurants: int
+    date_from: str
+    date_to: str
+    cuisines: dict[str, int]  # e.g. {"japanese": 9, "italian": 6}
+    top_ingredients: list[str]  # Epicure ingredients found in ordered item names
+    taste_shift: dict[str, float]  # change applied to taste_vector, per dim
+    price_pref: float
+
+
+class UberImportResult(BaseModel):
+    profile: UserProfile
+    summary: UberImportSummary

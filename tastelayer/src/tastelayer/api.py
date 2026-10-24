@@ -1,6 +1,6 @@
 """TasteLayer HTTP API. For now only the trained taste tagger; recommender endpoints get added here later.
 
-Run: uvicorn tastelayer.api:app --port 8000
+Run: uvicorn tastelayer.api:app --port 8002   (the app backend, backend/main.py, uses 8000)
 """
 from __future__ import annotations
 

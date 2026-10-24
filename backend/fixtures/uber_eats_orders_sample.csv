@@ -1,0 +1,9 @@
+Order_UUID,City_Name,Restaurant_Name,Request_Time_Local,Order_Status,Item_Name,Item_quantity,Item_Price,Customizations,Special_Instructions,Currency
+demo-0001,Demo City,Demo Sourdough Pizza,2026-05-02 19:10:00,completed,Margherita Pizza,1,10.50,,Leave at the blue door,GBP
+demo-0001,Demo City,Demo Sourdough Pizza,2026-05-02 19:10:00,completed,Spicy Nduja Pizza,1,12.95,Extra chilli,,GBP
+demo-0002,Demo City,Demo Curry House,2026-05-09 20:05:00,completed,Chicken Tikka Masala,2,23.90,,,GBP
+demo-0002,Demo City,Demo Curry House,2026-05-09 20:05:00,completed,Garlic Naan,2,7.00,,,GBP
+demo-0003,Demo City,Demo Sushi Bar,2026-05-16 13:00:00,completed,Salmon Avocado Roll,2,15.98,Wasabi,,GBP
+demo-0003,Demo City,Demo Sushi Bar,2026-05-16 13:00:00,completed,Tuna Sashimi,1,9.50,,,GBP
+demo-0004,Demo City,Demo Curry House,2026-05-23 21:30:00,canceled,Lamb Vindaloo,1,13.50,,,GBP
+demo-0005,Demo City,Demo Burger Shack,2026-05-30 12:15:00,completed,Cheese Burger,1,8.99,Bacon,,GBP

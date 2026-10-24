@@ -29,7 +29,10 @@ and never decides what is safe to eat.
 | 4 | Persona harness: 8-10 personas with safety and taste assertions | 8 personas (vegan, halal, nut allergy, vegetarian with dislikes, gluten allergy); safety tests pass. Taste assertions next |
 | 5 | Recommender tuning: confidence-weighted taste match, per-dimension rating updates, normalised vibe/occasion, dish variety per restaurant | next |
 | 6 | Demo hardening: JSON-file profile persistence, preloaded demo users, precomputed LLM explanations (batch API), deploy | later |
-| 7 | Switch to real data when Role B ships `data/dishes.json` and re-run `data/scripts/compare_epicure.py` | blocked on B |
+| 7 | Switch to real data when Role B ships `data/dishes.json` and re-run `data/scripts/compare_epicure.py` | blocked on B (TasteLayer stand-in catalogue already runs: `DATA_DIR=data/tastelayer`) |
+| 8 | Merge TasteLayer (Role B taste model): one anchor file, its optional contract fields, strict mode, catalogue sync | done |
+| 9 | Exclusion-only safety rules over dish text (`backend/safety.py`), needed because menus rarely state dietary/allergen info | done |
+| 10 | Uber Eats import: `POST /profile/:id/import/uber` warm-starts taste, flavour and price from order history | done |
 
 ## Epicure decisions
 
@@ -71,3 +74,21 @@ NEBIUS_MODEL=meta-llama/Meta-Llama-3.1-8B-Instruct-fast    # optional override
 The LLM gets only facts the code computed (matched tastes, the dish the user loved, price/vibe
 fit, warnings) and rewrites them into one friendly sentence. Warnings are always shown verbatim,
 never paraphrased.
+
+## Integration decisions (TasteLayer + Uber Eats)
+
+- **One app API.** `backend/` serves the app on :8000. `tastelayer/` is Role B's offline taste pipeline; its own
+  `POST /taste` API moved to :8002. Its recommender (`tastelayer/src/tastelayer/reco`) is not used by the app; its
+  ideas (strict mode, allergen synonyms, whole-word dislikes) are in `backend/`.
+- **Catalogue hand-off.** `data/scripts/sync_tastelayer.py` validates TasteLayer's output against `schema/models.py`
+  and writes `data/tastelayer/`. Taste scores come from TasteNet; dietary flags, allergens and `verified` pass through untouched.
+- **Safety on unverified menus.** Every TasteLayer dish has dietary flags `"unknown"` and no listed allergens.
+  `backend/safety.py` reads name, description and ingredients and can only exclude ("chicken" -> not vegetarian,
+  "pistachio" -> nuts, "pepperoni" -> not halal, meat with dairy -> not kosher). Plant milks are not dairy.
+  `strict: true` on a profile excludes anything still unknown or unverified; it stays opt-in until Role B verifies the menus,
+  because otherwise allergy users get no results.
+- **Uber Eats import.** Reads only the Eats order CSV from the export, in memory. Taste: TasteLayer's lexicon on the dims it
+  matched, plus the tagged taste of catalogue dishes whose names share a rare word. Flavour: Epicure ingredients
+  named in items, plus the ingredients of name-matched catalogue dishes, stored as `ordered_ingredients`, which count
+  like one 5-star dish in total. Price: mean unit price -> tier. The raw file is never stored; a synthetic sample lives
+  in `backend/fixtures/`.

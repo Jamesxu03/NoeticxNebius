@@ -1,0 +1,144 @@
+{
+  "profile": {
+    "id": "u_009",
+    "first_name": "Alex",
+    "last_name": "Demo",
+    "dietary": [
+      "vegetarian"
+    ],
+    "allergies": [
+      "nuts"
+    ],
+    "disliked_ingredients": [
+      "coriander"
+    ],
+    "taste_vector": {
+      "spice": 4.0,
+      "sweet": 2.52,
+      "sour": 3.51,
+      "bitter": 2.4,
+      "umami": 5.82,
+      "richness": 5.9,
+      "crunch": 3.73,
+      "creaminess": 6.76
+    },
+    "taste_confidence": {
+      "spice": 0.77,
+      "sweet": 0.77,
+      "sour": 0.77,
+      "bitter": 0.77,
+      "umami": 0.81,
+      "richness": 0.83,
+      "crunch": 0.77,
+      "creaminess": 0.83
+    },
+    "dish_ratings": [
+      {
+        "dish_id": "d_0010",
+        "stars": 5
+      },
+      {
+        "dish_id": "d_0034",
+        "stars": 4
+      },
+      {
+        "dish_id": "d_0029",
+        "stars": 2
+      },
+      {
+        "dish_id": "d_0027",
+        "stars": 3
+      },
+      {
+        "dish_id": "d_0012",
+        "stars": 5
+      },
+      {
+        "dish_id": "d_0007",
+        "stars": 1
+      },
+      {
+        "dish_id": "d_0017",
+        "stars": 4
+      }
+    ],
+    "venue_choices": [
+      {
+        "round_id": "v1",
+        "options": [
+          "r_01",
+          "r_02",
+          "r_03"
+        ],
+        "chosen": "r_02"
+      }
+    ],
+    "price_pref": 1.88,
+    "vibe_pref": {
+      "traditional": 0.5,
+      "family": 0.5
+    },
+    "adventurousness": 4.4,
+    "created_at": "2026-10-24T13:55:46.116275+00:00",
+    "strict": false,
+    "ordered_ingredients": {
+      "tomato": 4.0,
+      "tikka_masala": 4.0,
+      "yogurt": 4.0,
+      "chicken": 4.0,
+      "garlic": 4.0,
+      "chili_pepper": 3.0,
+      "mozzarella_cheese": 2.0,
+      "dough": 2.0,
+      "onion": 2.0,
+      "cream": 2.0,
+      "flour": 2.0,
+      "butter": 2.0,
+      "naan": 2.0,
+      "salmon": 2.0,
+      "avocado": 2.0,
+      "wasabi": 2.0,
+      "basil": 1.0,
+      "olive_oil": 1.0,
+      "pepperoni": 1.0,
+      "oregano": 1.0,
+      "nduja": 1.0,
+      "tuna": 1.0,
+      "cheese": 1.0,
+      "bacon": 1.0
+    }
+  },
+  "summary": {
+    "items": 10,
+    "restaurants": 4,
+    "date_from": "2026-05-02",
+    "date_to": "2026-05-30",
+    "cuisines": {
+      "indian": 4,
+      "japanese": 3,
+      "italian": 2,
+      "fast food": 1
+    },
+    "top_ingredients": [
+      "tomato",
+      "tikka_masala",
+      "yogurt",
+      "chicken",
+      "garlic",
+      "chili_pepper",
+      "mozzarella_cheese",
+      "dough"
+    ],
+    "taste_shift": {
+      "spice": -0.44,
+      "sweet": -0.16,
+      "sour": -0.37,
+      "bitter": -0.76,
+      "umami": -0.43,
+      "richness": -0.22,
+      "crunch": -0.44,
+      "creaminess": -0.92
+    },
+    "price_pref": 1.88
+  }
+}

@@ -1,15 +1,27 @@
 {
-  "version": 1,
-  "scale": "0-10. Slider anchors and the dish-tagging rubric use the same anchors and scores.",
+  "version": 2,
+  "scale": "0-10: 0 absent, 2-3 low anchor, 5 mid anchor, 8-9 high anchor, 10 extreme. The tagging rubric (tastelayer/src/tastelayer/tagging/rubric.py) uses the same anchors and scores.",
   "dimensions": [
     {
       "key": "spice",
       "label": "Spice",
       "meaning": "capsaicin heat",
       "anchors": [
-        { "level": "low", "score": 2, "ingredient": "black pepper" },
-        { "level": "mid", "score": 5, "ingredient": "jalapeño" },
-        { "level": "high", "score": 9, "ingredient": "habanero" }
+        {
+          "level": "low",
+          "score": 2.5,
+          "ingredient": "black pepper"
+        },
+        {
+          "level": "mid",
+          "score": 5.0,
+          "ingredient": "jalapeño"
+        },
+        {
+          "level": "high",
+          "score": 8.5,
+          "ingredient": "habanero"
+        }
       ]
     },
     {
@@ -17,9 +29,21 @@
       "label": "Sweet",
       "meaning": "sweetness",
       "anchors": [
-        { "level": "low", "score": 2, "ingredient": "roasted red pepper" },
-        { "level": "mid", "score": 5, "ingredient": "caramelised onion" },
-        { "level": "high", "score": 9, "ingredient": "maple syrup" }
+        {
+          "level": "low",
+          "score": 2.5,
+          "ingredient": "roasted red pepper"
+        },
+        {
+          "level": "mid",
+          "score": 5.0,
+          "ingredient": "caramelised onion"
+        },
+        {
+          "level": "high",
+          "score": 8.5,
+          "ingredient": "maple syrup"
+        }
       ]
     },
     {
@@ -27,9 +51,21 @@
       "label": "Sour",
       "meaning": "acidity / tang",
       "anchors": [
-        { "level": "low", "score": 2, "ingredient": "natural yoghurt" },
-        { "level": "mid", "score": 5, "ingredient": "lemon juice" },
-        { "level": "high", "score": 9, "ingredient": "tamarind" }
+        {
+          "level": "low",
+          "score": 2.5,
+          "ingredient": "natural yoghurt"
+        },
+        {
+          "level": "mid",
+          "score": 5.0,
+          "ingredient": "lemon juice"
+        },
+        {
+          "level": "high",
+          "score": 8.5,
+          "ingredient": "tamarind"
+        }
       ]
     },
     {
@@ -37,9 +73,21 @@
       "label": "Bitter",
       "meaning": "bitterness",
       "anchors": [
-        { "level": "low", "score": 2, "ingredient": "rocket" },
-        { "level": "mid", "score": 5, "ingredient": "70% dark chocolate" },
-        { "level": "high", "score": 9, "ingredient": "radicchio" }
+        {
+          "level": "low",
+          "score": 2.5,
+          "ingredient": "rocket"
+        },
+        {
+          "level": "mid",
+          "score": 5.0,
+          "ingredient": "70% dark chocolate"
+        },
+        {
+          "level": "high",
+          "score": 8.5,
+          "ingredient": "radicchio"
+        }
       ]
     },
     {
@@ -47,9 +95,21 @@
       "label": "Umami",
       "meaning": "savouriness",
       "anchors": [
-        { "level": "low", "score": 2, "ingredient": "tomato" },
-        { "level": "mid", "score": 5, "ingredient": "parmesan" },
-        { "level": "high", "score": 9, "ingredient": "anchovy" }
+        {
+          "level": "low",
+          "score": 2.5,
+          "ingredient": "tomato"
+        },
+        {
+          "level": "mid",
+          "score": 5.0,
+          "ingredient": "parmesan"
+        },
+        {
+          "level": "high",
+          "score": 8.5,
+          "ingredient": "anchovy or miso"
+        }
       ]
     },
     {
@@ -57,9 +117,21 @@
       "label": "Richness",
       "meaning": "fat / heaviness",
       "anchors": [
-        { "level": "low", "score": 2, "ingredient": "olive-oil dressing" },
-        { "level": "mid", "score": 5, "ingredient": "cream sauce" },
-        { "level": "high", "score": 9, "ingredient": "dal makhani" }
+        {
+          "level": "low",
+          "score": 2.5,
+          "ingredient": "olive-oil dressing"
+        },
+        {
+          "level": "mid",
+          "score": 5.0,
+          "ingredient": "cream sauce"
+        },
+        {
+          "level": "high",
+          "score": 8.5,
+          "ingredient": "ghee-heavy dal makhani"
+        }
       ]
     },
     {
@@ -67,9 +139,21 @@
       "label": "Crunch",
       "meaning": "crispy / crunchy texture",
       "anchors": [
-        { "level": "low", "score": 2, "ingredient": "soft bread" },
-        { "level": "mid", "score": 5, "ingredient": "toasted nuts" },
-        { "level": "high", "score": 9, "ingredient": "fried papadum" }
+        {
+          "level": "low",
+          "score": 2.5,
+          "ingredient": "soft bread"
+        },
+        {
+          "level": "mid",
+          "score": 5.0,
+          "ingredient": "toasted nuts"
+        },
+        {
+          "level": "high",
+          "score": 8.5,
+          "ingredient": "fried papadum"
+        }
       ]
     },
     {
@@ -77,9 +161,21 @@
       "label": "Creaminess",
       "meaning": "smooth / creamy texture",
       "anchors": [
-        { "level": "low", "score": 2, "ingredient": "clear broth" },
-        { "level": "mid", "score": 5, "ingredient": "hummus" },
-        { "level": "high", "score": 9, "ingredient": "mascarpone" }
+        {
+          "level": "low",
+          "score": 2.5,
+          "ingredient": "clear broth"
+        },
+        {
+          "level": "mid",
+          "score": 5.0,
+          "ingredient": "hummus"
+        },
+        {
+          "level": "high",
+          "score": 8.5,
+          "ingredient": "mascarpone"
+        }
       ]
     }
   ]

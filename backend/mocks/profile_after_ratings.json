@@ -1,5 +1,5 @@
 {
-  "id": "u_004",
+  "id": "u_009",
   "first_name": "Alex",
   "last_name": "Demo",
   "dietary": [
@@ -12,14 +12,14 @@
     "coriander"
   ],
   "taste_vector": {
-    "spice": 4.75,
-    "sweet": 3.71,
-    "sour": 5.0,
-    "bitter": 2.66,
-    "umami": 4.96,
-    "richness": 5.5,
-    "crunch": 7.08,
-    "creaminess": 4.29
+    "spice": 4.44,
+    "sweet": 2.68,
+    "sour": 3.88,
+    "bitter": 3.16,
+    "umami": 6.25,
+    "richness": 6.12,
+    "crunch": 4.17,
+    "creaminess": 7.68
   },
   "taste_confidence": {
     "spice": 0.65,
@@ -41,29 +41,29 @@
       "stars": 4
     },
     {
-      "dish_id": "d_0007",
+      "dish_id": "d_0029",
       "stars": 2
     },
     {
-      "dish_id": "d_0029",
+      "dish_id": "d_0027",
       "stars": 3
     },
     {
-      "dish_id": "d_0021",
+      "dish_id": "d_0012",
       "stars": 5
     },
     {
-      "dish_id": "d_0012",
+      "dish_id": "d_0007",
       "stars": 1
     },
     {
-      "dish_id": "d_0011",
+      "dish_id": "d_0017",
       "stars": 4
     }
   ],
   "venue_choices": [],
   "price_pref": 2.5,
   "vibe_pref": {},
-  "adventurousness": 4.0,
-  "created_at": "2026-10-24T11:43:25.713097+00:00"
+  "adventurousness": 4.4,
+  "created_at": "2026-10-24T12:22:58.698848+00:00"
 }

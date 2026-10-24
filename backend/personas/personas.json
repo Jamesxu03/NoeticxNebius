@@ -180,5 +180,281 @@
     },
     "adventurousness": 6.0,
     "created_at": "2026-10-24T12:00:00Z"
+  },
+  {
+    "id": "u_004",
+    "first_name": "Maya",
+    "last_name": "Vegan",
+    "dietary": [
+      "vegan"
+    ],
+    "allergies": [],
+    "disliked_ingredients": [],
+    "taste_vector": {
+      "spice": 8,
+      "sweet": 3,
+      "sour": 6,
+      "bitter": 3,
+      "umami": 6,
+      "richness": 3,
+      "crunch": 6,
+      "creaminess": 2
+    },
+    "taste_confidence": {
+      "spice": 0.5,
+      "sweet": 0.5,
+      "sour": 0.5,
+      "bitter": 0.5,
+      "umami": 0.5,
+      "richness": 0.5,
+      "crunch": 0.5,
+      "creaminess": 0.5
+    },
+    "dish_ratings": [
+      {
+        "dish_id": "d_0020",
+        "stars": 5
+      },
+      {
+        "dish_id": "d_0034",
+        "stars": 5
+      },
+      {
+        "dish_id": "d_0007",
+        "stars": 4
+      },
+      {
+        "dish_id": "d_0035",
+        "stars": 3
+      }
+    ],
+    "venue_choices": [],
+    "price_pref": 2.0,
+    "vibe_pref": {
+      "casual": 0.6,
+      "trendy": 0.4
+    },
+    "adventurousness": 7.0,
+    "created_at": "2026-10-24T00:00:00+00:00"
+  },
+  {
+    "id": "u_005",
+    "first_name": "Omar",
+    "last_name": "Halal",
+    "dietary": [
+      "halal"
+    ],
+    "allergies": [],
+    "disliked_ingredients": [],
+    "taste_vector": {
+      "spice": 6,
+      "sweet": 4,
+      "sour": 5,
+      "bitter": 3,
+      "umami": 7,
+      "richness": 6,
+      "crunch": 4,
+      "creaminess": 5
+    },
+    "taste_confidence": {
+      "spice": 0.5,
+      "sweet": 0.5,
+      "sour": 0.5,
+      "bitter": 0.5,
+      "umami": 0.5,
+      "richness": 0.5,
+      "crunch": 0.5,
+      "creaminess": 0.5
+    },
+    "dish_ratings": [
+      {
+        "dish_id": "d_0025",
+        "stars": 5
+      },
+      {
+        "dish_id": "d_0026",
+        "stars": 4
+      },
+      {
+        "dish_id": "d_0020",
+        "stars": 4
+      },
+      {
+        "dish_id": "d_0029",
+        "stars": 3
+      }
+    ],
+    "venue_choices": [],
+    "price_pref": 2.5,
+    "vibe_pref": {
+      "family": 0.5,
+      "traditional": 0.5
+    },
+    "adventurousness": 7.5,
+    "created_at": "2026-10-24T00:00:00+00:00"
+  },
+  {
+    "id": "u_006",
+    "first_name": "Sam",
+    "last_name": "Careful",
+    "dietary": [],
+    "allergies": [
+      "nuts",
+      "peanuts"
+    ],
+    "disliked_ingredients": [],
+    "taste_vector": {
+      "spice": 3,
+      "sweet": 5,
+      "sour": 3,
+      "bitter": 2,
+      "umami": 6,
+      "richness": 6,
+      "crunch": 4,
+      "creaminess": 6
+    },
+    "taste_confidence": {
+      "spice": 0.5,
+      "sweet": 0.5,
+      "sour": 0.5,
+      "bitter": 0.5,
+      "umami": 0.5,
+      "richness": 0.5,
+      "crunch": 0.5,
+      "creaminess": 0.5
+    },
+    "dish_ratings": [
+      {
+        "dish_id": "d_0018",
+        "stars": 4
+      },
+      {
+        "dish_id": "d_0001",
+        "stars": 5
+      },
+      {
+        "dish_id": "d_0020",
+        "stars": 3
+      }
+    ],
+    "venue_choices": [],
+    "price_pref": 2.0,
+    "vibe_pref": {
+      "casual": 0.7,
+      "quick": 0.3
+    },
+    "adventurousness": 2.5,
+    "created_at": "2026-10-24T00:00:00+00:00"
+  },
+  {
+    "id": "u_007",
+    "first_name": "Lena",
+    "last_name": "Veggie",
+    "dietary": [
+      "vegetarian"
+    ],
+    "allergies": [],
+    "disliked_ingredients": [
+      "coriander",
+      "mushroom"
+    ],
+    "taste_vector": {
+      "spice": 4,
+      "sweet": 5,
+      "sour": 4,
+      "bitter": 3,
+      "umami": 6,
+      "richness": 7,
+      "crunch": 3,
+      "creaminess": 8
+    },
+    "taste_confidence": {
+      "spice": 0.5,
+      "sweet": 0.5,
+      "sour": 0.5,
+      "bitter": 0.5,
+      "umami": 0.5,
+      "richness": 0.5,
+      "crunch": 0.5,
+      "creaminess": 0.5
+    },
+    "dish_ratings": [
+      {
+        "dish_id": "d_0028",
+        "stars": 5
+      },
+      {
+        "dish_id": "d_0027",
+        "stars": 5
+      },
+      {
+        "dish_id": "d_0001",
+        "stars": 4
+      },
+      {
+        "dish_id": "d_0004",
+        "stars": 4
+      }
+    ],
+    "venue_choices": [],
+    "price_pref": 3.0,
+    "vibe_pref": {
+      "date-night": 0.6,
+      "traditional": 0.4
+    },
+    "adventurousness": 4.5,
+    "created_at": "2026-10-24T00:00:00+00:00"
+  },
+  {
+    "id": "u_008",
+    "first_name": "Ben",
+    "last_name": "GlutenFree",
+    "dietary": [],
+    "allergies": [
+      "gluten"
+    ],
+    "disliked_ingredients": [],
+    "taste_vector": {
+      "spice": 6,
+      "sweet": 3,
+      "sour": 6,
+      "bitter": 5,
+      "umami": 8,
+      "richness": 5,
+      "crunch": 4,
+      "creaminess": 3
+    },
+    "taste_confidence": {
+      "spice": 0.5,
+      "sweet": 0.5,
+      "sour": 0.5,
+      "bitter": 0.5,
+      "umami": 0.5,
+      "richness": 0.5,
+      "crunch": 0.5,
+      "creaminess": 0.5
+    },
+    "dish_ratings": [
+      {
+        "dish_id": "d_0020",
+        "stars": 5
+      },
+      {
+        "dish_id": "d_0025",
+        "stars": 4
+      },
+      {
+        "dish_id": "d_0016",
+        "stars": 4
+      }
+    ],
+    "venue_choices": [],
+    "price_pref": 3.0,
+    "vibe_pref": {
+      "trendy": 0.5,
+      "date-night": 0.5
+    },
+    "adventurousness": 6.0,
+    "created_at": "2026-10-24T00:00:00+00:00"
   }
 ]

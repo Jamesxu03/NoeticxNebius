@@ -3,6 +3,7 @@ pydantic>=2.7
 fastapi
 uvicorn[standard]
 httpx
+pytest
 # Epicure scripts (data role, offline only)
 safetensors
 huggingface_hub

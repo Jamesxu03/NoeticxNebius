@@ -69,7 +69,7 @@ Served model: **TasteNet mlp on bge+lex+ing_ours+ing_fg**, held-out ρ vs consen
 
 ## Alternative, not served: TasteNet with Qwen3-Embedding features — n=28, single human labeller
 
-ridge on bge+qwen+lex+ing_ours+ing_fg (`artifacts/tastenet_qwen.joblib`); held-out ρ vs consensus 0.84. Needs one Qwen3-Embedding API call per unseen dish. Full report: `reports/eval_qwen_alt.md`.
+ridge on bge+qwen+lex+ing_ours+ing_fg (`artifacts/tastenet_qwen.joblib`, local only; rebuild with `make train`); held-out ρ vs consensus 0.84. Needs one Qwen3-Embedding API call per unseen dish. Full report: `reports/eval_qwen_alt.md`.
 
 | dim | Spearman (95% CI) | MAE | % within ±1 |
 |---|---|---|---|

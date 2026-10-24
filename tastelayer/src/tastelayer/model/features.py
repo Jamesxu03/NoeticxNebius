@@ -82,12 +82,24 @@ class EmbeddingStore:
 _BGE = None
 
 
+def load_bge(allow_download: bool = False):
+    """Load bge-base from the local Hugging Face cache only, so serving makes no network call
+    (without this, every load sends HEAD requests to huggingface.co to check for updates).
+    Fetch the weights once with `make fetch-models` (allow_download=True)."""
+    from sentence_transformers import SentenceTransformer
+
+    if allow_download:
+        return SentenceTransformer(BGE_MODEL)
+    try:
+        return SentenceTransformer(BGE_MODEL, local_files_only=True)
+    except OSError as e:
+        raise RuntimeError(f"{BGE_MODEL} is not in the local cache; run `make fetch-models` once (needs network)") from e
+
+
 def _bge_compute(texts: list[str]) -> np.ndarray:
     global _BGE
     if _BGE is None:
-        from sentence_transformers import SentenceTransformer
-
-        _BGE = SentenceTransformer(BGE_MODEL)
+        _BGE = load_bge()
     return _BGE.encode(texts, batch_size=64, normalize_embeddings=True, show_progress_bar=len(texts) > 2000)
 
 

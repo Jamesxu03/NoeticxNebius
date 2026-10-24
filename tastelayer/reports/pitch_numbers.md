@@ -2,7 +2,7 @@
 
 Generated 2026-10-24 from this run. Sources: `reports/eval.md`, `reports/eval_qwen_alt.md`, `reports/feature_cv_bge_only.md`, `reports/gold_vs_consensus.md`, `reports/tagging_summary.md`, `artifacts/tastenet.joblib`. Gold-set numbers are **n=28, single human labeller**.
 
-**Served model:** TasteNet, an MLP over bge-base text embeddings, our own skip-gram ingredient embeddings, FlavorGraph ingredient embeddings and a hand-written lexicon. It is `artifacts/tastenet.joblib`, a copy of `tastenet_bge_offline.joblib`, and it runs **fully offline**.
+**Served model:** TasteNet, an MLP over bge-base text embeddings, our own skip-gram ingredient embeddings, FlavorGraph ingredient embeddings and a hand-written lexicon. It is `artifacts/tastenet.joblib` and it runs **fully offline**.
 
 ## 1. We trained our own model
 - **What it does:** TasteNet maps a dish's name, description and ingredients to 8 taste scores (0–10).
@@ -62,12 +62,12 @@ Paired bootstrap on the same 28 dishes (2,000 resamples):
 | TasteNet variant | held-out ρ vs consensus | gold ρ (n=28, single labeller) | runtime network calls |
 |---|---|---|---|
 | **bge only, MLP (served)** | 0.81 [0.80, 0.81] | **0.53 [0.37, 0.65]** | **none** |
-| bge + Qwen3-Embedding, ridge (`artifacts/tastenet_qwen.joblib`) | 0.84 [0.83, 0.84] | 0.50 [0.33, 0.63] | 1 Qwen3-Embedding API call per unseen dish |
+| bge + Qwen3-Embedding, ridge (`artifacts/tastenet_qwen.joblib`, local only; not in the repo) | 0.84 [0.83, 0.84] | 0.50 [0.33, 0.63] | 1 Qwen3-Embedding API call per unseen dish |
 
 - The Qwen variant matches the LLM consensus better on held-out dishes (+0.03 ρ). On the human gold set the two can't be told apart.
 - We serve the offline model so that the "no runtime calls" claim is literally true.
 - Full report for the alternative: `reports/eval_qwen_alt.md`.
-- To switch back, copy `tastenet_qwen.joblib` over `tastenet.joblib` and rerun `make predict`. The runtime claim then becomes "one embedding call per new dish".
+- To switch back, rebuild it with `make train` (needs the corpus and consensus labels regenerated first, plus about $0.03 of Qwen embedding calls). It writes `tastenet.joblib`; then rerun `make predict`. The runtime claim then becomes "one embedding call per new dish".
 
 ## Limitations
 - **Small gold set:** 28 dishes, one labeller (9 Indian, 19 Italian). 22 of 50 candidates were skipped, mostly Indian. Bootstrap CIs are wide, and nothing per dimension against gold is reliable.

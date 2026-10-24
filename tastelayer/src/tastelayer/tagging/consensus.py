@@ -3,7 +3,10 @@
 Per uid, per dim:
   label      = median of all main-pass labels (3 models x 2 temps -> up to 6 values)
   taste_std  = population std of those labels
-  confidence = 1 - min(std / 3, 1)
+  confidence = (1 - min(std / 3, 1)) * coverage factor (3 models 1.0, 2 models 0.75, 1 model 0.5)
+Partial coverage (time cutoff 2026-10-24): dishes missing a model use the median of the models present;
+`n_models`/`models` record which, and the lower coverage factor marks them as less certain. A 1-model
+dish's std only reflects temperature noise, so it is never flagged as high-disagreement.
 Review pass (Qwen3-235B on high-disagreement dishes): the review label is added to the pool of
 main labels with weight 2 (two copies) and the median is recomputed. Taking median(main_median,
 review, review) instead would always just return the review label, discarding the panel; adding
@@ -25,6 +28,7 @@ CONSENSUS = config.DATA_PROCESSED / "labels_consensus.parquet"
 MENU_BY_MODEL = config.DATA_PROCESSED / "menu_dishes_by_model.json"
 STD_FLAG = 2.0
 TAGGED_BY = "nebius:consensus"
+COVERAGE_FACTOR = {3: 1.0, 2: 0.75, 1: 0.5}
 
 
 def compute_consensus(labels: pd.DataFrame) -> pd.DataFrame:
@@ -34,6 +38,9 @@ def compute_consensus(labels: pd.DataFrame) -> pd.DataFrame:
     med = g.median()
     std = g.std(ddof=0).fillna(0.0)
     n = main.groupby("uid").size().rename("n_labels")
+    models = main.groupby("uid").model.agg(lambda x: "+".join(sorted(set(x))))
+    n_models = main.groupby("uid").model.nunique()
+    factor = n_models.map(lambda k: COVERAGE_FACTOR.get(int(k), 0.5))
     out = med.copy()
     if not review.empty:
         rv = review.groupby("uid")[TASTE_DIMS].mean()
@@ -45,8 +52,10 @@ def compute_consensus(labels: pd.DataFrame) -> pd.DataFrame:
     for d in TASTE_DIMS:
         res[d] = out[d].round(1)
         res[f"{d}_std"] = std[d].round(3)
-        res[f"{d}_conf"] = (1 - np.minimum(std[d] / 3.0, 1.0)).round(3)
+        res[f"{d}_conf"] = ((1 - np.minimum(std[d] / 3.0, 1.0)) * factor).round(3)
     res["n_labels"] = n
+    res["n_models"] = n_models
+    res["models"] = models
     res["reviewed"] = res.index.isin(review["uid"].unique()) if not review.empty else False
     res["tagged_by"] = TAGGED_BY
     return res.reset_index()
@@ -54,7 +63,8 @@ def compute_consensus(labels: pd.DataFrame) -> pd.DataFrame:
 
 def disagreement_table(cons: pd.DataFrame, names: dict[str, dict]) -> pd.DataFrame:
     std_cols = [f"{d}_std" for d in TASTE_DIMS]
-    flagged = cons[(cons[std_cols] > STD_FLAG).any(axis=1)].copy()
+    multi = cons["n_models"] >= 2 if "n_models" in cons else True
+    flagged = cons[multi & (cons[std_cols] > STD_FLAG).any(axis=1)].copy()
     flagged["name"] = flagged["uid"].map(lambda u: names.get(u, {}).get("name", ""))
     flagged["cuisine"] = flagged["uid"].map(lambda u: names.get(u, {}).get("cuisine", ""))
     flagged["dims"] = flagged.apply(lambda r: ",".join(d for d in TASTE_DIMS if r[f"{d}_std"] > STD_FLAG), axis=1)
@@ -95,6 +105,9 @@ def run() -> pd.DataFrame:
     mbm = menu_by_model(labels)
     if mbm:
         MENU_BY_MODEL.write_text(json.dumps(mbm, indent=1, ensure_ascii=False))
+    cov = cons["n_models"].value_counts().to_dict()
+    print(f"consensus coverage: 3 models {cov.get(3, 0)}, 2 models {cov.get(2, 0)}, 1 model {cov.get(1, 0)}; "
+          f"menu dishes with 3 models: {int(((cons.uid.str.startswith('d_')) & (cons.n_models == 3)).sum())}")
     print(f"consensus: {len(cons)} dishes, {len(dis)} flagged (any dim std>{STD_FLAG}), "
           f"{int(cons['reviewed'].sum())} reviewed; menu-by-model for {len(mbm)} models")
     return cons

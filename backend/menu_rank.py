@@ -31,6 +31,10 @@ TASTELAYER_URL = os.environ.get("TASTELAYER_URL", "")
 TASTELAYER_TIMEOUT_S = 4.0
 WEIGHTS = {"taste": 0.5, "flavour": 0.3, "history": 0.2}
 STRONG = 6.0  # a taste dim the user scores this high counts as "loved"
+# Short menu lines give noisy flavour vectors ("squid, lemon, aioli" ~ lamb chops at 0.34), so a
+# "similar to X you loved" claim needs at least this many recognised ingredients and this similarity.
+LIKED_MIN_INGREDIENTS = 3
+LIKED_MIN_SIM = 0.4
 
 
 def _as_dish(item: MenuItemIn) -> Dish:
@@ -125,8 +129,8 @@ def rank_menu(profile: UserProfile, items: list[MenuItemIn], cat) -> list[MenuIt
         matches = [k for k in profile.ordered_ingredients if k in ings]
         history = min(1.0, len(matches) / 3)
 
-        liked, best = None, rec.BECAUSE_MIN_SIM
-        for d in loved:
+        liked, best = None, LIKED_MIN_SIM
+        for d in loved if len(ings) >= LIKED_MIN_INGREDIENTS else []:
             if item_vec is not None and d.id in cat.flavour.dish_vecs:
                 sim = float(item_vec @ cat.flavour.dish_vecs[d.id])
                 if sim > best:

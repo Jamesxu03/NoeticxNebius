@@ -47,6 +47,9 @@ frontend/                  Role A: "Palatable" (React + Vite). Menu scan (in-bro
 
 ## Run it
 
+Quickest demo, once the setup below is done: `scripts/dev.sh` (or `TASTENET=1 scripts/dev.sh` to include TasteNet),
+then open http://127.0.0.1:5173.
+
 Python 3.11+ and Node 18+.
 
 ```bash

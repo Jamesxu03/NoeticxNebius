@@ -1,0 +1,236 @@
+# Ingredient synonym map: variant -> canonical (applied after lowercasing/cleanup).
+curd: yoghurt
+yogurt: yoghurt
+dahi: yoghurt
+plain yogurt: yoghurt
+plain yoghurt: yoghurt
+greek yogurt: greek yoghurt
+hung curd: greek yoghurt
+maida: all-purpose flour
+plain flour: all-purpose flour
+flour: all-purpose flour
+all purpose flour: all-purpose flour
+atta: whole wheat flour
+whole wheat atta: whole wheat flour
+wheat flour: whole wheat flour
+besan: gram flour
+chickpea flour: gram flour
+dhania: coriander
+cilantro: coriander
+coriander leaf: coriander
+coriander leaves: coriander
+fresh coriander: coriander
+dhania powder: coriander powder
+ground coriander: coriander powder
+jeera: cumin
+cumin seed: cumin
+jeera powder: cumin powder
+ground cumin: cumin powder
+haldi: turmeric
+turmeric powder: turmeric
+ground turmeric: turmeric
+methi: fenugreek
+methi leaves: fenugreek
+fenugreek leaves: fenugreek
+fenugreek seed: fenugreek seed
+methi seed: fenugreek seed
+kasuri methi: dried fenugreek leaves
+dried methi leaves: dried fenugreek leaves
+parmigiano reggiano: parmesan
+parmigiano-reggiano: parmesan
+parmesan cheese: parmesan
+pecorino romano: pecorino
+pecorino cheese: pecorino
+mozzarella cheese: mozzarella
+fresh mozzarella: mozzarella
+fior di latte: mozzarella
+ricotta cheese: ricotta
+mascarpone cheese: mascarpone
+aloo: potato
+gobi: cauliflower
+phool gobi: cauliflower
+palak: spinach
+baby spinach: spinach
+mirchi: green chilli
+green chillies: green chilli
+green chili: green chilli
+green chile: green chilli
+hari mirch: green chilli
+lal mirch: red chilli
+red chillies: red chilli
+dried red chilli: red chilli
+red chili: red chilli
+red chilli powder: chilli powder
+red chili powder: chilli powder
+chili powder: chilli powder
+cayenne pepper: cayenne
+kashmiri red chilli powder: kashmiri chilli powder
+kashmiri lal mirch: kashmiri chilli powder
+crushed red pepper flake: chilli flakes
+red pepper flake: chilli flakes
+crushed red pepper: chilli flakes
+adrak: ginger
+ginger garlic paste: ginger garlic paste
+lahsun: garlic
+garlic clove: garlic
+pyaz: onion
+pyaaz: onion
+yellow onion: onion
+red onion: onion
+white onion: onion
+tamatar: tomato
+plum tomato: tomato
+roma tomato: tomato
+san marzano tomato: tomato
+canned tomato: tomato
+crushed tomato: tomato
+tomato puree: tomato puree
+tomato passata: tomato puree
+passata: tomato puree
+imli: tamarind
+tamarind paste: tamarind
+tamarind pulp: tamarind
+amchur: dry mango powder
+amchoor: dry mango powder
+dry mango powder: dry mango powder
+hing: asafoetida
+asafetida: asafoetida
+rai: mustard seed
+mustard seeds: mustard seed
+saunf: fennel seed
+fennel seeds: fennel seed
+elaichi: cardamom
+green cardamom: cardamom
+cardamom pod: cardamom
+laung: clove
+dalchini: cinnamon
+cinnamon stick: cinnamon
+tej patta: bay leaf
+kadi patta: curry leaf
+curry leaves: curry leaf
+kadi patta leaves: curry leaf
+malai: cream
+fresh cream: cream
+heavy cream: cream
+heavy whipping cream: cream
+whipping cream: cream
+double cream: cream
+single cream: cream
+desi ghee: ghee
+clarified butter: ghee
+unsalted butter: butter
+salted butter: butter
+extra virgin olive oil: olive oil
+extra-virgin olive oil: olive oil
+vegetable oil: oil
+sunflower oil: oil
+canola oil: oil
+cooking oil: oil
+refined oil: oil
+paneer cheese: paneer
+cottage cheese: paneer
+chana: chickpea
+kabuli chana: chickpea
+garbanzo bean: chickpea
+toor dal: pigeon pea lentil
+arhar dal: pigeon pea lentil
+moong dal: mung lentil
+masoor dal: red lentil
+urad dal: black gram lentil
+whole urad dal: black gram lentil
+rajma: kidney bean
+red kidney bean: kidney bean
+chawal: rice
+basmati rice: basmati rice
+gur: jaggery
+gud: jaggery
+cheeni: sugar
+granulated sugar: sugar
+white sugar: sugar
+caster sugar: sugar
+namak: salt
+sea salt: salt
+kosher salt: salt
+black salt: black salt
+kala namak: black salt
+nimbu: lemon
+lemon juice: lemon juice
+lime juice: lime juice
+pudina: mint
+mint leaves: mint
+fresh mint: mint
+basil leaves: basil
+fresh basil: basil
+sweet basil: basil
+fresh parsley: parsley
+flat-leaf parsley: parsley
+italian parsley: parsley
+arugula: rocket
+rucola: rocket
+eggplant: aubergine
+baingan: aubergine
+brinjal: aubergine
+zucchini: courgette
+bhindi: okra
+lady finger: okra
+capsicum: bell pepper
+green bell pepper: bell pepper
+red bell pepper: bell pepper
+shimla mirch: bell pepper
+matar: peas
+green peas: peas
+pea: peas
+frozen peas: peas
+gajar: carrot
+murgh: chicken
+chicken breast: chicken
+boneless chicken: chicken
+chicken thigh: chicken
+gosht: lamb
+mutton: lamb
+lamb mince: lamb mince
+keema: lamb mince
+ground beef: beef mince
+prawns: prawn
+shrimp: prawn
+jhinga: prawn
+anchovies: anchovy
+anchovy fillet: anchovy
+pancetta: pancetta
+guanciale: guanciale
+prosciutto: prosciutto
+pepperoni: pepperoni
+italian sausage: italian sausage
+spaghetti pasta: spaghetti
+penne pasta: penne
+eggs: egg
+large egg: egg
+egg yolk: egg yolk
+milk: milk
+whole milk: milk
+coconut milk: coconut milk
+nariyal: coconut
+desiccated coconut: coconut
+grated coconut: coconut
+kaju: cashew
+cashew nut: cashew
+cashews: cashew
+badam: almond
+almonds: almond
+pista: pistachio
+pistachios: pistachio
+pine nut: pine nut
+pignoli: pine nut
+peanuts: peanut
+moongphali: peanut
+black pepper: black pepper
+ground black pepper: black pepper
+pepper: black pepper
+peppercorn: black pepper
+kali mirch: black pepper
+garam masala powder: garam masala
+balsamic vinegar: balsamic vinegar
+white wine: white wine
+dry white wine: white wine
+red wine: red wine
+dry red wine: red wine

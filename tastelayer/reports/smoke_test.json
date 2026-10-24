@@ -1,0 +1,190 @@
+{
+ "Qwen/Qwen3-235B-A22B-Instruct-2507": [
+  {
+   "mode": "json_schema",
+   "ok": true,
+   "result": "valid, uids match",
+   "latency_s": 9.9,
+   "tokens": "488/1032",
+   "cost_usd": 0.00072,
+   "ratelimit_headers": {
+    "x-ratelimit-limit-requests": "600",
+    "x-ratelimit-limit-tokens": "400000",
+    "x-ratelimit-remaining-requests": "599",
+    "x-ratelimit-remaining-tokens": "399114",
+    "x-ratelimit-reset-requests": "1s",
+    "x-ratelimit-reset-tokens": "1s",
+    "x-ratelimit-dynamic-scale-requests": "1.00",
+    "x-ratelimit-dynamic-scale-tokens": "1.00",
+    "x-ratelimit-dynamic-period-remaining": "900s",
+    "x-ratelimit-dynamic-period-usage-requests": "0%",
+    "x-ratelimit-dynamic-period-usage-tokens": "0%"
+   }
+  },
+  {
+   "mode": "json_object",
+   "ok": true,
+   "result": "valid, uids match",
+   "latency_s": 7.4,
+   "tokens": "708/951",
+   "cost_usd": 0.00071,
+   "ratelimit_headers": {
+    "x-ratelimit-limit-requests": "600",
+    "x-ratelimit-limit-tokens": "400000",
+    "x-ratelimit-remaining-requests": "599",
+    "x-ratelimit-remaining-tokens": "398925",
+    "x-ratelimit-reset-requests": "1s",
+    "x-ratelimit-reset-tokens": "1s",
+    "x-ratelimit-dynamic-scale-requests": "1.00",
+    "x-ratelimit-dynamic-scale-tokens": "1.00",
+    "x-ratelimit-dynamic-period-remaining": "891s",
+    "x-ratelimit-dynamic-period-usage-requests": "0%",
+    "x-ratelimit-dynamic-period-usage-tokens": "0%"
+   }
+  }
+ ],
+ "openai/gpt-oss-120b": [
+  {
+   "mode": "json_schema",
+   "ok": true,
+   "result": "valid, uids match",
+   "latency_s": 3.7,
+   "tokens": "522/1653",
+   "cost_usd": 0.00107,
+   "ratelimit_headers": {
+    "x-ratelimit-limit-requests": "600",
+    "x-ratelimit-limit-tokens": "500000",
+    "x-ratelimit-remaining-requests": "599",
+    "x-ratelimit-remaining-tokens": "499113",
+    "x-ratelimit-reset-requests": "1s",
+    "x-ratelimit-reset-tokens": "1s",
+    "x-ratelimit-dynamic-scale-requests": "1.00",
+    "x-ratelimit-dynamic-scale-tokens": "1.00",
+    "x-ratelimit-dynamic-period-remaining": "900s",
+    "x-ratelimit-dynamic-period-usage-requests": "0%",
+    "x-ratelimit-dynamic-period-usage-tokens": "0%"
+   }
+  },
+  {
+   "mode": "json_object",
+   "ok": true,
+   "result": "valid, uids match",
+   "latency_s": 3.6,
+   "tokens": "740/1651",
+   "cost_usd": 0.0011,
+   "ratelimit_headers": {
+    "x-ratelimit-limit-requests": "600",
+    "x-ratelimit-limit-tokens": "500000",
+    "x-ratelimit-remaining-requests": "599",
+    "x-ratelimit-remaining-tokens": "498926",
+    "x-ratelimit-reset-requests": "1s",
+    "x-ratelimit-reset-tokens": "1s",
+    "x-ratelimit-dynamic-scale-requests": "1.00",
+    "x-ratelimit-dynamic-scale-tokens": "1.00",
+    "x-ratelimit-dynamic-period-remaining": "897s",
+    "x-ratelimit-dynamic-period-usage-requests": "0%",
+    "x-ratelimit-dynamic-period-usage-tokens": "0%"
+   }
+  }
+ ],
+ "deepseek-ai/DeepSeek-V4-Flash-0731": [
+  {
+   "mode": "json_schema",
+   "ok": true,
+   "result": "valid, uids match",
+   "latency_s": 4.2,
+   "tokens": "461/2011",
+   "cost_usd": 0.00063,
+   "ratelimit_headers": {
+    "x-ratelimit-limit-requests": "3000",
+    "x-ratelimit-limit-tokens": "1000000",
+    "x-ratelimit-remaining-requests": "2999",
+    "x-ratelimit-remaining-tokens": "999114",
+    "x-ratelimit-reset-requests": "1s",
+    "x-ratelimit-reset-tokens": "1s",
+    "x-ratelimit-dynamic-scale-requests": "1.00",
+    "x-ratelimit-dynamic-scale-tokens": "1.00",
+    "x-ratelimit-dynamic-period-remaining": "900s",
+    "x-ratelimit-dynamic-period-usage-requests": "0%",
+    "x-ratelimit-dynamic-period-usage-tokens": "0%"
+   }
+  },
+  {
+   "mode": "json_object",
+   "ok": true,
+   "result": "valid, uids match",
+   "latency_s": 4.3,
+   "tokens": "683/2021",
+   "cost_usd": 0.00066,
+   "ratelimit_headers": {
+    "x-ratelimit-limit-requests": "3000",
+    "x-ratelimit-limit-tokens": "1000000",
+    "x-ratelimit-remaining-requests": "2999",
+    "x-ratelimit-remaining-tokens": "998926",
+    "x-ratelimit-reset-requests": "1s",
+    "x-ratelimit-reset-tokens": "1s",
+    "x-ratelimit-dynamic-scale-requests": "1.00",
+    "x-ratelimit-dynamic-scale-tokens": "1.00",
+    "x-ratelimit-dynamic-period-remaining": "896s",
+    "x-ratelimit-dynamic-period-usage-requests": "0%",
+    "x-ratelimit-dynamic-period-usage-tokens": "0%"
+   }
+  }
+ ],
+ "nvidia/Nemotron-3_5-Lightning": [
+  {
+   "mode": "json_schema",
+   "ok": true,
+   "result": "INVALID (1 errors)",
+   "latency_s": 18.1,
+   "tokens": "501/2500",
+   "cost_usd": 0.00063,
+   "ratelimit_headers": {
+    "x-ratelimit-limit-requests": "600",
+    "x-ratelimit-limit-tokens": "400000",
+    "x-ratelimit-remaining-requests": "599",
+    "x-ratelimit-remaining-tokens": "399114",
+    "x-ratelimit-reset-requests": "1s",
+    "x-ratelimit-reset-tokens": "1s",
+    "x-ratelimit-dynamic-scale-requests": "1.00",
+    "x-ratelimit-dynamic-scale-tokens": "1.00",
+    "x-ratelimit-dynamic-period-remaining": "900s",
+    "x-ratelimit-dynamic-period-usage-requests": "0%",
+    "x-ratelimit-dynamic-period-usage-tokens": "0%"
+   }
+  },
+  {
+   "mode": "json_object",
+   "ok": true,
+   "result": "INVALID (1 errors)",
+   "latency_s": 14.0,
+   "tokens": "725/2500",
+   "cost_usd": 0.00064,
+   "ratelimit_headers": {
+    "x-ratelimit-limit-requests": "600",
+    "x-ratelimit-limit-tokens": "400000",
+    "x-ratelimit-remaining-requests": "599",
+    "x-ratelimit-remaining-tokens": "398925",
+    "x-ratelimit-reset-requests": "1s",
+    "x-ratelimit-reset-tokens": "1s",
+    "x-ratelimit-dynamic-scale-requests": "1.00",
+    "x-ratelimit-dynamic-scale-tokens": "1.00",
+    "x-ratelimit-dynamic-period-remaining": "882s",
+    "x-ratelimit-dynamic-period-usage-requests": "0%",
+    "x-ratelimit-dynamic-period-usage-tokens": "0%"
+   }
+  }
+ ],
+ "google/gemma-3-27b-it": [
+  {
+   "mode": "json_schema",
+   "ok": false,
+   "error": "InternalServerError: <html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n<hr><center>ngin"
+  },
+  {
+   "mode": "json_object",
+   "ok": false,
+   "error": "InternalServerError: <html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n<hr><center>ngin"
+  }
+ ]
+}

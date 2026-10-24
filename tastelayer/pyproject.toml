@@ -1,0 +1,16 @@
+[project]
+name = "tastelayer"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "pandas", "pyarrow", "pydantic>=2", "python-dotenv", "openai>=1.40", "httpx", "tenacity",
+  "aiolimiter", "diskcache", "numpy", "scipy", "scikit-learn", "gensim", "sentence-transformers",
+  "joblib", "rapidfuzz", "pyyaml", "openpyxl", "fastapi", "uvicorn", "rich", "typer", "kaggle", "matplotlib", "pytest", "tabulate",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,619 @@
+uid,name,cuisine,dims,max_std,spice_std,sweet_std,sour_std,bitter_std,umami_std,richness_std,crunch_std,creaminess_std
+ue_083411,Pennzoil 10W30 1 Quart,italian,creaminess,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5.0
+ue_060067,Visine Allergy Eye Drops .5oz,italian,bitter,4.0,0.0,0.0,0.0,4.0,0.0,0.0,0.0,0.0
+ue_136691,Chutney Survey,indian,crunch,4.0,0.5,0.5,0.5,0.0,0.0,0.0,4.0,0.0
+ue_132553,Tylenol Sinus Congestion & Pain 24 count,italian,bitter,4.0,0.0,0.0,0.0,4.0,0.0,0.0,0.0,0.0
+ak_01477,Angaya Podi,indian,crunch,3.916,0.745,0.0,0.687,0.471,1.5,1.118,3.916,0.0
+fc_44360,Pistachio Biscotti,italian,crunch,3.767,0.0,1.581,0.5,0.0,0.5,0.433,3.767,0.829
+ue_107411,BC Headache Powder 2 Count,italian,bitter,3.5,0.0,0.0,0.0,3.5,0.0,0.0,0.0,0.0
+fc_460186,Peppers Packed In Oil,italian,crunch,3.5,0.0,1.5,1.0,0.5,1.0,1.5,3.5,0.0
+ue_201366,The Party Box,indian,"umami,richness",3.5,1.0,1.0,1.0,1.0,3.0,3.5,1.0,2.0
+ak_02527,Coconut Coconut Chili Powder Recipe,indian,crunch,3.496,1.247,0.0,0.373,1.106,1.106,1.067,3.496,0.0
+ak_02838,Dahi Vada With Sweet & Spicy Chutney,indian,crunch,3.484,0.687,0.687,0.471,0.373,0.687,0.5,3.484,0.687
+ak_05331,Spicy Peanut Butter,indian,crunch,3.436,0.943,0.373,0.373,0.898,0.373,1.247,3.436,0.471
+ak_05469,Kadle Bele Chutney Pudi,indian,crunch,3.399,0.745,1.772,0.957,0.687,0.898,0.471,3.399,0.687
+fc_39796,Pizzelles,italian,crunch,3.345,0.0,0.707,0.433,0.0,0.433,0.829,3.345,0.829
+fc_55072,Zeppoli Italian Fried Bread Dough,italian,crunch,3.345,0.0,0.707,0.0,0.0,0.433,0.707,3.345,1.225
+ak_03801,Peanut Garlic Chutney Powder,indian,crunch,3.337,1.247,0.471,1.258,0.471,0.5,1.462,3.337,0.471
+fc_472483,Estonian Milk Soup With Pasta Shapes Makaroni Piimasupp,italian,"spice,sweet,umami,richness",3.3,2.357,2.055,0.471,0.471,3.3,2.625,1.886,1.7
+fc_184560,Yeast Puri,indian,crunch,3.3,0.5,0.471,0.373,0.5,0.5,1.599,3.3,0.898
+fc_252198,Punjabi Pakora Curry,indian,crunch,3.287,1.118,0.471,1.258,0.373,0.0,0.943,3.287,0.687
+fc_125943,Chocolate Hazelnut Phyllo Dessert Fit For Queens,italian,"crunch,creaminess",3.269,0.0,0.433,0.0,0.829,1.118,0.433,3.269,2.773
+fc_384558,Oamc Cheese Chicken Shells,italian,crunch,3.269,0.5,0.433,0.5,0.5,1.118,0.829,3.269,1.09
+fc_41978,Guanti And Or Chruscik,italian,"crunch,creaminess",3.269,0.0,1.299,0.433,0.5,0.433,1.0,3.269,3.269
+fc_126528,Chivada,indian,crunch,3.2,1.789,0.49,0.49,0.49,0.748,0.8,3.2,0.8
+fc_236785,The Art Of Making The Perfect Pizza Dough,italian,crunch,3.197,0.0,0.373,0.471,0.5,0.764,0.745,3.197,0.745
+ak_03980,Ram Ladoo,indian,crunch,3.184,0.745,0.0,0.957,0.687,0.687,0.898,3.184,1.384
+fc_135119,Ellie S Biscotti,italian,"crunch,creaminess",3.145,0.0,1.247,0.471,0.816,0.816,1.067,3.145,2.141
+fc_358588,Marchwangan Korma,indian,spice,3.091,3.091,0.471,0.943,0.577,1.0,0.5,0.0,0.471
+ak_02433,Sindhi Dal Pakwan Recipe - A Delicious Sindhi Breakfast,indian,crunch,3.091,0.0,0.471,0.943,0.0,0.816,0.816,3.091,0.471
+fc_117010,Shortcut Panettone Abm,italian,"sweet,umami,creaminess",3.091,0.373,3.091,0.5,0.373,2.034,1.374,0.816,2.967
+ak_02313,Delicious Butter Chicken Pani Puri,indian,crunch,3.078,1.213,0.373,0.471,0.373,0.687,0.687,3.078,0.898
+ak_04502,Uppu Seedai Recipe - Krishna Janmashtami | Gokulashtami,indian,crunch,3.072,0.4,0.49,0.4,0.0,1.095,1.02,3.072,1.356
+fc_502536,Flaky Thin Crust Chicago Inspired Pizza,italian,crunch,3.041,0.0,0.433,0.829,0.433,0.433,0.433,3.041,0.0
+fc_475173,Indian Pork Vindaloo,indian,crunch,3.031,0.433,0.5,0.0,0.0,0.433,0.5,3.031,0.433
+fc_434,Cherry Pistachio Biscotti,italian,"sweet,crunch",3.031,0.0,2.046,0.433,0.707,1.732,0.707,3.031,1.5
+fc_50521,Chocolate Spiders,italian,"crunch,creaminess",3.031,0.0,1.5,0.0,0.433,0.433,0.707,2.062,3.031
+fc_110621,Spicy Dhal With Tomatoes,indian,"spice,richness,creaminess",3.023,2.672,0.5,1.106,0.0,1.772,2.291,0.0,3.023
+ue_037748,FRUITTELLA 3.2OZ STR RASP GMY Single,italian,crunch,3.0,0.0,0.5,0.5,0.0,0.0,0.5,3.0,0.0
+ue_013106,Half Tandoori Chicken,indian,crunch,3.0,0.0,0.0,0.0,0.5,0.5,0.5,3.0,0.5
+ue_038209,Pepcid AC Max Strength 5 Count,italian,bitter,3.0,0.0,0.0,0.0,3.0,0.0,0.0,0.0,0.0
+ue_012634,Playoff time,italian,"umami,richness",3.0,0.0,1.0,2.0,0.5,3.0,2.5,2.0,2.0
+fc_83001,Pizza Dough In Food Processor,italian,crunch,3.0,0.0,0.0,0.0,0.5,0.0,0.0,3.0,0.5
+ue_126130,Moules A La Mouniere,italian,crunch,3.0,0.5,0.0,0.0,0.0,0.0,0.0,3.0,0.0
+ue_126132,Moules Pernod,italian,crunch,3.0,0.5,0.0,0.0,0.0,0.5,0.0,3.0,0.5
+fc_5134,Little Bitty Coffee Hazelnut Biscotti,italian,crunch,3.0,0.0,1.785,0.5,1.299,0.433,0.707,3.0,0.707
+ak_05311,Vellai Seedai Recipe - Krishna Janmashtami | Gokulashtami,indian,crunch,3.0,0.471,1.951,0.5,0.898,0.373,1.462,3.0,1.344
+fc_150512,Perfect Dosa,indian,crunch,2.986,0.5,0.373,0.745,0.471,0.471,1.067,2.986,1.213
+fc_165104,Shrikhand And Puri,indian,crunch,2.981,0.0,0.957,0.471,0.0,0.687,0.764,2.981,0.764
+fc_179101,Chocolate Hazelnut Gelato,italian,sweet,2.967,0.0,2.967,0.471,0.687,1.258,0.5,0.471,0.5
+fc_194613,Basic Bruschetta Topping,italian,crunch,2.944,0.0,0.816,0.373,1.067,0.5,0.898,2.944,0.373
+ak_03973,Kolhapuri Khanda Lasun Masala Spice Mix,indian,"umami,crunch",2.93,0.816,0.687,0.687,1.572,2.034,1.247,2.93,0.898
+ak_04669,Chettinad Podalangai Vadai Recipe (Chettinad Style Snake Gourd Fritters),indian,crunch,2.93,1.258,0.471,0.687,0.687,0.943,1.0,2.93,1.247
+fc_177821,Thin Cracker Crust Pizza,italian,crunch,2.93,0.0,0.471,1.247,0.471,1.5,0.471,2.93,0.373
+ak_00866,Cashew Bunch,indian,"crunch,creaminess",2.925,0.373,0.764,0.5,0.471,0.471,1.106,2.925,2.16
+ak_05808,Healthy Bharwa Karela Recipe - Stuffed Bitter Gourd,indian,bitter,2.925,0.5,0.471,0.471,2.925,0.898,1.106,0.373,0.745
+fc_244525,Easy Tuna Pasta Salad For One,italian,"umami,crunch",2.915,0.5,0.5,1.5,0.0,2.165,0.5,2.915,0.829
+fc_511884,Jason S Quick Ciabatta,italian,crunch,2.915,0.0,0.5,0.433,0.433,0.829,0.5,2.915,0.5
+fc_251840,Pizza Dough Abm,italian,crunch,2.911,0.0,0.471,0.471,0.471,0.5,0.373,2.911,0.5
+ak_03792,Goondh Paani Recipe - Sweet Gum Tree Almond Drink,indian,creaminess,2.911,0.0,0.471,0.373,0.373,0.687,1.247,1.118,2.911
+fc_208396,Slowburn Goat Curry With Friend Roti,indian,crunch,2.887,0.471,0.373,0.687,0.471,0.471,0.764,2.887,1.067
+fc_16331,S Kat S Easy Pizza Dough,italian,crunch,2.887,0.0,0.745,0.471,0.471,1.067,0.471,2.887,0.816
+ak_03428,Manipuri Style Alu Kangmet Recipe,indian,crunch,2.872,0.687,0.373,0.577,0.898,0.943,0.471,2.872,1.067
+fc_48997,Amritsari Machi Punjabi Indian Fish,indian,crunch,2.872,0.707,0.0,0.707,0.0,0.433,0.829,2.872,0.829
+fc_428210,Flinn Family Bread Machine Pizza Dough,italian,crunch,2.872,0.866,0.433,0.5,0.5,0.829,0.829,2.872,0.433
+ak_04146,Andhra Style Paruppu Podi Recipe - Dal Podi,indian,"sweet,crunch",2.867,1.118,2.339,0.373,0.0,1.106,0.745,2.867,0.5
+fc_458182,Sorbetto Espresso Or Italian Ice,italian,creaminess,2.861,0.0,1.299,1.0,0.5,0.5,0.433,0.0,2.861
+fc_40714,Spinach Artichoke Calzones,italian,crunch,2.861,0.5,0.433,0.707,0.433,0.829,0.433,2.861,0.829
+fc_428068,Gnocchi Gratin With Chilli Tomato Sauce,italian,crunch,2.861,1.225,0.0,0.829,0.5,0.0,0.866,2.861,1.09
+fc_388739,Veal Piccata With Crisp Fried Garlic,italian,crunch,2.861,0.707,0.433,0.5,0.433,0.707,0.5,2.861,0.5
+fc_114729,Bagna Cauda Olive Oil Garlic Butter And Anchovy Sauce,italian,creaminess,2.853,0.5,0.5,0.373,1.067,0.5,1.344,0.373,2.853
+ak_02162,Fenugreek Makhana Matar Korma Recipe,indian,crunch,2.828,1.067,0.764,0.373,0.0,0.471,0.471,2.828,0.816
+fc_32377,Basil Cilantro And Macadamia Nut Chicken,indian,crunch,2.828,0.764,0.471,0.577,0.373,0.5,0.471,2.828,0.745
+ak_02378,Rajasthani Ghevar,indian,crunch,2.828,0.0,0.745,0.471,0.471,0.5,0.471,2.828,1.528
+fc_336556,Diabetic Holiday Biscotti,italian,crunch,2.828,0.0,0.898,0.687,0.5,0.471,0.745,2.828,0.943
+ak_03153,Mawa Gujiya With Badam and Pista,indian,crunch,2.809,0.0,0.687,0.471,0.373,1.528,0.5,2.809,1.344
+fc_304595,Paximathakia Portokaliou Or Orange Sesame Biscotti Greece,italian,crunch,2.8,0.0,1.02,0.0,0.49,0.632,0.748,2.8,0.8
+ak_02480,Gajar Halwa Barfi Recipe (Carrot Fudge),indian,"sweet,creaminess",2.794,1.863,2.794,0.687,0.5,1.599,0.957,0.471,2.055
+fc_20683,Samosa Chickpea,indian,crunch,2.794,1.067,0.5,0.5,0.0,0.471,0.745,2.794,0.577
+fc_187519,No Knead Food Processor Thin Crust Pizza Dough,italian,crunch,2.794,0.0,0.471,0.687,0.471,1.344,0.471,2.794,0.5
+fc_117021,Broccoli Alfredo Pasta,italian,sweet,2.794,0.5,2.794,0.687,0.471,1.258,0.816,1.118,1.886
+fc_376633,Amish Butter Noodles 1965,italian,creaminess,2.773,0.0,0.0,0.0,0.0,0.433,0.829,0.0,2.773
+fc_453977,Wedding Soup With Stracciatella,italian,creaminess,2.773,0.5,0.0,0.433,0.5,1.09,1.871,0.5,2.773
+fc_21973,Carrabba S Italian Butter Clone,italian,creaminess,2.773,0.433,0.0,0.0,0.0,0.707,0.433,0.0,2.773
+fc_48146,Black Halwa,indian,creaminess,2.773,0.0,0.5,0.433,0.0,1.09,0.5,1.299,2.773
+fc_56492,Cod Fish With Pine Nut Brown Butter,italian,creaminess,2.773,0.0,0.0,0.829,0.0,0.5,0.829,0.5,2.773
+fc_190096,Pangani,italian,crunch,2.769,0.5,0.687,0.471,1.067,0.816,0.687,2.769,0.745
+fc_34936,Sindhi Aloo Potato Took,indian,crunch,2.749,1.5,0.373,1.344,0.373,0.745,0.745,2.749,0.577
+ak_03758,Rajasthani Dal Bati Churma Recipe | Dhaba Style,indian,crunch,2.749,1.067,0.471,0.816,0.373,0.471,0.898,2.749,1.344
+fc_21780,Anna S Twice Baked Almond Biscotti,italian,crunch,2.749,0.0,0.471,0.5,0.373,0.471,0.471,2.749,1.118
+fc_173682,Double Chocolate Biscotti,italian,crunch,2.734,0.0,0.816,0.745,1.572,0.764,0.577,2.734,0.764
+ak_05805,Konkani Style Phanna Doddak Recipe-Tempered Dosa,indian,crunch,2.734,1.106,0.687,0.471,0.471,1.0,1.374,2.734,0.943
+fc_155842,Sicilian Pizza Dough Noble Roman S Copycat,italian,crunch,2.734,0.0,0.471,0.471,0.471,0.471,1.374,2.734,1.0
+ak_03658,Makhan Bada,indian,crunch,2.734,0.0,0.5,0.471,0.471,0.471,1.247,2.734,1.886
+ak_00316,Instant Puliodarai Powder Recipe (Puliogare / Pulihora Powder),indian,crunch,2.734,1.213,0.687,0.898,0.577,0.745,1.067,2.734,0.471
+fc_167359,Ice Cream Cone Cannoli,italian,crunch,2.708,0.0,1.106,0.471,0.5,0.898,0.5,2.708,0.687
+ak_01659,Radhaballabhi Recipe (Bengali Stuffed Poori With Spiced Urad Dal),indian,crunch,2.708,0.687,0.373,0.373,0.471,0.577,0.687,2.708,0.471
+ak_00858,Thalipeeth Bhajani Recipe,indian,crunch,2.708,0.745,0.373,0.471,0.816,1.572,0.943,2.708,0.687
+fc_288937,Wood Fired Oven Pizza Dough,italian,crunch,2.693,0.0,0.0,0.373,0.373,0.957,0.577,2.693,0.745
+fc_18038,Vanilla Ice Cream Affogato With Espresso,italian,bitter,2.693,0.0,1.106,0.373,2.693,1.7,0.373,0.0,0.5
+ak_03846,Rajasthani Sev Tamatar Ki Sabzi (Recipe In Hindi),indian,crunch,2.693,0.0,0.0,0.0,0.829,0.5,0.0,2.693,0.433
+fc_44525,Grandma Helen S Struffoli,italian,crunch,2.693,0.0,0.433,0.5,0.433,0.5,0.433,2.693,1.299
+fc_102288,Dahi Bada,indian,crunch,2.687,0.0,0.687,0.745,0.687,0.373,0.373,2.687,0.898
+fc_370008,Pizza Crust Dough Bread Machine Recipe,italian,crunch,2.687,0.0,0.373,0.471,0.0,0.687,1.118,2.687,0.5
+ak_02741,Jhunka Vadi Recipe,indian,crunch,2.687,0.373,1.344,0.471,0.687,1.599,0.816,2.687,0.898
+ak_05621,Himachali Style Pahari Khatta Recipe (Boondi In Tangy Yogurt Curry),indian,crunch,2.687,0.745,0.471,0.687,0.0,0.745,0.471,2.687,1.291
+ak_05113,Huruli Kaalu Chutney Pudi Recipe (Horse Gram Chutney Podi),indian,crunch,2.687,1.067,0.577,0.943,1.247,1.067,0.373,2.687,0.471
+ak_03997,Chiba Dhokli,indian,crunch,2.672,0.5,1.247,1.067,0.373,0.898,0.373,2.672,0.764
+fc_196617,Anise Pizzelles,italian,crunch,2.672,0.745,0.5,0.0,0.5,0.5,0.471,2.672,0.577
+fc_148880,Chocolate Peppermint Pizzelle Sandwich Cookies,italian,crunch,2.672,0.764,0.898,0.373,1.0,1.106,0.577,2.672,1.344
+fc_215383,Coffee Granita A La Orange,italian,"bitter,crunch",2.672,0.0,0.5,1.258,2.478,0.5,1.155,2.672,0.764
+fc_283952,Very Basic Butter Sauce,italian,creaminess,2.672,0.0,0.5,0.471,0.373,1.106,1.344,0.0,2.672
+ak_02975,Udupi Style Huli Podi Recipe (Sambar Powder),indian,crunch,2.646,1.491,0.373,0.577,1.118,0.943,0.5,2.646,0.0
+ak_02092,Malabar Parrot Recipe - Kerala Parrot,indian,crunch,2.638,0.0,0.748,0.4,0.49,0.4,1.2,2.638,1.2
+ak_02085,Kesar Mawa Gujiya Recipe,indian,crunch,2.638,0.0,0.98,0.49,0.4,1.02,0.49,2.638,1.744
+fc_104260,Fried Noodles,italian,crunch,2.625,0.373,0.0,1.106,0.373,0.687,0.471,2.625,0.5
+fc_10129,Heavenly Pizza Dough,italian,crunch,2.625,0.0,0.471,0.471,0.471,0.471,1.247,2.625,0.373
+fc_146813,100 Whole Grain Pizza Dough,italian,crunch,2.625,0.0,0.373,0.0,1.106,0.471,0.471,2.625,0.471
+fc_116315,Rajah S Chicken For Lunch,indian,crunch,2.625,0.943,0.898,0.745,0.373,0.5,0.373,2.625,1.067
+d_0233,Gulab Jamun,indian,creaminess,2.625,0.0,0.471,0.816,0.0,0.373,1.118,0.687,2.625
+fc_209813,De Skinning Filberts Hazelnuts,indian,richness,2.625,0.0,0.471,0.0,0.373,0.577,2.625,1.344,0.471
+fc_314872,Quick And Easy Six Cheese Tortellini Bake,italian,crunch,2.625,0.471,0.764,0.577,0.577,0.687,0.471,2.625,0.0
+fc_204958,Dyck Family Pizza Dough,italian,crunch,2.625,0.0,0.5,0.0,0.471,0.471,0.816,2.625,0.816
+fc_403323,Gluten Free Pizza Hertzberg Francois Crusty Boule,italian,crunch,2.625,0.471,0.471,0.471,0.471,0.471,0.816,2.625,0.471
+ak_04726,Bihari Chana Daal Puri,indian,crunch,2.625,0.471,0.0,0.373,0.471,0.5,0.687,2.625,0.373
+ak_02481,Lemon Pudina Curry Leaf Shikanji,indian,sour,2.625,0.471,1.374,2.625,0.471,0.373,1.247,1.863,0.471
+fc_110633,Tuna Pasta Salad,italian,"sweet,creaminess",2.609,0.577,2.339,0.943,0.0,1.118,1.951,0.816,2.609
+fc_282514,Cheesy Taco Macaroni Bake,italian,crunch,2.609,0.373,1.067,0.577,0.373,0.373,0.471,2.609,0.373
+fc_152674,Ultimate Pizza Dough,italian,crunch,2.609,0.0,0.373,0.373,0.373,0.0,0.5,2.609,0.687
+fc_167885,Army Lou S Soul Food Macaroni And Cheese,italian,crunch,2.609,0.471,0.373,0.471,0.687,0.745,0.0,2.609,0.471
+fc_436082,The Best Vegetarian Vegan Vegetable Samosas,indian,crunch,2.598,0.866,0.433,0.5,0.433,1.0,0.433,2.598,0.0
+fc_431561,Healthified Easy No Yeast Thin Pizza Crust,italian,crunch,2.598,0.0,0.433,0.433,0.433,0.433,0.433,2.598,0.707
+fc_239105,Ww Chicken Pumpkin Pizza 7 5Pts Australian Ww,italian,crunch,2.586,0.5,0.433,0.433,0.5,0.433,1.0,2.586,1.09
+ak_04821,Chettinad Masala Powder Recipe - Chettinad Masala Powder,indian,spice,2.582,2.582,0.577,0.764,0.5,1.118,1.067,0.0,0.0
+fc_127361,Curry Marinade Chicken Wings,indian,crunch,2.577,0.748,0.49,0.632,0.49,0.49,1.2,2.577,0.748
+fc_301049,Easy Thin Crust Pizza Dough,italian,crunch,2.577,0.0,0.4,0.748,0.49,0.98,0.49,2.577,0.49
+ak_00189,Assamese Sweet Kordoi,indian,crunch,2.577,0.0,0.4,0.4,0.0,0.632,0.98,2.577,1.6
+ak_00759,Chocolate Cheese Gujiya,indian,crunch,2.566,0.687,0.471,0.0,1.106,1.247,0.471,2.566,1.247
+ak_00848,Tawa Amritsari Kulcha,indian,crunch,2.566,0.898,0.5,0.745,0.373,0.745,0.373,2.566,0.373
+ak_03784,Menthe Hittu Recipe (Roasted Fenugreek Chutney Powder),indian,crunch,2.566,1.599,0.471,0.471,0.898,0.898,0.373,2.566,0.0
+fc_259024,No Yolks Chicken Skillet,italian,sweet,2.566,0.943,2.566,0.0,0.471,0.687,0.764,0.687,0.816
+fc_129627,Favorite Pizza Crust,italian,crunch,2.56,0.0,0.471,0.373,0.471,0.687,0.745,2.56,0.0
+ak_03765,Peter's Vegetable,indian,crunch,2.56,0.745,0.577,1.067,0.373,0.471,0.373,2.56,1.826
+fc_270252,Vadai Curry,indian,crunch,2.56,0.5,0.5,0.687,0.471,0.373,0.687,2.56,0.373
+ak_05217,Fried Barnyard Millet Recipe -Fried Samvat Rice,indian,crunch,2.56,1.0,0.687,0.816,0.0,1.067,0.816,2.56,0.745
+ak_01556,Chalimidi,indian,creaminess,2.56,0.373,0.471,0.5,0.577,1.0,1.572,1.155,2.56
+fc_412708,Chicken Curry Pies,indian,crunch,2.55,0.5,0.5,0.433,0.0,0.433,0.433,2.55,0.829
+fc_421904,Kandhe Ki Roti Mummy S Favourite Onion Paratha,indian,crunch,2.55,0.433,0.433,0.707,0.707,0.829,0.433,2.55,0.433
+fc_455079,Mushrooms I Funghi Fritti Col Formaggio Parmigiano,italian,crunch,2.55,0.0,0.0,0.5,0.433,0.433,0.829,2.55,0.829
+fc_51224,Baklava An Indian Milk Sweet In Sugar Syrup,indian,crunch,2.55,0.0,0.5,0.5,0.433,0.433,1.0,2.55,1.225
+fc_393599,No Knead Ciabatta,italian,crunch,2.55,0.0,0.433,0.433,0.5,0.0,0.433,2.55,1.0
+fc_251011,Authentic Pizza Dough Bulk,italian,crunch,2.544,0.0,0.5,0.471,0.373,0.687,0.5,2.544,0.471
+ak_03278,Kerala Style Kanji Payar,indian,crunch,2.544,0.373,0.0,0.816,0.687,0.745,1.0,2.544,1.106
+fc_147592,Macaroni And Cheese Reduced Fat,italian,crunch,2.544,0.0,0.816,0.745,0.5,0.373,0.0,2.544,0.471
+ak_02367,Oats And Coconut Dosa,indian,crunch,2.544,0.471,0.0,0.373,0.373,0.687,0.577,2.544,0.373
+ak_00741,Carrot and Ginger Spiced Dosa,indian,crunch,2.544,1.118,0.471,0.687,0.373,0.745,0.577,2.544,0.957
+ak_05806,Mozzarella Stuffed Potato Balls,indian,creaminess,2.544,0.943,1.247,1.247,0.687,1.155,1.258,1.213,2.544
+fc_10850,Delicious Garlicky Garlic Butter,italian,creaminess,2.53,0.4,0.0,0.748,0.49,0.4,0.49,0.0,2.53
+d_0192,Butter Masala Dosa,indian,"crunch,creaminess",2.517,0.373,0.471,0.577,0.471,0.5,0.471,2.517,2.082
+fc_229889,Creamy Chicken Pasta,italian,sweet,2.5,0.5,2.5,0.373,0.471,1.155,0.687,0.943,1.067
+ue_293033,"14"" 1/2 & 1/2 Pizza",italian,"umami,richness,crunch",2.5,1.0,1.0,1.5,0.5,2.5,2.5,2.5,2.0
+fc_92392,Mrs Russell S Pizza Dough,italian,crunch,2.5,0.0,0.0,0.0,0.0,0.5,0.5,2.5,0.5
+ue_045599,WAIAKEA HAWIIAN VOLC 1L Single,italian,sweet,2.5,0.0,2.5,0.0,0.0,0.0,0.0,0.0,0.0
+fc_395793,Chicken Finger French Bread Pizza,italian,crunch,2.5,0.433,0.829,0.0,0.433,0.0,0.5,2.5,0.829
+fc_36265,Old Fashioned Potato Gnocchi,italian,umami,2.5,0.433,0.0,0.5,0.433,2.5,1.5,1.0,1.785
+fc_484921,Indian Pilau Rice,indian,richness,2.5,0.829,0.433,0.0,0.5,0.5,2.5,0.433,1.0
+fc_345935,Chili Macaroni,italian,creaminess,2.5,0.577,0.471,0.577,0.471,0.471,1.155,0.687,2.5
+ak_03161,Inji Thogayal Recipe - Spicy & Delicious Ginger Chutney,indian,crunch,2.5,1.155,1.344,1.607,0.687,0.687,1.258,2.5,1.344
+fc_519190,The Last Pizza Dough Recipe You Ll Ever Use,italian,crunch,2.5,0.0,0.5,0.5,0.433,0.0,0.829,2.5,0.0
+fc_56695,Pasta From Hell,italian,spice,2.5,2.5,0.829,1.5,0.433,0.866,1.299,0.433,1.0
+fc_445661,Easy Kitchenaid Mixer Pizza Dough,italian,crunch,2.5,0.0,0.433,0.433,0.433,0.0,0.5,2.5,0.433
+ak_03418,Chicken Tikki Recipe - Chicken Cutlet,indian,crunch,2.5,1.213,0.0,0.687,0.0,0.471,0.373,2.5,0.745
+ue_012999,Chicken Tandoori 10 Pc,indian,crunch,2.5,0.5,0.0,0.0,0.5,0.5,0.0,2.5,0.5
+ue_043536,DAVD ORGNL JMBO 5.25OZ Single,italian,richness,2.5,0.0,0.0,0.0,0.0,2.0,2.5,0.5,0.5
+fc_409380,Restaurant Style Pizza Dough Recipe By Weight,italian,crunch,2.5,0.0,0.433,0.5,0.5,1.09,0.0,2.5,0.5
+ue_142303,Met-RX Vanilla Caramel Churro 3.5oz,italian,crunch,2.5,0.0,0.0,0.0,0.5,0.0,0.5,2.5,0.0
+ue_058207,CHOLE BATHURA Regular,indian,crunch,2.5,0.0,0.0,0.0,0.0,0.0,0.0,2.5,0.5
+ue_058212,Poori Masala Regular,indian,crunch,2.5,0.0,0.5,0.0,0.0,0.0,0.0,2.5,0.5
+ue_277904,NERDS Grape & Strawberry Candy 1.65oz Box,italian,crunch,2.5,0.0,0.0,1.0,0.0,0.0,0.0,2.5,0.0
+ue_065552,Halls Mentholyptus Stick 9 Count,italian,crunch,2.5,0.0,1.0,0.5,0.5,0.0,0.0,2.5,0.0
+ue_231275,Single Topping (Large),italian,"umami,richness,creaminess",2.5,0.0,1.0,1.5,0.5,2.5,2.5,1.5,2.5
+ue_094943,10 oz Ceramic Diner Mug,indian,bitter,2.5,0.0,0.0,0.5,2.5,0.5,0.0,0.0,0.0
+ue_202988,Avocado Golgappa,indian,crunch,2.5,0.5,0.5,0.0,0.0,0.0,0.0,2.5,0.0
+fc_190873,Marielisa S Pizza Dough,italian,crunch,2.494,0.0,0.471,0.471,0.471,0.898,0.0,2.494,0.816
+fc_50101,My Best Ever Breadmaker Pizza Dough,italian,crunch,2.494,0.0,0.0,0.471,0.471,0.943,0.471,2.494,0.471
+ak_05842,Chai Ka Masala Recipe - Homemade Spice Powder for Tea,indian,spice,2.494,2.494,0.745,0.0,0.898,0.373,0.471,0.0,0.0
+fc_273361,Veal Cutlets Parmesan,italian,crunch,2.494,0.0,0.745,0.943,0.0,0.816,0.471,2.494,0.5
+ak_01388,Andhra Style Erra Kaaram Dosa Recipe (Spicy Red Chilli Chutney Dosa Recipe),indian,crunch,2.494,0.0,0.373,0.471,0.373,0.764,0.745,2.494,0.943
+fc_15312,Octo Dogs Shells,italian,"crunch,creaminess",2.494,0.373,0.943,0.943,0.471,0.745,0.471,2.494,2.034
+fc_189334,Gluten Free Naan Roti Indian Flat Bread Version 1,indian,crunch,2.494,0.0,0.471,0.0,0.471,0.687,0.577,2.494,0.687
+fc_10829,Anchovy Crostini,italian,bitter,2.494,0.0,0.373,0.745,2.494,0.471,0.0,1.118,0.5
+ak_03522,Labongo Latika,indian,"crunch,creaminess",2.494,0.373,0.816,0.373,0.471,0.764,0.943,2.494,2.034
+fc_515433,Indian Chicken Drumsticks,indian,crunch,2.487,0.5,0.0,0.829,0.829,0.5,1.0,2.487,1.0
+fc_220946,Smashed Red Potatoes With Parmesan Basil Butter,italian,crunch,2.487,0.433,0.5,0.5,0.0,0.5,0.433,2.487,0.829
+fc_367049,Pecan Caramel Biscotti,italian,crunch,2.487,0.0,1.299,0.5,0.433,0.866,0.829,2.487,1.09
+fc_428423,Chicken Pizza With Avocado Salsa,italian,crunch,2.487,0.829,0.0,0.433,0.5,1.0,0.829,2.487,1.299
+fc_382385,If You Love Yogurt Cheese Pizza Dough,italian,crunch,2.487,0.0,0.0,1.225,0.433,0.5,1.225,2.487,1.639
+fc_488165,Twisted Butter S Corn Ravioli In Sweet Cilantro Lime Cream Sauce,italian,sour,2.487,0.433,1.09,2.487,0.5,0.829,0.433,0.433,0.433
+fc_148634,Torrones A Christmas Time Nougat Candy,italian,crunch,2.482,0.0,0.748,0.8,0.8,0.4,1.2,2.482,0.98
+fc_246157,Sunset S Vanilla Ice Cream Drowned In Espresso Affo,italian,bitter,2.478,0.0,0.898,1.067,2.478,0.898,1.5,0.0,0.5
+fc_35805,Easy Peezy Pizza Dough Bread Machine Pizza Dough,italian,crunch,2.478,0.0,0.471,0.471,0.471,0.745,0.764,2.478,0.5
+ak_05467,Dry Fruit & Nut Modak,indian,creaminess,2.478,0.0,0.471,0.5,0.373,0.957,1.462,0.745,2.478
+fc_282073,Low Carb Pork Rind Pizza Crust,italian,crunch,2.478,0.373,0.0,0.687,0.687,0.577,0.5,2.478,0.687
+fc_172167,Cheesy Ground Beef Spinach Sour Cream Noodle Casserole,italian,spice,2.449,2.449,0.373,0.373,0.471,0.5,0.5,1.106,0.816
+fc_48464,Cheddar Wagon Wheels And Chili Meatballs,italian,crunch,2.449,0.829,0.433,0.5,0.0,0.5,0.433,2.449,1.0
+fc_45601,Dad S Nutritious Muthiyas An Indian Appetiser With Tofu Stuff,indian,crunch,2.449,0.816,0.471,0.471,0.0,0.0,1.414,2.449,0.471
+ak_02248,Churma Ladoo Recipe - Atta/Whole Wheat Ladoo,indian,creaminess,2.449,0.373,0.471,0.471,0.373,0.764,0.471,0.957,2.449
+fc_103241,Moist And Delicious Italian Pork Chops,italian,"crunch,creaminess",2.449,0.687,0.764,0.943,0.471,0.471,1.7,2.449,2.357
+fc_293899,Pizza Gain Aka Pizzagaina Pizza Rustica Italian Easter Ham Pie,italian,crunch,2.449,0.373,0.5,0.0,0.0,0.687,0.373,2.449,0.687
+fc_21399,Kashmiri Chops,indian,crunch,2.449,0.373,0.471,0.471,0.745,0.898,0.816,2.449,1.213
+fc_141472,Chocolate Cherry And Chile Biscotti,italian,crunch,2.432,1.708,0.471,0.373,1.247,0.816,0.471,2.432,0.687
+fc_220237,Chocolate Cherry Pecan Biscotti,italian,crunch,2.427,0.0,0.471,0.471,0.745,1.067,0.373,2.427,1.0
+ak_00836,Sesame Bread Patties Recipe (Bread Cutlets),indian,crunch,2.427,0.764,0.898,0.745,0.471,1.374,0.816,2.427,1.344
+ak_00068,Dubuk Vade Recipe - Khandeshi Gram Flour Dumpling Curry,indian,crunch,2.427,0.687,0.0,0.5,0.745,0.5,0.0,2.427,0.373
+fc_226892,Salmon Fusilli Salad,italian,creaminess,2.427,0.373,0.816,0.577,0.471,0.373,1.491,0.577,2.427
+ak_05671,Buckwheat Dosa,indian,crunch,2.427,1.0,0.0,0.471,0.5,0.687,0.0,2.427,0.764
+fc_212457,Parmesan Thin Crust Pizza Dough,italian,crunch,2.427,0.0,0.0,0.471,0.373,1.067,0.745,2.427,0.687
+fc_178908,Chicken Breast With Rosemary Fontina And Prosciuitto,italian,crunch,2.427,0.0,0.5,0.471,0.373,0.373,0.5,2.427,0.5
+fc_307437,California Pizza Kitchen Pizza Dough,italian,crunch,2.427,0.0,0.471,0.471,0.471,0.577,0.816,2.427,0.0
+ak_00389,Spinach Coriander Dosa Recipe - Spinach and Coriander Dosa,indian,crunch,2.427,0.373,0.0,0.577,0.5,0.471,0.373,2.427,0.0
+fc_187031,Ricotta Cappuccino,italian,sweet,2.427,0.0,2.427,0.471,1.491,1.247,0.373,1.7,0.745
+fc_263282,Herb Parmesan Pizza Dough Bread Maker,italian,crunch,2.427,0.745,0.373,0.5,0.5,1.247,0.764,2.427,0.0
+ak_00691,Dibba Rotti/Minapa Rotti Recipe (Pan Idli Recipe),indian,crunch,2.417,0.4,0.0,0.0,0.4,0.98,0.49,2.417,1.095
+ak_04240,Karnataka Style Set Dosa,indian,crunch,2.409,0.687,0.373,0.471,0.373,0.5,1.106,2.409,0.5
+ak_04399,Masala Vadai Kuzhambu Recipe (Mudaliar Style Curried Fritters In Spicy Tamarind Gravy),indian,crunch,2.409,0.943,0.816,0.898,0.745,0.0,0.471,2.409,0.5
+ak_00219,Himachali Dry Raw Mango Chutney,indian,sour,2.409,0.577,0.373,2.409,0.687,0.745,0.0,0.373,1.374
+fc_239567,Best Lebanese Pita Bread Spread,italian,crunch,2.409,0.0,0.0,0.471,0.898,0.687,0.898,2.409,0.745
+ak_00159,Biryani Masala Powder Recipe - Biryani Masala Powder,indian,spice,2.409,2.409,0.471,0.471,0.687,0.745,0.745,0.0,0.373
+fc_267710,My Pizza Dough Fat Free,italian,crunch,2.409,0.0,0.471,0.687,0.471,0.687,0.0,2.409,0.5
+fc_165656,Yerushalmi Kugel,italian,spice,2.409,2.409,1.0,0.5,0.373,0.816,0.373,1.067,0.943
+fc_27402,Easy French,italian,crunch,2.409,0.0,0.471,0.5,0.0,0.687,0.745,2.409,0.5
+fc_212613,New York Style Pizza Dough,italian,crunch,2.409,0.0,0.471,0.373,0.373,0.943,0.471,2.409,0.687
+ak_03154,Chettinad Rasam Powder,indian,crunch,2.409,1.155,0.373,0.898,0.373,0.687,0.943,2.409,0.373
+ak_02918,Punjabi Garam Masala Powder,indian,spice,2.409,2.409,1.247,0.471,1.0,0.898,0.373,0.0,0.0
+fc_199050,Golden Crusted Chicken Asparagus Lasagna,italian,crunch,2.409,0.5,0.5,1.067,0.0,0.764,0.577,2.409,0.471
+fc_18472,Blue Cheese Pasta Salad,italian,bitter,2.409,0.471,0.471,0.745,2.409,1.067,1.0,0.577,0.745
+ak_04645,Coorg Style Kadumbuttu/Kadambuttu Recipe (Steamed Rice Balls Recipe),indian,richness,2.409,0.0,0.471,0.0,0.373,0.5,2.409,0.0,1.374
+fc_136016,Italian Pastry Twists,italian,sweet,2.409,0.471,2.409,0.373,0.471,1.972,0.471,0.0,0.764
+fc_51209,Pizza Hut Style Pizza Dough Bread Machine,italian,crunch,2.385,0.829,0.0,0.433,0.5,0.433,0.5,2.385,0.433
+fc_261598,Italian Butter Cookies 1952,italian,crunch,2.38,0.0,0.898,0.471,0.373,0.687,0.816,2.38,1.106
+ak_03620,Rajasthani Kanji Vada,indian,crunch,2.38,1.607,0.0,0.898,0.5,0.745,1.067,2.38,0.471
+ak_00532,Kashmiri Style Bharit Marchavangun Recipe-Stuffed Chillies,indian,"spice,creaminess",2.38,2.291,0.5,0.898,0.577,0.5,0.898,0.687,2.38
+fc_237560,All American Pizza Crust,italian,crunch,2.363,0.0,0.471,0.373,0.471,0.5,0.471,2.363,0.0
+fc_25132,Tiramisu An Italian Delight,italian,umami,2.363,0.0,0.816,0.687,0.943,2.363,0.5,0.5,0.373
+fc_187091,Upside Down Pizza Gluten Free,italian,crunch,2.363,0.471,0.898,1.106,0.373,0.0,1.067,2.363,0.471
+ak_02264,Fennel Turmeric Walnut Soup With Apple And Raw Mango,indian,creaminess,2.363,0.764,1.344,0.764,0.0,0.816,1.291,0.687,2.363
+fc_354518,Chickpea Pizza Crust Gluten Free,italian,crunch,2.357,0.0,0.0,0.0,0.0,0.471,0.471,2.357,0.0
+fc_102919,Cottage Cheese Paneer Cutlets,indian,crunch,2.357,0.764,0.0,0.471,0.373,0.373,1.258,2.357,0.745
+ak_05801,Spring Onion Dosa,indian,crunch,2.357,0.816,1.067,0.577,0.471,0.764,0.577,2.357,0.745
+fc_234175,Parmesan Garlic Chicken Breasts,italian,crunch,2.357,0.471,0.373,0.0,0.577,0.764,0.5,2.357,1.118
+ak_04211,Red Rice Dosa,indian,crunch,2.357,0.471,0.373,0.471,0.471,0.373,0.5,2.357,0.471
+fc_29253,Ciabatta Bread,italian,crunch,2.357,0.0,0.471,0.471,0.5,0.5,0.471,2.357,0.471
+ak_03582,Biryani Masala Powder,indian,spice,2.357,2.357,0.816,0.471,1.0,0.898,0.471,0.0,0.0
+fc_305654,Tomato Onion And Cucumber Kachumber,indian,crunch,2.357,0.687,0.764,0.745,0.687,0.373,0.0,2.357,0.471
+ak_03157,Aluchi Bhaji Recipe,indian,crunch,2.357,0.687,1.384,0.957,0.816,0.764,0.943,2.357,0.898
+ak_02896,Coffee Recipe With Instant Coffee Powder,indian,bitter,2.357,0.0,0.957,0.373,2.357,0.471,0.687,0.0,0.687
+ak_02596,Ragi Appam Recipe,indian,"richness,creaminess",2.357,1.344,0.373,0.816,1.067,1.414,2.357,0.957,2.267
+fc_122678,Truly Easy Pizza Dough,italian,crunch,2.357,0.0,0.471,0.471,0.373,0.687,0.745,2.357,0.0
+fc_10615,Chocolate Mint Biscotti,italian,crunch,2.357,0.0,0.687,0.0,1.067,0.471,0.373,2.357,0.687
+fc_499003,Quinoa Pizza Crust Gluten Free,italian,crunch,2.357,0.471,0.0,0.0,0.0,0.0,0.816,2.357,0.0
+ak_00724,Milagu Rasam Recipe - Village Style Pepper Rasam,indian,spice,2.357,2.357,0.0,1.247,0.687,0.816,0.745,0.0,0.471
+ak_00721,Shandong Style Sweet Potato In Spicy Caramel Sauce,indian,crunch,2.357,0.5,0.0,0.373,0.471,0.373,0.373,2.357,1.106
+ak_02022,Ayala Fish Fry,indian,crunch,2.357,0.5,0.471,1.067,0.471,1.528,1.067,2.357,0.373
+fc_406575,Coconut Macaroon Cookies,italian,crunch,2.345,0.0,0.433,0.0,0.433,0.433,1.581,2.345,0.829
+fc_475565,Tuscan Potato And Onion Pie,italian,crunch,2.345,0.433,0.707,0.433,0.433,0.707,0.433,2.345,1.118
+fc_40918,Angel Hair Pasta With Portabellas Leeks And Balsamic Vinegar,italian,sweet,2.345,0.0,2.345,0.829,0.707,0.0,0.433,0.433,0.433
+fc_386002,Mac N Cheese Ww,italian,crunch,2.345,0.5,0.433,0.433,0.433,1.118,1.299,2.345,0.433
+fc_238434,Salmon With Puff Pastry And Pesto,italian,crunch,2.339,0.5,0.0,0.0,0.373,0.0,0.373,2.339,0.816
+fc_307297,Gastronomic Gelato Italiano,italian,umami,2.339,0.0,1.572,0.373,0.373,2.339,0.471,0.745,0.5
+ak_03616,Moong Dal Karara,indian,crunch,2.339,0.577,0.373,0.943,0.373,0.687,0.687,2.339,1.0
+fc_27028,Masala Dosa With Coconut Chutney South Indian Savory Crepes With Filling,indian,crunch,2.339,0.471,0.373,0.471,0.373,0.5,0.687,2.339,0.373
+fc_307602,Campari Sorbetto Intermezzo From The Hags,italian,bitter,2.339,0.0,1.7,1.491,2.339,0.373,0.687,0.0,0.471
+fc_179357,Anchovy Rolls,italian,bitter,2.339,0.471,0.0,0.5,2.339,0.471,0.471,0.898,1.462
+fc_226189,Italian Wine Biscuits,italian,"sweet,crunch",2.339,0.0,2.192,0.5,0.0,0.687,0.471,2.339,0.471
+ak_05807,Alu Vadi Or Patrode Recipe,indian,bitter,2.339,0.745,1.462,1.0,2.339,1.344,0.5,0.943,0.898
+d_0181,Puri Bhaji,indian,"richness,crunch",2.339,0.577,0.373,0.471,0.471,0.764,2.267,2.339,0.471
+fc_20140,Anchovy Garlic Spread,italian,bitter,2.339,0.816,0.471,0.687,2.339,0.373,0.577,0.471,1.106
+fc_192092,No Rise Pizza Dough,italian,crunch,2.339,0.0,0.373,0.5,0.471,0.745,0.471,2.339,0.471
+fc_172426,Budgia Silver Beet Chard Indian Vegetable Fritters,indian,crunch,2.339,0.373,0.373,0.471,0.471,0.898,0.687,2.339,0.745
+fc_131899,Fabulous Crusty Italian Loaf,italian,crunch,2.332,0.0,0.0,0.0,0.49,0.4,0.49,2.332,0.49
+fc_349696,Olive Oil Pizza Dough No Kneading Needed,italian,crunch,2.332,0.0,0.49,0.49,0.49,0.0,0.4,2.332,0.49
+fc_18928,Cheesy Shells And Green Beans,italian,"richness,creaminess",2.332,0.0,0.49,0.0,0.4,1.6,2.135,0.49,2.332
+ak_02992,Mysore Masala Dosa Made With Yeast Dosa Batter,indian,crunch,2.332,0.49,0.4,0.894,0.4,0.748,0.632,2.332,0.49
+fc_121442,Roast Pork With Rosemary And Garlic,italian,crunch,2.315,0.632,0.632,0.4,0.4,0.632,1.265,2.315,0.8
+fc_126504,Nonfat Pizza Dough Bread Machine,italian,crunch,2.315,0.0,0.4,0.4,0.4,0.748,0.49,2.315,0.49
+fc_137730,Ramen Noodle Side Dish,italian,crunch,2.315,0.49,0.0,0.0,0.748,0.748,0.49,2.315,0.0
+ak_00456,Black Pepper Singhada Vegetable,indian,crunch,2.309,0.745,0.687,0.373,0.471,0.745,0.471,2.309,0.471
+fc_10144,Triple Chocolate Biscotti,italian,crunch,2.309,0.0,1.7,0.0,1.572,0.745,0.471,2.309,0.577
+ak_00528,Maharashtrian Goda Masala Powder,indian,spice,2.309,2.309,0.471,0.471,0.5,1.491,1.155,0.0,0.373
+ak_02067,Watermelon Seeds And Pumpkin Seeds Podi,indian,crunch,2.309,0.898,0.0,0.373,0.764,1.106,0.816,2.309,0.471
+ak_02850,Kara Sevai Recipe (Lemon Vermicelli),indian,crunch,2.309,1.247,1.067,0.577,0.577,0.373,0.373,2.309,0.471
+fc_250299,Almond Lemon And Anise Biscotti,italian,crunch,2.309,0.0,1.374,0.745,0.816,0.816,1.213,2.309,0.471
+fc_338734,Stuffed Taco Shells,italian,crunch,2.309,0.745,0.471,0.898,0.373,0.373,0.471,2.309,0.764
+fc_25952,Lime Glazed Scallops On Creamy Wasabi Fettuccine,italian,sour,2.309,1.795,0.471,2.309,0.0,1.106,0.687,0.471,0.687
+ak_03924,Cucumber Pineapple Raw Mango Salad,indian,crunch,2.291,0.471,0.745,0.764,0.471,0.0,0.471,2.291,0.471
+fc_481559,The Real Chicago Deep Dish Pizza Dough,italian,crunch,2.291,0.0,0.433,0.433,0.5,0.829,1.0,2.291,0.707
+ak_02298,Fish Jaismandi Recipe,indian,crunch,2.291,0.5,0.471,0.957,0.0,0.764,0.764,2.291,1.155
+fc_433943,Copycat Pizzeria Uno Chicago Deep Dish Pizza Dough,italian,crunch,2.291,0.0,0.433,0.433,0.5,0.707,0.433,2.291,0.433
+ak_04965,Sweet & Spicy Raw Papaya Moongphali Ki Sabzi,indian,crunch,2.291,0.0,0.577,0.943,0.0,0.764,0.577,2.291,0.5
+fc_469271,Turkey Pot Pie With Leftovers,italian,crunch,2.291,0.707,0.433,0.433,0.433,0.707,1.299,2.291,0.829
+ak_02819,Methi Dana Sabzi Recipe - Healthy Fenugreek Seeds Stir Fry,indian,bitter,2.291,1.106,0.373,1.106,2.291,1.5,0.687,0.764,0.471
+fc_17428,Tortellini Antipasto Kebabs,italian,crunch,2.291,0.471,0.373,0.943,0.5,0.764,0.471,2.291,0.5
+fc_484585,Aloo Chops,indian,crunch,2.291,0.866,0.829,0.433,0.707,0.0,0.433,2.291,0.5
+ak_01309,Masala Vada Curry Recipe - Chana Dal Vada Curry,indian,crunch,2.285,0.943,0.471,0.471,0.471,0.373,0.687,2.285,0.373
+ak_02859,Chaat Masala,indian,spice,2.285,2.285,0.687,1.572,0.471,1.067,0.373,0.0,0.0
+fc_365031,Pesto Dell Uomo Povero Poor Man S Pesto,italian,crunch,2.285,0.577,0.0,0.373,0.745,0.373,0.471,2.285,0.816
+ak_02579,Utanki Recipe - Crispy Rice Crepes,indian,crunch,2.285,0.0,0.471,1.106,0.0,0.687,0.471,2.285,0.5
+ak_03642,Kara Boondi Kurma Recipe - Boondi In Coconut Milk,indian,crunch,2.285,0.816,0.764,0.687,0.471,0.373,0.471,2.285,0.687
+ak_02253,Mango Shikanji Recipe - Chatpata Mango Spritzer,indian,sweet,2.285,1.118,2.285,1.344,0.373,0.471,0.687,0.0,0.5
+fc_311370,Chicken Tenders Parmesan With Penne And Broccoli,italian,crunch,2.285,0.471,0.471,0.471,0.471,0.471,0.898,2.285,1.067
+fc_328170,Beefy Shells And Cheese,italian,creaminess,2.285,0.745,0.471,0.471,0.471,0.5,1.106,0.5,2.285
+ak_05777,Maharashtrian Narali Bhaat Recipe (Sweetened Coconut Rice),indian,creaminess,2.285,0.0,0.373,0.816,0.5,0.816,1.155,0.745,2.285
+fc_31978,Italian Lemon Ice,italian,sweet,2.285,0.0,2.285,0.745,0.373,0.471,0.943,0.0,1.795
+fc_12726,Baked Olives,italian,crunch,2.285,0.5,0.373,0.687,1.247,0.898,0.764,2.285,0.943
+fc_16120,5 Can Casserole,italian,crunch,2.285,0.898,0.471,0.943,0.471,0.0,0.471,2.285,0.764
+fc_131592,Easy Creamy Pasta Anyway You Like It,italian,sour,2.285,0.471,0.687,2.285,0.373,0.687,0.898,0.373,1.213
+fc_142066,Sicilian Style Pizza Dough Bread Machine,italian,crunch,2.285,0.0,0.471,0.471,0.471,0.471,0.816,2.285,0.373
+fc_130896,Chicago Style Pizza Crust,italian,crunch,2.285,0.0,0.373,0.373,0.471,0.471,0.373,2.285,0.471
+fc_111650,Whole Wheat Yeast Free Herbed Pizza Dough,italian,crunch,2.285,0.0,0.0,0.898,0.5,1.0,0.5,2.285,0.471
+fc_120095,Mizithra Browned Buttered Pasta,italian,creaminess,2.285,0.0,0.471,0.471,0.471,1.344,0.471,0.471,2.285
+fc_12416,Italian Chicken Cutlets,italian,crunch,2.285,0.373,0.471,0.373,0.373,0.943,0.816,2.285,0.471
+fc_350140,Nif S Pasta And Shrimp,italian,creaminess,2.28,1.47,0.4,0.49,0.4,1.166,1.6,0.748,2.28
+fc_349755,World S Best Pizza Crust,italian,crunch,2.28,0.0,0.49,0.49,0.49,0.632,0.632,2.28,0.49
+fc_484603,Roman Kebabs,italian,crunch,2.278,0.433,0.433,0.829,0.707,0.433,0.5,2.278,0.433
+fc_468353,Uno S Chicago Style Deep Dish Pizza Dough,italian,crunch,2.278,0.0,0.829,0.5,0.5,0.0,0.0,2.278,0.0
+fc_319312,Spinach Pesto,italian,creaminess,2.278,0.0,0.5,0.5,0.433,0.707,0.829,0.433,2.278
+fc_61980,Saffron Rice With Cashews,indian,creaminess,2.278,0.0,0.433,0.0,0.433,0.829,1.225,0.0,2.278
+fc_354662,Five Cheese Mac N Cheese For Grownups,italian,crunch,2.278,0.5,0.707,0.707,0.5,0.433,0.0,2.278,0.5
+fc_60467,Noodle Kugel,italian,crunch,2.278,0.0,1.299,0.5,0.866,0.829,0.5,2.278,1.0
+fc_50339,The Best Leftovers Casserole,italian,crunch,2.278,0.5,0.433,0.829,0.0,0.433,0.5,2.278,0.433
+fc_58485,Fish Cutlets,indian,crunch,2.278,0.433,0.0,1.0,0.0,0.433,0.829,2.278,0.433
+fc_380764,Lemony Biscotti,italian,"sour,crunch",2.278,0.0,0.829,2.278,0.433,0.433,0.829,2.062,0.433
+fc_58113,Another Chicken Parmesan The One I Like,italian,crunch,2.278,0.5,0.829,0.433,0.0,0.5,0.5,2.278,0.829
+fc_556,Garlic Pizza Crust,italian,crunch,2.278,0.433,0.433,0.0,0.433,0.5,0.433,2.278,0.0
+fc_385351,Double Dutch Mac Cheese With Chard,italian,crunch,2.278,0.829,0.433,0.433,0.433,1.0,0.433,2.278,0.5
+fc_427556,Roasted Asparagus Pasta With Garlic Butter,italian,creaminess,2.278,0.433,0.5,1.225,0.5,0.5,1.299,0.433,2.278
+fc_413114,Olive Garden Pizza Dough,italian,crunch,2.278,0.0,0.0,0.0,0.0,0.5,0.0,2.278,0.5
+fc_393237,Cocoamisu Aka Chocolate Tiramisu,italian,umami,2.278,0.0,0.0,0.0,1.581,2.278,0.829,0.433,0.5
+ak_04810,Aval Dosa | Poha Dosa Recipe (Savory Flattened Rice Crepe),indian,crunch,2.267,0.373,0.687,0.687,0.373,0.471,0.687,2.267,1.106
+fc_179321,Ww 1 Point Weight Watchers Macaroni Salad,italian,"richness,creaminess",2.267,0.471,0.687,1.106,0.471,0.577,2.267,0.687,2.16
+fc_23725,Italian Seasoned Bread,italian,crunch,2.267,0.373,0.471,0.373,0.5,0.816,0.687,2.267,0.471
+fc_124855,Affogato Mocha,italian,bitter,2.267,0.0,1.258,0.373,2.267,0.898,0.687,0.0,1.528
+ak_04076,Warqi Paratha,indian,crunch,2.267,0.0,0.764,0.471,0.0,0.373,0.745,2.267,1.528
+fc_328777,Tatin Di Carciofi Artichoke Tart,italian,crunch,2.267,0.5,0.5,0.5,0.577,0.373,0.687,2.267,1.106
+fc_327129,Quick And Easy Mini Russian Pizza,italian,crunch,2.267,0.471,0.471,0.5,0.471,0.471,0.0,2.267,0.471
+fc_271325,Heavenly Pasta Salad,italian,creaminess,2.267,0.5,0.471,0.471,0.5,0.5,1.863,0.687,2.267
+fc_172304,De Best Pizza Dough,italian,crunch,2.267,0.0,0.687,0.471,0.373,0.764,0.471,2.267,0.5
+fc_273358,Linda S Fantabulous Italian Bread A B M,italian,crunch,2.267,0.0,0.471,0.373,0.471,0.373,1.118,2.267,0.577
+fc_115005,Skillet Pizza Crust,italian,crunch,2.267,0.745,0.373,0.471,0.471,0.816,0.0,2.267,0.471
+fc_294303,Sophia Lorens Tiramisu,italian,bitter,2.267,0.0,0.5,0.471,2.267,1.893,1.155,0.471,0.816
+ak_01935,Kerala Style Appam Recipe Without Yeast,indian,crunch,2.267,0.745,1.344,1.0,0.471,0.5,0.898,2.267,1.572
+fc_33025,Kaandha Poha Maharashtrian Potato Onion Beaten Rice,indian,crunch,2.267,0.745,0.687,0.816,0.471,0.5,0.471,2.267,0.0
+ak_02688,Burnt Orange Panna Cotta,italian,crunch,2.267,0.0,0.943,0.745,0.745,0.471,0.943,2.267,0.816
+fc_356321,Debbie S Chicken Parmesan,italian,crunch,2.267,0.0,0.816,0.816,0.0,0.687,0.373,2.267,0.764
+ak_01648,Mangai Inji Pickle Recipe- Instant Mango Ginger Pickle,indian,crunch,2.267,1.951,0.0,0.764,0.471,0.898,0.764,2.267,0.0
+fc_195526,Abm Perfect Pizza Dough,italian,crunch,2.267,0.0,0.373,0.373,0.5,0.764,0.943,2.267,0.5
+fc_116427,Smashing Potatoes And Spinach,indian,crunch,2.267,0.577,0.0,0.5,1.106,0.5,0.471,2.267,0.5
+ak_01492,Pohala Jhola Recipe (Pohala Fish Curry),indian,crunch,2.267,0.687,0.373,0.764,0.0,0.471,0.5,2.267,0.816
+ak_05183,Aam Pudina Ka Panna,indian,creaminess,2.245,0.8,0.632,0.8,0.49,0.49,1.356,0.0,2.245
+fc_254063,Easy No Yeast Pizza Dough,italian,crunch,2.245,0.0,0.0,0.0,0.4,0.748,0.49,2.245,0.49
+ak_04508,Calicut Payyoli Chicken Fry,indian,crunch,2.245,0.748,0.4,1.095,0.4,0.632,0.8,2.245,0.632
+fc_136375,Basil Red Capsicum Pugliese,italian,crunch,2.245,0.0,0.49,0.632,0.4,0.8,1.02,2.245,0.0
+ak_00239,Karnataka Style Ragi Ujju Rotti,indian,crunch,2.236,0.0,0.5,0.5,0.577,0.745,0.373,2.236,0.898
+ak_03163,Kaju Pakoda Recipe (Cashew Nut Fritters),indian,crunch,2.236,0.764,0.577,1.0,0.373,0.764,1.572,2.236,1.067
+fc_127133,Neighborhood Recipe Pizza Dough,italian,crunch,2.236,0.0,0.373,0.471,0.5,0.471,0.373,2.236,0.471
+fc_182154,Mozzarella Chicken Ciabatta Sandwiches,italian,crunch,2.236,0.373,0.373,0.471,0.816,0.687,0.471,2.236,0.471
+ak_03052,Goan Soya Mince Potato Chop,indian,crunch,2.236,0.745,0.373,0.471,0.0,0.577,0.471,2.236,0.471
+fc_112628,I Wanna Make Em Sneeze Potatoes,indian,crunch,2.236,0.471,0.373,0.373,0.5,0.471,1.247,2.236,0.5
+fc_310968,Spicy Jack Mac Cheese With Broccoli,italian,crunch,2.236,1.708,0.471,0.0,0.373,0.745,0.764,2.236,0.577
+fc_361375,Cacio E Pepe Popcorn,italian,crunch,2.236,0.687,0.5,0.373,0.816,0.745,1.344,2.236,0.471
+fc_187415,Wait Family Pizza Dough Bread Machine,italian,crunch,2.236,0.0,0.687,0.471,0.373,0.764,0.943,2.236,0.745
+ak_05648,Doodh Jhinge Curry Recipe-Ridge Gourd Cooked In Milk,indian,spice,2.236,2.236,0.898,0.745,0.471,0.5,1.247,0.471,0.816
+fc_287507,Italian Mushrooms In Vinegar Funghi Al Salamoia,italian,crunch,2.236,0.471,0.0,1.599,0.764,0.471,0.373,2.236,0.471
+ak_02811,Maharashtrian Anarsa,indian,crunch,2.236,0.373,0.687,0.471,0.471,0.687,1.247,2.236,1.7
+fc_171225,Chicago Style Deep Dish Pizza Dough,italian,crunch,2.236,0.0,0.5,0.471,0.471,0.687,0.373,2.236,0.471
+ak_04919,Tamil Nadu Style Badam Puri Recipe (Almond Stuffed Whole Wheat Puri Recipe),indian,crunch,2.227,0.8,0.748,0.4,0.49,0.748,0.632,2.227,0.748
+fc_114100,Italian Garlic And Herb Seasoned Panini Focaccia Bread Abm,italian,crunch,2.217,0.471,0.0,0.471,0.373,0.471,0.687,2.217,0.471
+fc_184812,An Italian S Classic Pizza Dough,italian,crunch,2.217,0.0,0.373,0.373,0.373,0.898,0.471,2.217,0.687
+ak_03584,Whole Wheat Sonth Ke Ladoo,indian,creaminess,2.217,0.471,0.471,0.373,0.471,0.943,0.471,0.816,2.217
+ak_05323,Vadu Mangai Pickle Recipe - Tender Small Raw Mango Pickle,indian,sour,2.217,1.106,0.471,2.217,0.687,0.687,0.898,1.572,0.5
+ak_01900,Sweet Corn And Raw Mango Salad,indian,crunch,2.217,0.373,0.373,1.0,0.5,0.471,0.687,2.217,0.471
+fc_107077,Balsamic Roasted Asparagus With Fleur De Sel And Parmesan,italian,crunch,2.211,0.5,0.577,0.816,0.745,0.0,0.471,2.211,0.5
+fc_109921,Sooji Semolina Halwa,indian,creaminess,2.211,0.373,0.687,0.471,0.471,0.577,0.373,0.687,2.211
+ak_02856,Saffron Milk Masala,indian,creaminess,2.211,0.0,0.577,0.0,0.471,0.745,1.462,1.258,2.211
+ak_02325,Indian Chicken Keema Sliders,indian,crunch,2.211,1.0,0.5,0.5,0.373,0.0,0.373,2.211,0.471
+ak_02310,Healthy Homemade Ragi Dosa,indian,crunch,2.211,0.471,0.0,0.943,1.0,0.471,0.943,2.211,0.471
+fc_271431,Rachael Ray S Caesar Filled Fricos,italian,crunch,2.211,1.247,0.471,0.764,0.943,0.373,0.0,2.211,0.373
+ak_01769,High,indian,crunch,2.211,0.471,0.5,0.577,0.471,1.155,0.577,2.211,1.213
+fc_224002,Bread Dipping Spice,italian,creaminess,2.211,0.471,0.471,0.471,0.816,0.687,1.572,1.118,2.211
+fc_375998,Whole Grain Pizza Dough,italian,crunch,2.211,0.0,0.0,0.0,0.577,0.5,0.898,2.211,0.373
+fc_374353,Italian Tomato Herb Bread,italian,crunch,2.211,0.471,0.471,0.471,0.471,0.373,0.764,2.211,0.745
+fc_118682,Toasted Orzo With Peas Onion And Bacon,italian,crunch,2.192,0.373,0.471,0.687,0.471,0.5,0.471,2.192,0.898
+fc_366712,Pauper S Pizza,italian,sweet,2.192,1.7,2.192,0.745,0.816,1.155,0.373,1.599,1.247
+fc_106171,George S Pizza Dough,italian,crunch,2.192,0.0,0.5,0.5,0.471,0.745,0.687,2.192,0.5
+ak_04914,Mahunada Khaja Recipe - Rose Cookie,indian,crunch,2.192,0.0,0.898,0.5,0.471,0.373,0.943,2.192,1.067
+fc_274123,Curry Currant Hummus,indian,creaminess,2.192,0.816,1.772,0.764,0.471,1.0,0.373,0.373,2.192
+ak_01048,Bottle Gourd Ice Cream Recipe - Lauki Ice Cream,indian,sweet,2.192,0.0,2.192,0.5,0.373,0.471,1.106,0.0,0.5
+ak_00795,Stuffed Mango Pickle Recipe - Gujarati Double Mango Pickle,indian,sour,2.192,1.155,1.067,2.192,0.745,0.816,1.258,1.067,0.471
+fc_273161,Old Fashioned Pizzells Made With Hand Held Pizzelle Iron,italian,sweet,2.192,0.0,2.192,0.0,0.0,0.373,0.577,1.863,0.471
+fc_214842,Penne With Tuna Peppers And Tomato Sauce,italian,crunch,2.192,0.471,0.764,0.577,0.745,0.471,0.373,2.192,0.687
+fc_469150,Polpettine Alla Griglia Sicilian Lemon Grilled Meatballs,italian,sour,2.179,0.433,0.433,2.179,0.433,0.5,1.0,1.225,0.433
+fc_44487,Gluten Free Pizza Crust,italian,crunch,2.179,0.5,0.5,0.829,0.5,0.829,0.0,2.179,0.5
+fc_425168,Muchli Masala Indian Spicy Fried Fish,indian,crunch,2.165,0.433,0.0,0.5,0.5,1.225,0.5,2.165,0.433
+fc_498173,Spicy Roasted East Indian Style Chicken Thighs,indian,crunch,2.165,1.0,0.5,0.433,0.433,0.5,0.0,2.165,0.433
+fc_482021,Tandoori Baked Flat Breads Naan,indian,creaminess,2.165,0.0,0.0,0.0,0.5,0.829,1.658,0.433,2.165
+fc_403598,Italian Egg Rolls,italian,crunch,2.165,0.5,0.433,0.866,0.0,0.5,0.0,2.165,1.299
+fc_35460,Low Cal Spicy Baked Potatoes,indian,crunch,2.165,1.5,0.0,1.225,0.433,0.433,0.707,2.165,1.09
+fc_425341,Easy Italian Grill Pan Chicken,italian,crunch,2.165,0.5,0.0,1.299,0.433,0.0,0.433,2.165,0.5
+fc_474058,Indian Seer Fish Fry,indian,crunch,2.165,0.5,0.5,1.0,0.5,1.5,1.118,2.165,0.0
+fc_471340,Easy And Awesome Pizza Base Recipe,italian,crunch,2.165,0.0,0.433,0.5,0.433,0.433,0.433,2.165,0.433
+fc_383190,Braised Lamb Shank Pie,italian,crunch,2.165,0.433,1.0,0.433,0.707,0.0,0.829,2.165,1.299
+fc_465059,Chocolate Espresso Tiramisu,italian,umami,2.165,0.0,0.829,0.433,0.829,2.165,0.433,0.866,0.5
+fc_335448,Chicken Parmigiana Courtesy Of Bobby Flay,italian,crunch,2.16,0.816,0.687,0.5,0.471,0.471,0.471,2.16,0.373
+fc_301961,Jim Lahey S Sullivan Street Bakery Pizza Bianca,italian,crunch,2.16,0.0,0.471,0.373,0.373,0.687,0.816,2.16,0.471
+fc_171309,Cooking Light S Creamy Stove Top Macaroni And Cheese,italian,sweet,2.16,0.471,2.16,0.471,0.373,1.528,1.414,0.373,0.943
+fc_132412,Whole Roasted Tandoori Chicken,indian,crunch,2.16,0.471,0.471,0.471,0.687,0.577,0.373,2.16,0.687
+fc_161284,Lemon Ricotta Pie,italian,sour,2.16,0.0,1.675,2.16,0.471,0.816,0.373,1.247,0.471
+ak_00049,Rajasthani very roti,indian,richness,2.16,0.0,0.373,0.5,0.5,0.373,2.16,1.886,0.471
+ak_04041,Murungai Keerai Thanni Saaru Recipe-Drumstick Leaves Soup,indian,creaminess,2.16,0.5,0.471,0.471,1.106,0.816,1.374,0.373,2.16
+ak_05811,Onion Raita,indian,sour,2.16,0.471,0.471,2.16,0.471,0.471,0.373,0.471,0.816
+fc_472459,Creamy Cajun Chicken Pasta With Bacon,italian,umami,2.16,1.886,0.0,0.816,0.471,2.16,1.886,0.943,0.471
+fc_466185,Fried Macaroni,italian,crunch,2.16,0.471,0.471,0.471,0.471,0.0,0.943,2.16,1.247
+fc_58159,Smashed Kalamata Olive Dip With Garlic And Herbs,italian,"sour,umami",2.16,0.471,0.471,2.16,0.471,2.055,0.471,0.0,0.471
+fc_449352,Pizza Dough Perfection,italian,crunch,2.16,0.0,0.943,0.471,0.471,0.471,0.943,2.16,0.471
+ak_04785,Roasted Garlic Pineapple Paneer Pizza,italian,crunch,2.16,0.943,1.972,0.5,1.106,1.247,1.462,2.16,1.118
+ak_02435,Carrots & Sweet Potato Stuffed Paratha,indian,crunch,2.16,0.471,0.471,0.471,0.0,0.816,0.471,2.16,0.471
+ak_02441,Bengali Bhetki Begum Bahar Recipe (Spicy Fish Fillets Curry),indian,crunch,2.16,1.247,0.471,0.943,0.0,0.471,0.471,2.16,0.816
+ak_00893,Spaghetti Pasta In Green Olive Pesto Sauce,italian,bitter,2.16,0.471,0.471,0.471,2.16,0.373,0.764,0.745,0.471
+fc_104852,Anginetti Italian Lemon Drop Cookies,italian,crunch,2.16,0.0,1.344,0.943,0.373,0.687,0.471,2.16,0.687
+ak_01054,Raw Mango Carrot Cucumber Salad Recipe With Peanuts,indian,sour,2.154,0.49,1.02,2.154,0.4,0.0,0.4,0.98,0.49
+ak_02126,Konkani Style Doddak Recipe-Lentil Pancakes,indian,crunch,2.154,0.632,0.0,0.0,0.0,0.98,0.748,2.154,0.49
+ak_02084,Masala Jowar Methi Roti,indian,crunch,2.154,0.4,0.0,0.4,0.4,0.748,1.02,2.154,0.4
+fc_143843,Almond Ginger Biscotti,italian,crunch,2.141,0.0,0.0,0.373,0.816,0.816,0.5,2.141,0.5
+ak_01165,Maheri,indian,creaminess,2.141,0.471,0.0,0.687,0.373,0.471,0.816,0.0,2.141
+fc_1005,Pizza Dough And Sauce,italian,crunch,2.141,0.471,0.471,0.5,0.764,0.0,0.0,2.141,0.5
+fc_365699,Grilled Pizzettas Dough Recipe,italian,crunch,2.141,0.0,0.373,0.471,0.5,0.5,0.5,2.141,0.373
+ak_04668,"South Indian Kosambari Recipe With Raw Mango, Cucumber, Carrot & Beetroot",indian,sour,2.141,0.577,0.943,2.141,0.816,1.247,0.687,1.247,0.577
+fc_352152,Cuisinart Food Processor Pizza Dough,italian,crunch,2.141,0.0,0.373,0.0,0.471,0.898,0.687,2.141,0.0
+fc_124380,Whole Tandoori Chicken,indian,crunch,2.141,0.745,0.5,0.898,0.471,0.471,0.687,2.141,0.764
+ak_03802,Khajur And Pakora Raita Recipe - Dates Pakora Raita,indian,sweet,2.141,0.471,2.141,1.247,0.373,0.577,0.373,1.118,0.5
+ak_02656,Gooseberry Juice Recipe - Whole Gooseberry Juice,indian,bitter,2.141,1.067,0.943,0.943,2.141,1.106,1.067,0.0,0.898
+fc_27282,Cold Spicy Cashew Noodles,italian,crunch,2.141,0.687,0.5,0.471,0.373,0.943,0.471,2.141,0.816
+fc_202833,Olive Garden Five Cheese Ziti Al Forno,italian,crunch,2.135,0.4,0.4,0.49,0.4,0.8,0.49,2.135,0.632
+fc_308986,Imitation Crab And Pasta Alfredo Bake,italian,crunch,2.135,0.4,0.4,0.8,0.4,0.0,0.4,2.135,0.4
+ak_00399,Fulkopir Paturi,indian,crunch,2.134,0.373,1.0,0.5,0.373,0.471,0.471,2.134,0.898
+ak_00416,Palak (Spinach) Puri,indian,crunch,2.134,0.471,0.373,0.373,0.373,0.471,0.5,2.134,0.5
+ak_02584,Karnataka Style Sandige Huli Recipe (Toor dal dumplings in Gravy Recipe),indian,crunch,2.134,0.764,0.764,1.5,0.577,0.471,0.687,2.134,1.155
+ak_02664,Banarasi Tomato Chart Recipe - Spicy Tomato Chaat,indian,crunch,2.134,0.5,0.898,1.067,0.577,0.577,0.471,2.134,0.373
+ak_00972,Gobhi Ke Kofte,indian,crunch,2.134,0.5,0.5,0.471,0.577,0.471,0.898,2.134,0.957
+fc_127149,Ida S Baked Macaroni And Cheese,italian,crunch,2.134,0.373,0.687,0.373,0.5,0.898,0.373,2.134,0.745
+ak_03031,Mango Jalapeno Bruschetta,italian,crunch,2.134,1.106,0.943,0.764,0.373,1.067,0.745,2.134,1.491
+ak_02308,Crispy Amla Gawar Pod Sabzi,indian,sour,2.134,0.687,0.471,2.134,0.5,0.471,0.745,1.344,0.373
+ak_01756,Raw Mango Puliyogare Gojju Recipe With Peanuts,indian,crunch,2.134,0.373,0.764,0.816,0.5,0.943,0.764,2.134,0.687
+ak_01914,Parwal Ki Mithai Recipe -Pointed Gourd Sweet,indian,creaminess,2.134,0.0,0.898,0.5,0.577,0.687,1.247,0.687,2.134
+fc_16038,Charishma S Own Quick N Easy Theplas,indian,crunch,2.134,0.943,0.471,0.577,0.745,0.577,0.687,2.134,0.816
+fc_106557,Bill S Focaccia Bread,italian,crunch,2.134,0.0,0.471,0.471,0.471,0.471,1.0,2.134,0.687
+fc_258362,White Chocolate Cranberry Biscotti,italian,crunch,2.134,0.0,0.5,0.471,0.745,0.943,0.5,2.134,1.374
+fc_115247,Italian Sausage And Pasta Soup,italian,creaminess,2.134,0.898,0.471,0.577,0.577,0.745,1.155,0.687,2.134
+fc_19524,Carrot Burfi,indian,creaminess,2.134,0.373,0.816,0.373,0.5,0.687,0.898,0.471,2.134
+fc_236421,Chocolate Espresso Roulade,italian,bitter,2.134,0.373,0.816,0.471,2.134,1.462,0.687,0.471,0.943
+fc_20486,Kate S Spicy Sausage Tortellini Soup,italian,spice,2.134,2.134,0.471,0.687,0.0,0.943,0.0,0.687,0.471
+ak_03608,Menthya Dose (Dosa Recipe With Methi Leaves),indian,crunch,2.134,0.577,0.373,0.0,1.414,0.471,0.373,2.134,0.745
+fc_182022,Cornmeal Pizza Crust,italian,crunch,2.134,0.471,0.471,0.0,0.471,0.943,1.106,2.134,0.816
+ak_03615,Assamese Bilahi Boror Tenga Recipe (Sour Curry With Red Lentil Fritters),indian,crunch,2.134,1.067,0.745,0.471,0.471,0.577,0.373,2.134,0.5
+fc_180725,Farfalle With Pesto,italian,creaminess,2.134,0.5,0.0,0.764,0.898,0.577,0.687,0.577,2.134
+fc_190053,Baked Pasta With Tomato Cream And Five Cheeses,italian,crunch,2.134,0.471,0.577,0.577,0.373,0.687,0.471,2.134,0.471
+fc_221533,Italian Seven Layer Cookies Tricolores,italian,crunch,2.134,0.0,0.687,0.471,0.745,1.106,0.745,2.134,0.577
+fc_181281,Indian Spiced Chapati Flat Bread,indian,crunch,2.134,0.373,0.471,0.5,0.577,0.745,0.745,2.134,0.687
+fc_272848,Linda S Spinach Pasta Fresca,italian,creaminess,2.134,0.0,0.373,0.471,0.898,0.0,1.5,0.0,2.134
+fc_268357,Super Quick Pizza Crust,italian,crunch,2.134,0.0,0.471,0.816,0.471,1.374,0.373,2.134,0.471
+ak_04145,Dahi Gujiya,indian,crunch,2.134,0.745,0.745,1.7,0.373,0.745,0.471,2.134,1.067
+ak_04267,Nagli/Ragi Laddu,indian,creaminess,2.134,1.0,0.687,0.471,0.5,1.213,0.687,0.687,2.134
+fc_254213,Lower Calorie Chicken Piccata,italian,crunch,2.134,0.745,0.373,0.764,0.471,0.471,0.373,2.134,0.577
+fc_471071,Italian Pound Cake Food Processor,italian,sweet,2.121,0.0,2.121,0.433,0.433,0.866,0.5,1.92,0.707
+fc_37868,Desi Corn,indian,crunch,2.121,0.866,1.0,1.871,0.5,0.433,0.433,2.121,0.0
+fc_28008,Super Quick Pizza Dough,italian,crunch,2.121,0.0,0.5,0.5,0.433,0.5,0.0,2.121,0.5
+fc_483073,Indian Stuffed Peppers,indian,creaminess,2.121,0.5,0.707,0.0,0.433,0.5,1.581,0.5,2.121
+fc_456436,Balsamic Strawberries Just A Little Bit Different,italian,richness,2.121,0.0,0.433,0.707,0.5,0.866,2.121,0.0,1.581
+fc_60766,Nz Sponge Cake,italian,creaminess,2.121,0.0,0.433,0.5,0.0,0.433,1.0,0.866,2.121
+fc_407831,Chili Noodle Casserole,italian,spice,2.121,2.121,0.433,0.433,0.433,0.433,0.0,0.433,0.5
+fc_55432,Yogi Bhajan S Onion Soup,indian,"richness,creaminess",2.121,0.707,0.829,0.433,0.433,1.09,2.121,0.0,2.046
+fc_234105,Yum Italian Pizza Base,italian,crunch,2.115,0.0,0.687,0.0,0.373,0.5,0.0,2.115,0.5
+fc_358868,Sourdough Ciabatta,italian,crunch,2.115,0.0,0.687,1.0,0.471,0.373,0.471,2.115,0.957
+ak_03217,Gulkand Kala Jamun,indian,creaminess,2.115,0.471,0.5,0.5,0.5,0.816,1.067,1.528,2.115
+fc_174718,Rice Pizza Crust,italian,crunch,2.115,0.0,0.471,0.471,0.471,0.687,0.687,2.115,0.471
+fc_107415,Thin Crust Pizza Dough Abm,italian,crunch,2.115,0.0,0.5,0.816,0.471,0.0,0.0,2.115,0.471
+fc_224696,Milwaukee Cavatini,italian,crunch,2.115,1.106,0.5,0.687,0.0,0.471,0.816,2.115,0.373
+ak_02353,Garlic And Pepper Mushroom Stir Fry,indian,crunch,2.115,0.471,0.0,0.0,0.471,0.471,0.471,2.115,0.471
+fc_274240,Tomato Shrimp Scampi Diablo,italian,creaminess,2.115,1.374,0.687,0.687,0.373,0.687,0.943,0.373,2.115
+ak_01434,Chettinad Kathirikai Chops Recipe,indian,crunch,2.115,0.898,1.067,0.5,1.0,0.373,0.898,2.115,0.471
+ak_01191,Potato Bonda Recipe Flavoured With Sambar Powder,indian,crunch,2.115,0.745,0.471,0.471,0.471,0.943,0.943,2.115,1.067
+fc_338278,Amanda S Parmesan Chicken,italian,crunch,2.115,0.687,0.0,0.373,0.687,0.5,0.471,2.115,0.764
+ak_05459,Gurellu Chutney Podi,indian,crunch,2.115,0.898,0.0,0.745,0.816,0.471,0.943,2.115,0.471
+fc_342324,Fresh Peaches With Sabayon,italian,richness,2.115,0.0,0.471,1.067,0.471,0.745,2.115,0.0,1.915
+ak_04193,Salt Bell Pudding Recipe - Kara BT Pudding,indian,crunch,2.115,0.471,0.373,0.471,0.373,0.5,0.0,2.115,0.943
+fc_178020,Bombay Naan Oamc,indian,crunch,2.115,0.0,0.577,0.745,0.373,0.373,1.247,2.115,0.471
+fc_338653,Tortellini Salad With Fresh Herb Tomato Vinaigrette,italian,bitter,2.115,0.5,0.687,1.344,2.115,0.577,0.745,0.943,1.106
+fc_238782,Giada S Limoncello Recipe,italian,sour,2.115,0.0,1.344,2.115,1.155,0.0,0.816,0.0,0.764
+fc_28892,Biscuit Mix Pizza Dough,italian,crunch,2.115,0.0,0.373,0.471,0.471,0.577,0.471,2.115,0.373
+fc_2998,Biscotti Del Laggaccio,italian,crunch,2.115,0.0,1.118,0.471,0.471,0.471,0.0,2.115,0.0
+fc_30775,Anchovy Sun Dried Tomato Bruschetta,italian,bitter,2.115,0.5,0.471,0.373,2.115,0.577,0.471,1.374,0.898
+fc_304586,Whole Wheat Rotini With Spicy Turkey Sausage And Mustard Greens,italian,bitter,2.115,1.247,0.0,0.471,2.115,0.5,0.687,0.943,0.687
+ak_03300,Kollu Vada Kurma Recipe (Horse Gram Fritters Spicy & Tangy Curry),indian,crunch,2.115,1.067,0.373,0.943,0.5,0.373,1.247,2.115,0.898
+ak_02427,Chettinad Sweet Paniyaram,indian,crunch,2.098,0.49,0.49,0.4,0.49,0.49,0.632,2.098,1.2
+fc_174703,Sunny S Pizza Dough,italian,crunch,2.082,0.0,0.373,0.471,0.373,0.373,0.687,2.082,0.5
+ak_01046,Instant Gor Kairi Lonche Recipe - Sweet Raw Mango Pickle,indian,sour,2.082,0.943,0.577,2.082,0.0,0.471,0.5,1.067,0.373
+fc_249385,Redroadhome S Pizza Dough,italian,crunch,2.082,0.0,1.772,0.373,0.898,0.471,0.764,2.082,0.5
+ak_03196,How To Make Homemade Kashmiri Masala/ Spice Mix,indian,spice,2.082,2.082,0.471,0.471,0.745,1.247,0.687,0.0,0.0
+fc_455080,Italian Rice Balls,italian,crunch,2.062,0.433,0.5,0.0,0.0,0.433,0.5,2.062,1.5
+fc_184603,Smoked Ham Walnut And Roquefort Sauce Pasta Dish,italian,creaminess,2.062,0.816,0.471,0.687,1.414,0.816,0.943,1.633,2.062
+fc_270591,Cannoli Shells,italian,sweet,2.062,0.764,2.062,0.5,0.471,0.687,0.745,1.118,0.373
+ak_04779,Baked Whole Wheat Masala Baati Recipe (Healthy Rajasthani Spiced Wheat Dumplings),indian,crunch,2.062,0.943,0.471,1.213,0.373,0.373,0.898,2.062,1.247
+fc_380874,Summer Fruit Crostata Ina Garten,italian,crunch,2.062,0.0,0.829,1.0,0.433,0.433,0.433,2.062,0.5
+fc_270073,Grama Bonnie S Pizza Crust,italian,crunch,2.062,0.0,0.5,0.471,0.373,0.5,0.471,2.062,0.764
+fc_377055,Spaghetti With Browned Butter And Myzithra Cheese,italian,umami,2.062,0.0,0.0,0.5,0.707,2.062,0.829,0.433,1.479
+fc_467705,Chocolate Chip Cannoli Pie,italian,bitter,2.062,0.0,0.5,0.5,2.062,0.707,0.829,1.299,0.433
+fc_214744,Easy Cheesy Pasta Pot,italian,crunch,2.062,0.0,0.433,0.0,0.5,0.433,0.5,2.062,0.433
+fc_496440,Seafood In Basil Sauce,italian,creaminess,2.062,0.433,0.829,0.0,0.5,0.433,0.433,0.0,2.062
+fc_31619,Buffalo Pierogies,italian,crunch,2.062,0.943,0.687,0.943,0.5,1.0,0.373,2.062,0.687
+fc_383978,20 Minutes Chicken Parmesan With Spaghetti,italian,crunch,2.062,0.0,0.829,0.829,0.0,0.433,0.433,2.062,0.707
+ak_02201,Puffed Rice Bar,indian,crunch,2.062,0.707,0.0,0.5,0.433,0.707,0.829,2.062,0.707
+fc_55761,Italian Gazpacho,italian,crunch,2.062,0.433,0.5,0.5,0.707,0.433,0.707,2.062,0.5
+fc_174954,Curried Couscous And Chicken Salad,indian,creaminess,2.062,0.373,0.687,0.816,0.5,0.471,1.0,0.816,2.062
+fc_19290,Italian Popcorn,italian,crunch,2.062,0.471,0.0,0.373,0.373,0.943,1.067,2.062,1.067
+fc_38931,Sicilian Panini Buns,italian,crunch,2.062,0.0,0.433,0.433,0.433,0.5,0.433,2.062,0.433
+fc_441186,Chili Lime Rubbed Indian Corn On The Cob,indian,crunch,2.062,0.5,0.829,1.639,0.5,0.433,0.707,2.062,0.829
+ak_01021,Instant Khaman Dhokla,indian,crunch,2.062,0.5,0.829,0.5,0.0,0.5,0.433,2.062,1.225
+fc_473918,Garlic Scallion Noodles,italian,creaminess,2.062,0.707,0.5,0.433,0.5,0.433,0.5,0.5,2.062
+ak_04940,Mooga Gathi (Sprouted Moong In Coconut Paste),indian,creaminess,2.062,0.943,0.816,0.471,0.471,0.471,0.816,0.0,2.062
+fc_326638,7 Cheese Mac Cheese,italian,sweet,2.062,0.471,2.062,0.373,1.118,0.471,0.0,1.795,0.471
+fc_48768,Rice Fritta,italian,crunch,2.062,0.707,0.5,0.0,0.433,0.0,0.829,2.062,0.433
+ak_01981,Pudina Buttermilk,indian,creaminess,2.062,0.373,0.471,1.7,0.373,0.373,0.471,0.0,2.062
+fc_416652,Yellow Split Pea Soup With Spiced Yogurt,indian,creaminess,2.062,0.0,0.433,1.118,0.433,0.5,0.829,0.433,2.062
+ak_02799,Pata Gobi Aur Kele Kofta Curry Recipe - No onion No Garlic,indian,crunch,2.062,0.0,0.577,0.898,0.5,0.5,0.373,2.062,0.577
+fc_220951,Fried Halloumi Cheese With Lime And Caper Dressing,italian,crunch,2.062,0.5,0.0,0.433,0.829,0.707,0.433,2.062,0.433
+fc_36810,Low Fat Linguine With Tomatoes And Cream,italian,richness,2.062,0.471,0.816,0.943,0.0,0.373,2.062,0.5,0.943
+ak_01930,Bitter Gourd Chips,indian,bitter,2.062,1.258,0.5,0.471,2.062,0.687,1.414,0.471,0.0
+fc_394995,Rice Cooker Coconut Rice,indian,creaminess,2.062,0.0,0.433,0.829,0.5,0.829,1.299,0.0,2.062
+ak_02449,Dry Fruits Suzhiyam (Boorelu) With Black Rice,indian,crunch,2.062,0.373,1.067,0.687,0.373,0.471,1.067,2.062,0.745
+fc_161,Chicken In Pizza Dough,italian,crunch,2.062,0.0,0.0,0.471,0.471,0.5,1.414,2.062,1.803
+fc_106270,Coco Banana S Dhal,indian,creaminess,2.062,0.373,1.118,0.687,0.687,0.745,0.943,0.0,2.062
+fc_146394,Italian Style Tuna Pasta Bake,italian,crunch,2.062,0.471,0.577,0.687,0.471,0.373,0.764,2.062,0.471
+fc_241744,Delightfully Different Chicken Spitzad Spezzatino,italian,crunch,2.062,0.373,0.0,0.577,0.471,0.5,0.577,2.062,0.373
+fc_335166,Spaghetti With Butter And Parmesan,italian,creaminess,2.059,0.0,0.0,0.4,0.4,0.894,0.894,0.49,2.059
+fc_119878,Yankee Doodle Noodle Casserole,italian,spice,2.055,2.055,0.745,0.5,0.373,0.471,0.471,0.957,0.5
+fc_141371,Divine Semolina Dessert Suji Halva,indian,creaminess,2.055,0.764,0.471,0.471,0.471,1.633,1.118,0.943,2.055
+fc_13717,Bombay Rice Lentils,indian,crunch,2.055,0.5,0.577,0.373,0.373,0.471,0.471,2.055,0.745
+fc_179403,Cannoli Ice Cream No Ice Cream Maker Needed,italian,umami,2.055,0.471,0.943,0.471,0.745,2.055,0.816,0.943,0.471
+ak_04363,Menthya Jolada Mudde Recipe - Methi & Jowar Balls,indian,richness,2.055,0.5,0.471,0.471,0.687,0.373,2.055,0.0,1.7
+fc_27864,Indian Lamb Curry,indian,spice,2.055,2.055,1.951,0.745,0.898,0.471,0.471,0.0,0.373
+ak_04357,Dahi Wale Makhane Recipe - Lotus Seeds In Curd Gravy,indian,crunch,2.055,0.764,0.471,0.373,0.0,0.943,0.687,2.055,1.067
+ak_00821,Konkani Style Solkadhi Recipe - Kokum Drink,indian,creaminess,2.055,0.957,0.943,0.898,0.687,0.577,1.155,0.0,2.055
+fc_358054,Egg Calzone,italian,crunch,2.055,0.373,0.5,0.577,0.373,0.577,0.373,2.055,0.745
+ak_00196,Baingan Sarson Ka Saag Recipe - Brinjal Mustard Saag,indian,bitter,2.055,0.687,0.5,0.471,2.055,0.943,1.291,0.471,0.745
+fc_165730,Stir Fried French Beans,indian,crunch,2.055,0.943,0.687,0.687,0.745,0.471,0.471,2.055,0.373
+ak_00383,Crispy Vegetable Recipe - Crispy Bhujia,indian,bitter,2.055,0.816,0.0,1.106,2.055,0.5,1.0,1.374,0.5
+fc_36761,Sourdough Rosemary Bread,italian,crunch,2.055,0.0,0.5,1.067,0.373,0.373,0.745,2.055,1.106
+fc_368865,Magic Summer Sauce Makes Devil Eggs Chicken Potato Mac Salad,italian,creaminess,2.055,0.764,0.816,1.247,0.687,0.687,0.764,0.471,2.055
+ak_02886,Goan Style Podollim Recheado Com Batata Recipe (Snake Gourd Stuffed with Sweet Potato),indian,crunch,2.055,0.687,0.816,0.471,0.745,0.745,0.898,2.055,0.745
+ak_00639,Ragi Sankati Recipe - Andhra Style Ragi Mudda,indian,richness,2.055,0.471,0.373,0.5,0.0,0.373,2.055,0.471,1.213
+fc_161887,Chicken Noodle Soup With A Lady S Kick,italian,creaminess,2.055,0.373,0.373,0.687,0.577,0.816,1.258,0.687,2.055
+ak_00657,Kerala Style Sugiyan Recipe (Sweet Moong Dal Bondas),indian,crunch,2.055,0.471,0.687,0.373,0.471,0.687,0.577,2.055,1.772
+fc_196130,Tomato Basil Elephant Ears,italian,crunch,2.055,0.0,0.471,0.898,0.373,0.373,0.943,2.055,0.764
+fc_173828,Asiago Pepper Frico Crispy Cheese Wafers,italian,spice,2.055,2.055,0.373,0.471,0.898,0.373,0.687,0.373,0.5
+ak_00977,Sindhi Kadhi (Recipe In Hindi),indian,crunch,2.055,0.471,0.577,1.067,0.687,0.5,0.471,2.055,0.687
+fc_255566,Vinny S Spaghetti Pie Sara S Secrets,italian,crunch,2.055,0.471,0.764,1.291,0.373,0.687,0.373,2.055,0.577
+fc_158346,Savannah Tiramisu,italian,crunch,2.055,0.0,0.471,1.067,0.898,1.155,0.5,2.055,0.687
+ak_02643,Gobi Ke Kofte Recipe (Cauliflower Fritters In Spicy Gravy),indian,crunch,2.055,0.471,0.687,0.471,0.687,0.471,0.687,2.055,0.577
+fc_174223,Pilau Or Pulao Fragrant Rice,indian,creaminess,2.055,0.471,0.5,1.247,0.0,1.067,1.7,0.0,2.055
+fc_121901,Wiener And Pasta Pot,italian,spice,2.055,2.055,1.374,0.687,0.373,0.373,0.687,0.0,0.764
+fc_136636,Provencal Tapenade,italian,bitter,2.055,0.0,0.0,0.5,2.055,0.577,1.118,0.764,1.0
+ak_01129,Mavinakayi Menasinakai Curry Recipe,indian,creaminess,2.055,1.067,1.414,0.687,0.5,0.816,1.633,0.5,2.055
+ak_02372,Oats Uppu Kozhukattai,indian,crunch,2.055,1.106,0.373,0.0,0.373,0.471,0.5,2.055,1.344
+fc_456111,Hurry Up Alfredo Sauce From Vegan Yum Yum,italian,richness,2.055,0.471,0.471,0.943,0.471,0.0,2.055,0.0,0.943
+fc_264590,Not Your Mama S Mac N Cheese,italian,crunch,2.055,1.118,0.5,0.471,0.0,0.816,0.577,2.055,0.687
+ak_01368,Mangalorean Neer Dosa Recipe-Savory Rice & Coconut Crepe,indian,creaminess,2.055,0.0,0.687,0.5,0.0,0.898,1.106,0.898,2.055
+fc_60181,Orecchiette With Broccoli Rabe,italian,crunch,2.046,0.866,0.0,0.433,1.299,0.829,0.433,2.046,0.433
+fc_60232,Fettuccine With Ricotta And Dill Sauce,italian,spice,2.046,2.046,0.433,0.433,0.0,0.829,0.433,0.0,1.225
+fc_213618,Zappa Family Spaghetti And Meatballs,italian,spice,2.046,2.046,1.0,1.0,0.707,0.5,0.5,0.5,0.829
+fc_460727,Bacony Blue Cheese Chicken Pasta,italian,crunch,2.046,0.5,1.0,0.0,1.299,0.5,0.433,2.046,0.829
+fc_530024,Hot Spicey Tomato Oil For Dipping,italian,crunch,2.046,1.639,1.92,1.92,0.5,0.433,1.225,2.046,0.829
+fc_474980,Pagach Quick And Easy,italian,crunch,2.046,0.5,0.829,0.866,0.5,0.5,1.299,2.046,0.866
+fc_378794,Lemon Ricotta Basil Cookies,italian,sour,2.046,0.0,0.5,2.046,0.433,0.5,0.433,0.433,0.5
+fc_38384,Cucidati Fruit And Chocolate Filled Cookie Rolls,italian,crunch,2.046,0.433,0.0,0.433,0.433,0.829,0.5,2.046,1.5
+fc_48906,Garlic Focaccia,italian,crunch,2.046,0.433,0.433,0.5,0.433,1.118,0.707,2.046,0.5
+fc_387527,Onion And Rosemary Focaccia No Knead,italian,crunch,2.046,0.5,0.5,0.707,0.0,1.479,0.5,2.046,0.433
+fc_41424,Pepperoni Pizza Twist,italian,crunch,2.046,0.433,0.829,0.707,0.433,0.829,0.707,2.046,0.433
+fc_436030,100 Whole Wheat Pizza Dough And Pizza Tips,italian,crunch,2.046,0.0,0.866,0.433,1.118,0.5,0.433,2.046,0.5
+fc_450624,Best Ever Cauliflower Mac Cheese,italian,crunch,2.046,0.433,0.5,0.829,0.433,0.707,0.5,2.046,0.433
+fc_455477,Apple Chedder Panini,italian,crunch,2.046,0.0,0.829,0.829,0.5,0.707,0.433,2.046,1.118
+fc_302815,15 Minute Parmesan Pasta,italian,creaminess,2.04,0.4,0.0,0.0,0.0,0.632,1.02,0.0,2.04
+fc_29886,My Favourite Curry Gujrati Kadhi,indian,creaminess,2.04,0.49,0.632,0.632,0.748,1.166,1.2,0.0,2.04
+fc_244339,Curry Rice With Orange And Brown Lentils,indian,creaminess,2.04,0.4,0.49,0.0,0.632,0.49,0.894,0.49,2.04
+ak_05030,Sweet Pongal With Thai Jasmine Rice And Palm Sugar,indian,richness,2.04,0.49,0.49,0.49,0.0,1.095,2.04,0.4,0.98
+fc_251182,Skinny Pizza,italian,crunch,2.034,0.471,0.471,0.745,0.471,0.471,0.687,2.034,0.687
+ak_03012,Restaurant Style Chicken 555,indian,crunch,2.034,0.764,0.373,0.373,0.373,0.471,0.373,2.034,0.471
+fc_36180,Holiday Gingersnap Biscotti,italian,spice,2.034,2.034,0.373,0.471,0.0,0.816,0.373,0.373,0.577
+ak_00282,Moringa Masoor Dal Recipe - Drumstick Leaves Dal,indian,richness,2.034,0.764,0.5,1.118,0.687,0.577,2.034,0.0,1.795
+fc_333227,Harvest Moon Pasta Rachael Ray,italian,spice,2.034,2.034,0.943,0.687,0.0,0.5,0.577,0.0,0.471
+fc_331393,My Gluten Free Dairy Free Low Fat Tiramis,italian,sweet,2.034,0.0,2.034,0.373,1.528,0.816,0.577,0.471,0.5
+ak_02965,Doodh Dudhi Recipe- Bottle Gourd In Milk Curry,indian,creaminess,2.034,1.067,0.957,0.5,0.373,0.898,1.462,0.5,2.034
+fc_373,Tiramisu Balducci S In New York City,italian,umami,2.034,0.373,1.106,0.816,1.067,2.034,0.816,0.816,0.816
+fc_135815,Polenta Fingers With Beans And Tomatoes,italian,crunch,2.034,0.5,0.0,0.898,0.0,0.764,0.687,2.034,1.067
+fc_111113,Italian Dipping Oil For Bread,italian,creaminess,2.034,0.0,0.471,0.943,0.898,0.0,1.803,0.0,2.034
+fc_172618,Indian Cucumber Salad,indian,crunch,2.034,0.471,0.687,1.106,0.471,0.816,1.067,2.034,0.898
+fc_172925,Fresh Fruit Macedonia,italian,creaminess,2.034,0.0,0.471,0.943,0.471,0.745,1.213,0.898,2.034
+ak_00739,Maharashtrian Style Kothimbir Oats Vadi,indian,crunch,2.034,0.943,0.373,0.471,0.471,0.471,0.471,2.034,0.687
+ak_01187,Gorikayi Palya Recipe - Karnataka Style Gawar Phali Sabzi,indian,sour,2.034,0.0,1.118,2.034,0.764,0.764,0.898,0.687,0.373
+ak_05084,Andhra Style Chepa Vepudu Recipe - Andhra Fish Fry,indian,crunch,2.034,0.5,0.373,0.5,0.687,0.471,0.816,2.034,0.5
+fc_301792,Walnut And Pine Nut Pesto,italian,creaminess,2.034,0.943,0.687,1.826,0.577,0.764,1.462,1.155,2.034
+fc_110067,Easy Pita Bread Pizza,italian,crunch,2.034,0.471,0.471,1.213,0.471,0.577,0.745,2.034,0.687
+fc_301286,White Bean Pasta E Fagioli,italian,crunch,2.034,0.471,0.0,0.577,0.577,0.373,0.5,2.034,1.118
+ak_01402,Achari Amla Mirchi Vegetable Recipe,indian,sour,2.034,0.745,0.687,2.034,1.067,1.291,0.373,0.471,0.471
+ak_05375,Amla Achaar Recipe | Hot & Sweet Indian Gooseberry Pickle,indian,sour,2.034,1.772,1.213,2.034,0.471,1.0,0.943,0.687,0.471
+fc_289250,Homemade Semolina Pasta Using Kitchenaid Mixer Pasta Attachment,italian,crunch,2.034,0.0,0.471,0.0,0.373,0.745,0.577,2.034,0.764
+fc_274429,Pasta With Peas And Pork,italian,bitter,2.034,0.5,0.471,0.373,2.034,0.471,0.687,1.067,0.898
+ak_01074,Karatyacho Fodi Recipe - Pan Fried Bitter Gourd,indian,crunch,2.034,0.687,0.0,0.471,0.471,0.373,1.118,2.034,0.373
+fc_216918,Pickled Onions Indian Home Style,indian,crunch,2.034,0.898,0.373,1.0,0.745,0.373,0.687,2.034,0.471
+fc_140572,Robert Mondavi Winery Lemon Panna Cotta,italian,sour,2.034,0.0,0.816,2.034,0.0,0.745,1.344,0.0,0.687
+fc_344072,Spicy Carrot And Zucchini Bhaji,indian,crunch,2.034,0.0,1.106,0.471,0.471,0.577,0.471,2.034,0.0

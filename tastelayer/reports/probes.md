@@ -1,0 +1,43 @@
+# Taste probes
+
+Primary embedding: **ours** (anchor-order failures: {'ours': 4, 'flavorgraph': 5})
+
+## ours (dim 128, 966 ingredients)
+
+| dim | CV Spearman | low / mid / high anchor | predicted score | ordered |
+|---|---|---|---|---|
+| spice | 0.37 | black pepper / jalapeno / None | [2.59, 3.58, None] | None |
+| sweet | 0.325 | roasted red pepper / onion / maple syrup | [3.62, 2.31, 5.06] | False |
+| sour | 0.458 | natural yoghurt / lemon juice / tamarind | [2.27, 4.57, 3.27] | False |
+| bitter | 0.467 | rocket / dark chocolate / radicchio | [2.76, 3.1, 3.54] | True |
+| umami | 0.673 | tomato / parmesan / anchovy | [4.55, 6.06, 6.19] | True |
+| richness | 0.565 | olive oil / cream / ghee | [3.34, 5.09, 4.23] | False |
+| crunch | 0.431 | bread / almond / papad | [2.52, 3.32, 1.74] | False |
+| creaminess | 0.458 | broth / hummus / mascarpone | [1.26, 2.9, 3.74] | True |
+
+Nearest neighbours:
+
+- **paneer**: [('gravy', 0.338), ('basmati rice', 0.306), ('rice', 0.3), ('chilli powder', 0.298), ('fenugreek', 0.276), ('panir', 0.258)]
+- **basil**: [('basil leave', 0.599), ('parmesan', 0.57), ('olive oil', 0.558), ('oregano', 0.515), ('parsley', 0.499), ('basil leaf', 0.498)]
+- **tamarind**: [('fenugreek seed', 0.458), ('curry leaf', 0.439), ('asafoetida', 0.416), ('coconut', 0.416), ('basmati rice', 0.411), ('mustard seed', 0.401)]
+- **guanciale**: (not in vocab)
+
+## flavorgraph (dim 300, 731 ingredients)
+
+| dim | CV Spearman | low / mid / high anchor | predicted score | ordered |
+|---|---|---|---|---|
+| spice | 0.475 | black pepper / jalapeno / None | [2.75, 1.19, None] | None |
+| sweet | 0.483 | roasted red pepper / onion / maple syrup | [2.5, 2.26, 6.36] | False |
+| sour | 0.547 | natural yoghurt / lemon juice / tamarind | [2.62, 6.29, 3.75] | False |
+| bitter | 0.473 | rocket / dark chocolate / radicchio | [2.72, 4.24, 3.43] | False |
+| umami | 0.688 | tomato / parmesan / anchovy | [3.14, 5.64, 4.77] | False |
+| richness | 0.662 | olive oil / cream / ghee | [4.95, 5.86, 4.28] | False |
+| crunch | 0.603 | bread / almond / None | [2.48, 2.97, None] | None |
+| creaminess | 0.572 | broth / hummus / mascarpone | [1.5, 3.04, 3.35] | True |
+
+Nearest neighbours:
+
+- **paneer**: (not in vocab)
+- **basil**: [('oregano', 0.891), ('paprika', 0.886), ('rosemary', 0.874), ('parsley', 0.869), ('onion', 0.865), ('thyme', 0.852)]
+- **tamarind**: [('chili paste', 0.617), ('coriander powder', 0.601), ('cumin powder', 0.596), ('soya sauce', 0.579), ('garlic paste', 0.573), ('garam masala', 0.57)]
+- **guanciale**: (not in vocab)

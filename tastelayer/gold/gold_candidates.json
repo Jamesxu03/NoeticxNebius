@@ -1,0 +1,769 @@
+[
+ {
+  "uid": "d_0263",
+  "name": "Kheer",
+  "description": "Naturally fragrant basmati rice pudding served chilled with almonds and pistachio.",
+  "cuisine": "indian",
+  "dish_family": "dessert",
+  "restaurant": "India's Restaurant (Houston)",
+  "ingredients": [
+   "basmati rice",
+   "almond",
+   "pistachio"
+  ],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0042",
+  "name": "Tuscan Onion",
+  "description": "Served with two slices of garlic bread.",
+  "cuisine": "italian",
+  "dish_family": "soup",
+  "restaurant": "Portesi's Fine Food",
+  "ingredients": [
+   "onion",
+   "garlic bread"
+  ],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0175",
+  "name": "Aloo Gobi",
+  "description": "Fresh cauliflower cooked potatoes cubes ginger, garlic, and spices. Served with steamed basmati rice.",
+  "cuisine": "indian",
+  "dish_family": "rice",
+  "restaurant": "Mayuri Indian Grill",
+  "ingredients": [
+   "potato",
+   "cauliflower",
+   "potato cube",
+   "ginger",
+   "garlic",
+   "basmati rice"
+  ],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0026",
+  "name": "Chicken Roll",
+  "description": "Filled with chicken and mozzarella cheese.",
+  "cuisine": "italian",
+  "dish_family": "pizza",
+  "restaurant": "Luigi's Pizza & Pasta",
+  "ingredients": [
+   "chicken",
+   "roll",
+   "mozzarella"
+  ],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0172",
+  "name": "Coconut Korma",
+  "description": "Rich dish cooked with a paste of nuts and coconut. Served with steamed basmati rice.",
+  "cuisine": "indian",
+  "dish_family": "curry",
+  "restaurant": "Mayuri Indian Grill",
+  "ingredients": [
+   "coconut",
+   "basmati rice"
+  ],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0142",
+  "name": "New York Cheesecake",
+  "description": "Full New York Cheesecake",
+  "cuisine": "italian",
+  "dish_family": "dessert",
+  "restaurant": "Russo's Italian Family Meals (San Antonio)",
+  "ingredients": [],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0215",
+  "name": "Vegetable Biryani Combo",
+  "description": "Spiced basmathi rice layered with a hearty vegetable gravy. served with mirchi ka salan(contains nuts), raitha, panner tikka masala, butter naan, and fountain drink 24 oz. gluten free.",
+  "cuisine": "indian",
+  "dish_family": "biryani",
+  "restaurant": "Cafe Namasthe",
+  "ingredients": [
+   "rice",
+   "gravy",
+   "green chilli",
+   "butter"
+  ],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0057",
+  "name": "Nick's Salad",
+  "description": "Italy salad with onions, garlic and bell peppers tossed in olive oil, and lemon dressing. Dressings offered are our famous tomato vinaigrette or ranch dressing.",
+  "cuisine": "italian",
+  "dish_family": "salad",
+  "restaurant": "Italy Pasta & Pizza - Fort Worth",
+  "ingredients": [
+   "onion",
+   "garlic",
+   "bell pepper",
+   "olive oil",
+   "lemon",
+   "tomato",
+   "vinaigrette",
+   "ranch dressing"
+  ],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0182",
+  "name": "Idly",
+  "description": "Steamed rice and lentil patties, served with sambar, and chutney.",
+  "cuisine": "indian",
+  "dish_family": "dal",
+  "restaurant": "Udupi Cafe",
+  "ingredients": [
+   "rice",
+   "lentil",
+   "chutney"
+  ],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0059",
+  "name": "Chicken Piccata",
+  "description": "Served with capers and white wine lemon sauce. Add nick's famous dipping sauce with bread.",
+  "cuisine": "italian",
+  "dish_family": "meat_main",
+  "restaurant": "Italy Pasta & Pizza - Fort Worth",
+  "ingredients": [
+   "chicken",
+   "caper",
+   "white wine",
+   "lemon"
+  ],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0281",
+  "name": "Roti",
+  "description": "Unleavened whole wheat bread.",
+  "cuisine": "indian",
+  "dish_family": "indian_bread",
+  "restaurant": "Tikka Masala",
+  "ingredients": [
+   "wheat bread"
+  ],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0055",
+  "name": "Low Carb Chicken",
+  "description": "Grilled chicken garnished with fresh steamed veggies. No pasta.",
+  "cuisine": "italian",
+  "dish_family": "pasta",
+  "restaurant": "Italy Pasta & Pizza - Fort Worth",
+  "ingredients": [
+   "chicken",
+   "grilled chicken"
+  ],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0236",
+  "name": "Spinach Pakora (Gluten Free. Vegan)",
+  "description": "Bite size crisp light fritters.",
+  "cuisine": "indian",
+  "dish_family": "indian_snack",
+  "restaurant": "Rajput Indian Cuisine -- Norfolk",
+  "ingredients": [
+   "spinach"
+  ],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0036",
+  "name": "Italian meatball",
+  "description": "Homemade meatballs tossed in bolognese sauce and topped with mozzarella cheese. Served with french fries.",
+  "cuisine": "italian",
+  "dish_family": "antipasti",
+  "restaurant": "Portesi's Fine Food",
+  "ingredients": [
+   "italian",
+   "meatball",
+   "bolognese sauce",
+   "mozzarella"
+  ],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0188",
+  "name": "Falooda",
+  "description": "Delicious treat of rose flavored milk and home made ice cream, garnished with tender vermicelli, and tunkmeri seeds.",
+  "cuisine": "indian",
+  "dish_family": "drink",
+  "restaurant": "Udupi Cafe",
+  "ingredients": [
+   "rose",
+   "milk",
+   "vermicelli"
+  ],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0058",
+  "name": "Zuppa De Pesce",
+  "description": "Mussels, shrimp, scallops, calamari, and light marinara over linguine.",
+  "cuisine": "italian",
+  "dish_family": "soup",
+  "restaurant": "Italy Pasta & Pizza - Fort Worth",
+  "ingredients": [
+   "mussel",
+   "prawn",
+   "scallop",
+   "linguine"
+  ],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0202",
+  "name": "Chicken 65 Kebab",
+  "description": "Naan bread burrito, hummus, lettuce, tomato, red onions, chicken 65, served with French fries, yogurt, and spicy mayo.",
+  "cuisine": "indian",
+  "dish_family": "tandoori",
+  "restaurant": "Halal Indian Kitchen",
+  "ingredients": [
+   "chicken",
+   "naan bread",
+   "hummus",
+   "lettuce",
+   "tomato",
+   "onion",
+   "yoghurt"
+  ],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0061",
+  "name": "Cheese Pizza",
+  "description": "Thin crust, cheese.",
+  "cuisine": "italian",
+  "dish_family": "pizza",
+  "restaurant": "Verona Italian Cafe",
+  "ingredients": [],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0233",
+  "name": "Gulab Jamun",
+  "description": "Sweet pastry balls in warm honey flavored syrup garnished with coconut flakes.",
+  "cuisine": "indian",
+  "dish_family": "dessert",
+  "restaurant": "Rajput Indian Cuisine -- Norfolk",
+  "ingredients": [
+   "honey",
+   "coconut flake"
+  ],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0079",
+  "name": "Sausage & Peppers",
+  "description": "Spicy Italian sausage with sauteed onions, fresh garlic, sweet peppers & fresh basil.",
+  "cuisine": "italian",
+  "dish_family": "dessert",
+  "restaurant": "Corelli's Italian Cafe",
+  "ingredients": [
+   "sausage",
+   "black pepper",
+   "italian sausage",
+   "onion",
+   "garlic",
+   "sweet pepper",
+   "basil"
+  ],
+  "origin": "menu",
+  "overlap": true
+ },
+ {
+  "uid": "d_0251",
+  "name": "Aloo Jeera",
+  "description": "Potatoes boiled and sauteed golden with turmeric, jeera, and onions. Served with plain rice.",
+  "cuisine": "indian",
+  "dish_family": "rice",
+  "restaurant": "Authentic Indian Cuisine",
+  "ingredients": [
+   "potato",
+   "cumin",
+   "turmeric",
+   "onion",
+   "rice"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0067",
+  "name": "Greek Salad",
+  "description": "Onions, feta cheese, tomatoes, roasted red peppers, with red vinegar and olive oil.",
+  "cuisine": "italian",
+  "dish_family": "salad",
+  "restaurant": "Verona Italian Cafe",
+  "ingredients": [
+   "onion",
+   "feta cheese",
+   "tomato",
+   "roasted red pepper",
+   "vinegar",
+   "olive oil"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0149",
+  "name": "Chicken Tikka Masala",
+  "description": "Gluten free. Juicy pcs of chicken breast char grilled in our clay tandoor oven, simmered in a sauce made with fresh tomatoes, onions, red and green pepper, herbs and flavored with fenugreek and touch of honey. Served with basmati white rice.",
+  "cuisine": "indian",
+  "dish_family": "curry",
+  "restaurant": "Curry & Kabob House - Indian Cuisine",
+  "ingredients": [
+   "chicken",
+   "tomato",
+   "onion",
+   "green pepper",
+   "fenugreek",
+   "honey",
+   "white rice"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0112",
+  "name": "Steak Salad",
+  "description": "Sliced grilled steak on a bed of tossed salad served in a vinaigrette.",
+  "cuisine": "italian",
+  "dish_family": "meat_main",
+  "restaurant": "Savio’s Restaurant",
+  "ingredients": [
+   "steak",
+   "vinaigrette"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0295",
+  "name": "Gongura Veg Dum Biryani (Family Pack)",
+  "description": "*Family Pack includes Biryani for 3 people + Appetizer (Chef’s Choice) + Dessert (Chef’s Choice) + 2 soft drinks",
+  "cuisine": "indian",
+  "dish_family": "biryani",
+  "restaurant": "Swagath Biryanis Indian Cuisine",
+  "ingredients": [],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0109",
+  "name": "Spaghetti and Meatballs",
+  "description": "Spaghetti with meatballs served with marinara sauce.",
+  "cuisine": "italian",
+  "dish_family": "pasta",
+  "restaurant": "Savio’s Restaurant",
+  "ingredients": [
+   "spaghetti",
+   "meatball",
+   "marinara sauce"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0186",
+  "name": "Sambar Idly",
+  "description": "Steamed rice and lentil patties dipped in sambar.",
+  "cuisine": "indian",
+  "dish_family": "dal",
+  "restaurant": "Udupi Cafe",
+  "ingredients": [
+   "rice",
+   "lentil"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0014",
+  "name": "Burrata Bruschetta",
+  "description": "Burrata cheese, olive oil, grey sea salt, basil pesto, toasted hazelnuts, honey drizzle, oven-roasted tomatoes, crostini",
+  "cuisine": "italian",
+  "dish_family": "antipasti",
+  "restaurant": "Pizza Man (Wauwatosa)",
+  "ingredients": [
+   "olive oil",
+   "salt",
+   "basil pesto",
+   "hazelnut",
+   "honey",
+   "tomato"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0221",
+  "name": "Onion Paratha",
+  "description": "Flatbread stuffed with a blend of Onions, Cilantro, and Indian spices cooked in Tandoor oven. Served with plain Yogurt",
+  "cuisine": "indian",
+  "dish_family": "indian_bread",
+  "restaurant": "Cafe Namasthe",
+  "ingredients": [
+   "onion",
+   "coriander",
+   "yoghurt"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0039",
+  "name": "Italian Chicken and Bean",
+  "description": "Served with two slices of garlic bread.",
+  "cuisine": "italian",
+  "dish_family": "soup",
+  "restaurant": "Portesi's Fine Food",
+  "ingredients": [
+   "italian",
+   "chicken",
+   "bean",
+   "garlic bread"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0155",
+  "name": "Samosa Chaat",
+  "description": "Vegetarian. 2 samosas topped with chana masala chickpea curry, yogurt, spicy green sauce, sweet sour date sauce, and chaat masala.",
+  "cuisine": "indian",
+  "dish_family": "indian_snack",
+  "restaurant": "Curry & Kabob House - Indian Cuisine",
+  "ingredients": [
+   "chickpea",
+   "yoghurt",
+   "green",
+   "date"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0001",
+  "name": "Artichoke A La Mode",
+  "description": "Classic sauce, artichoke, tomato, chopped garlic, basil, cream cheese",
+  "cuisine": "italian",
+  "dish_family": "pizza",
+  "restaurant": "Pizza Man (Wauwatosa)",
+  "ingredients": [
+   "artichoke",
+   "tomato",
+   "garlic",
+   "basil",
+   "cream cheese"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0286",
+  "name": "Chicken 65 (Dry)",
+  "description": "Spring chicken marinated with ginger, garlic, and fried for a lovely taste.",
+  "cuisine": "indian",
+  "dish_family": "tandoori",
+  "restaurant": "Swagath Biryanis Indian Cuisine",
+  "ingredients": [
+   "chicken",
+   "ginger",
+   "garlic"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0010",
+  "name": "Tiramisu",
+  "description": "Espresso-soaked ladyfingers, mascarpone cheese, shaved chocolate",
+  "cuisine": "italian",
+  "dish_family": "dessert",
+  "restaurant": "Pizza Man (Wauwatosa)",
+  "ingredients": [
+   "espresso",
+   "ladyfinger",
+   "mascarpone",
+   "chocolate"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0214",
+  "name": "Gulab Jamun (2 pcs)",
+  "description": "Soft delicious milk solid and flour balls soaked in a rose flavored sugar syrup.",
+  "cuisine": "indian",
+  "dish_family": "dessert",
+  "restaurant": "Cafe Namasthe",
+  "ingredients": [
+   "milk",
+   "all-purpose flour",
+   "rose"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0127",
+  "name": "Tuscany Salad",
+  "description": "Green leaf lettuce, tomato, pepperocini, black olives and mozzarella cheese.",
+  "cuisine": "italian",
+  "dish_family": "salad",
+  "restaurant": "Tuscany Italian Bistro (Richardson)",
+  "ingredients": [
+   "salad green",
+   "lettuce",
+   "tomato",
+   "black olive",
+   "mozzarella"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0278",
+  "name": "Special Chicken Mumtaz",
+  "description": "Chicken breast, spinach leaves, sauce, cashew nuts. onions, tomatoes and Indian spices. Served basmati rice.",
+  "cuisine": "indian",
+  "dish_family": "rice",
+  "restaurant": "Tikka Masala",
+  "ingredients": [
+   "chicken",
+   "spinach leave",
+   "cashew",
+   "onion",
+   "tomato",
+   "basmati rice"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0097",
+  "name": "Chicken Parmigiana family",
+  "description": "Served with spaghetti. Served with 8-10 garlic rolls and a family salad",
+  "cuisine": "italian",
+  "dish_family": "meat_main",
+  "restaurant": "Tony's Pizza and Pasta",
+  "ingredients": [
+   "chicken",
+   "spaghetti",
+   "garlic",
+   "roll"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0206",
+  "name": "Shrimp/ Fish Vindaloo",
+  "description": "Jumbo shrimp/ fish and potatoes cooked in very spicy vinegar sauce.",
+  "cuisine": "indian",
+  "dish_family": "curry",
+  "restaurant": "Halal Indian Kitchen",
+  "ingredients": [
+   "prawn",
+   "fish",
+   "jumbo shrimp",
+   "potato",
+   "vinegar"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0019",
+  "name": "Spaghetti Pasta",
+  "description": "Choice of meatballs, meat sauce, sausage, marinara sauce, garlic olive, oil, or butter sauce.",
+  "cuisine": "italian",
+  "dish_family": "pasta",
+  "restaurant": "Luigi's Pizza & Pasta",
+  "ingredients": [
+   "spaghetti",
+   "meatball",
+   "sausage",
+   "marinara sauce",
+   "garlic",
+   "olive oil",
+   "butter"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0255",
+  "name": "Vegetable Biryani",
+  "description": "Basmati rice cooked with garden vegetables, spices, and yogurt.",
+  "cuisine": "indian",
+  "dish_family": "biryani",
+  "restaurant": "India's Restaurant (Houston)",
+  "ingredients": [
+   "basmati rice",
+   "yoghurt"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0009",
+  "name": "Calamari",
+  "description": "Served with side of marinara",
+  "cuisine": "italian",
+  "dish_family": "antipasti",
+  "restaurant": "Pizza Man (Wauwatosa)",
+  "ingredients": [],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0273",
+  "name": "Lentil Soup",
+  "description": "A traditional Indian soup of lentils and spices.",
+  "cuisine": "indian",
+  "dish_family": "dal",
+  "restaurant": "Tikka Masala",
+  "ingredients": [
+   "lentil"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0118",
+  "name": "Zuppa di Minestrone",
+  "description": "Minestrone soup with chicken chunks and fresh vegetables.",
+  "cuisine": "italian",
+  "dish_family": "soup",
+  "restaurant": "Savio’s Restaurant",
+  "ingredients": [
+   "chicken"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0173",
+  "name": "Garlic Naan",
+  "description": "Indian leavened flat bread baked in clay tandoor oven.",
+  "cuisine": "indian",
+  "dish_family": "indian_bread",
+  "restaurant": "Mayuri Indian Grill",
+  "ingredients": [
+   "garlic",
+   "flat bread"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0106",
+  "name": "Margherita Pizza",
+  "description": "10\" pizza with mozzarella, fresh basil and tomato sauce.",
+  "cuisine": "italian",
+  "dish_family": "pizza",
+  "restaurant": "Savio’s Restaurant",
+  "ingredients": [
+   "mozzarella",
+   "basil",
+   "tomato sauce"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0213",
+  "name": "Samosa (2 pcs)",
+  "description": "Fried pastry with a savory potato filling served with mint and tamarind chutneys. vegan.",
+  "cuisine": "indian",
+  "dish_family": "indian_snack",
+  "restaurant": "Cafe Namasthe",
+  "ingredients": [
+   "savory",
+   "potato",
+   "mint",
+   "tamarind",
+   "chutney"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0006",
+  "name": "Cheesecake",
+  "description": "Classic New York-style cheesecake",
+  "cuisine": "italian",
+  "dish_family": "dessert",
+  "restaurant": "Pizza Man (Wauwatosa)",
+  "ingredients": [],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0256",
+  "name": "Shammi Kebab",
+  "description": "Lamb patties blended with ginger and mint, laden with yellow split peas, mild spices, and shallow fried.",
+  "cuisine": "indian",
+  "dish_family": "tandoori",
+  "restaurant": "India's Restaurant (Houston)",
+  "ingredients": [
+   "lamb",
+   "ginger",
+   "mint",
+   "yellow split pea"
+  ],
+  "origin": "menu",
+  "overlap": false
+ },
+ {
+  "uid": "d_0072",
+  "name": "Verona Salad",
+  "description": "Mozzarella, olives, tomatoes and mushrooms.",
+  "cuisine": "italian",
+  "dish_family": "salad",
+  "restaurant": "Verona Italian Cafe",
+  "ingredients": [
+   "mozzarella",
+   "olive",
+   "tomato",
+   "mushroom"
+  ],
+  "origin": "menu",
+  "overlap": false
+ }
+]

@@ -1,0 +1,14 @@
+.venv/bin/python -m tastelayer.model.train --text bge,qwen
+/Users/ardakancal/tastelayer/.venv/lib/python3.12/site-packages/sklearn/neural_network/_multilayer_perceptron.py:785: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn't converged yet.
+  warnings.warn(
+[cv] lex                                      rho=0.635 mae=0.96
+[cv] bge                                      rho=0.709 mae=0.86
+[cv] qwen                                     rho=0.802 mae=0.70
+[cv] bge+lex+ing_ours+ing_fg                  rho=0.813 mae=0.67
+[cv] qwen+lex+ing_ours+ing_fg                 rho=0.841 mae=0.62
+[cv] bge+qwen+lex+ing_ours+ing_fg             rho=0.842 mae=0.61
+[cv] lex+ing_ours+ing_fg                      rho=0.779 mae=0.74
+[train] best feature set: ['bge', 'qwen', 'lex', 'ing_ours', 'ing_fg']
+[train] ridge: held-out mean Spearman 0.854 MAE 0.61 (5s)
+[train] mlp: held-out mean Spearman 0.750 MAE 0.80 (38s)
+[train] saved tastenet.joblib: ridge on bge+qwen+lex+ing_ours+ing_fg (n_train=5301)

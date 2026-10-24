@@ -1,0 +1,422 @@
+[
+  {
+    "id": "r_01",
+    "name": "Basil & Brick",
+    "cuisine": "italian",
+    "price_tier": 1,
+    "vibe_tags": [
+      "quick",
+      "casual"
+    ],
+    "area": "Soho",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0001",
+      "d_0002",
+      "d_0003",
+      "d_0004"
+    ]
+  },
+  {
+    "id": "r_02",
+    "name": "Casa Nona",
+    "cuisine": "italian",
+    "price_tier": 2,
+    "vibe_tags": [
+      "casual",
+      "family"
+    ],
+    "area": "Shoreditch",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0005",
+      "d_0006",
+      "d_0007",
+      "d_0008"
+    ]
+  },
+  {
+    "id": "r_03",
+    "name": "Oliva Social",
+    "cuisine": "italian",
+    "price_tier": 3,
+    "vibe_tags": [
+      "trendy",
+      "date-night"
+    ],
+    "area": "Covent Garden",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0009",
+      "d_0010",
+      "d_0011",
+      "d_0012"
+    ]
+  },
+  {
+    "id": "r_04",
+    "name": "Luna Tavola",
+    "cuisine": "italian",
+    "price_tier": 4,
+    "vibe_tags": [
+      "traditional",
+      "date-night"
+    ],
+    "area": "Fitzrovia",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0013",
+      "d_0014",
+      "d_0015",
+      "d_0016"
+    ]
+  },
+  {
+    "id": "r_05",
+    "name": "Little Farina",
+    "cuisine": "italian",
+    "price_tier": 1,
+    "vibe_tags": [
+      "quick",
+      "casual"
+    ],
+    "area": "Soho",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0017",
+      "d_0018",
+      "d_0019",
+      "d_0020"
+    ]
+  },
+  {
+    "id": "r_06",
+    "name": "Via Roma",
+    "cuisine": "italian",
+    "price_tier": 2,
+    "vibe_tags": [
+      "casual",
+      "family"
+    ],
+    "area": "Shoreditch",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0021",
+      "d_0022",
+      "d_0023",
+      "d_0024"
+    ]
+  },
+  {
+    "id": "r_07",
+    "name": "Sotto",
+    "cuisine": "italian",
+    "price_tier": 3,
+    "vibe_tags": [
+      "trendy",
+      "date-night"
+    ],
+    "area": "Covent Garden",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0025",
+      "d_0026",
+      "d_0027",
+      "d_0028"
+    ]
+  },
+  {
+    "id": "r_08",
+    "name": "The Sunday Table",
+    "cuisine": "italian",
+    "price_tier": 4,
+    "vibe_tags": [
+      "traditional",
+      "date-night"
+    ],
+    "area": "Fitzrovia",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0029",
+      "d_0030",
+      "d_0031",
+      "d_0032"
+    ]
+  },
+  {
+    "id": "r_09",
+    "name": "Amici",
+    "cuisine": "italian",
+    "price_tier": 1,
+    "vibe_tags": [
+      "quick",
+      "casual"
+    ],
+    "area": "Soho",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0033",
+      "d_0034",
+      "d_0035",
+      "d_0036"
+    ]
+  },
+  {
+    "id": "r_10",
+    "name": "Terra",
+    "cuisine": "italian",
+    "price_tier": 2,
+    "vibe_tags": [
+      "casual",
+      "family"
+    ],
+    "area": "Shoreditch",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0037",
+      "d_0038",
+      "d_0039",
+      "d_0040"
+    ]
+  },
+  {
+    "id": "r_11",
+    "name": "Saffron House",
+    "cuisine": "indian",
+    "price_tier": 3,
+    "vibe_tags": [
+      "trendy",
+      "date-night"
+    ],
+    "area": "Covent Garden",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0041",
+      "d_0042",
+      "d_0043",
+      "d_0044"
+    ]
+  },
+  {
+    "id": "r_12",
+    "name": "Curry Corner",
+    "cuisine": "indian",
+    "price_tier": 4,
+    "vibe_tags": [
+      "traditional",
+      "date-night"
+    ],
+    "area": "Fitzrovia",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0045",
+      "d_0046",
+      "d_0047",
+      "d_0048"
+    ]
+  },
+  {
+    "id": "r_13",
+    "name": "Tamarind Social",
+    "cuisine": "indian",
+    "price_tier": 1,
+    "vibe_tags": [
+      "quick",
+      "casual"
+    ],
+    "area": "Soho",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0049",
+      "d_0050",
+      "d_0051",
+      "d_0052"
+    ]
+  },
+  {
+    "id": "r_14",
+    "name": "The Copper Tiffin",
+    "cuisine": "indian",
+    "price_tier": 2,
+    "vibe_tags": [
+      "casual",
+      "family"
+    ],
+    "area": "Shoreditch",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0053",
+      "d_0054",
+      "d_0055",
+      "d_0056"
+    ]
+  },
+  {
+    "id": "r_15",
+    "name": "Chai & Co",
+    "cuisine": "indian",
+    "price_tier": 3,
+    "vibe_tags": [
+      "trendy",
+      "date-night"
+    ],
+    "area": "Covent Garden",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0057",
+      "d_0058",
+      "d_0059",
+      "d_0060"
+    ]
+  },
+  {
+    "id": "r_16",
+    "name": "Masala Room",
+    "cuisine": "indian",
+    "price_tier": 4,
+    "vibe_tags": [
+      "traditional",
+      "date-night"
+    ],
+    "area": "Fitzrovia",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0061",
+      "d_0062",
+      "d_0063",
+      "d_0064"
+    ]
+  },
+  {
+    "id": "r_17",
+    "name": "Kesar",
+    "cuisine": "indian",
+    "price_tier": 1,
+    "vibe_tags": [
+      "quick",
+      "casual"
+    ],
+    "area": "Soho",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0065",
+      "d_0066",
+      "d_0067",
+      "d_0068"
+    ]
+  },
+  {
+    "id": "r_18",
+    "name": "Naan Kitchen",
+    "cuisine": "indian",
+    "price_tier": 2,
+    "vibe_tags": [
+      "casual",
+      "family"
+    ],
+    "area": "Shoreditch",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0069",
+      "d_0070",
+      "d_0071",
+      "d_0072"
+    ]
+  },
+  {
+    "id": "r_19",
+    "name": "Cardamom Club",
+    "cuisine": "indian",
+    "price_tier": 3,
+    "vibe_tags": [
+      "trendy",
+      "date-night"
+    ],
+    "area": "Covent Garden",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0073",
+      "d_0074",
+      "d_0075",
+      "d_0076"
+    ]
+  },
+  {
+    "id": "r_20",
+    "name": "Monsoon",
+    "cuisine": "indian",
+    "price_tier": 4,
+    "vibe_tags": [
+      "traditional",
+      "date-night"
+    ],
+    "area": "Fitzrovia",
+    "lat": 0.0,
+    "lng": 0.0,
+    "halal_status": "unknown",
+    "menu_source_url": "",
+    "dish_ids": [
+      "d_0077",
+      "d_0078",
+      "d_0079",
+      "d_0080"
+    ]
+  }
+]

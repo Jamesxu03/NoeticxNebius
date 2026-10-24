@@ -1,0 +1,146 @@
+{
+  "spice": {
+    "min": 0,
+    "max": 10,
+    "anchors": [
+      {
+        "value": 0,
+        "label": "black pepper"
+      },
+      {
+        "value": 5,
+        "label": "jalape\u00f1o"
+      },
+      {
+        "value": 10,
+        "label": "habanero"
+      }
+    ]
+  },
+  "sweet": {
+    "min": 0,
+    "max": 10,
+    "anchors": [
+      {
+        "value": 0,
+        "label": "roasted red pepper"
+      },
+      {
+        "value": 5,
+        "label": "caramelised onion"
+      },
+      {
+        "value": 10,
+        "label": "maple syrup"
+      }
+    ]
+  },
+  "sour": {
+    "min": 0,
+    "max": 10,
+    "anchors": [
+      {
+        "value": 0,
+        "label": "natural yoghurt"
+      },
+      {
+        "value": 5,
+        "label": "lemon juice"
+      },
+      {
+        "value": 10,
+        "label": "tamarind"
+      }
+    ]
+  },
+  "bitter": {
+    "min": 0,
+    "max": 10,
+    "anchors": [
+      {
+        "value": 0,
+        "label": "rocket"
+      },
+      {
+        "value": 5,
+        "label": "70% dark chocolate"
+      },
+      {
+        "value": 10,
+        "label": "radicchio"
+      }
+    ]
+  },
+  "umami": {
+    "min": 0,
+    "max": 10,
+    "anchors": [
+      {
+        "value": 0,
+        "label": "tomato"
+      },
+      {
+        "value": 5,
+        "label": "parmesan"
+      },
+      {
+        "value": 10,
+        "label": "anchovy or miso"
+      }
+    ]
+  },
+  "richness": {
+    "min": 0,
+    "max": 10,
+    "anchors": [
+      {
+        "value": 0,
+        "label": "olive-oil dressing"
+      },
+      {
+        "value": 5,
+        "label": "cream sauce"
+      },
+      {
+        "value": 10,
+        "label": "ghee-heavy dal makhani"
+      }
+    ]
+  },
+  "crunch": {
+    "min": 0,
+    "max": 10,
+    "anchors": [
+      {
+        "value": 0,
+        "label": "soft bread"
+      },
+      {
+        "value": 5,
+        "label": "toasted nuts"
+      },
+      {
+        "value": 10,
+        "label": "fried papadum"
+      }
+    ]
+  },
+  "creaminess": {
+    "min": 0,
+    "max": 10,
+    "anchors": [
+      {
+        "value": 0,
+        "label": "clear broth"
+      },
+      {
+        "value": 5,
+        "label": "hummus"
+      },
+      {
+        "value": 10,
+        "label": "mascarpone"
+      }
+    ]
+  }
+}

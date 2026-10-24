@@ -1,0 +1,9 @@
+# CPU torch is installed separately by scripts/install-palatable.sh.
+# Match the scikit-learn version embedded in the committed model artifact.
+scikit-learn==1.9.1
+sentence-transformers==6.2.0
+pandas==3.1.0
+scipy==1.18.1
+joblib==1.6.0
+typer==0.27.3
+python-dotenv==1.2.4

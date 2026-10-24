@@ -1,0 +1,3112 @@
+[
+  {
+    "id": "d_0001",
+    "restaurant_id": "r_01",
+    "name": "Margherita",
+    "description": "Illustrative recipe with wheat, tomato, mozzarella, basil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pizza",
+    "price_gbp": 11.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "mozzarella",
+      "basil"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 2,
+      "sour": 4,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 5,
+      "crunch": 4,
+      "creaminess": 5
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0002",
+    "restaurant_id": "r_01",
+    "name": "Mushroom risotto",
+    "description": "Illustrative recipe with rice, mushroom, butter, parmesan.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "risotto",
+    "price_gbp": 11.5,
+    "ingredients": [
+      "rice",
+      "mushroom",
+      "butter",
+      "parmesan"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 1,
+      "sour": 1,
+      "bitter": 1,
+      "umami": 9,
+      "richness": 8,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0003",
+    "restaurant_id": "r_01",
+    "name": "Arrabbiata",
+    "description": "Illustrative recipe with wheat, tomato, chilli, garlic.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pasta",
+    "price_gbp": 12.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "chilli",
+      "garlic"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 4,
+      "crunch": 1,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0004",
+    "restaurant_id": "r_01",
+    "name": "Panzanella",
+    "description": "Illustrative recipe with wheat, tomato, cucumber, olive oil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "salad",
+    "price_gbp": 12.5,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "cucumber",
+      "olive oil"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 3,
+      "sour": 6,
+      "bitter": 2,
+      "umami": 4,
+      "richness": 3,
+      "crunch": 6,
+      "creaminess": 1
+    },
+    "serving_temp": "cold",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0005",
+    "restaurant_id": "r_02",
+    "name": "Margherita",
+    "description": "Illustrative recipe with wheat, tomato, mozzarella, basil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pizza",
+    "price_gbp": 14.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "mozzarella",
+      "basil"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 2,
+      "sour": 4,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 5,
+      "crunch": 4,
+      "creaminess": 5
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0006",
+    "restaurant_id": "r_02",
+    "name": "Mushroom risotto",
+    "description": "Illustrative recipe with rice, mushroom, butter, parmesan.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "risotto",
+    "price_gbp": 14.5,
+    "ingredients": [
+      "rice",
+      "mushroom",
+      "butter",
+      "parmesan"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 1,
+      "sour": 1,
+      "bitter": 1,
+      "umami": 9,
+      "richness": 8,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0007",
+    "restaurant_id": "r_02",
+    "name": "Arrabbiata",
+    "description": "Illustrative recipe with wheat, tomato, chilli, garlic.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pasta",
+    "price_gbp": 15.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "chilli",
+      "garlic"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 4,
+      "crunch": 1,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0008",
+    "restaurant_id": "r_02",
+    "name": "Panzanella",
+    "description": "Illustrative recipe with wheat, tomato, cucumber, olive oil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "salad",
+    "price_gbp": 15.5,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "cucumber",
+      "olive oil"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 3,
+      "sour": 6,
+      "bitter": 2,
+      "umami": 4,
+      "richness": 3,
+      "crunch": 6,
+      "creaminess": 1
+    },
+    "serving_temp": "cold",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0009",
+    "restaurant_id": "r_03",
+    "name": "Margherita",
+    "description": "Illustrative recipe with wheat, tomato, mozzarella, basil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pizza",
+    "price_gbp": 17.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "mozzarella",
+      "basil"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 2,
+      "sour": 4,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 5,
+      "crunch": 4,
+      "creaminess": 5
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0010",
+    "restaurant_id": "r_03",
+    "name": "Mushroom risotto",
+    "description": "Illustrative recipe with rice, mushroom, butter, parmesan.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "risotto",
+    "price_gbp": 17.5,
+    "ingredients": [
+      "rice",
+      "mushroom",
+      "butter",
+      "parmesan"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 1,
+      "sour": 1,
+      "bitter": 1,
+      "umami": 9,
+      "richness": 8,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0011",
+    "restaurant_id": "r_03",
+    "name": "Arrabbiata",
+    "description": "Illustrative recipe with wheat, tomato, chilli, garlic.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pasta",
+    "price_gbp": 18.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "chilli",
+      "garlic"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 4,
+      "crunch": 1,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0012",
+    "restaurant_id": "r_03",
+    "name": "Panzanella",
+    "description": "Illustrative recipe with wheat, tomato, cucumber, olive oil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "salad",
+    "price_gbp": 18.5,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "cucumber",
+      "olive oil"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 3,
+      "sour": 6,
+      "bitter": 2,
+      "umami": 4,
+      "richness": 3,
+      "crunch": 6,
+      "creaminess": 1
+    },
+    "serving_temp": "cold",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0013",
+    "restaurant_id": "r_04",
+    "name": "Margherita",
+    "description": "Illustrative recipe with wheat, tomato, mozzarella, basil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pizza",
+    "price_gbp": 20.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "mozzarella",
+      "basil"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 2,
+      "sour": 4,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 5,
+      "crunch": 4,
+      "creaminess": 5
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0014",
+    "restaurant_id": "r_04",
+    "name": "Mushroom risotto",
+    "description": "Illustrative recipe with rice, mushroom, butter, parmesan.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "risotto",
+    "price_gbp": 20.5,
+    "ingredients": [
+      "rice",
+      "mushroom",
+      "butter",
+      "parmesan"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 1,
+      "sour": 1,
+      "bitter": 1,
+      "umami": 9,
+      "richness": 8,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0015",
+    "restaurant_id": "r_04",
+    "name": "Arrabbiata",
+    "description": "Illustrative recipe with wheat, tomato, chilli, garlic.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pasta",
+    "price_gbp": 21.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "chilli",
+      "garlic"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 4,
+      "crunch": 1,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0016",
+    "restaurant_id": "r_04",
+    "name": "Panzanella",
+    "description": "Illustrative recipe with wheat, tomato, cucumber, olive oil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "salad",
+    "price_gbp": 21.5,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "cucumber",
+      "olive oil"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 3,
+      "sour": 6,
+      "bitter": 2,
+      "umami": 4,
+      "richness": 3,
+      "crunch": 6,
+      "creaminess": 1
+    },
+    "serving_temp": "cold",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0017",
+    "restaurant_id": "r_05",
+    "name": "Margherita",
+    "description": "Illustrative recipe with wheat, tomato, mozzarella, basil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pizza",
+    "price_gbp": 11.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "mozzarella",
+      "basil"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 2,
+      "sour": 4,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 5,
+      "crunch": 4,
+      "creaminess": 5
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0018",
+    "restaurant_id": "r_05",
+    "name": "Mushroom risotto",
+    "description": "Illustrative recipe with rice, mushroom, butter, parmesan.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "risotto",
+    "price_gbp": 11.5,
+    "ingredients": [
+      "rice",
+      "mushroom",
+      "butter",
+      "parmesan"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 1,
+      "sour": 1,
+      "bitter": 1,
+      "umami": 9,
+      "richness": 8,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0019",
+    "restaurant_id": "r_05",
+    "name": "Arrabbiata",
+    "description": "Illustrative recipe with wheat, tomato, chilli, garlic.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pasta",
+    "price_gbp": 12.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "chilli",
+      "garlic"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 4,
+      "crunch": 1,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0020",
+    "restaurant_id": "r_05",
+    "name": "Panzanella",
+    "description": "Illustrative recipe with wheat, tomato, cucumber, olive oil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "salad",
+    "price_gbp": 12.5,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "cucumber",
+      "olive oil"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 3,
+      "sour": 6,
+      "bitter": 2,
+      "umami": 4,
+      "richness": 3,
+      "crunch": 6,
+      "creaminess": 1
+    },
+    "serving_temp": "cold",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0021",
+    "restaurant_id": "r_06",
+    "name": "Margherita",
+    "description": "Illustrative recipe with wheat, tomato, mozzarella, basil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pizza",
+    "price_gbp": 14.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "mozzarella",
+      "basil"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 2,
+      "sour": 4,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 5,
+      "crunch": 4,
+      "creaminess": 5
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0022",
+    "restaurant_id": "r_06",
+    "name": "Mushroom risotto",
+    "description": "Illustrative recipe with rice, mushroom, butter, parmesan.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "risotto",
+    "price_gbp": 14.5,
+    "ingredients": [
+      "rice",
+      "mushroom",
+      "butter",
+      "parmesan"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 1,
+      "sour": 1,
+      "bitter": 1,
+      "umami": 9,
+      "richness": 8,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0023",
+    "restaurant_id": "r_06",
+    "name": "Arrabbiata",
+    "description": "Illustrative recipe with wheat, tomato, chilli, garlic.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pasta",
+    "price_gbp": 15.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "chilli",
+      "garlic"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 4,
+      "crunch": 1,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0024",
+    "restaurant_id": "r_06",
+    "name": "Panzanella",
+    "description": "Illustrative recipe with wheat, tomato, cucumber, olive oil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "salad",
+    "price_gbp": 15.5,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "cucumber",
+      "olive oil"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 3,
+      "sour": 6,
+      "bitter": 2,
+      "umami": 4,
+      "richness": 3,
+      "crunch": 6,
+      "creaminess": 1
+    },
+    "serving_temp": "cold",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0025",
+    "restaurant_id": "r_07",
+    "name": "Margherita",
+    "description": "Illustrative recipe with wheat, tomato, mozzarella, basil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pizza",
+    "price_gbp": 17.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "mozzarella",
+      "basil"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 2,
+      "sour": 4,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 5,
+      "crunch": 4,
+      "creaminess": 5
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0026",
+    "restaurant_id": "r_07",
+    "name": "Mushroom risotto",
+    "description": "Illustrative recipe with rice, mushroom, butter, parmesan.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "risotto",
+    "price_gbp": 17.5,
+    "ingredients": [
+      "rice",
+      "mushroom",
+      "butter",
+      "parmesan"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 1,
+      "sour": 1,
+      "bitter": 1,
+      "umami": 9,
+      "richness": 8,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0027",
+    "restaurant_id": "r_07",
+    "name": "Arrabbiata",
+    "description": "Illustrative recipe with wheat, tomato, chilli, garlic.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pasta",
+    "price_gbp": 18.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "chilli",
+      "garlic"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 4,
+      "crunch": 1,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0028",
+    "restaurant_id": "r_07",
+    "name": "Panzanella",
+    "description": "Illustrative recipe with wheat, tomato, cucumber, olive oil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "salad",
+    "price_gbp": 18.5,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "cucumber",
+      "olive oil"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 3,
+      "sour": 6,
+      "bitter": 2,
+      "umami": 4,
+      "richness": 3,
+      "crunch": 6,
+      "creaminess": 1
+    },
+    "serving_temp": "cold",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0029",
+    "restaurant_id": "r_08",
+    "name": "Margherita",
+    "description": "Illustrative recipe with wheat, tomato, mozzarella, basil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pizza",
+    "price_gbp": 20.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "mozzarella",
+      "basil"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 2,
+      "sour": 4,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 5,
+      "crunch": 4,
+      "creaminess": 5
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0030",
+    "restaurant_id": "r_08",
+    "name": "Mushroom risotto",
+    "description": "Illustrative recipe with rice, mushroom, butter, parmesan.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "risotto",
+    "price_gbp": 20.5,
+    "ingredients": [
+      "rice",
+      "mushroom",
+      "butter",
+      "parmesan"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 1,
+      "sour": 1,
+      "bitter": 1,
+      "umami": 9,
+      "richness": 8,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0031",
+    "restaurant_id": "r_08",
+    "name": "Arrabbiata",
+    "description": "Illustrative recipe with wheat, tomato, chilli, garlic.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pasta",
+    "price_gbp": 21.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "chilli",
+      "garlic"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 4,
+      "crunch": 1,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0032",
+    "restaurant_id": "r_08",
+    "name": "Panzanella",
+    "description": "Illustrative recipe with wheat, tomato, cucumber, olive oil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "salad",
+    "price_gbp": 21.5,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "cucumber",
+      "olive oil"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 3,
+      "sour": 6,
+      "bitter": 2,
+      "umami": 4,
+      "richness": 3,
+      "crunch": 6,
+      "creaminess": 1
+    },
+    "serving_temp": "cold",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0033",
+    "restaurant_id": "r_09",
+    "name": "Margherita",
+    "description": "Illustrative recipe with wheat, tomato, mozzarella, basil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pizza",
+    "price_gbp": 11.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "mozzarella",
+      "basil"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 2,
+      "sour": 4,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 5,
+      "crunch": 4,
+      "creaminess": 5
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0034",
+    "restaurant_id": "r_09",
+    "name": "Mushroom risotto",
+    "description": "Illustrative recipe with rice, mushroom, butter, parmesan.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "risotto",
+    "price_gbp": 11.5,
+    "ingredients": [
+      "rice",
+      "mushroom",
+      "butter",
+      "parmesan"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 1,
+      "sour": 1,
+      "bitter": 1,
+      "umami": 9,
+      "richness": 8,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0035",
+    "restaurant_id": "r_09",
+    "name": "Arrabbiata",
+    "description": "Illustrative recipe with wheat, tomato, chilli, garlic.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pasta",
+    "price_gbp": 12.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "chilli",
+      "garlic"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 4,
+      "crunch": 1,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0036",
+    "restaurant_id": "r_09",
+    "name": "Panzanella",
+    "description": "Illustrative recipe with wheat, tomato, cucumber, olive oil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "salad",
+    "price_gbp": 12.5,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "cucumber",
+      "olive oil"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 3,
+      "sour": 6,
+      "bitter": 2,
+      "umami": 4,
+      "richness": 3,
+      "crunch": 6,
+      "creaminess": 1
+    },
+    "serving_temp": "cold",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0037",
+    "restaurant_id": "r_10",
+    "name": "Margherita",
+    "description": "Illustrative recipe with wheat, tomato, mozzarella, basil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pizza",
+    "price_gbp": 14.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "mozzarella",
+      "basil"
+    ],
+    "allergens": [
+      "gluten",
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 2,
+      "sour": 4,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 5,
+      "crunch": 4,
+      "creaminess": 5
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0038",
+    "restaurant_id": "r_10",
+    "name": "Mushroom risotto",
+    "description": "Illustrative recipe with rice, mushroom, butter, parmesan.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "risotto",
+    "price_gbp": 14.5,
+    "ingredients": [
+      "rice",
+      "mushroom",
+      "butter",
+      "parmesan"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 1,
+      "sour": 1,
+      "bitter": 1,
+      "umami": 9,
+      "richness": 8,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0039",
+    "restaurant_id": "r_10",
+    "name": "Arrabbiata",
+    "description": "Illustrative recipe with wheat, tomato, chilli, garlic.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "pasta",
+    "price_gbp": 15.0,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "chilli",
+      "garlic"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 4,
+      "crunch": 1,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0040",
+    "restaurant_id": "r_10",
+    "name": "Panzanella",
+    "description": "Illustrative recipe with wheat, tomato, cucumber, olive oil.",
+    "cuisine": "italian",
+    "category": "main",
+    "dish_family": "salad",
+    "price_gbp": 15.5,
+    "ingredients": [
+      "wheat",
+      "tomato",
+      "cucumber",
+      "olive oil"
+    ],
+    "allergens": [
+      "gluten"
+    ],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 0,
+      "sweet": 3,
+      "sour": 6,
+      "bitter": 2,
+      "umami": 4,
+      "richness": 3,
+      "crunch": 6,
+      "creaminess": 1
+    },
+    "serving_temp": "cold",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0041",
+    "restaurant_id": "r_11",
+    "name": "Butter chicken",
+    "description": "Illustrative recipe with chicken, tomato, butter, cream.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "curry",
+    "price_gbp": 17.0,
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "butter",
+      "cream"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 4,
+      "sweet": 3,
+      "sour": 2,
+      "bitter": 0,
+      "umami": 7,
+      "richness": 9,
+      "crunch": 1,
+      "creaminess": 8
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0042",
+    "restaurant_id": "r_11",
+    "name": "Chana masala",
+    "description": "Illustrative recipe with chickpeas, tomato, onion, coriander.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "chickpea curry",
+    "price_gbp": 17.5,
+    "ingredients": [
+      "chickpeas",
+      "tomato",
+      "onion",
+      "coriander"
+    ],
+    "allergens": [],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 7,
+      "richness": 5,
+      "crunch": 1,
+      "creaminess": 3
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0043",
+    "restaurant_id": "r_11",
+    "name": "Vegetable biryani",
+    "description": "Illustrative recipe with rice, carrot, peas, ghee.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "biryani",
+    "price_gbp": 18.0,
+    "ingredients": [
+      "rice",
+      "carrot",
+      "peas",
+      "ghee"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 5,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 6,
+      "crunch": 2,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0044",
+    "restaurant_id": "r_11",
+    "name": "Dal makhani",
+    "description": "Illustrative recipe with lentils, butter, cream, tomato.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "lentil curry",
+    "price_gbp": 18.5,
+    "ingredients": [
+      "lentils",
+      "butter",
+      "cream",
+      "tomato"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 3,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 8,
+      "richness": 9,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0045",
+    "restaurant_id": "r_12",
+    "name": "Butter chicken",
+    "description": "Illustrative recipe with chicken, tomato, butter, cream.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "curry",
+    "price_gbp": 20.0,
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "butter",
+      "cream"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 4,
+      "sweet": 3,
+      "sour": 2,
+      "bitter": 0,
+      "umami": 7,
+      "richness": 9,
+      "crunch": 1,
+      "creaminess": 8
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0046",
+    "restaurant_id": "r_12",
+    "name": "Chana masala",
+    "description": "Illustrative recipe with chickpeas, tomato, onion, coriander.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "chickpea curry",
+    "price_gbp": 20.5,
+    "ingredients": [
+      "chickpeas",
+      "tomato",
+      "onion",
+      "coriander"
+    ],
+    "allergens": [],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 7,
+      "richness": 5,
+      "crunch": 1,
+      "creaminess": 3
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0047",
+    "restaurant_id": "r_12",
+    "name": "Vegetable biryani",
+    "description": "Illustrative recipe with rice, carrot, peas, ghee.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "biryani",
+    "price_gbp": 21.0,
+    "ingredients": [
+      "rice",
+      "carrot",
+      "peas",
+      "ghee"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 5,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 6,
+      "crunch": 2,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0048",
+    "restaurant_id": "r_12",
+    "name": "Dal makhani",
+    "description": "Illustrative recipe with lentils, butter, cream, tomato.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "lentil curry",
+    "price_gbp": 21.5,
+    "ingredients": [
+      "lentils",
+      "butter",
+      "cream",
+      "tomato"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 3,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 8,
+      "richness": 9,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0049",
+    "restaurant_id": "r_13",
+    "name": "Butter chicken",
+    "description": "Illustrative recipe with chicken, tomato, butter, cream.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "curry",
+    "price_gbp": 11.0,
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "butter",
+      "cream"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 4,
+      "sweet": 3,
+      "sour": 2,
+      "bitter": 0,
+      "umami": 7,
+      "richness": 9,
+      "crunch": 1,
+      "creaminess": 8
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0050",
+    "restaurant_id": "r_13",
+    "name": "Chana masala",
+    "description": "Illustrative recipe with chickpeas, tomato, onion, coriander.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "chickpea curry",
+    "price_gbp": 11.5,
+    "ingredients": [
+      "chickpeas",
+      "tomato",
+      "onion",
+      "coriander"
+    ],
+    "allergens": [],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 7,
+      "richness": 5,
+      "crunch": 1,
+      "creaminess": 3
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0051",
+    "restaurant_id": "r_13",
+    "name": "Vegetable biryani",
+    "description": "Illustrative recipe with rice, carrot, peas, ghee.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "biryani",
+    "price_gbp": 12.0,
+    "ingredients": [
+      "rice",
+      "carrot",
+      "peas",
+      "ghee"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 5,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 6,
+      "crunch": 2,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0052",
+    "restaurant_id": "r_13",
+    "name": "Dal makhani",
+    "description": "Illustrative recipe with lentils, butter, cream, tomato.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "lentil curry",
+    "price_gbp": 12.5,
+    "ingredients": [
+      "lentils",
+      "butter",
+      "cream",
+      "tomato"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 3,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 8,
+      "richness": 9,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0053",
+    "restaurant_id": "r_14",
+    "name": "Butter chicken",
+    "description": "Illustrative recipe with chicken, tomato, butter, cream.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "curry",
+    "price_gbp": 14.0,
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "butter",
+      "cream"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 4,
+      "sweet": 3,
+      "sour": 2,
+      "bitter": 0,
+      "umami": 7,
+      "richness": 9,
+      "crunch": 1,
+      "creaminess": 8
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0054",
+    "restaurant_id": "r_14",
+    "name": "Chana masala",
+    "description": "Illustrative recipe with chickpeas, tomato, onion, coriander.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "chickpea curry",
+    "price_gbp": 14.5,
+    "ingredients": [
+      "chickpeas",
+      "tomato",
+      "onion",
+      "coriander"
+    ],
+    "allergens": [],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 7,
+      "richness": 5,
+      "crunch": 1,
+      "creaminess": 3
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0055",
+    "restaurant_id": "r_14",
+    "name": "Vegetable biryani",
+    "description": "Illustrative recipe with rice, carrot, peas, ghee.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "biryani",
+    "price_gbp": 15.0,
+    "ingredients": [
+      "rice",
+      "carrot",
+      "peas",
+      "ghee"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 5,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 6,
+      "crunch": 2,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0056",
+    "restaurant_id": "r_14",
+    "name": "Dal makhani",
+    "description": "Illustrative recipe with lentils, butter, cream, tomato.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "lentil curry",
+    "price_gbp": 15.5,
+    "ingredients": [
+      "lentils",
+      "butter",
+      "cream",
+      "tomato"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 3,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 8,
+      "richness": 9,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0057",
+    "restaurant_id": "r_15",
+    "name": "Butter chicken",
+    "description": "Illustrative recipe with chicken, tomato, butter, cream.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "curry",
+    "price_gbp": 17.0,
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "butter",
+      "cream"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 4,
+      "sweet": 3,
+      "sour": 2,
+      "bitter": 0,
+      "umami": 7,
+      "richness": 9,
+      "crunch": 1,
+      "creaminess": 8
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0058",
+    "restaurant_id": "r_15",
+    "name": "Chana masala",
+    "description": "Illustrative recipe with chickpeas, tomato, onion, coriander.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "chickpea curry",
+    "price_gbp": 17.5,
+    "ingredients": [
+      "chickpeas",
+      "tomato",
+      "onion",
+      "coriander"
+    ],
+    "allergens": [],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 7,
+      "richness": 5,
+      "crunch": 1,
+      "creaminess": 3
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0059",
+    "restaurant_id": "r_15",
+    "name": "Vegetable biryani",
+    "description": "Illustrative recipe with rice, carrot, peas, ghee.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "biryani",
+    "price_gbp": 18.0,
+    "ingredients": [
+      "rice",
+      "carrot",
+      "peas",
+      "ghee"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 5,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 6,
+      "crunch": 2,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0060",
+    "restaurant_id": "r_15",
+    "name": "Dal makhani",
+    "description": "Illustrative recipe with lentils, butter, cream, tomato.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "lentil curry",
+    "price_gbp": 18.5,
+    "ingredients": [
+      "lentils",
+      "butter",
+      "cream",
+      "tomato"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 3,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 8,
+      "richness": 9,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0061",
+    "restaurant_id": "r_16",
+    "name": "Butter chicken",
+    "description": "Illustrative recipe with chicken, tomato, butter, cream.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "curry",
+    "price_gbp": 20.0,
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "butter",
+      "cream"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 4,
+      "sweet": 3,
+      "sour": 2,
+      "bitter": 0,
+      "umami": 7,
+      "richness": 9,
+      "crunch": 1,
+      "creaminess": 8
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0062",
+    "restaurant_id": "r_16",
+    "name": "Chana masala",
+    "description": "Illustrative recipe with chickpeas, tomato, onion, coriander.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "chickpea curry",
+    "price_gbp": 20.5,
+    "ingredients": [
+      "chickpeas",
+      "tomato",
+      "onion",
+      "coriander"
+    ],
+    "allergens": [],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 7,
+      "richness": 5,
+      "crunch": 1,
+      "creaminess": 3
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0063",
+    "restaurant_id": "r_16",
+    "name": "Vegetable biryani",
+    "description": "Illustrative recipe with rice, carrot, peas, ghee.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "biryani",
+    "price_gbp": 21.0,
+    "ingredients": [
+      "rice",
+      "carrot",
+      "peas",
+      "ghee"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 5,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 6,
+      "crunch": 2,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0064",
+    "restaurant_id": "r_16",
+    "name": "Dal makhani",
+    "description": "Illustrative recipe with lentils, butter, cream, tomato.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "lentil curry",
+    "price_gbp": 21.5,
+    "ingredients": [
+      "lentils",
+      "butter",
+      "cream",
+      "tomato"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 3,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 8,
+      "richness": 9,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0065",
+    "restaurant_id": "r_17",
+    "name": "Butter chicken",
+    "description": "Illustrative recipe with chicken, tomato, butter, cream.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "curry",
+    "price_gbp": 11.0,
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "butter",
+      "cream"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 4,
+      "sweet": 3,
+      "sour": 2,
+      "bitter": 0,
+      "umami": 7,
+      "richness": 9,
+      "crunch": 1,
+      "creaminess": 8
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0066",
+    "restaurant_id": "r_17",
+    "name": "Chana masala",
+    "description": "Illustrative recipe with chickpeas, tomato, onion, coriander.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "chickpea curry",
+    "price_gbp": 11.5,
+    "ingredients": [
+      "chickpeas",
+      "tomato",
+      "onion",
+      "coriander"
+    ],
+    "allergens": [],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 7,
+      "richness": 5,
+      "crunch": 1,
+      "creaminess": 3
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0067",
+    "restaurant_id": "r_17",
+    "name": "Vegetable biryani",
+    "description": "Illustrative recipe with rice, carrot, peas, ghee.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "biryani",
+    "price_gbp": 12.0,
+    "ingredients": [
+      "rice",
+      "carrot",
+      "peas",
+      "ghee"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 5,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 6,
+      "crunch": 2,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0068",
+    "restaurant_id": "r_17",
+    "name": "Dal makhani",
+    "description": "Illustrative recipe with lentils, butter, cream, tomato.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "lentil curry",
+    "price_gbp": 12.5,
+    "ingredients": [
+      "lentils",
+      "butter",
+      "cream",
+      "tomato"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 3,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 8,
+      "richness": 9,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0069",
+    "restaurant_id": "r_18",
+    "name": "Butter chicken",
+    "description": "Illustrative recipe with chicken, tomato, butter, cream.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "curry",
+    "price_gbp": 14.0,
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "butter",
+      "cream"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 4,
+      "sweet": 3,
+      "sour": 2,
+      "bitter": 0,
+      "umami": 7,
+      "richness": 9,
+      "crunch": 1,
+      "creaminess": 8
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0070",
+    "restaurant_id": "r_18",
+    "name": "Chana masala",
+    "description": "Illustrative recipe with chickpeas, tomato, onion, coriander.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "chickpea curry",
+    "price_gbp": 14.5,
+    "ingredients": [
+      "chickpeas",
+      "tomato",
+      "onion",
+      "coriander"
+    ],
+    "allergens": [],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 7,
+      "richness": 5,
+      "crunch": 1,
+      "creaminess": 3
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0071",
+    "restaurant_id": "r_18",
+    "name": "Vegetable biryani",
+    "description": "Illustrative recipe with rice, carrot, peas, ghee.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "biryani",
+    "price_gbp": 15.0,
+    "ingredients": [
+      "rice",
+      "carrot",
+      "peas",
+      "ghee"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 5,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 6,
+      "crunch": 2,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0072",
+    "restaurant_id": "r_18",
+    "name": "Dal makhani",
+    "description": "Illustrative recipe with lentils, butter, cream, tomato.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "lentil curry",
+    "price_gbp": 15.5,
+    "ingredients": [
+      "lentils",
+      "butter",
+      "cream",
+      "tomato"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 3,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 8,
+      "richness": 9,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0073",
+    "restaurant_id": "r_19",
+    "name": "Butter chicken",
+    "description": "Illustrative recipe with chicken, tomato, butter, cream.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "curry",
+    "price_gbp": 17.0,
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "butter",
+      "cream"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 4,
+      "sweet": 3,
+      "sour": 2,
+      "bitter": 0,
+      "umami": 7,
+      "richness": 9,
+      "crunch": 1,
+      "creaminess": 8
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0074",
+    "restaurant_id": "r_19",
+    "name": "Chana masala",
+    "description": "Illustrative recipe with chickpeas, tomato, onion, coriander.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "chickpea curry",
+    "price_gbp": 17.5,
+    "ingredients": [
+      "chickpeas",
+      "tomato",
+      "onion",
+      "coriander"
+    ],
+    "allergens": [],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 7,
+      "richness": 5,
+      "crunch": 1,
+      "creaminess": 3
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0075",
+    "restaurant_id": "r_19",
+    "name": "Vegetable biryani",
+    "description": "Illustrative recipe with rice, carrot, peas, ghee.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "biryani",
+    "price_gbp": 18.0,
+    "ingredients": [
+      "rice",
+      "carrot",
+      "peas",
+      "ghee"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 5,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 6,
+      "crunch": 2,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0076",
+    "restaurant_id": "r_19",
+    "name": "Dal makhani",
+    "description": "Illustrative recipe with lentils, butter, cream, tomato.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "lentil curry",
+    "price_gbp": 18.5,
+    "ingredients": [
+      "lentils",
+      "butter",
+      "cream",
+      "tomato"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 3,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 8,
+      "richness": 9,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0077",
+    "restaurant_id": "r_20",
+    "name": "Butter chicken",
+    "description": "Illustrative recipe with chicken, tomato, butter, cream.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "curry",
+    "price_gbp": 20.0,
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "butter",
+      "cream"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "no",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 4,
+      "sweet": 3,
+      "sour": 2,
+      "bitter": 0,
+      "umami": 7,
+      "richness": 9,
+      "crunch": 1,
+      "creaminess": 8
+    },
+    "serving_temp": "hot",
+    "adventurousness": 3,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0078",
+    "restaurant_id": "r_20",
+    "name": "Chana masala",
+    "description": "Illustrative recipe with chickpeas, tomato, onion, coriander.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "chickpea curry",
+    "price_gbp": 20.5,
+    "ingredients": [
+      "chickpeas",
+      "tomato",
+      "onion",
+      "coriander"
+    ],
+    "allergens": [],
+    "dietary": {
+      "vegan": "yes",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 6,
+      "sweet": 2,
+      "sour": 5,
+      "bitter": 1,
+      "umami": 7,
+      "richness": 5,
+      "crunch": 1,
+      "creaminess": 3
+    },
+    "serving_temp": "hot",
+    "adventurousness": 4,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0079",
+    "restaurant_id": "r_20",
+    "name": "Vegetable biryani",
+    "description": "Illustrative recipe with rice, carrot, peas, ghee.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "biryani",
+    "price_gbp": 21.0,
+    "ingredients": [
+      "rice",
+      "carrot",
+      "peas",
+      "ghee"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 5,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 6,
+      "richness": 6,
+      "crunch": 2,
+      "creaminess": 2
+    },
+    "serving_temp": "hot",
+    "adventurousness": 5,
+    "tagged_by": "human",
+    "verified": false
+  },
+  {
+    "id": "d_0080",
+    "restaurant_id": "r_20",
+    "name": "Dal makhani",
+    "description": "Illustrative recipe with lentils, butter, cream, tomato.",
+    "cuisine": "indian",
+    "category": "main",
+    "dish_family": "lentil curry",
+    "price_gbp": 21.5,
+    "ingredients": [
+      "lentils",
+      "butter",
+      "cream",
+      "tomato"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "dietary": {
+      "vegan": "no",
+      "vegetarian": "yes",
+      "halal": "unknown",
+      "kosher": "unknown"
+    },
+    "taste": {
+      "spice": 3,
+      "sweet": 2,
+      "sour": 2,
+      "bitter": 1,
+      "umami": 8,
+      "richness": 9,
+      "crunch": 0,
+      "creaminess": 9
+    },
+    "serving_temp": "hot",
+    "adventurousness": 6,
+    "tagged_by": "human",
+    "verified": false
+  }
+]

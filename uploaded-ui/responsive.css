@@ -1,0 +1,47 @@
+/* Real device layout. Desktop styles in style.css keep the framed demo. */
+html { -webkit-text-size-adjust: 100%; }
+body, button, input, select { -webkit-tap-highlight-color: transparent; }
+button, a, input { touch-action: manipulation; }
+.phone, #app, .row > *, input, .card { min-width: 0; }
+input, select { max-width: 100%; }
+#app { overflow-wrap: anywhere; overscroll-behavior-y: contain; }
+.anchors { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 7px; }
+.anchors span:nth-child(2) { text-align: center; }
+.anchors span:last-child { text-align: right; }
+.pill, .round-option, .primary, .secondary { overflow-wrap: anywhere; }
+.diet-group .pill { min-height: 44px; }
+.allergen-select .pill { min-height: 44px; white-space: normal; }
+.back { min-height: 44px; }
+.phone header .wordmark { flex-shrink: 0; }
+/* Portrait phone; the second rule also covers a phone turned sideways.
+   Tablets and laptop/desktop screens retain the decorative iPhone frame. */
+@media (max-width: 767px), (pointer: coarse) and (max-width: 1000px) and (max-height: 500px) {
+  html, body { width: 100%; height: 100%; overflow: hidden; }
+  body { display: block; min-height: 0; background: var(--paper); }
+  .intro, .side-note, .status, .island, .homebar { display: none !important; }
+  .phone { display: flex; flex-direction: column; width: 100%; max-width: none;
+    height: 100vh; height: 100dvh; margin: 0; border: none; border-radius: 0;
+    box-shadow: none; overflow: hidden; background: var(--paper); }
+  .phone header { height: auto; min-height: 65px; flex: 0 0 auto;
+    padding: max(12px,env(safe-area-inset-top)) max(20px,env(safe-area-inset-right)) 12px max(20px,env(safe-area-inset-left)); }
+  #app { flex: 1 1 auto; width: 100%; min-height: 0; height: auto;
+    padding: 20px max(20px,env(safe-area-inset-right)) 30px max(20px,env(safe-area-inset-left));
+    overflow-y: auto; overflow-x: hidden; -webkit-overflow-scrolling: touch; }
+  .phone nav { position: relative; flex: 0 0 auto; bottom: auto; height: auto;
+    min-height: 65px; padding: 8px max(12px,env(safe-area-inset-right)) max(10px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left)); }
+  .phone nav button { min-height: 44px; }
+  input[type=text], input[type=email], input[type=number], select { font-size: 16px; }
+  #toast { left: 16px; right: 16px; bottom: max(82px,calc(env(safe-area-inset-bottom) + 72px)); text-align: center; }
+  h2 { font-size: clamp(26px,7.5vw,34px); }
+  .stars button { min-width: 44px; min-height: 44px; }
+}
+@media (min-width: 768px) and (max-height: 850px) and (pointer: fine) {
+  body { padding: 16px 0; }
+  .phone { height: calc(100dvh - 32px); display: flex; flex-direction: column; }
+  .phone header, .phone .status { flex-shrink: 0; }
+  #app { flex: 1; min-height: 0; height: auto; padding-bottom: 30px; }
+  .phone nav { position: relative; bottom: auto; flex: 0 0 61px; margin-bottom: 20px; }
+  .intro { height: calc(100dvh - 100px); }
+}
+
+.history-actions{align-items:stretch}.history-actions button{font-size:11px}.history-items{border:1px solid var(--line);border-radius:12px;margin:12px 0}.history-item{display:flex;align-items:flex-start;gap:10px;padding:12px;margin:0;border-bottom:1px solid var(--line)}.history-item:last-child{border:0}.history-item input{accent-color:#3A61FF;flex-shrink:0;margin-top:4px;width:18px;height:18px}.history-item strong{font-size:12px}.history-item small{display:block;font-size:10px;color:var(--muted);margin-top:5px;line-height:1.4}.history-dimensions{margin:14px 0}.history-dimension{display:grid;grid-template-columns:80px 1fr 65px;gap:10px;align-items:center;font-size:11px;padding:7px 0}.history-dimension meter{width:100%;height:12px;accent-color:#3A61FF}.history-dimension b{text-align:right;font-size:10px}.history-error{color:#8d2626;background:#fff0ec;border-radius:10px;padding:12px;font-size:12px}button:disabled{opacity:.5;cursor:not-allowed}input[type=file]{width:100%;min-height:48px;font-size:12px;white-space:normal}input[type=file]::file-selector-button{background:#3A61FF;color:white;border:0;border-radius:8px;padding:10px;margin-right:8px}

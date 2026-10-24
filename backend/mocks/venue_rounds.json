@@ -64,7 +64,14 @@
           "serving_temp": "hot",
           "adventurousness": 1.0,
           "tagged_by": "human",
-          "verified": false
+          "verified": false,
+          "taste_confidence": null,
+          "taste_std": null,
+          "ingredients_canonical": [],
+          "allergens_suggested": [],
+          "taste_model_version": "",
+          "taste_verified": false,
+          "is_mock": false
         }
       },
       {
@@ -130,7 +137,14 @@
           "serving_temp": "hot",
           "adventurousness": 1.0,
           "tagged_by": "human",
-          "verified": false
+          "verified": false,
+          "taste_confidence": null,
+          "taste_std": null,
+          "ingredients_canonical": [],
+          "allergens_suggested": [],
+          "taste_model_version": "",
+          "taste_verified": false,
+          "is_mock": false
         }
       },
       {
@@ -197,7 +211,14 @@
           "serving_temp": "hot",
           "adventurousness": 2.0,
           "tagged_by": "human",
-          "verified": false
+          "verified": false,
+          "taste_confidence": null,
+          "taste_std": null,
+          "ingredients_canonical": [],
+          "allergens_suggested": [],
+          "taste_model_version": "",
+          "taste_verified": false,
+          "is_mock": false
         }
       }
     ]

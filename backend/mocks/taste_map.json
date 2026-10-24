@@ -1,33 +1,33 @@
 {
   "taste_vector": {
-    "spice": 4.44,
-    "sweet": 2.68,
-    "sour": 3.88,
-    "bitter": 3.16,
-    "umami": 6.25,
-    "richness": 6.12,
-    "crunch": 4.17,
-    "creaminess": 7.68
+    "spice": 4.0,
+    "sweet": 2.52,
+    "sour": 3.51,
+    "bitter": 2.4,
+    "umami": 5.82,
+    "richness": 5.9,
+    "crunch": 3.73,
+    "creaminess": 6.76
   },
   "taste_confidence": {
-    "spice": 0.65,
-    "sweet": 0.65,
-    "sour": 0.65,
-    "bitter": 0.65,
-    "umami": 0.65,
-    "richness": 0.65,
-    "crunch": 0.65,
-    "creaminess": 0.65
+    "spice": 0.77,
+    "sweet": 0.77,
+    "sour": 0.77,
+    "bitter": 0.77,
+    "umami": 0.81,
+    "richness": 0.83,
+    "crunch": 0.77,
+    "creaminess": 0.83
   },
   "adventurousness": 4.4,
-  "price_pref": 2.0,
+  "price_pref": 1.88,
   "vibe_pref": {
     "traditional": 0.5,
     "family": 0.5
   },
   "top_dimensions": [
     "creaminess",
-    "umami",
-    "richness"
+    "richness",
+    "umami"
   ]
 }

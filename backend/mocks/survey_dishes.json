@@ -37,7 +37,14 @@
     "serving_temp": "cold",
     "adventurousness": 4.0,
     "tagged_by": "human",
-    "verified": false
+    "verified": false,
+    "taste_confidence": null,
+    "taste_std": null,
+    "ingredients_canonical": [],
+    "allergens_suggested": [],
+    "taste_model_version": "",
+    "taste_verified": false,
+    "is_mock": false
   },
   {
     "id": "d_0034",
@@ -80,7 +87,14 @@
     "serving_temp": "cold",
     "adventurousness": 7.0,
     "tagged_by": "human",
-    "verified": false
+    "verified": false,
+    "taste_confidence": null,
+    "taste_std": null,
+    "ingredients_canonical": [],
+    "allergens_suggested": [],
+    "taste_model_version": "",
+    "taste_verified": false,
+    "is_mock": false
   },
   {
     "id": "d_0029",
@@ -122,7 +136,14 @@
     "serving_temp": "warm",
     "adventurousness": 3.0,
     "tagged_by": "human",
-    "verified": false
+    "verified": false,
+    "taste_confidence": null,
+    "taste_std": null,
+    "ingredients_canonical": [],
+    "allergens_suggested": [],
+    "taste_model_version": "",
+    "taste_verified": false,
+    "is_mock": false
   },
   {
     "id": "d_0027",
@@ -164,7 +185,14 @@
     "serving_temp": "hot",
     "adventurousness": 2.0,
     "tagged_by": "human",
-    "verified": false
+    "verified": false,
+    "taste_confidence": null,
+    "taste_std": null,
+    "ingredients_canonical": [],
+    "allergens_suggested": [],
+    "taste_model_version": "",
+    "taste_verified": false,
+    "is_mock": false
   },
   {
     "id": "d_0012",
@@ -204,7 +232,14 @@
     "serving_temp": "hot",
     "adventurousness": 3.0,
     "tagged_by": "human",
-    "verified": false
+    "verified": false,
+    "taste_confidence": null,
+    "taste_std": null,
+    "ingredients_canonical": [],
+    "allergens_suggested": [],
+    "taste_model_version": "",
+    "taste_verified": false,
+    "is_mock": false
   },
   {
     "id": "d_0007",
@@ -245,7 +280,14 @@
     "serving_temp": "hot",
     "adventurousness": 2.0,
     "tagged_by": "human",
-    "verified": false
+    "verified": false,
+    "taste_confidence": null,
+    "taste_std": null,
+    "ingredients_canonical": [],
+    "allergens_suggested": [],
+    "taste_model_version": "",
+    "taste_verified": false,
+    "is_mock": false
   },
   {
     "id": "d_0017",
@@ -283,7 +325,14 @@
     "serving_temp": "cold",
     "adventurousness": 3.0,
     "tagged_by": "human",
-    "verified": false
+    "verified": false,
+    "taste_confidence": null,
+    "taste_std": null,
+    "ingredients_canonical": [],
+    "allergens_suggested": [],
+    "taste_model_version": "",
+    "taste_verified": false,
+    "is_mock": false
   },
   {
     "id": "d_0028",
@@ -325,7 +374,14 @@
     "serving_temp": "hot",
     "adventurousness": 3.0,
     "tagged_by": "human",
-    "verified": false
+    "verified": false,
+    "taste_confidence": null,
+    "taste_std": null,
+    "ingredients_canonical": [],
+    "allergens_suggested": [],
+    "taste_model_version": "",
+    "taste_verified": false,
+    "is_mock": false
   },
   {
     "id": "d_0021",
@@ -366,7 +422,14 @@
     "serving_temp": "hot",
     "adventurousness": 2.0,
     "tagged_by": "human",
-    "verified": false
+    "verified": false,
+    "taste_confidence": null,
+    "taste_std": null,
+    "ingredients_canonical": [],
+    "allergens_suggested": [],
+    "taste_model_version": "",
+    "taste_verified": false,
+    "is_mock": false
   },
   {
     "id": "d_0011",
@@ -407,7 +470,14 @@
     "serving_temp": "hot",
     "adventurousness": 2.0,
     "tagged_by": "human",
-    "verified": false
+    "verified": false,
+    "taste_confidence": null,
+    "taste_std": null,
+    "ingredients_canonical": [],
+    "allergens_suggested": [],
+    "taste_model_version": "",
+    "taste_verified": false,
+    "is_mock": false
   },
   {
     "id": "d_0009",
@@ -448,7 +518,14 @@
     "serving_temp": "hot",
     "adventurousness": 3.0,
     "tagged_by": "human",
-    "verified": false
+    "verified": false,
+    "taste_confidence": null,
+    "taste_std": null,
+    "ingredients_canonical": [],
+    "allergens_suggested": [],
+    "taste_model_version": "",
+    "taste_verified": false,
+    "is_mock": false
   },
   {
     "id": "d_0020",
@@ -488,6 +565,13 @@
     "serving_temp": "hot",
     "adventurousness": 3.0,
     "tagged_by": "human",
-    "verified": false
+    "verified": false,
+    "taste_confidence": null,
+    "taste_std": null,
+    "ingredients_canonical": [],
+    "allergens_suggested": [],
+    "taste_model_version": "",
+    "taste_verified": false,
+    "is_mock": false
   }
 ]

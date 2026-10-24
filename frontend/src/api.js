@@ -6,15 +6,17 @@ import surveyDishes from '../../backend/mocks/survey_dishes.json'
 import venueRounds from '../../backend/mocks/venue_rounds.json'
 import tasteMap from '../../backend/mocks/taste_map.json'
 import recommendations from '../../backend/mocks/recommend.json'
+import uberImport from '../../backend/mocks/uber_import.json'
 
 const API = import.meta.env.VITE_API_URL
 
 async function call(method, path, body, mock) {
   if (!API) return structuredClone(mock)
+  const isForm = body instanceof FormData
   const res = await fetch(API + path, {
     method,
-    headers: { 'Content-Type': 'application/json' },
-    body: body ? JSON.stringify(body) : undefined,
+    headers: isForm ? undefined : { 'Content-Type': 'application/json' },
+    body: isForm ? body : body ? JSON.stringify(body) : undefined,
   })
   if (!res.ok) throw new Error(`${method} ${path} -> ${res.status}`)
   return res.json()
@@ -30,4 +32,10 @@ export const api = {
   postVenueChoice: (id, choice) => call('POST', `/profile/${id}/venue-choice`, choice, profile),
   tasteMap: (id) => call('GET', `/profile/${id}/taste-map`, null, tasteMap),
   recommend: (body) => call('POST', '/recommend', body, recommendations),
+  // file: the Uber "Download your data" zip, or its Eats/eats_order_details CSV. Returns { profile, summary }.
+  importUber: (id, file) => {
+    const form = new FormData()
+    form.append('file', file)
+    return call('POST', `/profile/${id}/import/uber`, form, uberImport)
+  },
 }

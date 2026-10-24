@@ -1,0 +1,8 @@
+# --- data targets (merge into Makefile) ---
+PY ?= .venv/bin/python
+
+download:
+	./scripts/download.sh
+
+ingest: download
+	$(PY) -m tastelayer.data.ingest

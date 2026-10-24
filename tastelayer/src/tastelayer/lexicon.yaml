@@ -1,0 +1,215 @@
+# Ingredient-lookup baseline. Partial 0-10 scores on the 8 taste dims, same anchors as taste_dimensions.json.
+# Keys are matched (word boundary, case-insensitive) against name + description + canonical ingredients.
+defaults: {spice: 2, sweet: 2, sour: 2, bitter: 2, umami: 2, richness: 2, crunch: 2, creaminess: 2}
+max_pool: [spice, sour, bitter, crunch]   # others use a strength-weighted mean of matches
+
+ingredients:
+  # --- chilli heat ---
+  habanero: {spice: 10}
+  scotch bonnet: {spice: 10}
+  ghost chilli: {spice: 10}
+  bird's eye chilli: {spice: 9}
+  naga: {spice: 10}
+  kashmiri chilli: {spice: 4, sweet: 3}
+  green chilli: {spice: 7}
+  red chilli: {spice: 7}
+  chilli: {spice: 6}
+  chili: {spice: 6}
+  chilli flakes: {spice: 6}
+  peperoncino: {spice: 6}
+  nduja: {spice: 7, richness: 7, umami: 7}
+  jalapeno: {spice: 5}
+  cayenne: {spice: 7}
+  chilli powder: {spice: 6}
+  paprika: {spice: 2, sweet: 3}
+  black pepper: {spice: 2.5}
+  pepper: {spice: 2}
+  ginger: {spice: 3}
+  mustard seed: {spice: 3, bitter: 3}
+  horseradish: {spice: 5}
+  pickle: {sour: 8, spice: 5}
+  achaar: {sour: 8, spice: 6}
+  # --- sweet ---
+  sugar: {sweet: 8}
+  brown sugar: {sweet: 8}
+  jaggery: {sweet: 8}
+  honey: {sweet: 8}
+  maple syrup: {sweet: 8.5}
+  syrup: {sweet: 8}
+  condensed milk: {sweet: 9, creaminess: 6}
+  chocolate: {sweet: 7, bitter: 4, richness: 6}
+  dark chocolate: {sweet: 5, bitter: 5, richness: 6}
+  cocoa: {bitter: 5, sweet: 3}
+  caramel: {sweet: 9, richness: 5}
+  mango: {sweet: 7, sour: 3}
+  mango chutney: {sweet: 7, sour: 4}
+  raisin: {sweet: 7}
+  sultana: {sweet: 7}
+  date: {sweet: 8}
+  fig: {sweet: 7}
+  coconut: {sweet: 4, richness: 5, creaminess: 5}
+  coconut milk: {sweet: 4, richness: 6, creaminess: 7}
+  caramelised onion: {sweet: 5}
+  onion: {sweet: 3}
+  roasted red pepper: {sweet: 2.5}
+  balsamic: {sour: 6, sweet: 5}
+  gulab jamun: {sweet: 10, richness: 6}
+  jalebi: {sweet: 10, crunch: 6}
+  kheer: {sweet: 8, creaminess: 8}
+  kulfi: {sweet: 8, creaminess: 8}
+  cardamom: {sweet: 3}
+  cinnamon: {sweet: 3}
+  vanilla: {sweet: 5}
+  nutella: {sweet: 9, richness: 7, creaminess: 6}
+  # --- sour ---
+  tamarind: {sour: 9, sweet: 4}
+  lemon: {sour: 6}
+  lemon juice: {sour: 5}
+  lime: {sour: 6}
+  vinegar: {sour: 7}
+  amchur: {sour: 7}
+  kokum: {sour: 8}
+  yoghurt: {sour: 2.5, creaminess: 5}
+  yogurt: {sour: 2.5, creaminess: 5}
+  curd: {sour: 3, creaminess: 5}
+  raita: {sour: 3, creaminess: 5}
+  tomato: {sour: 4, umami: 3, sweet: 2}
+  san marzano: {sour: 4, umami: 4, sweet: 3}
+  capers: {sour: 6, umami: 4}
+  sun-dried tomato: {sour: 4, umami: 6, sweet: 4}
+  pomegranate: {sour: 5, sweet: 5}
+  chaat masala: {sour: 6, spice: 3}
+  lemon curd: {sour: 6, sweet: 7}
+  # --- bitter ---
+  radicchio: {bitter: 8}
+  rocket: {bitter: 3}
+  arugula: {bitter: 3}
+  endive: {bitter: 6}
+  karela: {bitter: 9}
+  bitter gourd: {bitter: 9}
+  fenugreek: {bitter: 5}
+  methi: {bitter: 5}
+  espresso: {bitter: 6}
+  coffee: {bitter: 6}
+  campari: {bitter: 8, sweet: 4}
+  aperol: {bitter: 5, sweet: 6}
+  broccoli rabe: {bitter: 6}
+  cime di rapa: {bitter: 6}
+  kale: {bitter: 4}
+  olive: {bitter: 3, umami: 4, sour: 3}
+  walnut: {bitter: 3, crunch: 5, richness: 5}
+  # --- umami ---
+  anchovy: {umami: 9}
+  miso: {umami: 9}
+  parmesan: {umami: 5, richness: 4}
+  parmigiano: {umami: 5, richness: 4}
+  pecorino: {umami: 6, richness: 4}
+  grana padano: {umami: 5}
+  mushroom: {umami: 6}
+  porcini: {umami: 8}
+  truffle: {umami: 7, richness: 5}
+  prosciutto: {umami: 7, richness: 4}
+  parma ham: {umami: 7}
+  pancetta: {umami: 7, richness: 6}
+  guanciale: {umami: 7, richness: 8}
+  salami: {umami: 7, richness: 6}
+  pepperoni: {umami: 6, richness: 6, spice: 3}
+  bacon: {umami: 7, richness: 6}
+  sausage: {umami: 6, richness: 7}
+  beef: {umami: 6, richness: 6}
+  lamb: {umami: 6, richness: 7}
+  mutton: {umami: 6, richness: 7}
+  goat: {umami: 6, richness: 6}
+  chicken: {umami: 4, richness: 4}
+  prawn: {umami: 6}
+  shrimp: {umami: 6}
+  fish: {umami: 5}
+  tuna: {umami: 6}
+  ragu: {umami: 7, richness: 6}
+  bolognese: {umami: 7, richness: 6}
+  soy sauce: {umami: 8}
+  stock: {umami: 5}
+  # --- richness / fat ---
+  ghee: {richness: 8}
+  butter: {richness: 7}
+  cream: {richness: 7, creaminess: 7}
+  double cream: {richness: 8, creaminess: 8}
+  malai: {richness: 8, creaminess: 8}
+  makhani: {richness: 9, creaminess: 8}
+  korma: {richness: 7, creaminess: 8, sweet: 4, spice: 1}
+  cashew: {richness: 6, creaminess: 5, crunch: 3}
+  almond: {richness: 4, crunch: 5}
+  pistachio: {richness: 4, crunch: 5}
+  olive oil: {richness: 2.5}
+  cheese: {richness: 6, umami: 4, creaminess: 4}
+  mozzarella: {richness: 5, creaminess: 5}
+  fior di latte: {richness: 5, creaminess: 5}
+  burrata: {richness: 7, creaminess: 9}
+  ricotta: {richness: 4, creaminess: 7}
+  gorgonzola: {richness: 7, umami: 6, creaminess: 6, bitter: 2}
+  paneer: {richness: 5, creaminess: 4}
+  egg yolk: {richness: 7, creaminess: 6}
+  egg: {richness: 4}
+  pork: {richness: 6, umami: 5}
+  duck: {richness: 7, umami: 6}
+  # --- crunch ---
+  papadum: {crunch: 9}
+  poppadom: {crunch: 9}
+  pappadum: {crunch: 9}
+  samosa: {crunch: 7, richness: 6}
+  pakora: {crunch: 7, richness: 6}
+  bhaji: {crunch: 7, richness: 6}
+  onion bhaji: {crunch: 7, richness: 6}
+  sev: {crunch: 8}
+  puri: {crunch: 7}
+  pani puri: {crunch: 8, sour: 7, spice: 5}
+  dosa: {crunch: 6}
+  breadcrumbs: {crunch: 5}
+  pangrattato: {crunch: 6}
+  crouton: {crunch: 7}
+  bruschetta: {crunch: 6}
+  crostini: {crunch: 7}
+  cannoli: {crunch: 6, sweet: 7, creaminess: 6}
+  biscotti: {crunch: 8, sweet: 6}
+  amaretti: {crunch: 6, sweet: 7}
+  toasted nuts: {crunch: 5}
+  pine nut: {crunch: 4, richness: 4}
+  peanut: {crunch: 5, richness: 5}
+  arancini: {crunch: 6, richness: 6, creaminess: 5}
+  calamari: {crunch: 6, umami: 5}
+  naan: {crunch: 2, richness: 4}
+  bread: {crunch: 2}
+  focaccia: {crunch: 3, richness: 4}
+  # --- creaminess ---
+  mascarpone: {creaminess: 9, richness: 8, sweet: 3}
+  hummus: {creaminess: 5}
+  tiramisu: {creaminess: 8, sweet: 7, bitter: 3}
+  panna cotta: {creaminess: 9, sweet: 7}
+  gelato: {creaminess: 8, sweet: 8}
+  risotto: {creaminess: 7, richness: 6}
+  carbonara: {creaminess: 7, richness: 8, umami: 7}
+  alfredo: {creaminess: 8, richness: 8}
+  dal: {creaminess: 6}
+  dhal: {creaminess: 6}
+  lentil: {creaminess: 5}
+  lassi: {creaminess: 7, sweet: 6, sour: 3}
+  bechamel: {creaminess: 7, richness: 6}
+  broth: {creaminess: 0}
+  soup: {creaminess: 3}
+  potato: {creaminess: 4}
+  aubergine: {creaminess: 5}
+  eggplant: {creaminess: 5}
+  avocado: {creaminess: 7, richness: 5}
+
+keywords:   # applied to name + description as additive deltas after pooling
+  - {pattern: "\\b(fried|crispy|crisp|crunchy|battered|tempura|fritter)s?\\b", delta: {crunch: 4, richness: 1}}
+  - {pattern: "\\b(cream|creamy|makhani|malai|butter)\\b", delta: {creaminess: 3, richness: 3}}
+  - {pattern: "\\b(hot|fiery|vindaloo|phaal|phal|madras|jalfrezi|diablo|arrabbiata|piri piri|peri peri)\\b", delta: {spice: 4}}
+  - {pattern: "\\b(vindaloo|phaal|phal)\\b", delta: {spice: 3, sour: 2}}
+  - {pattern: "\\b(mild|korma|pasanda)\\b", delta: {spice: -2}}
+  - {pattern: "\\b(tangy|zesty|pickled|sour)\\b", delta: {sour: 3}}
+  - {pattern: "\\b(sweet|glazed|candied|honey)\\b", delta: {sweet: 2}}
+  - {pattern: "\\b(chargrilled|grilled|tandoori|smoked|roasted)\\b", delta: {umami: 1}}
+  - {pattern: "\\b(salad|steamed|light)\\b", delta: {richness: -2}}
+  - {pattern: "\\b(cheesy|loaded|stuffed|rich)\\b", delta: {richness: 2}}
+  - {pattern: "\\b(dessert|cake|pudding|tart)\\b", delta: {sweet: 4}}

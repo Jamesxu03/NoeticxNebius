@@ -1,0 +1,430 @@
+[
+ {
+  "id": "u_p01",
+  "first_name": "Vegan",
+  "last_name": "Persona",
+  "dietary": [
+   "vegan"
+  ],
+  "allergies": [],
+  "disliked_ingredients": [],
+  "taste_vector": {
+   "spice": 9.0,
+   "sweet": 3.0,
+   "sour": 6.0,
+   "bitter": 4.0,
+   "umami": 6.0,
+   "richness": 4.0,
+   "crunch": 5.0,
+   "creaminess": 3.0
+  },
+  "taste_confidence": {
+   "spice": 0.3,
+   "sweet": 0.3,
+   "sour": 0.3,
+   "bitter": 0.3,
+   "umami": 0.3,
+   "richness": 0.3,
+   "crunch": 0.3,
+   "creaminess": 0.3
+  },
+  "dish_ratings": [],
+  "venue_choices": [],
+  "price_pref": 2.0,
+  "vibe_pref": {
+   "casual": 0.6,
+   "trendy": 0.4
+  },
+  "adventurousness": 5.47,
+  "created_at": "2026-10-24T12:48:33+00:00",
+  "strict": true,
+  "ingredient_centroid": null,
+  "liked_ingredients": [
+   "green chilli",
+   "chickpea",
+   "tamarind",
+   "coriander"
+  ],
+  "persona": "vegan spice-lover"
+ },
+ {
+  "id": "u_p02",
+  "first_name": "Halal",
+  "last_name": "Persona",
+  "dietary": [
+   "halal"
+  ],
+  "allergies": [],
+  "disliked_ingredients": [],
+  "taste_vector": {
+   "spice": 7.0,
+   "sweet": 4.0,
+   "sour": 6.0,
+   "bitter": 5.0,
+   "umami": 8.0,
+   "richness": 6.0,
+   "crunch": 6.0,
+   "creaminess": 5.0
+  },
+  "taste_confidence": {
+   "spice": 0.3,
+   "sweet": 0.3,
+   "sour": 0.3,
+   "bitter": 0.3,
+   "umami": 0.3,
+   "richness": 0.3,
+   "crunch": 0.3,
+   "creaminess": 0.3
+  },
+  "dish_ratings": [],
+  "venue_choices": [],
+  "price_pref": 3.0,
+  "vibe_pref": {
+   "trendy": 0.6,
+   "traditional": 0.4
+  },
+  "adventurousness": 4.98,
+  "created_at": "2026-10-24T12:48:33+00:00",
+  "strict": true,
+  "ingredient_centroid": null,
+  "liked_ingredients": [
+   "lamb",
+   "cumin",
+   "yoghurt",
+   "fenugreek"
+  ],
+  "persona": "halal adventurous eater"
+ },
+ {
+  "id": "u_p03",
+  "first_name": "Nut-allergy",
+  "last_name": "Persona",
+  "dietary": [],
+  "allergies": [
+   "peanuts",
+   "tree nuts"
+  ],
+  "disliked_ingredients": [],
+  "taste_vector": {
+   "spice": 2.0,
+   "sweet": 5.0,
+   "sour": 3.0,
+   "bitter": 1.0,
+   "umami": 5.0,
+   "richness": 5.0,
+   "crunch": 3.0,
+   "creaminess": 6.0
+  },
+  "taste_confidence": {
+   "spice": 0.3,
+   "sweet": 0.3,
+   "sour": 0.3,
+   "bitter": 0.3,
+   "umami": 0.3,
+   "richness": 0.3,
+   "crunch": 0.3,
+   "creaminess": 0.3
+  },
+  "dish_ratings": [],
+  "venue_choices": [],
+  "price_pref": 2.0,
+  "vibe_pref": {
+   "family": 0.7,
+   "casual": 0.3
+  },
+  "adventurousness": 3.62,
+  "created_at": "2026-10-24T12:48:33+00:00",
+  "strict": true,
+  "ingredient_centroid": null,
+  "liked_ingredients": [
+   "chicken",
+   "tomato",
+   "mozzarella"
+  ],
+  "persona": "nut-allergy cautious eater"
+ },
+ {
+  "id": "u_p04",
+  "first_name": "Creamy-comfort",
+  "last_name": "Persona",
+  "dietary": [],
+  "allergies": [],
+  "disliked_ingredients": [],
+  "taste_vector": {
+   "spice": 3.0,
+   "sweet": 4.0,
+   "sour": 2.0,
+   "bitter": 1.0,
+   "umami": 6.0,
+   "richness": 9.0,
+   "crunch": 2.0,
+   "creaminess": 9.0
+  },
+  "taste_confidence": {
+   "spice": 0.3,
+   "sweet": 0.3,
+   "sour": 0.3,
+   "bitter": 0.3,
+   "umami": 0.3,
+   "richness": 0.3,
+   "crunch": 0.3,
+   "creaminess": 0.3
+  },
+  "dish_ratings": [],
+  "venue_choices": [],
+  "price_pref": 2.5,
+  "vibe_pref": {
+   "casual": 0.5,
+   "traditional": 0.5
+  },
+  "adventurousness": 4.28,
+  "created_at": "2026-10-24T12:48:33+00:00",
+  "strict": true,
+  "ingredient_centroid": null,
+  "liked_ingredients": [
+   "cream",
+   "butter",
+   "parmesan",
+   "paneer"
+  ],
+  "persona": "creamy-comfort lover"
+ },
+ {
+  "id": "u_p05",
+  "first_name": "Bitter",
+  "last_name": "Persona",
+  "dietary": [],
+  "allergies": [],
+  "disliked_ingredients": [
+   "cream"
+  ],
+  "taste_vector": {
+   "spice": 4.0,
+   "sweet": 2.0,
+   "sour": 8.0,
+   "bitter": 8.0,
+   "umami": 6.0,
+   "richness": 3.0,
+   "crunch": 6.0,
+   "creaminess": 2.0
+  },
+  "taste_confidence": {
+   "spice": 0.3,
+   "sweet": 0.3,
+   "sour": 0.3,
+   "bitter": 0.3,
+   "umami": 0.3,
+   "richness": 0.3,
+   "crunch": 0.3,
+   "creaminess": 0.3
+  },
+  "dish_ratings": [],
+  "venue_choices": [],
+  "price_pref": 3.0,
+  "vibe_pref": {
+   "trendy": 0.7,
+   "date-night": 0.3
+  },
+  "adventurousness": 5.82,
+  "created_at": "2026-10-24T12:48:33+00:00",
+  "strict": true,
+  "ingredient_centroid": null,
+  "liked_ingredients": [
+   "rocket",
+   "lemon",
+   "radicchio",
+   "caper"
+  ],
+  "persona": "bitter & sour fan"
+ },
+ {
+  "id": "u_p06",
+  "first_name": "Vegetarian",
+  "last_name": "Persona",
+  "dietary": [
+   "vegetarian"
+  ],
+  "allergies": [],
+  "disliked_ingredients": [],
+  "taste_vector": {
+   "spice": 4.0,
+   "sweet": 5.0,
+   "sour": 4.0,
+   "bitter": 3.0,
+   "umami": 6.0,
+   "richness": 7.0,
+   "crunch": 4.0,
+   "creaminess": 7.0
+  },
+  "taste_confidence": {
+   "spice": 0.3,
+   "sweet": 0.3,
+   "sour": 0.3,
+   "bitter": 0.3,
+   "umami": 0.3,
+   "richness": 0.3,
+   "crunch": 0.3,
+   "creaminess": 0.3
+  },
+  "dish_ratings": [],
+  "venue_choices": [],
+  "price_pref": 3.5,
+  "vibe_pref": {
+   "date-night": 0.8,
+   "trendy": 0.2
+  },
+  "adventurousness": 4.17,
+  "created_at": "2026-10-24T12:48:33+00:00",
+  "strict": true,
+  "ingredient_centroid": null,
+  "liked_ingredients": [
+   "mushroom",
+   "truffle",
+   "ricotta",
+   "spinach"
+  ],
+  "persona": "vegetarian date-night"
+ },
+ {
+  "id": "u_p07",
+  "first_name": "Low-spice",
+  "last_name": "Persona",
+  "dietary": [],
+  "allergies": [],
+  "disliked_ingredients": [
+   "coriander"
+  ],
+  "taste_vector": {
+   "spice": 1.0,
+   "sweet": 5.0,
+   "sour": 3.0,
+   "bitter": 1.0,
+   "umami": 5.0,
+   "richness": 5.0,
+   "crunch": 5.0,
+   "creaminess": 5.0
+  },
+  "taste_confidence": {
+   "spice": 0.3,
+   "sweet": 0.3,
+   "sour": 0.3,
+   "bitter": 0.3,
+   "umami": 0.3,
+   "richness": 0.3,
+   "crunch": 0.3,
+   "creaminess": 0.3
+  },
+  "dish_ratings": [],
+  "venue_choices": [],
+  "price_pref": 2.0,
+  "vibe_pref": {
+   "family": 0.8,
+   "casual": 0.2
+  },
+  "adventurousness": 3.52,
+  "created_at": "2026-10-24T12:48:33+00:00",
+  "strict": true,
+  "ingredient_centroid": null,
+  "liked_ingredients": [
+   "chicken",
+   "potato",
+   "cheese",
+   "tomato"
+  ],
+  "persona": "low-spice family"
+ },
+ {
+  "id": "u_p08",
+  "first_name": "Budget",
+  "last_name": "Persona",
+  "dietary": [],
+  "allergies": [],
+  "disliked_ingredients": [],
+  "taste_vector": {
+   "spice": 6.0,
+   "sweet": 5.0,
+   "sour": 4.0,
+   "bitter": 2.0,
+   "umami": 7.0,
+   "richness": 7.0,
+   "crunch": 6.0,
+   "creaminess": 5.0
+  },
+  "taste_confidence": {
+   "spice": 0.3,
+   "sweet": 0.3,
+   "sour": 0.3,
+   "bitter": 0.3,
+   "umami": 0.3,
+   "richness": 0.3,
+   "crunch": 0.3,
+   "creaminess": 0.3
+  },
+  "dish_ratings": [],
+  "venue_choices": [],
+  "price_pref": 1.0,
+  "vibe_pref": {
+   "quick": 0.6,
+   "casual": 0.4
+  },
+  "adventurousness": 4.38,
+  "created_at": "2026-10-24T12:48:33+00:00",
+  "strict": true,
+  "ingredient_centroid": null,
+  "liked_ingredients": [
+   "pepperoni",
+   "cheese",
+   "chicken",
+   "rice"
+  ],
+  "persona": "budget student"
+ },
+ {
+  "id": "u_p09",
+  "first_name": "Crunch",
+  "last_name": "Persona",
+  "dietary": [],
+  "allergies": [],
+  "disliked_ingredients": [
+   "mushroom"
+  ],
+  "taste_vector": {
+   "spice": 5.0,
+   "sweet": 3.0,
+   "sour": 4.0,
+   "bitter": 2.0,
+   "umami": 8.0,
+   "richness": 5.0,
+   "crunch": 9.0,
+   "creaminess": 3.0
+  },
+  "taste_confidence": {
+   "spice": 0.3,
+   "sweet": 0.3,
+   "sour": 0.3,
+   "bitter": 0.3,
+   "umami": 0.3,
+   "richness": 0.3,
+   "crunch": 0.3,
+   "creaminess": 0.3
+  },
+  "dish_ratings": [],
+  "venue_choices": [],
+  "price_pref": 2.0,
+  "vibe_pref": {
+   "quick": 0.5,
+   "casual": 0.5
+  },
+  "adventurousness": 4.62,
+  "created_at": "2026-10-24T12:48:33+00:00",
+  "strict": true,
+  "ingredient_centroid": null,
+  "liked_ingredients": [
+   "potato",
+   "gram flour",
+   "onion",
+   "garlic"
+  ],
+  "persona": "crunch & savoury snacker"
+ }
+]

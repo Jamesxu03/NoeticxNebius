@@ -8,3 +8,7 @@ node_modules/
 frontend/dist/
 .claude/settings.local.json
 backend/.cache/
+
+# Personal data exports (e.g. Uber "Download your data") must never be committed
+Uber Data/
+*Uber*Data*Request*.zip

@@ -1,0 +1,28 @@
+# Model block targets (include from the main Makefile: `include Makefile.model`).
+PY ?= .venv/bin/python
+
+.PHONY: embed embed-core train train-bge eval predict serve test-model
+
+embed:            ## mini-Epicure skip-gram (128-d) + FlavorGraph mapping + taste probes
+	$(PY) -m tastelayer.embed --dim 128
+
+embed-core:       ## same, plus NPMI-graph random walks ("Core" variant)
+	$(PY) -m tastelayer.embed --dim 128 --core
+
+train:            ## feature CV (bge vs qwen vs both) + ridge/MLP -> artifacts/tastenet.joblib
+	$(PY) -m tastelayer.model.train --text bge,qwen
+
+train-bge:        ## no Nebius calls at all (bge only)
+	$(PY) -m tastelayer.model.train --text bge
+
+eval:             ## gold (or held-out consensus) comparison -> reports/eval.{md,csv,png}, calibrators
+	$(PY) -m tastelayer.model.evaluate
+
+predict:          ## data/processed/menu_dishes_tagged.json (taste fields only)
+	$(PY) -m tastelayer.model.predict
+
+serve:            ## POST /taste on :8002 (the app backend uses :8000)
+	$(PY) -m uvicorn tastelayer.api:app --port 8002
+
+test-model:
+	$(PY) -m pytest tests/test_model.py -q

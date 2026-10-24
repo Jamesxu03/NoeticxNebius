@@ -18,7 +18,7 @@ from pathlib import Path
 
 import numpy as np
 
-from backend import llm
+from backend import llm, safety
 from backend.flavour import FlavourIndex
 from schema.models import (
     TASTE_KEYS, Dish, DishRating, Recommendation, Restaurant, TasteMap,
@@ -39,6 +39,7 @@ DISLIKE_PENALTY = 0.3
 RATING_STEP = 0.25
 SURVEY_SIZE = 12
 DISLIKE_FLAVOUR_WEIGHT = 1.0  # a disliked ingredient pulls the flavour vector away like a 1-star dish
+ORDER_FLAVOUR_WEIGHT = 2.0  # all imported Uber Eats ingredients together count like one 5-star dish
 BECAUSE_MIN_SIM = 0.3  # centred Epicure cosine needed to say "because you liked X"
 STRETCH_MIN_SIM = 0.2  # centred Epicure cosine to the user's direction needed for a stretch pick
 SURVEY_EPICURE_MIX = 0.5  # share of Epicure distance in survey diversity (rest is taste distance)
@@ -64,24 +65,32 @@ def disliked_in(dish: Dish, disliked: list[str]) -> list[str]:
     found = []
     for x in disliked:
         pattern = rf"\b{re.escape(x.strip().lower())}(s|es)?\b"
-        if any(re.search(pattern, ing.lower()) for ing in dish.ingredients):
+        if any(re.search(pattern, ing.lower()) for ing in [*dish.ingredients, *dish.ingredients_canonical]):
             found.append(x)
     return found
 
 
 def hard_filter(dish: Dish, profile: UserProfile) -> tuple[bool, list[str]]:
-    """(allowed, warnings). "no" or a listed allergen excludes; "unknown" warns, never passes silently."""
+    """(allowed, warnings). A listed or text-implied allergen, or a "no" flag, excludes.
+
+    "unknown" never passes silently: it warns, or excludes when profile.strict is set.
+    backend/safety.py can only make a dish less eligible, never more.
+    """
     warnings = []
-    for allergy in profile.allergies:
-        if allergy in dish.allergens:
-            return False, []
+    allergens = set(dish.allergens) | safety.implied_allergens(dish)
+    if set(profile.allergies) & allergens:
+        return False, []
     for restriction in profile.dietary:
-        status = getattr(dish.dietary, restriction)
+        status, _ = safety.effective_dietary(dish, restriction)
         if status == "no":
             return False, []
         if status == "unknown":
+            if profile.strict:
+                return False, []
             warnings.append(f"{dish.name}: not confirmed {restriction}, check with the restaurant")
     if profile.allergies and not dish.verified:
+        if profile.strict:
+            return False, []
         warnings.append(f"{dish.name}: allergen info not yet verified")
     for disliked in disliked_in(dish, profile.disliked_ingredients):
         warnings.append(f"{dish.name}: contains {disliked}")
@@ -187,11 +196,17 @@ def taste_map(profile: UserProfile) -> TasteMap:
 # ----- scoring -----
 
 def epicure_user_vector(profile: UserProfile, cat: Catalogue) -> np.ndarray | None:
-    """User's direction in centred Epicure space: rated dishes weighted by stars-3, minus dislikes."""
+    """User's direction in centred Epicure space: rated dishes weighted by stars-3, imported
+    order ingredients (Uber Eats), minus dislikes."""
     flav = cat.flavour
     if not flav.available:
         return None
     parts = [(r.stars - 3) * flav.dish_vecs[r.dish_id] for r in profile.dish_ratings if r.dish_id in flav.dish_vecs]
+    total = sum(profile.ordered_ingredients.values())
+    for ing, w in profile.ordered_ingredients.items():
+        v = flav.ingredient_vec(ing)
+        if v is not None and total > 0:
+            parts.append(ORDER_FLAVOUR_WEIGHT * w / total * v)
     for ing in profile.disliked_ingredients:
         v = flav.ingredient_vec(ing)
         if v is not None:

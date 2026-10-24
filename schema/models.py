@@ -204,3 +204,34 @@ class UberImportSummary(BaseModel):
 class UberImportResult(BaseModel):
     profile: UserProfile
     summary: UberImportSummary
+
+
+# ----- menu scan ranking (POST /menu/rank) -----
+
+class MenuItemIn(BaseModel):
+    """One reviewed line of a scanned or typed menu. Ingredients are only what the menu lists."""
+    id: str = ""
+    name: str
+    ingredients: str = ""  # free text, comma separated
+    price: str = ""
+
+
+class MenuRankRequest(BaseModel):
+    profile_id: str
+    items: list[MenuItemIn]
+
+
+class MenuItemResult(BaseModel):
+    id: str
+    name: str
+    ingredients: str
+    price: str
+    score: float | None  # None when excluded
+    excluded: bool  # a listed or text-implied allergen, or a ruled-out diet
+    exclusion_reason: str | None
+    warnings: list[str]  # always show verbatim
+    reason: str  # one sentence: why it ranks where it does
+    matches: list[str]  # ingredients shared with the user's order history
+    because_you_liked: str | None  # closest highly rated catalogue dish, by Epicure flavour
+    taste: dict[str, float]  # estimated, only the dims with evidence
+    taste_source: str  # "tastenet" | "estimate" | "none"

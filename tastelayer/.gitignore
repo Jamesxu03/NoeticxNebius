@@ -5,3 +5,4 @@ cache/
 data/raw/
 data/interim/
 *.egg-info/
+artifacts/emb_cache/

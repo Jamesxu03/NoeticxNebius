@@ -50,3 +50,20 @@ def test_served_tastenet_predicts_new_dish_offline(no_network):
     assert no_network == [], f"network attempted: {no_network}"
     assert set(p["taste"]) == {"spice", "sweet", "sour", "bitter", "umami", "richness", "crunch", "creaminess"}
     assert all(0 <= v <= 10 for v in p["taste"].values())
+
+
+def test_embedding_cache_ignores_keys_without_vectors(tmp_path, monkeypatch):
+    """Fresh clone: *_keys.json present, *_vecs.npy missing (too big to commit) -> must not crash."""
+    import json
+
+    import numpy as np
+
+    from tastelayer.model import features
+
+    monkeypatch.setattr(features, "EMB_CACHE", tmp_path)
+    (tmp_path / "toy_keys.json").write_text(json.dumps([f"k{i}" for i in range(5)]))
+    store = features.EmbeddingStore("toy")
+    out = store.get(["a", "b", "a"], lambda xs: np.arange(len(xs) * 2, dtype=float).reshape(len(xs), 2))
+    assert out.shape == (3, 2) and np.allclose(out[0], out[2])
+    again = features.EmbeddingStore("toy").get(["b"], lambda xs: 1 / 0)  # cached now: compute never called
+    assert np.allclose(again[0], out[1])

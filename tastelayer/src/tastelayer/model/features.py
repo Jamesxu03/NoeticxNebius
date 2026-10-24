@@ -59,6 +59,12 @@ class EmbeddingStore:
         self.kp, self.vp = EMB_CACHE / f"{name}_keys.json", EMB_CACHE / f"{name}_vecs.npy"
         self.keys: list[str] = json.loads(self.kp.read_text()) if self.kp.exists() else []
         self.vecs = np.load(self.vp) if self.vp.exists() else None
+        n_vecs = 0 if self.vecs is None else len(self.vecs)
+        if len(self.keys) != n_vecs:
+            # e.g. a fresh clone: the keys file was committed but the >50MB vectors file was not.
+            # Never trust an index that doesn't match its vectors; start the cache over instead.
+            print(f"[emb_cache] {name}: {len(self.keys)} keys but {n_vecs} vectors; ignoring the stale cache")
+            self.keys, self.vecs = [], None
         self.index = {k: i for i, k in enumerate(self.keys)}
 
     def get(self, texts: list[str], compute) -> np.ndarray:

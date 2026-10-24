@@ -45,7 +45,7 @@ Not committed (large or reproducible). Regenerate with `make`:
 | `data/processed/corpus.parquet` | `make ingest` |
 | `data/interim/` + `data/processed/labels*.parquet`, `ingredient_taste_llm.parquet` | `make tag-ingredients tag-corpus consensus second-pass consensus-final` (Nebius API calls, costs money; capped by `MAX_USD`) |
 | `cache/` (LLM response disk cache) | rebuilt automatically during tagging |
-| `artifacts/emb_cache/*_vecs.npy` (>50MB text embeddings) | `make train` (or `make train-bge` for no Nebius calls) |
+| `artifacts/emb_cache/` (text-embedding cache; vectors >50MB, so the whole folder is local-only) | `make train` (or `make train-bge` for no Nebius calls) |
 | `data/processed/cooc_extra.parquet` and embedding artifacts | `make embed` |
 
 Full pipeline end to end (idempotent, cached):
